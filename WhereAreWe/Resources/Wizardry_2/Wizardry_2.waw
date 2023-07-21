@@ -1,0 +1,1483 @@
+<MapBook version="1.0" title="Wizardry 2: The Knight of Diamonds" IncreaseX="0" IncreaseY="1" OffsetX="-1" OffsetY="-1" QuickDoor="0">
+  <Bag>
+  </Bag>
+  <GridLines color="FFC0FFFF" style="0" width="1" />
+  <Unvisited fore="FFD3D3D3" back="FFA9A9A9" style="35" />
+  <FlaggedQuests />
+  <Sheet width="18" height="18" title="Legend" path="" zoom="200" gameIndex="-1">
+    <Grid>H4sIAAAAAAAEAO3YTQqDMBCG4TqrFrrp0lv2WrlFFt5rmklJjbULoSE/8gZC0Edj0OFDVVV9qHrN+xTaxZrW0fe2qVS9LvqHeu/LzWz7AsqqNuZdQtuem6omzixd3yu0qKYnn0aJuSFdrxnNcuNeauYsN2Stje/ciNnxOXeXG9LtvUKL6q/ckOarQg+pHXCrUxsxNybeN9B9bdgofKeMo845vdapDXIDJTdOoua8b6ANlNwYWBddmtRG0f+x6IiaaiJ16WJV6CF9znO5/6IoiqIoiqIoutEXWIRedfglAAA=</Grid>
+    <Notes>
+      <Note x="1" y="1" symbol="B">A border square that is not actually part of the map.  Cannot be accessed by any means.</Note>
+      <Note x="4" y="1" symbol="W">An ordinary solid wall in the Maze.</Note>
+      <Note x="6" y="1" symbol="E">Forced Encounter:  The party will encounter the monster(s) specified, regardless of the type of monsters otherwise assigned to the maze.  The "room" will still be cleared of its encounter flags as is the case with random encounters.</Note>
+      <Note x="7" y="1" symbol="T">A teleporter to another location on the current map.</Note>
+      <Note x="6" y="2" symbol="e">Encounter Square (fixed battles fought here will use the level 2 reward for the monsters; random battles will use the level 1 reward but yield double gold).  There is a 1% chance to encounter enemies in non-encounter squares.
+Whenever a map is loaded, several randomly-selected rooms containing encounters will have their monsters removed until the area is exited.
+After finishing a fixed encounter, the rest of the "room" (collection of squares surrounded by walls and/or doors) will have the active flag cleared (i.e. only one fixed encounter will happen in a room until exiting the map).</Note>
+      <Note x="7" y="2" symbol="t">A trap square that has only negative effects.</Note>
+      <Note x="8" y="2" symbol="s">A sign or other noninteractive information.</Note>
+      <Note x="9" y="2" symbol="n">Note - Contains information about the game that has no corresponding text or action in this square.</Note>
+      <Note x="1" y="3" symbol="U">A location that is generally unimportant and typically inaccessible by any means other than the Malor spell or a Teleporter trap on a chest.</Note>
+      <Note x="4" y="3" symbol="!W">A passage that appears to be a wall, blocking vision, but can be walked through.</Note>
+      <Note x="6" y="3" symbol=".">Stairs going down to a lower level.</Note>
+      <Note x="7" y="3" symbol=".">Stairs going up to a higher level.</Note>
+      <Note x="8" y="3" symbol="↺">A spinner that automatically rotates the party when activated.</Note>
+      <Note x="1" y="5" symbol="D">A location in which it is too dark for the party to see the details of the Maze (and will cancel any Milwa/Lomilwa spells that are active).</Note>
+      <Note x="4" y="5" symbol=".">One-Way: Party may pass through in the direction of the arrow but may not return (except by casting the teleportation spell "Malor")</Note>
+      <Note x="1" y="7" symbol="d">A location in which Milwa/Lomilwa will not reveal secret doors, but does not prevent the party from otherwise seeing normally.</Note>
+      <Note x="4" y="7" symbol=".">Door: Party may pass through both directions freely.  The primary purpose of a door is to mark the boundary of a "room" (area in which only a single fixed encounter may take place).</Note>
+      <Note x="1" y="9" symbol="A">A location in which magic spells do not work (for the party or for enemies).</Note>
+      <Note x="4" y="9" symbol=".">One-way door:  Party may pass through in the direction from which the door exists, but may not return (except by casting the teleportation spell "Malor")</Note>
+      <Note x="1" y="11" symbol="Ro">An internal room in an underground area (cosmetic only).</Note>
+      <Note x="4" y="11" symbol=".">Wraparound: When at the edge of a map, this indicates that the party may proceed in this direction and appear at the opposite edge.</Note>
+      <Note x="1" y="13" symbol="Wa">A wall of solid rock that will instantly eradicate the party if the party becomes located in it.</Note>
+    </Notes>
+    <Icons>
+      <Icon x="6" y="3" id="10" dir="1" />
+      <Icon x="7" y="3" id="9" dir="1" />
+      <Icon x="4" y="5" id="2" dir="2" />
+      <Icon x="4" y="7" id="4" dir="2" />
+      <Icon x="5" y="7" id="4" dir="4" />
+      <Icon x="5" y="9" id="4" dir="4" />
+      <Icon x="4" y="11" id="2" dir="2" />
+    </Icons>
+  </Sheet>
+  <Sheet width="3" height="3" title="Castle" path="" zoom="150" gameIndex="0">
+    <Grid>H4sIAAAAAAAEAH2O2w0AIAgDtU7g/su4WS1GI8RHk/5wOYAkK9nom5WkFHqqwaS40L+7fEFsahNfKNFdN8dmvDafd71nxfOr4HYPay79DgEAAA==</Grid>
+    <Notes>
+      <Note x="1" y="1" symbol="Ca">The Castle is not a map in the traditional sense; it is simply the only location "outside of the Maze."  The Tavern, Inn, Temple, Trading Post, and Edge of Town may all be accessed from the in-game menus from this location.</Note>
+    </Notes>
+    <Icons />
+  </Sheet>
+  <Sheet width="22" height="22" title="Maze Level 1" path="" zoom="150" gameIndex="1">
+    <Grid>H4sIAAAAAAAEAO1YQY7DMAh0uO1x//+C/mIP/Ve2iWsLhI3BwW5SpVK1207BeBgPSR6Px/q7rn8rfi+vV9heD4y+Pr9RuNEbdUNl1aX4Fwg7+vpm/d3+pqzbG+Adm1G8LqR1vxzNbCw3Gxqutv8h6SqrDv9iAb0mceyOwht9rk9BsRktdpChpGZ2Fna0c12S+UisKxv1/eb+wql1JfdI5mqwJtO36RdLYjKjRfdmaFwXBqxLMh+JHVQVDNMkmGOj6lT7PYKO0+Tg042rinqePyUNPSI+mWMBGq4CRZR4bOeOwBhrnAsX0KTrhDV0v505dsHriqKTjcP9lTPr9DxRdR/V5JAJSzJnFN6TzvWaQUa1VZVQUlVG25nHacNSFciZQUDh3JrE3QtBmmW6acXnUfns48yh6t6sqk+hBrW3u0D6y5iMXLWqAveqrqLJIbEKJtO3+rPAUTb3jbEBnyPX/XIn7KxKwVWn80/SJOu+0RmsTFbZMPa37ipl1VXnviGW8TyYq04mjetGPc/XpDwXrGx4oYQNN88Z595HrnMyG6d6ellGq7qa9MycMTnxyTZxJIIyxSpOmYcTlmM7fXL78FNlI6PFqgjKlOMaSzo40Setmqw6v+HJNquZxM6egzrFtmP5fmVN4rjYhRJq7JEcm1WHUSBo51z4lCbZjuTTHZhP6vVMtCH75OB752oHDVyl+DydCVcZJX6FOxjZ0HudHFvlmcUalPNRTVbXVexXZhJn7Z04bTRgPcuqO+zAepRUxXgmPco7KtZsjOWu8n2a1GmDuahbZuO6MhuKDmKk9xz1sFHtL4vlO+rMfBFNusUaMjNtyJNdzqzQ5BFt4JqD6Ga9qkvxC5Tmb0aL0znFLx5cnUaTdTdrn325+7yqIWfBqMk6Ok4b5cy4oiNTg3t7taoLaDLX7OGEMqq4P8JxYY5P7rHV7htRUvO4uzZ5R0F0lXNq0k2xbdTXGTrP/uCqMBrYOcI87bHj2ZB7NEmTjGfXs38VtDphT1zzGbgiejZqMvKMURwX173RGz2OVlX3Dybhcb+4OAAA</Grid>
+    <Notes>
+      <Note x="2" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="4" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="7" symbol="T">(Teleport to 9,7)</Note>
+      <Note x="9" y="7" symbol="T">(Teleport to 9,7)</Note>
+      <Note x="10" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)
+(The teleporter at 11,7 sends you here)</Note>
+      <Note x="11" y="7" symbol="T">(Teleport to 9,7)</Note>
+      <Note x="12" y="7" symbol="T">(Teleport to 9,7)</Note>
+      <Note x="17" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="8" symbol="t">Pit: 2d10+70 damage.  Chance to avoid the pit: 4% for each point of Agility</Note>
+      <Note x="8" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="9" symbol="T">(Teleport to 6,10)</Note>
+      <Note x="7" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)
+(The teleporter at 12,8 sends you here)
+(The teleporter at 12,9 sends you here)
+(The teleporter at 12,11 sends you here)</Note>
+      <Note x="8" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="10" symbol="Ap">As you enter, an eerie glow fills the room.  With a bright flash, a towering apparition appears before you!
+"Hear these, the words on Gnilda.  The city of Llylgamyn, having shown its unworthiness, I chose to reclaim the symbols of my favor.  Only here, in my temple, may one worthy enough regain those symbols and return.  But woe to those undeserving who might try.  To obtain my staff, one must acquire the five.  These are the tests, and shall be the proof, before me presented."
+"This is the will of Gnilda."
+If you have a single character wearing Kod's Shield, Kod's Armor, Kod's Gauntlets, Hod's Helm, and wielding Hrathnir:  A hideous apparition demands of you the answer to the riddle of the sphinx.  Your answer?
+Answer The Knight of Diamonds:  A now familiar apparition appears:  "Through you valor, wit, and presence of mind, you have proved yourself this day.  By obtaining the complete regalia of the legendary knight and presenting it here before me, you have demonstrated the worth of your ilk.  I shall reclaim those artifacts, but also will I present you with a gift.  Behold!  The Staff of Gnilda!  (Receive Staff of Gnilda)
+Otherwise:  False!  Your equipment vanishes!  (Lose all items)</Note>
+      <Note x="11" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="11" symbol="T">(Teleport to 6,10)</Note>
+      <Note x="2" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="12" symbol="T">(Teleport to 12,10)</Note>
+      <Note x="8" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="12" symbol="T">(Teleport to 6,10)</Note>
+      <Note x="16" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="13" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="13" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="13" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="13" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="13" symbol="T">(Teleport to 9,13)</Note>
+      <Note x="9" y="13" symbol="T">(Teleport to 9,13)</Note>
+      <Note x="10" y="13" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)
+(The teleporter at 10,13 sends you here)
+(The teleporter at 11,13 sends you here)</Note>
+      <Note x="12" y="13" symbol="T">(Teleport to 9,13)</Note>
+      <Note x="2" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="15" symbol="t">Pit: 2d10+40 damage.  Chance to avoid the pit: 4% for each point of Agility</Note>
+      <Note x="2" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="18" symbol="s">"The armor you seek, to bring to the fray.  Lies four step ahead, but three steps away."</Note>
+      <Note x="13" y="18" symbol="n">(The teleporter at 13,2 sends you here)</Note>
+      <Note x="14" y="18" symbol="T">(Teleport to 12,2)</Note>
+      <Note x="15" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="18" symbol="E">If no characters in the roster had Kod's Armor when the party entered the Maze: Forced Encounter with Magic Armor (defeat to receive Kod's Armor)</Note>
+      <Note x="17" y="18" symbol=".">Stairs going down: {map:Maze Level 2} (11,10)</Note>
+      <Note x="2" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="1" y="20" symbol=".">Stairs going up: {map:Castle} (0,0)</Note>
+    </Notes>
+    <Icons>
+      <Icon x="5" y="2" id="4" dir="1" />
+      <Icon x="7" y="2" id="4" dir="2" />
+      <Icon x="8" y="2" id="4" dir="4" />
+      <Icon x="12" y="2" id="4" dir="2" />
+      <Icon x="13" y="2" id="4" dir="4" />
+      <Icon x="3" y="3" id="4" dir="3" />
+      <Icon x="7" y="3" id="4" dir="3" />
+      <Icon x="3" y="4" id="4" dir="1" />
+      <Icon x="3" y="4" id="4" dir="3" />
+      <Icon x="7" y="4" id="4" dir="1" />
+      <Icon x="7" y="4" id="4" dir="3" />
+      <Icon x="11" y="4" id="4" dir="3" />
+      <Icon x="3" y="5" id="4" dir="1" />
+      <Icon x="7" y="5" id="4" dir="1" />
+      <Icon x="11" y="5" id="4" dir="1" />
+      <Icon x="2" y="6" id="4" dir="2" />
+      <Icon x="3" y="6" id="4" dir="4" />
+      <Icon x="7" y="6" id="4" dir="3" />
+      <Icon x="10" y="6" id="4" dir="3" />
+      <Icon x="2" y="7" id="4" dir="2" />
+      <Icon x="3" y="7" id="4" dir="4" />
+      <Icon x="7" y="7" id="4" dir="1" />
+      <Icon x="8" y="7" id="4" dir="3" />
+      <Icon x="9" y="7" id="4" dir="3" />
+      <Icon x="10" y="7" id="4" dir="1" />
+      <Icon x="10" y="7" id="4" dir="3" />
+      <Icon x="11" y="7" id="4" dir="3" />
+      <Icon x="12" y="7" id="4" dir="3" />
+      <Icon x="13" y="7" id="4" dir="3" />
+      <Icon x="17" y="7" id="4" dir="2" />
+      <Icon x="18" y="7" id="4" dir="4" />
+      <Icon x="2" y="8" id="4" dir="2" />
+      <Icon x="3" y="8" id="4" dir="4" />
+      <Icon x="5" y="8" id="4" dir="3" />
+      <Icon x="7" y="8" id="4" dir="2" />
+      <Icon x="8" y="8" id="4" dir="4" />
+      <Icon x="8" y="8" id="4" dir="1" />
+      <Icon x="9" y="8" id="4" dir="1" />
+      <Icon x="10" y="8" id="4" dir="1" />
+      <Icon x="11" y="8" id="4" dir="1" />
+      <Icon x="12" y="8" id="4" dir="1" />
+      <Icon x="12" y="8" id="4" dir="2" />
+      <Icon x="13" y="8" id="4" dir="4" />
+      <Icon x="13" y="8" id="4" dir="1" />
+      <Icon x="2" y="9" id="4" dir="2" />
+      <Icon x="3" y="9" id="4" dir="4" />
+      <Icon x="6" y="9" id="4" dir="2" />
+      <Icon x="7" y="9" id="4" dir="4" />
+      <Icon x="7" y="9" id="4" dir="2" />
+      <Icon x="8" y="9" id="4" dir="4" />
+      <Icon x="10" y="9" id="4" dir="3" />
+      <Icon x="12" y="9" id="4" dir="2" />
+      <Icon x="13" y="9" id="4" dir="4" />
+      <Icon x="2" y="10" id="4" dir="3" />
+      <Icon x="6" y="10" id="4" dir="2" />
+      <Icon x="7" y="10" id="4" dir="4" />
+      <Icon x="7" y="10" id="4" dir="2" />
+      <Icon x="8" y="10" id="4" dir="4" />
+      <Icon x="9" y="10" id="4" dir="2" />
+      <Icon x="10" y="10" id="4" dir="4" />
+      <Icon x="10" y="10" id="4" dir="1" />
+      <Icon x="10" y="10" id="4" dir="2" />
+      <Icon x="10" y="10" id="4" dir="3" />
+      <Icon x="11" y="10" id="4" dir="4" />
+      <Icon x="12" y="10" id="4" dir="2" />
+      <Icon x="13" y="10" id="4" dir="4" />
+      <Icon x="13" y="10" id="4" dir="2" />
+      <Icon x="14" y="10" id="4" dir="4" />
+      <Icon x="2" y="11" id="4" dir="1" />
+      <Icon x="2" y="11" id="4" dir="3" />
+      <Icon x="7" y="11" id="4" dir="2" />
+      <Icon x="8" y="11" id="4" dir="4" />
+      <Icon x="10" y="11" id="4" dir="1" />
+      <Icon x="12" y="11" id="4" dir="2" />
+      <Icon x="13" y="11" id="4" dir="4" />
+      <Icon x="16" y="11" id="4" dir="3" />
+      <Icon x="2" y="12" id="4" dir="1" />
+      <Icon x="2" y="12" id="4" dir="3" />
+      <Icon x="4" y="12" id="4" dir="3" />
+      <Icon x="7" y="12" id="4" dir="2" />
+      <Icon x="8" y="12" id="4" dir="4" />
+      <Icon x="8" y="12" id="4" dir="3" />
+      <Icon x="9" y="12" id="4" dir="3" />
+      <Icon x="10" y="12" id="4" dir="3" />
+      <Icon x="11" y="12" id="4" dir="3" />
+      <Icon x="12" y="12" id="4" dir="2" />
+      <Icon x="12" y="12" id="4" dir="3" />
+      <Icon x="13" y="12" id="4" dir="4" />
+      <Icon x="16" y="12" id="4" dir="1" />
+      <Icon x="2" y="13" id="4" dir="1" />
+      <Icon x="2" y="13" id="4" dir="3" />
+      <Icon x="4" y="13" id="4" dir="1" />
+      <Icon x="7" y="13" id="4" dir="3" />
+      <Icon x="8" y="13" id="4" dir="1" />
+      <Icon x="9" y="13" id="4" dir="1" />
+      <Icon x="10" y="13" id="4" dir="1" />
+      <Icon x="10" y="13" id="4" dir="3" />
+      <Icon x="11" y="13" id="4" dir="1" />
+      <Icon x="12" y="13" id="4" dir="1" />
+      <Icon x="2" y="14" id="4" dir="1" />
+      <Icon x="2" y="14" id="4" dir="3" />
+      <Icon x="7" y="14" id="4" dir="1" />
+      <Icon x="10" y="14" id="4" dir="1" />
+      <Icon x="14" y="14" id="4" dir="2" />
+      <Icon x="15" y="14" id="4" dir="4" />
+      <Icon x="2" y="15" id="4" dir="1" />
+      <Icon x="2" y="15" id="4" dir="3" />
+      <Icon x="2" y="16" id="4" dir="1" />
+      <Icon x="2" y="16" id="4" dir="3" />
+      <Icon x="4" y="16" id="4" dir="3" />
+      <Icon x="8" y="16" id="4" dir="2" />
+      <Icon x="8" y="16" id="4" dir="3" />
+      <Icon x="9" y="16" id="4" dir="4" />
+      <Icon x="2" y="17" id="4" dir="1" />
+      <Icon x="2" y="17" id="4" dir="3" />
+      <Icon x="4" y="17" id="4" dir="1" />
+      <Icon x="7" y="17" id="4" dir="2" />
+      <Icon x="8" y="17" id="4" dir="4" />
+      <Icon x="8" y="17" id="4" dir="1" />
+      <Icon x="8" y="17" id="4" dir="3" />
+      <Icon x="2" y="18" id="4" dir="1" />
+      <Icon x="2" y="18" id="4" dir="3" />
+      <Icon x="8" y="18" id="4" dir="1" />
+      <Icon x="8" y="18" id="4" dir="2" />
+      <Icon x="9" y="18" id="4" dir="4" />
+      <Icon x="14" y="18" id="4" dir="2" />
+      <Icon x="15" y="18" id="4" dir="4" />
+      <Icon x="15" y="18" id="4" dir="2" />
+      <Icon x="16" y="18" id="4" dir="4" />
+      <Icon x="16" y="18" id="4" dir="2" />
+      <Icon x="17" y="18" id="4" dir="4" />
+      <Icon x="17" y="18" id="10" dir="1" />
+      <Icon x="2" y="19" id="4" dir="1" />
+      <Icon x="2" y="19" id="4" dir="2" />
+      <Icon x="3" y="19" id="4" dir="4" />
+      <Icon x="3" y="19" id="4" dir="3" />
+      <Icon x="1" y="20" id="9" dir="1" />
+      <Icon x="3" y="20" id="4" dir="1" />
+    </Icons>
+  </Sheet>
+  <Sheet width="22" height="22" title="Maze Level 2" path="" zoom="150" gameIndex="2">
+    <Grid>H4sIAAAAAAAEAO1ZQXLDMAhUfOux/39BftFD/+U6UaSBosUgJNfuJDNuJ7NFgmW12O79fl8/1/Vrpddt+6TH507R7fsLXd7oGx2G6qor8Ru4pNdn/Xj8KKs+fi8LQh/Xht44SrNaSlaXRysbkCvMRiR2P6uMvmK3b+snjc37Lo1968qLaeUIV1V19C9ui12TMLaitN5bqfd7/c5s0GurN44O62APCutlXFV06UMzzyirJHRF880rj3IV6HUsq/Ypg1kN1SRbuZ7BZr0Mrf0tPLPz23O67R2c56IsK8c5Emw49tW732bDdo7anqNnBeevQBPV1TxNOitiHXyqTvcNynFynm64L4utPHdqo3eW6Vm167XxvJ+V3DfisTbnP9AnnRVh5bSZtE9J7JNtV6EsejUJs2I+Keqt6F963f6ElbE0LjvhAK4O0mSUSbky7K/g2aHniHIMsXCWMXRoVs4eJehmbZRmlahP1vsrW49YzvM0GX4SiSjWltV45cAzGFZdZ1aCDa9P0u7JqQGzEh2ULvpXPgl51rMKx8LTHVGOOPuJOkPYYzuzcihH5yrSwbYm6ap5Wh3/LkhWBHnWs3JyxbThUE65qnvrE+eJjvDJttdBNgxZ6UzadCUqMnRQ1wblWPdYFntin9QnzohpVWLbz/uiovA71Yg/w6x0NNwjGie9DmrDcOcGs7q8T1auOs5v22P17sN9mV+JDobRTsU6ehRxlXNqssR73k5HpoZ95TwlTfuy/op9J6sugtqZzN33T+d9JiXa2f2IJplviHMkmEzp95SkPB3pOTArx93m3JxxVm1vPwOTw+oNa9I+6Vh/T9P9c6JSk9DrhjFZ1Q7fuCZ4FpyOpOc8VJMsVtSbu+BHRUVONnD3RRf+xcpMOQbF6mqHqCFW3xfmPFmTNDbfbyCUrWw4odCfHV1oe/uVVy5/ge+Bk92vIqjBn2nnc/eP8cmIJu0nVO+C9BzIxhVXFtpg3WdvPp2aFLqKKNaR1UGarF3o4FlMOvGGmc19US/rr86GmClXnN36yg5NTvZJWNEwTVZdNXPe1xXLavL/jvX+Xn124y7oyhH3SM5nHByrVyRyjmjS4M/QJx26aq9MmZBO2Lmv4OqKsxurTjBpWBkqx1nRM6spz925vxSlcWyGvtE3GkCh6n4AfOXxJ7g4AAA=</Grid>
+    <Notes>
+      <Note x="16" y="1" symbol="s">A panel slams shut behind you!</Note>
+      <Note x="20" y="1" symbol="n">(The teleporter at 3,18 sends you here)</Note>
+      <Note x="3" y="2" symbol="T">(Teleport to 16,4)</Note>
+      <Note x="4" y="2" symbol="T">(Teleport to 19,19)</Note>
+      <Note x="5" y="2" symbol="T">(Teleport to 0,0)</Note>
+      <Note x="3" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="3" symbol="s">"Three roads to follow, only one may you take, choose wisely amongst them, else the quest you forsake."</Note>
+      <Note x="5" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="4" symbol="n">(The teleporter at 8,10 sends you here)</Note>
+      <Note x="11" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="6" symbol="s">A panel slams shut behind you!</Note>
+      <Note x="2" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="10" symbol="T">(Teleport to 3,16)</Note>
+      <Note x="10" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="10" symbol=".">Stairs going up: {map:Maze Level 1} (16,2)</Note>
+      <Note x="19" y="10" symbol="Sa">A wizened sage, sitting in a large pile of dusty, mysterious books, turns to you and says:  "For a mere 100000 gold, many things will you be told!"
+The fee is 100000, will you pay (Y/N)?
+Y: Thank you!
+N: Teleport back one square</Note>
+      <Note x="19" y="11" symbol="Sa">The sage usgers you into a lavishly decorated study, takes a huge tome off one overloaded bookshelf, sits down behind a large desk, and speaks:
+"My studies have shown the stars come into a new configuration favorable to many things.  Much has changed, and the wise may profit from such changes."
+"Several spells are not what they seem to be.  Silence will reign, sleep go on undisturbed, and your enemies willl be held back before you."
+"Neither has Latumapic gone unchanged, and even the great word Mahaman has found favorable choice in the stars."</Note>
+      <Note x="1" y="13" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="13" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="13" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="13" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="1" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="14" symbol=".">Stairs going down: {map:Maze Level 3} (0,0)</Note>
+      <Note x="3" y="14" symbol="E">If no characters in the roster had Kod's Shield when the party entered the Maze: Forced Encounter with Magic Shield (defeat to receive Kod's Shield)</Note>
+      <Note x="4" y="14" symbol="Ri">I am a lonely being, scarred by swords, wounded by iron, sated with battle-deeds, wearied by blades, often I witness war, perilous fight, no hope for consolation, that any help may rescue me from strife before I perish amongst fighting men.  But hammered swords, hard edged and grimly sharp, batter me, and the handiwork of the smith bites in the castles; I must ever wait a contest yet more cruel.  I could never in any habitation find the sort of doctor who could heal my wounds with herbs but cuts from swords ever increase on me through deadly contest, both by day and by night.
+Tell me, what am I?
+Answer SHIELD: Correct
+otherwise: Teleport back one square</Note>
+      <Note x="13" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="20" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="1" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="20" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="1" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="16" symbol="t">Pit: 1d10+10 damage.  Chance to avoid the pit: 4% for each point of Agility over 1</Note>
+      <Note x="10" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="16" symbol="n">(The teleporter at 2,18 sends you here)</Note>
+      <Note x="18" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="20" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="1" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="17" symbol="s">From all directions can be heard the ominous sounds of hungry, wild beasts of all descriptions.</Note>
+      <Note x="18" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="20" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="1" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="20" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="1" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="20" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="1" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)
+(The teleporter at 4,18 sends you here)</Note>
+      <Note x="2" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="20" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+    </Notes>
+    <Icons>
+      <Icon x="17" y="1" id="2" dir="4" />
+      <Icon x="3" y="2" id="4" dir="3" />
+      <Icon x="4" y="2" id="4" dir="3" />
+      <Icon x="5" y="2" id="4" dir="3" />
+      <Icon x="11" y="2" id="4" dir="3" />
+      <Icon x="12" y="2" id="4" dir="2" />
+      <Icon x="13" y="2" id="4" dir="4" />
+      <Icon x="2" y="3" id="4" dir="2" />
+      <Icon x="3" y="3" id="4" dir="1" />
+      <Icon x="4" y="3" id="4" dir="1" />
+      <Icon x="5" y="3" id="4" dir="1" />
+      <Icon x="11" y="3" id="4" dir="4" />
+      <Icon x="11" y="3" id="4" dir="3" />
+      <Icon x="12" y="3" id="4" dir="4" />
+      <Icon x="15" y="3" id="4" dir="4" />
+      <Icon x="7" y="4" id="4" dir="2" />
+      <Icon x="8" y="4" id="4" dir="4" />
+      <Icon x="19" y="5" id="2" dir="3" />
+      <Icon x="2" y="6" id="4" dir="3" />
+      <Icon x="12" y="6" id="4" dir="2" />
+      <Icon x="13" y="6" id="4" dir="4" />
+      <Icon x="2" y="7" id="4" dir="1" />
+      <Icon x="9" y="7" id="4" dir="2" />
+      <Icon x="10" y="7" id="4" dir="4" />
+      <Icon x="8" y="8" id="4" dir="2" />
+      <Icon x="9" y="8" id="4" dir="4" />
+      <Icon x="12" y="8" id="4" dir="3" />
+      <Icon x="6" y="9" id="4" dir="2" />
+      <Icon x="7" y="9" id="4" dir="4" />
+      <Icon x="7" y="9" id="4" dir="1" />
+      <Icon x="12" y="9" id="4" dir="1" />
+      <Icon x="9" y="10" id="4" dir="3" />
+      <Icon x="10" y="10" id="4" dir="2" />
+      <Icon x="11" y="10" id="4" dir="4" />
+      <Icon x="12" y="10" id="9" dir="1" />
+      <Icon x="18" y="10" id="4" dir="2" />
+      <Icon x="19" y="10" id="4" dir="4" />
+      <Icon x="19" y="10" id="4" dir="3" />
+      <Icon x="9" y="11" id="4" dir="1" />
+      <Icon x="19" y="11" id="4" dir="4" />
+      <Icon x="19" y="11" id="4" dir="1" />
+      <Icon x="8" y="12" id="4" dir="3" />
+      <Icon x="16" y="12" id="4" dir="4" />
+      <Icon x="3" y="13" id="4" dir="3" />
+      <Icon x="7" y="13" id="4" dir="2" />
+      <Icon x="8" y="13" id="4" dir="1" />
+      <Icon x="9" y="13" id="4" dir="4" />
+      <Icon x="12" y="13" id="4" dir="2" />
+      <Icon x="13" y="13" id="4" dir="4" />
+      <Icon x="14" y="13" id="4" dir="1" />
+      <Icon x="20" y="13" id="4" dir="3" />
+      <Icon x="2" y="14" id="4" dir="2" />
+      <Icon x="2" y="14" id="10" dir="1" />
+      <Icon x="3" y="14" id="4" dir="4" />
+      <Icon x="3" y="14" id="4" dir="1" />
+      <Icon x="3" y="14" id="4" dir="2" />
+      <Icon x="4" y="14" id="4" dir="4" />
+      <Icon x="12" y="14" id="4" dir="3" />
+      <Icon x="13" y="14" id="4" dir="3" />
+      <Icon x="14" y="14" id="4" dir="2" />
+      <Icon x="14" y="14" id="4" dir="3" />
+      <Icon x="15" y="14" id="4" dir="4" />
+      <Icon x="16" y="14" id="4" dir="2" />
+      <Icon x="17" y="14" id="4" dir="4" />
+      <Icon x="17" y="14" id="4" dir="2" />
+      <Icon x="18" y="14" id="4" dir="4" />
+      <Icon x="19" y="14" id="4" dir="2" />
+      <Icon x="20" y="14" id="4" dir="4" />
+      <Icon x="20" y="14" id="4" dir="1" />
+      <Icon x="20" y="14" id="4" dir="3" />
+      <Icon x="12" y="15" id="4" dir="1" />
+      <Icon x="12" y="15" id="4" dir="3" />
+      <Icon x="13" y="15" id="4" dir="1" />
+      <Icon x="14" y="15" id="4" dir="1" />
+      <Icon x="15" y="15" id="4" dir="2" />
+      <Icon x="15" y="15" id="4" dir="3" />
+      <Icon x="16" y="15" id="4" dir="4" />
+      <Icon x="16" y="15" id="4" dir="2" />
+      <Icon x="17" y="15" id="4" dir="4" />
+      <Icon x="17" y="15" id="4" dir="2" />
+      <Icon x="18" y="15" id="4" dir="4" />
+      <Icon x="18" y="15" id="4" dir="2" />
+      <Icon x="19" y="15" id="4" dir="4" />
+      <Icon x="19" y="15" id="4" dir="3" />
+      <Icon x="20" y="15" id="4" dir="1" />
+      <Icon x="3" y="16" id="4" dir="2" />
+      <Icon x="4" y="16" id="4" dir="2" />
+      <Icon x="5" y="16" id="4" dir="4" />
+      <Icon x="6" y="16" id="4" dir="2" />
+      <Icon x="7" y="16" id="4" dir="4" />
+      <Icon x="7" y="16" id="4" dir="2" />
+      <Icon x="8" y="16" id="4" dir="4" />
+      <Icon x="9" y="16" id="4" dir="3" />
+      <Icon x="12" y="16" id="4" dir="1" />
+      <Icon x="14" y="16" id="4" dir="3" />
+      <Icon x="15" y="16" id="4" dir="1" />
+      <Icon x="15" y="16" id="4" dir="2" />
+      <Icon x="15" y="16" id="4" dir="3" />
+      <Icon x="16" y="16" id="4" dir="4" />
+      <Icon x="17" y="16" id="4" dir="3" />
+      <Icon x="18" y="16" id="4" dir="2" />
+      <Icon x="19" y="16" id="4" dir="4" />
+      <Icon x="19" y="16" id="4" dir="1" />
+      <Icon x="19" y="16" id="4" dir="3" />
+      <Icon x="20" y="16" id="4" dir="3" />
+      <Icon x="4" y="17" id="4" dir="3" />
+      <Icon x="9" y="17" id="4" dir="1" />
+      <Icon x="9" y="17" id="4" dir="3" />
+      <Icon x="12" y="17" id="4" dir="3" />
+      <Icon x="14" y="17" id="4" dir="1" />
+      <Icon x="14" y="17" id="4" dir="3" />
+      <Icon x="15" y="17" id="4" dir="1" />
+      <Icon x="15" y="17" id="4" dir="2" />
+      <Icon x="15" y="17" id="4" dir="3" />
+      <Icon x="16" y="17" id="4" dir="4" />
+      <Icon x="17" y="17" id="4" dir="4" />
+      <Icon x="17" y="17" id="4" dir="2" />
+      <Icon x="17" y="17" id="4" dir="3" />
+      <Icon x="18" y="17" id="4" dir="2" />
+      <Icon x="19" y="17" id="4" dir="4" />
+      <Icon x="19" y="17" id="4" dir="1" />
+      <Icon x="19" y="17" id="4" dir="3" />
+      <Icon x="20" y="17" id="4" dir="1" />
+      <Icon x="20" y="17" id="4" dir="3" />
+      <Icon x="4" y="18" id="4" dir="1" />
+      <Icon x="7" y="18" id="4" dir="3" />
+      <Icon x="9" y="18" id="4" dir="1" />
+      <Icon x="12" y="18" id="4" dir="1" />
+      <Icon x="12" y="18" id="4" dir="3" />
+      <Icon x="14" y="18" id="4" dir="1" />
+      <Icon x="15" y="18" id="4" dir="1" />
+      <Icon x="15" y="18" id="4" dir="2" />
+      <Icon x="15" y="18" id="4" dir="3" />
+      <Icon x="16" y="18" id="4" dir="4" />
+      <Icon x="17" y="18" id="4" dir="3" />
+      <Icon x="18" y="18" id="4" dir="2" />
+      <Icon x="19" y="18" id="4" dir="4" />
+      <Icon x="19" y="18" id="4" dir="1" />
+      <Icon x="19" y="18" id="4" dir="3" />
+      <Icon x="20" y="18" id="4" dir="1" />
+      <Icon x="7" y="19" id="4" dir="1" />
+      <Icon x="9" y="19" id="4" dir="2" />
+      <Icon x="10" y="19" id="4" dir="4" />
+      <Icon x="10" y="19" id="4" dir="2" />
+      <Icon x="11" y="19" id="4" dir="4" />
+      <Icon x="12" y="19" id="4" dir="1" />
+      <Icon x="14" y="19" id="4" dir="3" />
+      <Icon x="15" y="19" id="4" dir="1" />
+      <Icon x="15" y="19" id="4" dir="2" />
+      <Icon x="16" y="19" id="4" dir="4" />
+      <Icon x="16" y="19" id="4" dir="2" />
+      <Icon x="17" y="19" id="4" dir="4" />
+      <Icon x="17" y="19" id="4" dir="1" />
+      <Icon x="17" y="19" id="4" dir="2" />
+      <Icon x="18" y="19" id="4" dir="4" />
+      <Icon x="18" y="19" id="4" dir="2" />
+      <Icon x="19" y="19" id="4" dir="4" />
+      <Icon x="19" y="19" id="4" dir="1" />
+      <Icon x="20" y="19" id="4" dir="3" />
+      <Icon x="3" y="20" id="4" dir="2" />
+      <Icon x="4" y="20" id="4" dir="4" />
+      <Icon x="14" y="20" id="4" dir="1" />
+      <Icon x="14" y="20" id="4" dir="2" />
+      <Icon x="15" y="20" id="4" dir="4" />
+      <Icon x="16" y="20" id="4" dir="2" />
+      <Icon x="17" y="20" id="4" dir="4" />
+      <Icon x="17" y="20" id="4" dir="2" />
+      <Icon x="18" y="20" id="4" dir="4" />
+      <Icon x="19" y="20" id="4" dir="2" />
+      <Icon x="20" y="20" id="4" dir="4" />
+      <Icon x="20" y="20" id="4" dir="1" />
+    </Icons>
+  </Sheet>
+  <Sheet width="22" height="22" title="Maze Level 3" path="" zoom="150" gameIndex="3">
+    <Grid>H4sIAAAAAAAEAO1aTXLzMAh1tf4237K37LVyiy56LzexKgYGQUAg/2SSmUybEJDgPZ4k27fbbf2/rt8rfn/cX8vjdTuD9f75z1rc1kjkt+8ZfJn1/olaH9/djYVa25ibtUjWLXLpRX58rpEL8m3ftl8V4ostj/+LY1YtcvtFKcWS78/6Q323cUvpjAsZNavDN3XOhkqKzHHWmeOLs9nGHeSkzjovr7Cl+o7lG2G7XGfgxsCcWZ3DVluH6pzUUXjOHLkaIyiI+ALrur5hTuq8wlX0dqid7QtWJAOCOgo235F85/F5PtujqySxOjlJVNTZg45ZORAE68f+Vs66d77+1YrxKryfnIfRYEasU3SNla16ZF0ZIHLaGnr+fCuCfkVitUrdTzrGdeT7HCPiq58XnKcJLzewn1eRBrnBMqoa+1dnsGIk5D2ho86QEY5eHOjjMResZjvtJ6FWYoe+BicP0Ksd89UxWpgiYT7WTjFFTuVk2qzC3MB+R+gVyzdVr06RL5kzdFnGCWinMw5YM/YbbNyI5kS0juS7sU7MyHn18gL5Attxvv2124lveD+Ja1yVwX+NsY8CzqZ2t/8q4nPNIRkxrSN1NqyS4rhEJ5leMRUl+TJfuZLOfBmviLYbUIioqIhgWCczWMcwOpST4pwNzBE1h1j1XtDZ3t7yiuPlpBg5rO12BIk17dw9MquM/u3z2bZaPe8yuVNYDzpVtKJ/4XzDc8aVWKbppDcjHSN778soQKcccP6tGEkqWn0vfN4PI4j95unkMmVNcfp+fX6u/zAvSP+C1dYpXm5gP71DI1qn98LC9Fm0pmEEbM94XiV8LQhHJcowuct0Toq1AuvL6NWhnMQ1rpH3fwZDVwYS2cm6CCdPoVcMI6LPzlpdJV/bnFtVjE+F7fj8ZNqcme+oIkWt8pwjPXjVfB1KqPfvofe78Yy83T2YL/Ftf/vXKPTI4CvuVeT+7aMfGddWq7n5ytzooy+yPe0+Tt+qV2O+xvY7ZbDOp3ga/Ly+MvpOzZmskzgbrlcZkfVaNevIE/vgm35n6jV9K0Zj946Jb0QnD7Xi+fIu062RyG/fg31/AVNRFfW4OAAA</Grid>
+    <Notes>
+      <Note x="10" y="1" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="1" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="6" symbol=".">Stairs going down: {map:Maze Level 4} (7,12)</Note>
+      <Note x="15" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)
+(The teleporter at 10,11 sends you here)</Note>
+      <Note x="15" y="7" symbol="E">If no characters in the roster had Hrathnir when the party entered the Maze: Forced Encounter with Magic Sword (defeat to receive Hrathnir)</Note>
+      <Note x="10" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="9" symbol="T">(Teleport to 13,13)</Note>
+      <Note x="5" y="10" symbol="s">Ever considered another line of work?</Note>
+      <Note x="8" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="10" symbol="Ca">As you enter the room, you see a familiar figure rise, wave his arms and shout...
+"Mapiro Mahama Diromat" (Teleport to {map:Castle})</Note>
+      <Note x="10" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="11" symbol="t">Pit: 5d25+10 damage.  Chance to avoid the pit: 4% for each point of Agility over 2</Note>
+      <Note x="13" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="12" symbol="T">(Teleport to 0,0)</Note>
+      <Note x="11" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="13" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="13" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="20" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="1" y="20" symbol=".">Stairs going up: {map:Maze Level 2} (1,6)
+(The teleporter at 9,8 sends you here)</Note>
+    </Notes>
+    <Icons>
+      <Icon x="1" y="1" id="2" dir="4" />
+      <Icon x="1" y="1" id="2" dir="1" />
+      <Icon x="2" y="1" id="2" dir="1" />
+      <Icon x="3" y="1" id="2" dir="1" />
+      <Icon x="4" y="1" id="2" dir="1" />
+      <Icon x="7" y="1" id="2" dir="1" />
+      <Icon x="9" y="1" id="2" dir="1" />
+      <Icon x="10" y="1" id="4" dir="2" />
+      <Icon x="11" y="1" id="4" dir="4" />
+      <Icon x="11" y="1" id="2" dir="1" />
+      <Icon x="11" y="1" id="4" dir="2" />
+      <Icon x="12" y="1" id="4" dir="4" />
+      <Icon x="13" y="1" id="2" dir="1" />
+      <Icon x="15" y="1" id="2" dir="1" />
+      <Icon x="17" y="1" id="2" dir="1" />
+      <Icon x="19" y="1" id="2" dir="1" />
+      <Icon x="20" y="1" id="2" dir="2" />
+      <Icon x="7" y="3" id="4" dir="3" />
+      <Icon x="8" y="3" id="4" dir="2" />
+      <Icon x="9" y="3" id="4" dir="4" />
+      <Icon x="1" y="4" id="2" dir="4" />
+      <Icon x="7" y="4" id="4" dir="1" />
+      <Icon x="20" y="4" id="2" dir="2" />
+      <Icon x="1" y="5" id="2" dir="4" />
+      <Icon x="1" y="5" id="4" dir="2" />
+      <Icon x="2" y="5" id="4" dir="4" />
+      <Icon x="18" y="5" id="4" dir="3" />
+      <Icon x="20" y="5" id="2" dir="2" />
+      <Icon x="5" y="6" id="4" dir="2" />
+      <Icon x="6" y="6" id="4" dir="4" />
+      <Icon x="7" y="6" id="4" dir="2" />
+      <Icon x="8" y="6" id="4" dir="4" />
+      <Icon x="14" y="6" id="10" dir="1" />
+      <Icon x="15" y="6" id="4" dir="1" />
+      <Icon x="15" y="6" id="4" dir="3" />
+      <Icon x="18" y="6" id="4" dir="1" />
+      <Icon x="5" y="7" id="4" dir="2" />
+      <Icon x="6" y="7" id="4" dir="4" />
+      <Icon x="7" y="7" id="4" dir="2" />
+      <Icon x="8" y="7" id="4" dir="4" />
+      <Icon x="14" y="7" id="4" dir="2" />
+      <Icon x="15" y="7" id="4" dir="4" />
+      <Icon x="15" y="7" id="4" dir="1" />
+      <Icon x="11" y="8" id="4" dir="2" />
+      <Icon x="12" y="8" id="4" dir="4" />
+      <Icon x="18" y="8" id="4" dir="3" />
+      <Icon x="1" y="9" id="2" dir="4" />
+      <Icon x="1" y="9" id="4" dir="2" />
+      <Icon x="2" y="9" id="4" dir="4" />
+      <Icon x="8" y="9" id="4" dir="3" />
+      <Icon x="11" y="9" id="4" dir="3" />
+      <Icon x="18" y="9" id="4" dir="1" />
+      <Icon x="20" y="9" id="2" dir="2" />
+      <Icon x="8" y="10" id="4" dir="1" />
+      <Icon x="9" y="10" id="4" dir="2" />
+      <Icon x="10" y="10" id="4" dir="4" />
+      <Icon x="11" y="10" id="4" dir="1" />
+      <Icon x="1" y="11" id="2" dir="4" />
+      <Icon x="10" y="11" id="4" dir="3" />
+      <Icon x="11" y="11" id="4" dir="2" />
+      <Icon x="12" y="11" id="4" dir="4" />
+      <Icon x="13" y="11" id="4" dir="3" />
+      <Icon x="16" y="11" id="4" dir="2" />
+      <Icon x="17" y="11" id="4" dir="4" />
+      <Icon x="20" y="11" id="2" dir="2" />
+      <Icon x="10" y="12" id="4" dir="1" />
+      <Icon x="13" y="12" id="4" dir="1" />
+      <Icon x="1" y="13" id="2" dir="4" />
+      <Icon x="9" y="13" id="4" dir="2" />
+      <Icon x="10" y="13" id="4" dir="4" />
+      <Icon x="20" y="13" id="2" dir="2" />
+      <Icon x="1" y="14" id="4" dir="4" />
+      <Icon x="13" y="14" id="4" dir="2" />
+      <Icon x="14" y="14" id="4" dir="4" />
+      <Icon x="15" y="14" id="4" dir="2" />
+      <Icon x="16" y="14" id="4" dir="4" />
+      <Icon x="20" y="14" id="4" dir="2" />
+      <Icon x="13" y="15" id="4" dir="2" />
+      <Icon x="14" y="15" id="4" dir="4" />
+      <Icon x="15" y="15" id="4" dir="2" />
+      <Icon x="16" y="15" id="4" dir="4" />
+      <Icon x="1" y="16" id="2" dir="4" />
+      <Icon x="20" y="16" id="2" dir="2" />
+      <Icon x="1" y="17" id="2" dir="4" />
+      <Icon x="20" y="17" id="2" dir="2" />
+      <Icon x="8" y="18" id="4" dir="2" />
+      <Icon x="9" y="18" id="4" dir="4" />
+      <Icon x="12" y="18" id="4" dir="2" />
+      <Icon x="13" y="18" id="4" dir="4" />
+      <Icon x="16" y="18" id="4" dir="2" />
+      <Icon x="17" y="18" id="4" dir="4" />
+      <Icon x="1" y="19" id="2" dir="4" />
+      <Icon x="9" y="19" id="4" dir="2" />
+      <Icon x="10" y="19" id="4" dir="4" />
+      <Icon x="20" y="19" id="2" dir="2" />
+      <Icon x="1" y="20" id="2" dir="3" />
+      <Icon x="1" y="20" id="9" dir="1" />
+      <Icon x="2" y="20" id="2" dir="3" />
+      <Icon x="3" y="20" id="2" dir="3" />
+      <Icon x="4" y="20" id="2" dir="3" />
+      <Icon x="7" y="20" id="2" dir="3" />
+      <Icon x="9" y="20" id="2" dir="3" />
+      <Icon x="11" y="20" id="2" dir="3" />
+      <Icon x="13" y="20" id="2" dir="3" />
+      <Icon x="15" y="20" id="2" dir="3" />
+      <Icon x="17" y="20" id="2" dir="3" />
+      <Icon x="19" y="20" id="2" dir="3" />
+    </Icons>
+  </Sheet>
+  <Sheet width="22" height="22" title="Maze Level 4" path="" zoom="150" gameIndex="4">
+    <Grid>H4sIAAAAAAAEAO2ZTXLsIAyEMeu3yTK3zLXmFm+Rezn2eEyhalpIBv9NkqqpVKJB4NYnIczj8Rg/xvH/mH+G6SfMP4/cOv39ssaCtWXsWVZ9zWdZr6nGmVGYx0/G+LR+fX6O/+b/rF7n3zG+rN/j9zJ2/cZzbIxk7PyZxg7Smq85rmsG63Pe4eV5+u/4QT0na/5UccitVA2HFXR2WOs6c61SFIY8CnRsshbVSBHssSrhWV9zoi7/xhDtTNKxBq5yr4vne3El1txCTvKc6zVEu840RsJzeqLIckHXyht96lmPfjcmk+d4H65acr+eZWJeBzk6k8CVYd7ca8j3FLGXQfRFnQRyWjIFqnfId1gnkxj9s7kqa0Wf11mRhNW5D4a8EuqeDdWM5kKz1a4kZmivHHRQZ2DyGK54vYJc6FqRQl75oUMW5Bi6L73WUXIc1rIaNmvZM42RXusMe+j+TO7HFfDc0qvoaoiqUq51ucZLFPyeIfpOa8j3X+fOjmrQGIEaIkaGimQbC/Hteu7mtd1JjiMHodYZdLZVb13nMjk9MhQ83/49Q50cEd+dz910rKE3s82bok/rlSDW0W2C564nIEHsDbiCNe/Xt3c9dy9j7d0InRdOfEIrcZqA6BuUtNdYofPt3zPUueJZBmt29kgHMdnyPnZnrSixXbvN63GVntdxeqKrcvZXGH1bNevPJK2ThrdbOnU0Rr9gH+Q5uH4rOtigYw/szA9i8s37qzp1W7kq13Y993XqeuQ+zJuet0hO883yfkzSeS/B1TpD/3vndWyk/TOv7bBmZ+/N2WhdFWeyzpUgp6UX/QX3OHq9CoHdO6d5i/cp5eelnpvzl6qhn/ice3cLV5x2iJH+vG9+j1PXCq00goJYiKDheSk5oGSg9XmLGidw1VKvbn+P06JVmY2N5IiuL/EcSycRsALtAXZnvZpdjquWenWJe5x6fBfP/veTrTUnbNzZW2gHct6ib8cnytf81PmEd+Z6/qKVKuncYQOtOfqay3lkX5Wg7vb3g3WueHaX1aCeu51xYF5dyZb3ZnoV1XV2zKsTC0r+cbVRDfDcbe9O8d1w7wxcOU8iekW6W72qU8e5Kit5AlfONQtyWurk00pj1Dz2LKs9Q4+0XlONE+b9AURgpuy4OAAA</Grid>
+    <Notes>
+      <Note x="2" y="1" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="1" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="1" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="1" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="3" symbol="s">Before you is a pile of shattered stone which appears to be the result of a cave-in.</Note>
+      <Note x="16" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="20" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="4" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="4" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="7" symbol="s">You stand at the entrance of what seems to be a huge cavern.  The floor and walls are covered with moisture; the air is cool and dank.  From the vaulted ceiling hang great stalactites, and unknown creatures squeak and scurry i nthe darkness.</Note>
+      <Note x="17" y="7" symbol="t">Ouch!!  4d10 damage.  Chance to avoid: 4% for each point of Agility over 3</Note>
+      <Note x="3" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="8" symbol=".">Stairs going up: {map:Maze Level 3} (13,14)</Note>
+      <Note x="3" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="9" symbol="t">Pit: 2d10+5 damage.  Chance to avoid the pit: 4% for each point of Agility over 3</Note>
+      <Note x="1" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="10" symbol="t">Ouch!!  4d10 damage.  Chance to avoid: 4% for each point of Agility over 3</Note>
+      <Note x="18" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="1" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="11" symbol="s">"as the inside of a mountain..."</Note>
+      <Note x="18" y="11" symbol="s">A sign near the ground reads: "A cavern's dark..."</Note>
+      <Note x="7" y="12" symbol="t">Pit: 2d10+5 damage.  Chance to avoid the pit: 4% for each point of Agility over 3</Note>
+      <Note x="13" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="12" symbol="s">"down the hall..."</Note>
+      <Note x="19" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="13" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="13" symbol="Fo">"... a clear blue fountain."
+Who (#) will wade?
+Random chance of one of the following effects:
+1. Remove minor conditions, -8 MaxHP
+2. -1 Age, -1 IQ, -1 Piety
+3. Character becomes Poisoned
+4. Character becomes Asleep
+5. Character becomes Paralyzed
+6. Character becomes Petrified
+7. If character is Dead: 30% chance to remove the Dead condition (70% chance to becomes Ashes), otherwise nothing.</Note>
+      <Note x="4" y="14" symbol="t">Ouch!!  4d10 damage.  Chance to avoid: 4% for each point of Agility over 3</Note>
+      <Note x="14" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="15" symbol="t">Pit: 2d10+5 damage.  Chance to avoid the pit: 4% for each point of Agility over 3</Note>
+      <Note x="10" y="16" symbol=".">Stairs going down: {map:Maze Level 5} (1,18)</Note>
+      <Note x="11" y="16" symbol="E">If no characters in the roster had Kod's Helm when the party entered the Maze: Forced Encounter with Magic Helm (defeat to receive Kod's Helm)</Note>
+      <Note x="4" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="18" symbol="t">Ouch!!  4d10 damage.  Chance to avoid: 4% for each point of Agility over 3</Note>
+      <Note x="3" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="19" symbol="t">Pit: 2d10+5 damage.  Chance to avoid the pit: 4% for each point of Agility over 3</Note>
+    </Notes>
+    <Icons>
+      <Icon x="2" y="1" id="2" dir="1" />
+      <Icon x="8" y="1" id="2" dir="1" />
+      <Icon x="9" y="1" id="2" dir="1" />
+      <Icon x="10" y="1" id="2" dir="1" />
+      <Icon x="11" y="1" id="2" dir="1" />
+      <Icon x="12" y="1" id="2" dir="1" />
+      <Icon x="17" y="1" id="2" dir="1" />
+      <Icon x="1" y="4" id="2" dir="4" />
+      <Icon x="20" y="4" id="2" dir="2" />
+      <Icon x="1" y="5" id="2" dir="4" />
+      <Icon x="20" y="5" id="2" dir="2" />
+      <Icon x="1" y="6" id="2" dir="4" />
+      <Icon x="20" y="6" id="2" dir="2" />
+      <Icon x="8" y="8" id="9" dir="1" />
+      <Icon x="8" y="9" id="2" dir="1" />
+      <Icon x="1" y="14" id="2" dir="4" />
+      <Icon x="20" y="14" id="2" dir="2" />
+      <Icon x="1" y="15" id="2" dir="4" />
+      <Icon x="20" y="15" id="2" dir="2" />
+      <Icon x="1" y="16" id="2" dir="4" />
+      <Icon x="10" y="16" id="4" dir="2" />
+      <Icon x="10" y="16" id="10" dir="1" />
+      <Icon x="11" y="16" id="4" dir="4" />
+      <Icon x="11" y="16" id="4" dir="2" />
+      <Icon x="12" y="16" id="4" dir="4" />
+      <Icon x="20" y="16" id="2" dir="2" />
+      <Icon x="12" y="17" id="2" dir="3" />
+      <Icon x="1" y="19" id="2" dir="4" />
+      <Icon x="20" y="19" id="2" dir="2" />
+      <Icon x="2" y="20" id="2" dir="3" />
+      <Icon x="8" y="20" id="2" dir="3" />
+      <Icon x="9" y="20" id="2" dir="3" />
+      <Icon x="10" y="20" id="2" dir="3" />
+      <Icon x="11" y="20" id="2" dir="3" />
+      <Icon x="12" y="20" id="2" dir="3" />
+      <Icon x="17" y="20" id="2" dir="3" />
+    </Icons>
+  </Sheet>
+  <Sheet width="22" height="22" title="Maze Level 5" path="" zoom="150" gameIndex="5">
+    <Grid>H4sIAAAAAAAEAO1bW3LbMAxU8NV+5v4n8C36kXupEhWyhPEgQJCS4jozHo+zoQjsLkFQch6Px/q5rn/W+vWx/Sz7z8OObp+/Ufgv0DdX53DFor90NEeT36GO6gXRmon9LzYyAKN5XOIK3lzFPanznFD4RrffrJ/7e60CZBUKysaM0PwXkOfdP/yur5zQPO/X+qXMW9A6K/jgUBIVQY+oYJ8XFDagwRXgmMu8W9BprCMqPSMnk/MU1J1TXFePR+s35EkRJSocbOz6gj4WDiZF9dOVa9ccGdUK1tkcGYEQVfFGW982zzLqWEdPayGWr8xkS0FmHRUFoan+LTxJuBJXGaCxvUyKvoqsbqR+B88NT87fcYifHZ60K4irCqvgVZ5M+YreKCjLpAEdUeuIRkSFIyOpIiF0mCfJlQ1RdeZbmGRd16kRsCia9ypPOvu6pa5IpDIkVLwyQodWFUfNQWwQfVFXX3yF1oLoq2Ex85XfzqSugkPfSz0pXlnvc1BliFQVvl6JTN74lGpD+dU9hUlHH+t0zomepGidzUJWqJivXq8Mnpzv2DKWvTOmo07XRU6ahvos1g1dwWjvfYInS0b5ZG1YZaJGkZ5w2Om4zJsz6t+7W2fYSMw6G85elKqgO1ZUf6gnE8reMy8qNHccUFF9rBd1VhXHne36ytBwbBM11OfAPnirXgVQzKJzQs9x6lyt+xFMZ0Ncv2FP2vYy7DoweZKvsTDAk3r1PteTVH3WOXOe44j9Bq0qZP2G925u3h5Pyhk9+QrkigRl/62Rpa7e4pUhGrPORnjvtmVE1L9FP6mj+YVPfKJjCyp7slPBcFVR96OOPocfu9grv84G4pl4EvHMu05U8AeccciVDfcn/RXY68ke190TFR07j0nDTtfpnBPP3Uh9x/3Jgtqep5CxaF5SY5G+TnSp67PjNMGvwTobuV71xCzyHH5+1Knvj3u2CCr6PJbfU8R5I72oXlWGdap8vbJF5cwXaUTWkUOFNormvcqThEmUr7i6gaDEdSlf27xEo2FVxem6SO89tPJTT45W8N93MEQFL/WkrTIUrvIZVh4LTSYjz2ENNSewH4X6HNFXkXw1Jlsq6PcKdPVv4UnCc6ReISYL2tnnJFS8y4SiuvF3evWMOpmcp+BJz3F4VIz5RVH7+iU83zSjc7gizpn33zryd/JfFH1zNZ2rv6s6HFG4OAAA</Grid>
+    <Notes>
+      <Note x="2" y="2" symbol=".">Stairs going up: {map:Maze Level 4} (9,4)</Note>
+      <Note x="6" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)
+(The chute at 2,2 sends the party here)</Note>
+      <Note x="9" y="4" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="4" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="9" symbol="Ch">Chute: {map:Maze Level 6} 7,16</Note>
+      <Note x="12" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="10" symbol="T">(Teleport to 9,8)</Note>
+      <Note x="11" y="10" symbol=".">Stairs going down: {map:Maze Level 6} (0,0)</Note>
+      <Note x="11" y="11" symbol="E">If no characters in the roster had Kod's Gauntlets when the party entered the Maze: Forced Encounter with Magic Gauntlet (defeat to receive Kod's Gauntlets)</Note>
+      <Note x="2" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="12" symbol="n">(The teleporter at 9,10 sends you here)</Note>
+      <Note x="12" y="12" symbol="Ca">In the center of the room stands a brick-walled well.  Beside it is a sign that reads:  "Wishes: 5000 G.P."
+The fee is 5000.  Will you pay (Y/N)?
+Y: Teleport to {map:Castle}</Note>
+      <Note x="16" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="13" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="13" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="13" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="13" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="18" symbol="Ch">Chute: {map:Maze Level 5} 17,17</Note>
+      <Note x="6" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="18" symbol="Ch">Chute: {map:Maze Level 6} 12,15</Note>
+      <Note x="9" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="18" symbol="Ch">Chute: {map:Maze Level 6} 5,1</Note>
+      <Note x="6" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+    </Notes>
+    <Icons>
+      <Icon x="1" y="1" id="2" dir="4" />
+      <Icon x="1" y="1" id="2" dir="1" />
+      <Icon x="5" y="1" id="4" dir="3" />
+      <Icon x="10" y="1" id="2" dir="1" />
+      <Icon x="11" y="1" id="2" dir="1" />
+      <Icon x="16" y="1" id="4" dir="3" />
+      <Icon x="20" y="1" id="2" dir="1" />
+      <Icon x="20" y="1" id="2" dir="2" />
+      <Icon x="2" y="2" id="9" dir="1" />
+      <Icon x="5" y="2" id="4" dir="1" />
+      <Icon x="16" y="2" id="4" dir="1" />
+      <Icon x="13" y="3" id="4" dir="2" />
+      <Icon x="14" y="3" id="4" dir="4" />
+      <Icon x="5" y="4" id="4" dir="2" />
+      <Icon x="6" y="4" id="4" dir="4" />
+      <Icon x="15" y="4" id="4" dir="2" />
+      <Icon x="16" y="4" id="4" dir="4" />
+      <Icon x="1" y="5" id="4" dir="2" />
+      <Icon x="2" y="5" id="4" dir="4" />
+      <Icon x="4" y="5" id="4" dir="3" />
+      <Icon x="7" y="5" id="4" dir="3" />
+      <Icon x="8" y="5" id="4" dir="3" />
+      <Icon x="9" y="5" id="4" dir="3" />
+      <Icon x="12" y="5" id="4" dir="3" />
+      <Icon x="13" y="5" id="4" dir="3" />
+      <Icon x="14" y="5" id="4" dir="3" />
+      <Icon x="17" y="5" id="4" dir="3" />
+      <Icon x="19" y="5" id="4" dir="2" />
+      <Icon x="20" y="5" id="4" dir="4" />
+      <Icon x="4" y="6" id="4" dir="1" />
+      <Icon x="7" y="6" id="4" dir="1" />
+      <Icon x="8" y="6" id="4" dir="1" />
+      <Icon x="9" y="6" id="4" dir="1" />
+      <Icon x="11" y="6" id="4" dir="3" />
+      <Icon x="12" y="6" id="4" dir="1" />
+      <Icon x="13" y="6" id="4" dir="1" />
+      <Icon x="14" y="6" id="4" dir="1" />
+      <Icon x="17" y="6" id="4" dir="1" />
+      <Icon x="5" y="7" id="4" dir="2" />
+      <Icon x="6" y="7" id="4" dir="4" />
+      <Icon x="9" y="7" id="2" dir="3" />
+      <Icon x="15" y="7" id="4" dir="2" />
+      <Icon x="16" y="7" id="4" dir="4" />
+      <Icon x="5" y="8" id="4" dir="2" />
+      <Icon x="6" y="8" id="4" dir="4" />
+      <Icon x="15" y="8" id="4" dir="2" />
+      <Icon x="16" y="8" id="4" dir="4" />
+      <Icon x="5" y="9" id="4" dir="2" />
+      <Icon x="6" y="9" id="4" dir="4" />
+      <Icon x="14" y="9" id="2" dir="4" />
+      <Icon x="15" y="9" id="4" dir="2" />
+      <Icon x="16" y="9" id="4" dir="4" />
+      <Icon x="1" y="10" id="2" dir="4" />
+      <Icon x="7" y="10" id="4" dir="4" />
+      <Icon x="10" y="10" id="4" dir="3" />
+      <Icon x="11" y="10" id="4" dir="3" />
+      <Icon x="11" y="10" id="10" dir="1" />
+      <Icon x="20" y="10" id="2" dir="2" />
+      <Icon x="1" y="11" id="2" dir="4" />
+      <Icon x="10" y="11" id="4" dir="1" />
+      <Icon x="10" y="11" id="4" dir="2" />
+      <Icon x="11" y="11" id="4" dir="4" />
+      <Icon x="11" y="11" id="4" dir="1" />
+      <Icon x="15" y="11" id="4" dir="4" />
+      <Icon x="20" y="11" id="2" dir="2" />
+      <Icon x="5" y="12" id="4" dir="2" />
+      <Icon x="6" y="12" id="4" dir="4" />
+      <Icon x="8" y="12" id="2" dir="4" />
+      <Icon x="15" y="12" id="4" dir="2" />
+      <Icon x="16" y="12" id="4" dir="4" />
+      <Icon x="5" y="13" id="4" dir="2" />
+      <Icon x="6" y="13" id="4" dir="4" />
+      <Icon x="12" y="13" id="2" dir="3" />
+      <Icon x="15" y="13" id="4" dir="2" />
+      <Icon x="16" y="13" id="4" dir="4" />
+      <Icon x="5" y="14" id="4" dir="2" />
+      <Icon x="6" y="14" id="4" dir="4" />
+      <Icon x="10" y="14" id="4" dir="3" />
+      <Icon x="15" y="14" id="4" dir="2" />
+      <Icon x="16" y="14" id="4" dir="4" />
+      <Icon x="4" y="15" id="4" dir="3" />
+      <Icon x="7" y="15" id="4" dir="3" />
+      <Icon x="8" y="15" id="4" dir="3" />
+      <Icon x="9" y="15" id="4" dir="3" />
+      <Icon x="12" y="15" id="4" dir="3" />
+      <Icon x="13" y="15" id="4" dir="3" />
+      <Icon x="14" y="15" id="4" dir="3" />
+      <Icon x="17" y="15" id="4" dir="3" />
+      <Icon x="1" y="16" id="4" dir="2" />
+      <Icon x="2" y="16" id="4" dir="4" />
+      <Icon x="4" y="16" id="4" dir="1" />
+      <Icon x="7" y="16" id="4" dir="1" />
+      <Icon x="8" y="16" id="4" dir="1" />
+      <Icon x="9" y="16" id="4" dir="1" />
+      <Icon x="12" y="16" id="4" dir="1" />
+      <Icon x="13" y="16" id="4" dir="1" />
+      <Icon x="14" y="16" id="4" dir="1" />
+      <Icon x="17" y="16" id="4" dir="1" />
+      <Icon x="19" y="16" id="4" dir="2" />
+      <Icon x="20" y="16" id="4" dir="4" />
+      <Icon x="5" y="17" id="4" dir="2" />
+      <Icon x="6" y="17" id="4" dir="4" />
+      <Icon x="15" y="17" id="4" dir="2" />
+      <Icon x="16" y="17" id="4" dir="4" />
+      <Icon x="5" y="19" id="4" dir="3" />
+      <Icon x="16" y="19" id="4" dir="3" />
+      <Icon x="1" y="20" id="2" dir="4" />
+      <Icon x="1" y="20" id="2" dir="3" />
+      <Icon x="5" y="20" id="4" dir="1" />
+      <Icon x="10" y="20" id="2" dir="3" />
+      <Icon x="11" y="20" id="2" dir="3" />
+      <Icon x="16" y="20" id="4" dir="1" />
+      <Icon x="20" y="20" id="2" dir="2" />
+      <Icon x="20" y="20" id="2" dir="3" />
+    </Icons>
+  </Sheet>
+  <Sheet width="22" height="22" title="Maze Level 6" path="" zoom="150" gameIndex="6">
+    <Grid>H4sIAAAAAAAEAO1aW5KjMAwEfe1+zv1PkFvMx9yLDSZWJPSIZBuGbCVV1NSkYyN1t2VsfLvdlq9l+V7oNd8/0/q5UfT+/wOFD/pBh6G+62r7OwgFvX+zfK1/a6/rBfBou375lyIFnf8XtP6FyuRQdL3uaIRnRNWeh6J+VAWFhzd+lp8nim0BIii6juY7Q8iThUmzLaLqWHgDNDkGHX1hhwq3B7xhRAVcXxYVUPVpW5g154iMWFvdkxQpUcVcd6Int6jaFJT5xtq26GtqFMjIRE2eoaNtcd2qwh9VfXQdRTcFgfiK5ropSL1h+qqwMUJBVAFCFTjpya2qaJVQryqmCiLfTQWrLYvKqxuvxmAgqrgnZVQUkSNlVAVuVd8fvy0jtDFmoT5rm3yeHOvJHvWv6UmTq4AnG8evX2NZz7V9qaKwj6r+YmbOMatoIub6CxwpwjkJ113Ck4xJoa9gMuFJwXNShTM9ad4X1VcroY/6dVJUYMKk4nbkCipK1ZvqOIKXGV3Gkz7PNlfJWSPxVK/fd4QnUUF1vdDCVVyjhIKB0a26TmTEHCsyqu2x5vTsBQmuGJNDeWb3DfRsctW8IgCF50T19qPqUZBxhWjjLgSL2amT8Er9nrF/8Lq7kedEVfF71quZyYa/dma+qn3Ya8mCxnaZkgpuPYf0PaTnJxu+J1vGft6TrZW/l42ECr4nh8UsXOfs5u2rCqrA9uvMmJmCQgWByowO6dn3JKuxYl6Y9rMG4/m458mhbPRwlfVkI8+mn0E4Vq9m7+zJeunrQY5q836iEg7zZL23Xb23ntvQiVb+4zwpemZoUv3juGJsHKwCZWLCecFbd1eVzvCkiHmq9VmJOVVzsG1sxfeOnkSuaFv75MBEa2zPLCk0KmjDO3o9qjiTPZ5kTAo2WL6IqhlhzKqfk22ny9VJzCj2VN8Tc0J9vK/63lkomHxuZ/dNepKhPevuwH0pE1u+R5yikahfvU1vOO9/tXUKcx2LCvVNnDiKzUe+Cjzm/QkNpgJMg5+RmPrX9GRy/vVrbGk7bN/bjKpnnSJ4tmudUL8bpVzZ47dlpPio6VhvpOy4EuivejJWY1H9YbNkrGfBRs/eyCV2xgRXzFfJ+nzcnuowT6L6daYbehZC1hwz3wDq89zjdt+Tcbczb3SjMcf6td3nqjcj1nOPJ8u5Puq4baQ8ZEBUYcN/g7/jSniDcYXoyfOgjpqO/VVPmgomeT4uo2GefH1aWD+JKvavqJ+fZ6hM9d8ELWyctE8YR5mvbBVOzohF1fNusaC03abRB/2g/ajpun8CjklBuDgAAA==</Grid>
+    <Notes>
+      <Note x="1" y="1" symbol="T">(Teleport to 0,0)</Note>
+      <Note x="13" y="1" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="1" symbol="E">Forced Encounter with High Priest</Note>
+      <Note x="20" y="1" symbol="E">Forced Encounter with High Priest</Note>
+      <Note x="9" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="2" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="2" symbol="E">Forced Encounter with High Priest</Note>
+      <Note x="20" y="2" symbol="T">(Teleport to 0,0)</Note>
+      <Note x="4" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="3" symbol="s">That king, the king who worships power will have none within his tomb.</Note>
+      <Note x="13" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="3" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="3" symbol="T">(Teleport to 0,0)</Note>
+      <Note x="4" y="4" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="4" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="4" symbol="E">Forced Encounter with High Priest</Note>
+      <Note x="7" y="4" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="4" symbol="n">(The chute at 8,11 on level 5 sends the party here)</Note>
+      <Note x="9" y="4" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="4" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="4" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="4" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="4" symbol="↻">(Sets the facing direction randomly)</Note>
+      <Note x="16" y="4" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="4" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="5" symbol="E">Forced Encounter with High Priest</Note>
+      <Note x="7" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="5" symbol="n">(The chute at 7,2 on level 5 sends the party here)</Note>
+      <Note x="14" y="5" symbol="s">That king, the king who worships gold, will no more see his treasure room.</Note>
+      <Note x="15" y="5" symbol="↻">(Sets the facing direction randomly)</Note>
+      <Note x="16" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="5" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="6" symbol="Gn">A statue of the earth-god, Gnilda.  Will you search (Y/N) ?
+Y: Receive Staff of Light</Note>
+      <Note x="7" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="6" symbol="T">(Teleport to 0,0)</Note>
+      <Note x="19" y="6" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="7" symbol="s">That king, the king who worships these, that king, he finds doom!</Note>
+      <Note x="18" y="7" symbol="T">(Teleport to 0,0)</Note>
+      <Note x="19" y="7" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="7" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="8" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="8" symbol="↻">(Sets the facing direction randomly)</Note>
+      <Note x="20" y="8" symbol="↻">(Sets the facing direction randomly)</Note>
+      <Note x="4" y="9" symbol="T">(Teleport to 0,0)</Note>
+      <Note x="7" y="9" symbol="T">(Teleport to 0,0)</Note>
+      <Note x="8" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="9" symbol="T">(Teleport to 0,0)</Note>
+      <Note x="12" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="9" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="20" y="9" symbol="↻">(Sets the facing direction randomly)</Note>
+      <Note x="2" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="10" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="11" symbol="T">(Teleport to 0,0)</Note>
+      <Note x="10" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="11" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="3" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="5" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="12" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="4" y="13" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="13" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="13" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="10" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="14" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="16" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="17" y="15" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="16" symbol="T">(Teleport to {map:Maze Level 1} 9,9)</Note>
+      <Note x="5" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="16" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="17" symbol="Ap">The apparition reappears and intones: "One alone."</Note>
+      <Note x="5" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="8" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="20" y="17" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="2" y="18" symbol="Ri">Lying in front of the door is a beast with the head of a man and the body of a lion.  Hypnotically, he intones:
+"Enter here, the very few, who can give the answer true, to my riddle, asked of you."
+"Search this level, if you dare.  Search each den and monster lair, three clues have I hidden there."
+"Search each passage and each room, for a king within his tomb, you know your answer was his doom!"
+"If you live, you should not lose, for the answer to my ruse, lies confused in the clues!"
+What is your answer?
+Answer The Knight of Diamonds:  Correct!
+Otherwise: Wrong! (Teleport back one square)</Note>
+      <Note x="8" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="9" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="11" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="20" y="18" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="6" y="19" symbol="n">(The chute at 17,2 on level 5 sends the party here)</Note>
+      <Note x="11" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="20" y="19" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="1" y="20" symbol=".">Stairs going up: {map:Maze Level 5} (10,10)
+(The teleporters at 0,19; 3,11; 6,11; 8,9; 9,11; 15,14; 17,13; 17,17; 19,18 send you here)</Note>
+      <Note x="11" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="12" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="13" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="14" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="15" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="18" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="19" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+      <Note x="20" y="20" symbol="e">Encounter Square (battles here provide items the first time and double gold otherwise)</Note>
+    </Notes>
+    <Icons>
+      <Icon x="17" y="1" id="4" dir="2" />
+      <Icon x="19" y="1" id="4" dir="2" />
+      <Icon x="19" y="1" id="4" dir="3" />
+      <Icon x="20" y="1" id="4" dir="4" />
+      <Icon x="20" y="1" id="4" dir="3" />
+      <Icon x="17" y="2" id="4" dir="2" />
+      <Icon x="18" y="2" id="4" dir="2" />
+      <Icon x="19" y="2" id="4" dir="4" />
+      <Icon x="19" y="2" id="4" dir="1" />
+      <Icon x="19" y="2" id="4" dir="3" />
+      <Icon x="20" y="2" id="4" dir="1" />
+      <Icon x="3" y="3" id="4" dir="2" />
+      <Icon x="4" y="3" id="4" dir="4" />
+      <Icon x="6" y="3" id="4" dir="3" />
+      <Icon x="16" y="3" id="4" dir="3" />
+      <Icon x="19" y="3" id="4" dir="1" />
+      <Icon x="1" y="4" id="2" dir="4" />
+      <Icon x="6" y="4" id="4" dir="1" />
+      <Icon x="6" y="4" id="4" dir="3" />
+      <Icon x="13" y="4" id="4" dir="2" />
+      <Icon x="14" y="4" id="4" dir="4" />
+      <Icon x="16" y="4" id="4" dir="1" />
+      <Icon x="19" y="4" id="4" dir="1" />
+      <Icon x="20" y="4" id="2" dir="2" />
+      <Icon x="1" y="5" id="2" dir="4" />
+      <Icon x="6" y="5" id="4" dir="1" />
+      <Icon x="6" y="5" id="4" dir="3" />
+      <Icon x="20" y="5" id="2" dir="2" />
+      <Icon x="1" y="6" id="2" dir="4" />
+      <Icon x="5" y="6" id="4" dir="3" />
+      <Icon x="6" y="6" id="4" dir="1" />
+      <Icon x="7" y="6" id="4" dir="3" />
+      <Icon x="17" y="6" id="4" dir="3" />
+      <Icon x="20" y="6" id="2" dir="2" />
+      <Icon x="1" y="7" id="2" dir="4" />
+      <Icon x="5" y="7" id="4" dir="1" />
+      <Icon x="6" y="7" id="4" dir="2" />
+      <Icon x="7" y="7" id="4" dir="4" />
+      <Icon x="7" y="7" id="4" dir="1" />
+      <Icon x="17" y="7" id="4" dir="1" />
+      <Icon x="17" y="7" id="4" dir="3" />
+      <Icon x="20" y="7" id="2" dir="2" />
+      <Icon x="8" y="8" id="4" dir="2" />
+      <Icon x="9" y="8" id="4" dir="4" />
+      <Icon x="12" y="8" id="4" dir="3" />
+      <Icon x="17" y="8" id="4" dir="1" />
+      <Icon x="19" y="8" id="4" dir="1" />
+      <Icon x="2" y="9" id="4" dir="3" />
+      <Icon x="5" y="9" id="4" dir="3" />
+      <Icon x="12" y="9" id="4" dir="1" />
+      <Icon x="1" y="10" id="2" dir="4" />
+      <Icon x="2" y="10" id="4" dir="1" />
+      <Icon x="19" y="10" id="4" dir="1" />
+      <Icon x="20" y="10" id="2" dir="2" />
+      <Icon x="1" y="11" id="2" dir="4" />
+      <Icon x="11" y="11" id="4" dir="2" />
+      <Icon x="12" y="11" id="4" dir="4" />
+      <Icon x="20" y="11" id="2" dir="2" />
+      <Icon x="1" y="12" id="2" dir="4" />
+      <Icon x="4" y="12" id="4" dir="3" />
+      <Icon x="14" y="12" id="4" dir="3" />
+      <Icon x="20" y="12" id="2" dir="2" />
+      <Icon x="1" y="13" id="2" dir="4" />
+      <Icon x="3" y="13" id="4" dir="2" />
+      <Icon x="4" y="13" id="4" dir="4" />
+      <Icon x="4" y="13" id="4" dir="1" />
+      <Icon x="4" y="13" id="4" dir="2" />
+      <Icon x="4" y="13" id="4" dir="3" />
+      <Icon x="5" y="13" id="4" dir="4" />
+      <Icon x="14" y="13" id="4" dir="1" />
+      <Icon x="20" y="13" id="2" dir="2" />
+      <Icon x="4" y="14" id="4" dir="1" />
+      <Icon x="2" y="16" id="4" dir="3" />
+      <Icon x="4" y="16" id="4" dir="2" />
+      <Icon x="5" y="16" id="4" dir="4" />
+      <Icon x="6" y="16" id="4" dir="2" />
+      <Icon x="7" y="16" id="4" dir="4" />
+      <Icon x="7" y="16" id="4" dir="2" />
+      <Icon x="8" y="16" id="4" dir="4" />
+      <Icon x="19" y="16" id="4" dir="3" />
+      <Icon x="2" y="17" id="4" dir="1" />
+      <Icon x="2" y="17" id="4" dir="3" />
+      <Icon x="19" y="17" id="4" dir="1" />
+      <Icon x="2" y="18" id="4" dir="1" />
+      <Icon x="2" y="18" id="4" dir="3" />
+      <Icon x="1" y="19" id="4" dir="3" />
+      <Icon x="2" y="19" id="4" dir="1" />
+      <Icon x="1" y="20" id="4" dir="1" />
+      <Icon x="1" y="20" id="4" dir="2" />
+      <Icon x="1" y="20" id="9" dir="1" />
+      <Icon x="2" y="20" id="4" dir="4" />
+      <Icon x="10" y="20" id="4" dir="2" />
+      <Icon x="11" y="20" id="4" dir="4" />
+      <Icon x="15" y="20" id="4" dir="2" />
+      <Icon x="16" y="20" id="4" dir="4" />
+      <Icon x="17" y="20" id="4" dir="2" />
+      <Icon x="18" y="20" id="4" dir="4" />
+    </Icons>
+  </Sheet>
+</MapBook>

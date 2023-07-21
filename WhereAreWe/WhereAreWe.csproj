@@ -1,0 +1,1627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E341948A-297C-4C1C-A624-668C1F0B6C1D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WhereAreWe</RootNamespace>
+    <AssemblyName>WhereAreWe</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>WhereAreWe.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>WhereAreWe.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>WhereAreWe.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconWhereAreWe.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\Common\DamageDiceControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\DamageDiceControl.Designer.cs">
+      <DependentUpon>DamageDiceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Eye_of_the_Beholder_123\EOB123CharacterInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Eye_of_the_Beholder_123\EOB123CharacterInfoControl.Designer.cs">
+      <DependentUpon>EOB123CharacterInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Eye_of_the_Beholder_123\EOB123GameInformationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Eye_of_the_Beholder_123\EOB123GameInformationControl.Designer.cs">
+      <DependentUpon>EOB123GameInformationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Eye_of_the_Beholder_123\EOBCreationAssistantControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Eye_of_the_Beholder_123\EOBCreationAssistantControl.Designer.cs">
+      <DependentUpon>EOBCreationAssistantControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Ultima_123\Ultima123CharacterInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Ultima_123\Ultima123CharacterInfoControl.Designer.cs">
+      <DependentUpon>Ultima123CharacterInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\ItemSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\ItemSelectionForm.Designer.cs">
+      <DependentUpon>ItemSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\EditStrength18Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\EditStrength18Form.Designer.cs">
+      <DependentUpon>EditStrength18Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\EditDnDBasicCharInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\EditDnDBasicCharInfoForm.Designer.cs">
+      <DependentUpon>EditDnDBasicCharInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\EditTriggerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\EditTriggerForm.Designer.cs">
+      <DependentUpon>EditTriggerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\EditTriggerListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\EditTriggerListForm.Designer.cs">
+      <DependentUpon>EditTriggerListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Eye_of_the_Beholder\EOBMonsterEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Eye_of_the_Beholder\EOBMonsterEditForm.Designer.cs">
+      <DependentUpon>EOBMonsterEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Eye_of_the_Beholder\EditDnDSpellsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Eye_of_the_Beholder\EditDnDSpellsForm.Designer.cs">
+      <DependentUpon>EditDnDSpellsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Eye_of_the_Beholder\EditEOBMasterItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Eye_of_the_Beholder\EditEOBMasterItemForm.Designer.cs">
+      <DependentUpon>EditEOBMasterItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Eye_of_the_Beholder\EditInventoryTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Eye_of_the_Beholder\EditInventoryTableForm.Designer.cs">
+      <DependentUpon>EditInventoryTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Ultima\UltimaMonsterEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Ultima\UltimaMonsterEditForm.Designer.cs">
+      <DependentUpon>UltimaMonsterEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Ultima\UltimaItemEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Ultima\UltimaItemEditForm.Designer.cs">
+      <DependentUpon>UltimaItemEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Bards_Tale\BTCharacter.cs" />
+    <Compile Include="Games\Bards_Tale\BTItemList.cs" />
+    <Compile Include="Games\Bards_Tale\BTBaseClasses.cs" />
+    <Compile Include="Games\Bards_Tale\BTMaps.cs" />
+    <Compile Include="Games\Bards_Tale\BTMemoryHacker.cs" />
+    <Compile Include="Games\Bards_Tale\BTMonsterList.cs" />
+    <Compile Include="Games\Bards_Tale\BTSpots.cs" />
+    <Compile Include="Games\Bards_Tale_1\BT1SpellList.cs" />
+    <Compile Include="Games\Bards_Tale_1\BT1ItemList.cs" />
+    <Compile Include="Games\Bards_Tale_1\BT1MemoryHacker.cs" />
+    <Compile Include="Games\Bards_Tale_1\BT1MonsterList.cs" />
+    <Compile Include="Games\Bards_Tale_1\BT1Quests.cs" />
+    <Compile Include="Games\Bards_Tale_1\BT1Character.cs" />
+    <Compile Include="Games\Bards_Tale_2\BT2Character.cs" />
+    <Compile Include="Games\Bards_Tale_2\BT2MonsterList.cs" />
+    <Compile Include="Games\Bards_Tale_2\BT2Quests.cs" />
+    <Compile Include="Games\Bards_Tale_2\BT2SpellList.cs" />
+    <Compile Include="Games\Bards_Tale_2\BT2MemoryHacker.cs" />
+    <Compile Include="Games\Bards_Tale_2\BT2ItemList.cs" />
+    <Compile Include="Games\Bards_Tale_3\BT3Character.cs" />
+    <Compile Include="Games\Bards_Tale_3\BT3MonsterList.cs" />
+    <Compile Include="Games\Bards_Tale_3\BT3Quests.cs" />
+    <Compile Include="Games\Bards_Tale_3\BT3Scripts.cs" />
+    <Compile Include="Games\Bards_Tale_3\BT3SpellList.cs" />
+    <Compile Include="Games\Bards_Tale_3\BT3MemoryHacker.cs" />
+    <Compile Include="Games\Bards_Tale_3\BT3ItemList.cs" />
+    <Compile Include="CLOptions.cs" />
+    <Compile Include="Controls\BardsTale_123\BT123CharacterInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BardsTale_123\BT123CharacterInfoControl.Designer.cs">
+      <DependentUpon>BT123CharacterInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BardsTale_123\BT3AttackControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BardsTale_123\BT3AttackControl.Designer.cs">
+      <DependentUpon>BT3AttackControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BardsTale_123\BTCreationAssistantControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BardsTale_123\BTCreationAssistantControl.Designer.cs">
+      <DependentUpon>BTCreationAssistantControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BardsTale_123\BT123GameInformationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BardsTale_123\BT123GameInformationControl.Designer.cs">
+      <DependentUpon>BT123GameInformationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BardsTale_123\BT123TrainingAssistantControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BardsTale_123\BT123TrainingAssistantControl.Designer.cs">
+      <DependentUpon>BT123TrainingAssistantControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\BardsTale_123\BT123TrapsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\BardsTale_123\BT123TrapsControl.Designer.cs">
+      <DependentUpon>BT123TrapsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\ActiveEffectsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\ActiveEffectsControl.Designer.cs">
+      <DependentUpon>ActiveEffectsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\CharacterInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\CharacterInfoControl.Designer.cs">
+      <DependentUpon>CharacterInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\SpellRefPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\SpellRefPanel.Designer.cs">
+      <DependentUpon>SpellRefPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\MMCharacterInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\MMCharacterInfoControl.Designer.cs">
+      <DependentUpon>MMCharacterInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\CharCombatLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\CharCombatLabel.Designer.cs">
+      <DependentUpon>CharCombatLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\DraggableListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\DrawColorControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\DrawColorControl.Designer.cs">
+      <DependentUpon>DrawColorControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\EditableAttributeLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\EditableAttributeLabel.Designer.cs">
+      <DependentUpon>EditableAttributeLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\ExitsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\ExitsControl.Designer.cs">
+      <DependentUpon>ExitsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\GameInfoListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\GameInfoListView.Designer.cs">
+      <DependentUpon>GameInfoListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\IEnumerable.cs" />
+    <Compile Include="Controls\Common\PanelIgnoreWheel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\PanelIgnoreWheel.Designer.cs">
+      <DependentUpon>PanelIgnoreWheel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\TreasurePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\TreasurePanel.Designer.cs">
+      <DependentUpon>TreasurePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Common\UtilitySubclasses.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\MMCreationAssistantControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Common\MMCreationAssistantControl.Designer.cs">
+      <DependentUpon>MMCreationAssistantControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Might_and_Magic_1\MM1CharacterInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Might_and_Magic_1\MM1CharacterInfoControl.Designer.cs">
+      <DependentUpon>MM1CharacterInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Might_and_Magic_1\MM1GameInformationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Might_and_Magic_1\MM1GameInformationControl.Designer.cs">
+      <DependentUpon>MM1GameInformationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Might_and_Magic_1\MM1ItemLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Might_and_Magic_1\MM1ItemLabel.Designer.cs">
+      <DependentUpon>MM1ItemLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Might_and_Magic_1\MM1TrainingAssistantControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Might_and_Magic_1\MM1TrainingAssistantControl.Designer.cs">
+      <DependentUpon>MM1TrainingAssistantControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Might_and_Magic_2\MM2CharacterInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Might_and_Magic_2\MM2CharacterInfoControl.Designer.cs">
+      <DependentUpon>MM2CharacterInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Might_and_Magic_2\MM2GameInformationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Might_and_Magic_2\MM2GameInformationControl.Designer.cs">
+      <DependentUpon>MM2GameInformationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Might_and_Magic_3\MM345GameInformationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Might_and_Magic_3\MM345GameInformationControl.Designer.cs">
+      <DependentUpon>MM345GameInformationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Might_and_Magic_3\MM3CharacterInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Might_and_Magic_3\MM3CharacterInfoControl.Designer.cs">
+      <DependentUpon>MM3CharacterInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Might_and_Magic_45\MM45CharacterInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Might_and_Magic_45\MM45CharacterInfoControl.Designer.cs">
+      <DependentUpon>MM45CharacterInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PartyInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PartyInfoControl.Designer.cs" />
+    <Compile Include="BaseClasses.cs" />
+    <Compile Include="Controls\Wizardry_123\Wiz123TrapsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Wizardry_123\Wiz123TrapsControl.Designer.cs">
+      <DependentUpon>Wiz123TrapsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Wizardry_123\Wiz123TrainingAssistantControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Wizardry_123\Wiz123TrainingAssistantControl.Designer.cs">
+      <DependentUpon>Wiz123TrainingAssistantControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Wizardry_123\Wiz123CreationAssistantControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Wizardry_123\Wiz123CreationAssistantControl.Designer.cs">
+      <DependentUpon>Wiz123CreationAssistantControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Wizardry_123\Wiz123GameInformationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Wizardry_123\Wiz123GameInformationControl.Designer.cs">
+      <DependentUpon>Wiz123GameInformationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Wizardry_123\Wiz123CharacterInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Wizardry_123\Wiz123CharacterInfoControl.Designer.cs">
+      <DependentUpon>Wiz123CharacterInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Wizardry_4\Wiz4TrainingAssistantControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Wizardry_4\Wiz4TrainingAssistantControl.Designer.cs">
+      <DependentUpon>Wiz4TrainingAssistantControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Wizardry_5\Wiz5CharacterInfoControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Wizardry_5\Wiz5CharacterInfoControl.Designer.cs">
+      <DependentUpon>Wiz5CharacterInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bards_Tale\BT2EncounterEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bards_Tale\BT2EncounterEditForm.Designer.cs">
+      <DependentUpon>BT2EncounterEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bards_Tale\BT3MonsterEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bards_Tale\BT3MonsterEditForm.Designer.cs">
+      <DependentUpon>BT3MonsterEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bards_Tale\BT2MonsterEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bards_Tale\BT2MonsterEditForm.Designer.cs">
+      <DependentUpon>BT2MonsterEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bards_Tale\EditBTSpellLevels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bards_Tale\EditBTSpellLevels.Designer.cs">
+      <DependentUpon>EditBTSpellLevels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Bards_Tale\BTEncounterEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Bards_Tale\BTEncounterEditForm.Designer.cs">
+      <DependentUpon>BTEncounterEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\DebugConsole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\DebugConsole.Designer.cs">
+      <DependentUpon>DebugConsole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\WindowMarginsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\WindowMarginsForm.Designer.cs">
+      <DependentUpon>WindowMarginsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\NamedColorSelectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\NamedColorSelectorForm.Designer.cs">
+      <DependentUpon>NamedColorSelectorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\EditZOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\EditZOrderForm.Designer.cs">
+      <DependentUpon>EditZOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\EditMapSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\EditMapSection.Designer.cs">
+      <DependentUpon>EditMapSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games.cs" />
+    <Compile Include="GameGlobals.cs" />
+    <Compile Include="Games\Common\Walls.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder\EOBScripts.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder\EOBBaseClasses.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder\EOBCharacter.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder\EOBItemList.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder\EOBMaps.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder\EOBMemoryHacker.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder\EOBMonsterList.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder\EOBSpellList.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder_1\EOB1Spots.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder_1\EOB1Walls.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder_2\EOB2Spots.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder_2\EOB2Walls.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder_2\EOB2Character.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder_2\EOB2ItemList.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder_2\EOB2MemoryHacker.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder_2\EOB2MonsterList.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder_2\EOB2Quests.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder_2\EOB2Scripts.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder_2\EOB2SpellList.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder\EOBWalls.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder_1\EOB1Scripts.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder_1\EOB1Character.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder_1\EOB1ItemList.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder_1\EOB1MemoryHacker.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder_1\EOB1MonsterList.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder_1\EOB1Quests.cs" />
+    <Compile Include="Games\Eye_of_the_Beholder_1\EOB1SpellList.cs" />
+    <Compile Include="Games\Might_and_Magic\MMMaps.cs" />
+    <Compile Include="Games\Ultima\UltimaSpellList.cs" />
+    <Compile Include="Games\Ultima\UltimaMonsterList.cs" />
+    <Compile Include="Games\Ultima\UltimaMaps.cs" />
+    <Compile Include="Games\Ultima\UltimaItemList.cs" />
+    <Compile Include="Games\Ultima\UltimaMemoryHacker.cs" />
+    <Compile Include="Games\Ultima\UltimaBaseClasses.cs" />
+    <Compile Include="Games\Ultima\UltimaCharacter.cs" />
+    <Compile Include="Games\Ultima\Ultima_1\Ultima1Quests.cs" />
+    <Compile Include="Games\Ultima\Ultima_1\Ultima1Spots.cs" />
+    <Compile Include="Games\Ultima\Ultima_1\Ultima1MemoryHacker.cs" />
+    <Compile Include="Games\Ultima\Ultima_1\Ultima1Character.cs" />
+    <Compile Include="TypeConverterClasses.cs" />
+    <Compile Include="Games\Wizardry\WizSpots.cs" />
+    <Compile Include="Games\Wizardry\WizardryBaseClasses.cs" />
+    <Compile Include="Games\Wizardry\WizMaps.cs" />
+    <Compile Include="Games\Wizardry_5\Wiz5Character.cs" />
+    <Compile Include="Games\Wizardry_5\Wiz5ItemList.cs" />
+    <Compile Include="Games\Wizardry_5\Wiz5MemoryHacker.cs" />
+    <Compile Include="Games\Wizardry_5\Wiz5MonsterList.cs" />
+    <Compile Include="Games\Wizardry_5\Wiz5Quests.cs" />
+    <Compile Include="DebugMonitor.cs" />
+    <Compile Include="Games\Wizardry_4\Wiz4ItemList.cs" />
+    <Compile Include="Games\Wizardry_4\Wiz4MemoryHacker.cs" />
+    <Compile Include="Games\Wizardry_4\Wiz4MonsterList.cs" />
+    <Compile Include="Games\Wizardry_4\Wiz4Quests.cs" />
+    <Compile Include="Games\Wizardry_3\Wiz3ItemList.cs" />
+    <Compile Include="Games\Wizardry_3\Wiz3MemoryHacker.cs" />
+    <Compile Include="Games\Wizardry_3\Wiz3MonsterList.cs" />
+    <Compile Include="Games\Wizardry_3\Wiz3Quests.cs" />
+    <Compile Include="Games\Wizardry_2\Wiz2ItemList.cs" />
+    <Compile Include="Games\Wizardry_2\Wiz2MemoryHacker.cs" />
+    <Compile Include="Games\Wizardry_2\Wiz2MonsterList.cs" />
+    <Compile Include="Games\Wizardry_2\Wiz2Quests.cs" />
+    <Compile Include="Forms\Editors\EditWizSpellPointsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\EditWizSpellPointsForm.Designer.cs">
+      <DependentUpon>EditWizSpellPointsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\EnumSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\EnumSelectionForm.Designer.cs">
+      <DependentUpon>EnumSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wizardry_1\Wiz123MonsterEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Wizardry_1\Wiz123MonsterEditForm.Designer.cs">
+      <DependentUpon>Wiz123MonsterEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Wizardry_1\Wiz123EncounterEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Wizardry_1\Wiz123EncounterEditForm.Designer.cs">
+      <DependentUpon>Wiz123EncounterEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Games\Wizardry\WizCharacter.cs" />
+    <Compile Include="Games\Wizardry\WizItemList.cs" />
+    <Compile Include="Games\Wizardry\WizMemoryHacker.cs" />
+    <Compile Include="Games\Wizardry\WizMonsterList.cs" />
+    <Compile Include="Games\Wizardry_1\Wiz1ItemList.cs" />
+    <Compile Include="Games\Wizardry_1\Wiz1MonsterList.cs" />
+    <Compile Include="Games\Wizardry_1\Wiz1Quests.cs" />
+    <Compile Include="Games\Wizardry\WizSpellList.cs" />
+    <Compile Include="Forms\Color_Test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Color_Test.Designer.cs">
+      <DependentUpon>Color_Test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\CreationAssistantForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\CreationAssistantForm.Designer.cs">
+      <DependentUpon>CreationAssistantForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\ColorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\ColorsForm.Designer.cs">
+      <DependentUpon>ColorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\ItemCompareForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\ItemCompareForm.Designer.cs">
+      <DependentUpon>ItemCompareForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\DoNotShowAgainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\DoNotShowAgainForm.Designer.cs">
+      <DependentUpon>DoNotShowAgainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\DropTrashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\DropTrashForm.Designer.cs">
+      <DependentUpon>DropTrashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\EncounterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\EncounterForm.Designer.cs">
+      <DependentUpon>EncounterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\FastColorPickerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\FastColorPickerForm.Designer.cs">
+      <DependentUpon>FastColorPickerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\GameInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\GameInformationForm.Designer.cs">
+      <DependentUpon>GameInformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\IconsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\IconsForm.Designer.cs">
+      <DependentUpon>IconsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\InfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\InfoForm.Designer.cs">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\ItemsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\ItemsForm.Designer.cs">
+      <DependentUpon>ItemsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\MainForm.KeyEvents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\MainForm.Undo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\MapSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\MapSelectionForm.Designer.cs">
+      <DependentUpon>MapSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\MMSpellSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\MMSpellSelectForm.Designer.cs">
+      <DependentUpon>MMSpellSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\MonstersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\MonstersForm.Designer.cs">
+      <DependentUpon>MonstersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\NotificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\NotificationForm.Designer.cs">
+      <DependentUpon>NotificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\OptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\OptionsForm.Designer.cs">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\QuestsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\QuestsForm.Designer.cs">
+      <DependentUpon>QuestsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\QuickRefForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\QuickRefForm.Designer.cs">
+      <DependentUpon>QuickRefForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\ScriptsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\ScriptsForm.Designer.cs">
+      <DependentUpon>ScriptsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\SearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\SearchForm.Designer.cs">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\SelectGameFilesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\SelectGameFilesForm.Designer.cs">
+      <DependentUpon>SelectGameFilesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\SheetExpandForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\SheetExpandForm.Designer.cs">
+      <DependentUpon>SheetExpandForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\ShopInventoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\ShopInventoryForm.Designer.cs">
+      <DependentUpon>ShopInventoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\SpellReferenceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\SpellReferenceForm.Designer.cs">
+      <DependentUpon>SpellReferenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\StringsViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\StringsViewForm.Designer.cs">
+      <DependentUpon>StringsViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\TrainingAssistantForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\TrainingAssistantForm.Designer.cs">
+      <DependentUpon>TrainingAssistantForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\UnicodeSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\UnicodeSelectionForm.Designer.cs">
+      <DependentUpon>UnicodeSelectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\ViewInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\ViewInfoForm.Designer.cs">
+      <DependentUpon>ViewInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\ViewPartyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\ViewPartyForm.Designer.cs">
+      <DependentUpon>ViewPartyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\WaitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\WaitForm.Designer.cs">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Common\WizardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Common\WizardForm.Designer.cs">
+      <DependentUpon>WizardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\AskValueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\AskValueForm.Designer.cs">
+      <DependentUpon>AskValueForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\AttributeEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\AttributeEditForm.Designer.cs">
+      <DependentUpon>AttributeEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\BasicCharInfoEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\BasicCharInfoEditForm.Designer.cs">
+      <DependentUpon>BasicCharInfoEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\ColorPatternSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\ColorPatternSelectForm.Designer.cs">
+      <DependentUpon>ColorPatternSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\ConditionEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\ConditionEditForm.Designer.cs">
+      <DependentUpon>ConditionEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\EditItemDisplayFormatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\EditItemDisplayFormatForm.Designer.cs">
+      <DependentUpon>EditItemDisplayFormatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\EditBitsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\EditBitsForm.Designer.cs">
+      <DependentUpon>EditBitsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\EditBytesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\EditBytesForm.Designer.cs">
+      <DependentUpon>EditBytesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\EditCartographyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\EditCartographyForm.Designer.cs">
+      <DependentUpon>EditCartographyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\EditLabelsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\EditLabelsForm.Designer.cs">
+      <DependentUpon>EditLabelsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\EditNotificationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\EditNotificationForm.Designer.cs">
+      <DependentUpon>EditNotificationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\EditRosterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\EditRosterForm.Designer.cs">
+      <DependentUpon>EditRosterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\EraEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\EraEditForm.Designer.cs">
+      <DependentUpon>EraEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\ForbiddenSpellsEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\ForbiddenSpellsEditForm.Designer.cs">
+      <DependentUpon>ForbiddenSpellsEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\GameShortcutsEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\GameShortcutsEditorForm.Designer.cs">
+      <DependentUpon>GameShortcutsEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\InventoryManipulatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\InventoryManipulatorForm.Designer.cs">
+      <DependentUpon>InventoryManipulatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\ItemEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\ItemEditForm.Designer.cs">
+      <DependentUpon>ItemEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\LineStyleSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\LineStyleSelectForm.Designer.cs">
+      <DependentUpon>LineStyleSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\MMEffectsEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\MMEffectsEditForm.Designer.cs">
+      <DependentUpon>MMEffectsEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\MMSkillEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\MMSkillEditForm.Designer.cs">
+      <DependentUpon>MMSkillEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\NoteTemplatesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\NoteTemplatesForm.Designer.cs">
+      <DependentUpon>NoteTemplatesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\SelectImageRectangleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\SelectImageRectangleForm.Designer.cs">
+      <DependentUpon>SelectImageRectangleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\SheetOrganizerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\SheetOrganizerForm.Designer.cs">
+      <DependentUpon>SheetOrganizerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\SheetPathEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\SheetPathEditForm.Designer.cs">
+      <DependentUpon>SheetPathEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\SheetSelectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\SheetSelectorForm.Designer.cs">
+      <DependentUpon>SheetSelectorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Editors\TimeEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Editors\TimeEditForm.Designer.cs">
+      <DependentUpon>TimeEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Might_and_Magic_2\MM2KnownSpellsEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Might_and_Magic_2\MM2KnownSpellsEditForm.Designer.cs">
+      <DependentUpon>MM2KnownSpellsEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Might_and_Magic_2\MM2MonsterEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Might_and_Magic_2\MM2MonsterEditForm.Designer.cs">
+      <DependentUpon>MM2MonsterEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Might_and_Magic_2\MM2SecondarySkillForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Might_and_Magic_2\MM2SecondarySkillForm.Designer.cs">
+      <DependentUpon>MM2SecondarySkillForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Might_and_Magic_3\KnownSpellsEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Might_and_Magic_3\KnownSpellsEditForm.Designer.cs">
+      <DependentUpon>KnownSpellsEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Might_and_Magic_3\MM345MonsterEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Might_and_Magic_3\MM345MonsterEditForm.Designer.cs">
+      <DependentUpon>MM345MonsterEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Might_and_Magic_3\MM3ConditionEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Might_and_Magic_3\MM3ConditionEditForm.Designer.cs">
+      <DependentUpon>MM3ConditionEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Might_and_Magic_3\MM3ItemEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Might_and_Magic_3\MM3ItemEditForm.Designer.cs">
+      <DependentUpon>MM3ItemEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Might_and_Magic_45\MM45ItemEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Might_and_Magic_45\MM45ItemEditForm.Designer.cs">
+      <DependentUpon>MM45ItemEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global.cs" />
+    <Compile Include="MapItems.cs" />
+    <Compile Include="MapSheet.cs" />
+    <Compile Include="MemoryHacker.cs" />
+    <Compile Include="Games\Might_and_Magic_1\MM1ItemList.cs" />
+    <Compile Include="Games\Might_and_Magic_1\MM1MemoryHacker.cs" />
+    <Compile Include="Games\Might_and_Magic_1\MM1MonsterList.cs" />
+    <Compile Include="Games\Might_and_Magic_1\MM1Quests.cs" />
+    <Compile Include="Games\Might_and_Magic_1\MM1SpellList.cs" />
+    <Compile Include="Games\Might_and_Magic_2\MM2ItemList.cs" />
+    <Compile Include="Games\Might_and_Magic_2\MM2MemoryHacker.cs" />
+    <Compile Include="Games\Might_and_Magic_2\MM2MonsterList.cs" />
+    <Compile Include="Games\Might_and_Magic_2\MM2Quests.cs" />
+    <Compile Include="Games\Might_and_Magic_2\MM2Scripts.cs" />
+    <Compile Include="Games\Might_and_Magic_2\MM2SpellList.cs" />
+    <Compile Include="Games\Might_and_Magic_3\MM345BaseCharacter.cs" />
+    <Compile Include="Games\Might_and_Magic_3\MM3FileOffsets.cs" />
+    <Compile Include="Games\Might_and_Magic_3\MM3ItemList.cs" />
+    <Compile Include="Games\Might_and_Magic_3\MM3MemoryHacker.cs" />
+    <Compile Include="Games\Might_and_Magic_3\MM3MonsterList.cs" />
+    <Compile Include="Games\Might_and_Magic_3\MM3Quests.cs" />
+    <Compile Include="Games\Might_and_Magic_3\MM3Scripts.cs" />
+    <Compile Include="Games\Might_and_Magic_3\MM3SpellList.cs" />
+    <Compile Include="Games\Might_and_Magic_45\GetHitDamageAC.cs" />
+    <Compile Include="Games\Might_and_Magic_45\MM45FileOffsets.cs" />
+    <Compile Include="Games\Might_and_Magic_45\MM45ItemList.cs" />
+    <Compile Include="Games\Might_and_Magic_45\MM45MemoryHacker.cs" />
+    <Compile Include="Games\Might_and_Magic_45\MM45MonsterList.cs" />
+    <Compile Include="Games\Might_and_Magic_45\MM45Quests.cs" />
+    <Compile Include="Games\Might_and_Magic_45\MM45Scripts.cs" />
+    <Compile Include="Games\Might_and_Magic_45\MM45SpellList.cs" />
+    <Compile Include="Games\Might_and_Magic\MMBaseClasses.cs" />
+    <Compile Include="Games\Might_and_Magic\MMScripts.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Serializer.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Games\Might_and_Magic\MMSpots.cs" />
+    <Compile Include="Tests.cs" />
+    <Compile Include="Undo.cs" />
+    <Compile Include="Win32\KeyboardHook.cs" />
+    <Compile Include="Win32\Win32.cs" />
+    <Compile Include="Games\Wizardry_1\Wiz1MemoryHacker.cs" />
+    <Compile Include="Games\Wizardry_4\Wiz4Character.cs" />
+    <Compile Include="Games\Wizardry_5\Wiz5SpellList.cs" />
+    <EmbeddedResource Include="Controls\BardsTale_123\BT123CharacterInfoControl.resx">
+      <DependentUpon>BT123CharacterInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BardsTale_123\BT3AttackControl.resx">
+      <DependentUpon>BT3AttackControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BardsTale_123\BTCreationAssistantControl.resx">
+      <DependentUpon>BTCreationAssistantControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BardsTale_123\BT123GameInformationControl.resx">
+      <DependentUpon>BT123GameInformationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BardsTale_123\BT123TrainingAssistantControl.resx">
+      <DependentUpon>BT123TrainingAssistantControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\BardsTale_123\BT123TrapsControl.resx">
+      <DependentUpon>BT123TrapsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Common\ActiveEffectsControl.resx">
+      <DependentUpon>ActiveEffectsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Common\DamageDiceControl.resx">
+      <DependentUpon>DamageDiceControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Common\CharacterInfoControl.resx">
+      <DependentUpon>CharacterInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Common\SpellRefPanel.resx">
+      <DependentUpon>SpellRefPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Common\MMCharacterInfoControl.resx">
+      <DependentUpon>MMCharacterInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Common\CharCombatLabel.resx">
+      <DependentUpon>CharCombatLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Common\DrawColorControl.resx">
+      <DependentUpon>DrawColorControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Common\EditableAttributeLabel.resx">
+      <DependentUpon>EditableAttributeLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Common\ExitsControl.resx">
+      <DependentUpon>ExitsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Common\GameInfoListView.resx">
+      <DependentUpon>GameInfoListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Common\TreasurePanel.resx">
+      <DependentUpon>TreasurePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Common\MMCreationAssistantControl.resx">
+      <DependentUpon>MMCreationAssistantControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Eye_of_the_Beholder_123\EOB123CharacterInfoControl.resx">
+      <DependentUpon>EOB123CharacterInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Eye_of_the_Beholder_123\EOB123GameInformationControl.resx">
+      <DependentUpon>EOB123GameInformationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Eye_of_the_Beholder_123\EOBCreationAssistantControl.resx">
+      <DependentUpon>EOBCreationAssistantControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Might_and_Magic_1\MM1CharacterInfoControl.resx">
+      <DependentUpon>MM1CharacterInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Might_and_Magic_1\MM1GameInformationControl.resx">
+      <DependentUpon>MM1GameInformationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Might_and_Magic_1\MM1ItemLabel.resx">
+      <DependentUpon>MM1ItemLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Might_and_Magic_1\MM1TrainingAssistantControl.resx">
+      <DependentUpon>MM1TrainingAssistantControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Might_and_Magic_2\MM2CharacterInfoControl.resx">
+      <DependentUpon>MM2CharacterInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Might_and_Magic_2\MM2GameInformationControl.resx">
+      <DependentUpon>MM2GameInformationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Might_and_Magic_3\MM345GameInformationControl.resx">
+      <DependentUpon>MM345GameInformationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Might_and_Magic_3\MM3CharacterInfoControl.resx">
+      <DependentUpon>MM3CharacterInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Might_and_Magic_45\MM45CharacterInfoControl.resx">
+      <DependentUpon>MM45CharacterInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PartyInfoControl.resx" />
+    <EmbeddedResource Include="Controls\Ultima_123\Ultima123CharacterInfoControl.resx">
+      <DependentUpon>Ultima123CharacterInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Wizardry_123\Wiz123TrapsControl.resx">
+      <DependentUpon>Wiz123TrapsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Wizardry_123\Wiz123TrainingAssistantControl.resx">
+      <DependentUpon>Wiz123TrainingAssistantControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Wizardry_123\Wiz123CreationAssistantControl.resx">
+      <DependentUpon>Wiz123CreationAssistantControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Wizardry_123\Wiz123GameInformationControl.resx">
+      <DependentUpon>Wiz123GameInformationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Wizardry_123\Wiz123CharacterInfoControl.resx">
+      <DependentUpon>Wiz123CharacterInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Wizardry_4\Wiz4TrainingAssistantControl.resx">
+      <DependentUpon>Wiz4TrainingAssistantControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Wizardry_5\Wiz5CharacterInfoControl.resx">
+      <DependentUpon>Wiz5CharacterInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bards_Tale\BT2EncounterEditForm.resx">
+      <DependentUpon>BT2EncounterEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bards_Tale\BT3MonsterEditForm.resx">
+      <DependentUpon>BT3MonsterEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bards_Tale\BT2MonsterEditForm.resx">
+      <DependentUpon>BT2MonsterEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bards_Tale\EditBTSpellLevels.resx">
+      <DependentUpon>EditBTSpellLevels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Bards_Tale\BTEncounterEditForm.resx">
+      <DependentUpon>BTEncounterEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Color_Test.resx">
+      <DependentUpon>Color_Test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\CreationAssistantForm.resx">
+      <DependentUpon>CreationAssistantForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\ColorsForm.resx">
+      <DependentUpon>ColorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\DebugConsole.resx">
+      <DependentUpon>DebugConsole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\ItemCompareForm.resx">
+      <DependentUpon>ItemCompareForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\DoNotShowAgainForm.resx">
+      <DependentUpon>DoNotShowAgainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\DropTrashForm.resx">
+      <DependentUpon>DropTrashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\EncounterForm.resx">
+      <DependentUpon>EncounterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\FastColorPickerForm.resx">
+      <DependentUpon>FastColorPickerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\GameInformationForm.resx">
+      <DependentUpon>GameInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\IconsForm.resx">
+      <DependentUpon>IconsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\InfoForm.resx">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\ItemSelectionForm.resx">
+      <DependentUpon>ItemSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\ItemsForm.resx">
+      <DependentUpon>ItemsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\MapSelectionForm.resx">
+      <DependentUpon>MapSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\MMSpellSelectForm.resx">
+      <DependentUpon>MMSpellSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\MonstersForm.resx">
+      <DependentUpon>MonstersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\NotificationForm.resx">
+      <DependentUpon>NotificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\OptionsForm.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\QuestsForm.resx">
+      <DependentUpon>QuestsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\QuickRefForm.resx">
+      <DependentUpon>QuickRefForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\ScriptsForm.resx">
+      <DependentUpon>ScriptsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\SearchForm.resx">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\SelectGameFilesForm.resx">
+      <DependentUpon>SelectGameFilesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\WindowMarginsForm.resx">
+      <DependentUpon>WindowMarginsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\SheetExpandForm.resx">
+      <DependentUpon>SheetExpandForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\ShopInventoryForm.resx">
+      <DependentUpon>ShopInventoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\SpellReferenceForm.resx">
+      <DependentUpon>SpellReferenceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\StringsViewForm.resx">
+      <DependentUpon>StringsViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\TrainingAssistantForm.resx">
+      <DependentUpon>TrainingAssistantForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\UnicodeSelectionForm.resx">
+      <DependentUpon>UnicodeSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\ViewInfoForm.resx">
+      <DependentUpon>ViewInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\ViewPartyForm.resx">
+      <DependentUpon>ViewPartyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\WaitForm.resx">
+      <DependentUpon>WaitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Common\WizardForm.resx">
+      <DependentUpon>WizardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\AskValueForm.resx">
+      <DependentUpon>AskValueForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\EditStrength18Form.resx">
+      <DependentUpon>EditStrength18Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\AttributeEditForm.resx">
+      <DependentUpon>AttributeEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\EditDnDBasicCharInfoForm.resx">
+      <DependentUpon>EditDnDBasicCharInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\BasicCharInfoEditForm.resx">
+      <DependentUpon>BasicCharInfoEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\ColorPatternSelectForm.resx">
+      <DependentUpon>ColorPatternSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\ConditionEditForm.resx">
+      <DependentUpon>ConditionEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\EditTriggerForm.resx">
+      <DependentUpon>EditTriggerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\EditTriggerListForm.resx">
+      <DependentUpon>EditTriggerListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\NamedColorSelectorForm.resx">
+      <DependentUpon>NamedColorSelectorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\EditZOrderForm.resx">
+      <DependentUpon>EditZOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\EditMapSection.resx">
+      <DependentUpon>EditMapSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\EditWizSpellPointsForm.resx">
+      <DependentUpon>EditWizSpellPointsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\EnumSelectionForm.resx">
+      <DependentUpon>EnumSelectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\EditItemDisplayFormatForm.resx">
+      <DependentUpon>EditItemDisplayFormatForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\EditBitsForm.resx">
+      <DependentUpon>EditBitsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\EditBytesForm.resx">
+      <DependentUpon>EditBytesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\EditCartographyForm.resx">
+      <DependentUpon>EditCartographyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\EditLabelsForm.resx">
+      <DependentUpon>EditLabelsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\EditNotificationForm.resx">
+      <DependentUpon>EditNotificationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\EditRosterForm.resx">
+      <DependentUpon>EditRosterForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\EraEditForm.resx">
+      <DependentUpon>EraEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\ForbiddenSpellsEditForm.resx">
+      <DependentUpon>ForbiddenSpellsEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\GameShortcutsEditorForm.resx">
+      <DependentUpon>GameShortcutsEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\InventoryManipulatorForm.resx">
+      <DependentUpon>InventoryManipulatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\ItemEditForm.resx">
+      <DependentUpon>ItemEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\LineStyleSelectForm.resx">
+      <DependentUpon>LineStyleSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\MMEffectsEditForm.resx">
+      <DependentUpon>MMEffectsEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\MMSkillEditForm.resx">
+      <DependentUpon>MMSkillEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\NoteTemplatesForm.resx">
+      <DependentUpon>NoteTemplatesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\SelectImageRectangleForm.resx">
+      <DependentUpon>SelectImageRectangleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\SheetOrganizerForm.resx">
+      <DependentUpon>SheetOrganizerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\SheetPathEditForm.resx">
+      <DependentUpon>SheetPathEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\SheetSelectorForm.resx">
+      <DependentUpon>SheetSelectorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Editors\TimeEditForm.resx">
+      <DependentUpon>TimeEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Eye_of_the_Beholder\EOBMonsterEditForm.resx">
+      <DependentUpon>EOBMonsterEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Eye_of_the_Beholder\EditDnDSpellsForm.resx">
+      <DependentUpon>EditDnDSpellsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Eye_of_the_Beholder\EditEOBMasterItemForm.resx">
+      <DependentUpon>EditEOBMasterItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Eye_of_the_Beholder\EditInventoryTableForm.resx">
+      <DependentUpon>EditInventoryTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Might_and_Magic_2\MM2KnownSpellsEditForm.resx">
+      <DependentUpon>MM2KnownSpellsEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Might_and_Magic_2\MM2MonsterEditForm.resx">
+      <DependentUpon>MM2MonsterEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Might_and_Magic_2\MM2SecondarySkillForm.resx">
+      <DependentUpon>MM2SecondarySkillForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Might_and_Magic_3\KnownSpellsEditForm.resx">
+      <DependentUpon>KnownSpellsEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Might_and_Magic_3\MM345MonsterEditForm.resx">
+      <DependentUpon>MM345MonsterEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Might_and_Magic_3\MM3ConditionEditForm.resx">
+      <DependentUpon>MM3ConditionEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Might_and_Magic_3\MM3ItemEditForm.resx">
+      <DependentUpon>MM3ItemEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Might_and_Magic_45\MM45ItemEditForm.resx">
+      <DependentUpon>MM45ItemEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Ultima\UltimaMonsterEditForm.resx">
+      <DependentUpon>UltimaMonsterEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Ultima\UltimaItemEditForm.resx">
+      <DependentUpon>UltimaItemEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Wizardry_1\Wiz123MonsterEditForm.resx">
+      <DependentUpon>Wiz123MonsterEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Wizardry_1\Wiz123EncounterEditForm.resx">
+      <DependentUpon>Wiz123EncounterEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\Bards_Tale_1\Bards_Tale_1.waw.gz" />
+    <None Include="Resources\Bards_Tale_1\BT1InventoryChar.dat" />
+    <None Include="Resources\Bards_Tale_1\BT1_Item_List.gz" />
+    <None Include="Resources\Bards_Tale_1\BT1_Monster_List.gz" />
+    <None Include="Resources\Bards_Tale_2\Bards_Tale_2.waw.gz" />
+    <None Include="Resources\Bards_Tale_2\BT2InventoryChar.dat" />
+    <None Include="Resources\Bards_Tale_2\BT2_Item_List.gz" />
+    <None Include="Resources\Bards_Tale_2\BT2_Monster_List.gz" />
+    <None Include="Resources\Bards_Tale_3\Bards_Tale_3.waw.gz" />
+    <None Include="Resources\Bards_Tale_3\BT3InventoryChar.dat" />
+    <None Include="Resources\Bards_Tale_3\BT3_Item_List.gz" />
+    <None Include="Resources\Bards_Tale_3\BT3_Monster_List.gz" />
+    <None Include="Resources\Eye_of_the_Beholder_1\EOB1InventoryChar.dat" />
+    <None Include="Resources\Eye_of_the_Beholder_1\EOB1_Item_List.gz" />
+    <None Include="Resources\Eye_of_the_Beholder_1\EOB1_Monster_List.gz" />
+    <None Include="Resources\Eye_of_the_Beholder_1\Eye_of_the_Beholder_1.waw" />
+    <None Include="Resources\Eye_of_the_Beholder_1\Eye_of_the_Beholder_1.waw.gz" />
+    <None Include="Resources\Eye_of_the_Beholder_2\EOB2InventoryChar.dat" />
+    <None Include="Resources\Eye_of_the_Beholder_2\EOB2_Item_List.gz" />
+    <None Include="Resources\Eye_of_the_Beholder_2\EOB2_Monster_List.gz" />
+    <None Include="Resources\Eye_of_the_Beholder_2\Eye_of_the_Beholder_2.waw.gz" />
+    <None Include="Resources\Might_and_Magic_1\Might_and_Magic_1.waw.gz" />
+    <None Include="Resources\Might_and_Magic_1\MM1MonsterDefaults.dat" />
+    <None Include="Resources\Might_and_Magic_2\Might_and_Magic_2.waw.gz" />
+    <None Include="Resources\Might_and_Magic_2\MM2-Hirelings.dat" />
+    <None Include="Resources\Might_and_Magic_2\MM2ExternalScripts.dat.gz" />
+    <None Include="Resources\Might_and_Magic_2\MM2MonsterDefaults.dat" />
+    <None Include="Resources\Might_and_Magic_3\Might_and_Magic_3.waw.gz" />
+    <None Include="Resources\Might_and_Magic_3\MM3InventoryChar.dat" />
+    <None Include="Resources\Might_and_Magic_3\MM3MonsterDefaults.gz" />
+    <None Include="Resources\Might_and_Magic_3\MM3Monsters.dat.gz" />
+    <None Include="Resources\Might_and_Magic_3\MM3MonstersNames.dat.gz" />
+    <None Include="Resources\Might_and_Magic_45\Might_and_Magic_45.waw.gz" />
+    <None Include="Resources\Might_and_Magic_45\MM45InventoryChar.dat" />
+    <None Include="Resources\Might_and_Magic_45\MM45MonsterDefaults.dat.gz" />
+    <None Include="Resources\Might_and_Magic_45\MM45Monsters.dat.gz" />
+    <None Include="Resources\Might_and_Magic_45\MM4MonsterDefaults.dat.gz" />
+    <None Include="Resources\Might_and_Magic_45\MM4Monsters.dat.gz" />
+    <None Include="Resources\Might_and_Magic_45\MM5MonsterDefaults.dat.gz" />
+    <None Include="Resources\Might_and_Magic_45\MM5Monsters.dat.gz" />
+    <None Include="Resources\Ultima\Ultima_1\Ultima_1.waw.gz" />
+    <None Include="Resources\Wizardry_4\Wizardry_4-Item_List.mem.gz" />
+    <None Include="Resources\Wizardry_4\Wizardry_4-Maps.mem.gz" />
+    <None Include="Resources\Wizardry_4\Wizardry_4-Monster_List.mem.gz" />
+    <None Include="Resources\Wizardry_4\Wizardry_4.waw.gz" />
+    <None Include="Resources\Wizardry_1\Wizardry_1-Inventory_Char.dat" />
+    <None Include="Resources\Wizardry_1\Wizardry_1-Item_List.mem.gz" />
+    <None Include="Resources\Wizardry_1\Wizardry_1-Maps.mem.gz" />
+    <None Include="Resources\Wizardry_1\Wizardry_1-Monster_List.mem.gz" />
+    <None Include="Resources\Wizardry_1\Wizardry_1-Treasure_List.mem.gz" />
+    <None Include="Resources\Wizardry_1\Wizardry_1.waw.gz" />
+    <None Include="Resources\Wizardry_2\Wizardry_2-Item_List.mem.gz" />
+    <None Include="Resources\Wizardry_2\Wizardry_2-Maps.mem.gz" />
+    <None Include="Resources\Wizardry_2\Wizardry_2-Monster_List.mem.gz" />
+    <None Include="Resources\Wizardry_2\Wizardry_2-Treasure_List.mem.gz" />
+    <None Include="Resources\Wizardry_2\Wizardry_2.waw.gz" />
+    <None Include="Resources\Wizardry_3\Wizardry_3-Item_List.mem.gz" />
+    <None Include="Resources\Wizardry_3\Wizardry_3-Maps.mem.gz" />
+    <None Include="Resources\Wizardry_3\Wizardry_3-Monster_List.mem.gz" />
+    <None Include="Resources\Wizardry_3\Wizardry_3-Treasure_List.mem.gz" />
+    <None Include="Resources\Wizardry_3\Wizardry_3.waw.gz" />
+    <None Include="Resources\Wizardry_5\Wizardry_5-Inventory_Char.dat" />
+    <None Include="Resources\Wizardry_5\Wizardry_5-Item_List.mem.gz" />
+    <None Include="Resources\Wizardry_5\Wizardry_5-Monster_List.mem.gz" />
+    <None Include="Resources\Wizardry_5\Wizardry_5-Sector_Remap.dat" />
+    <None Include="Resources\Wizardry_5\Wizardry_5-Treasure_List.mem.gz" />
+    <None Include="Resources\Wizardry_5\Wizardry_5.waw.gz" />
+    <None Include="WhereAreWe.ruleset" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Documents\Changelog.txt" />
+    <Content Include="Documents\defer.txt" />
+    <Content Include="Documents\fixed.txt" />
+    <Content Include="Documents\TODO.txt" />
+    <Content Include="iconWhereAreWe.ico" />
+    <Content Include="Resources\Common\Cursors\iconCursorLiveDouble.ico" />
+    <Content Include="Resources\Common\Cursors\iconCursorLive.ico" />
+    <Content Include="Resources\Common\Cursors\iconCursorAnchor.ico" />
+    <Content Include="Resources\Common\Cursors\iconCursorAnchorDouble.ico" />
+    <Content Include="Resources\Common\Cursors\iconCursorBlock.ico" />
+    <Content Include="Resources\Common\Cursors\iconCursorBlockDouble.ico" />
+    <Content Include="Resources\Common\Cursors\iconCursorCopy.ico" />
+    <Content Include="Resources\Common\Cursors\iconCursorCopyDouble.ico" />
+    <Content Include="Resources\Common\Cursors\iconCursorFill.ico" />
+    <Content Include="Resources\Common\Cursors\iconCursorFillDouble.ico" />
+    <Content Include="Resources\Common\Cursors\iconCursorFillLines.ico" />
+    <Content Include="Resources\Common\Cursors\iconCursorFillLinesDouble.ico" />
+    <Content Include="Resources\Common\Cursors\iconCursorHybrid.ico" />
+    <Content Include="Resources\Common\Cursors\iconCursorHybridDouble.ico" />
+    <Content Include="Resources\Common\Cursors\iconCursorNote.ico" />
+    <Content Include="Resources\Common\Cursors\iconCursorNoteCopy.ico" />
+    <Content Include="Resources\Common\Cursors\iconCursorNoteCopyDouble.ico" />
+    <Content Include="Resources\Common\Cursors\iconCursorNoteDouble.ico" />
+    <Content Include="Resources\Common\Cursors\iconCursorPencil.ico" />
+    <Content Include="Resources\Common\Cursors\iconCursorPencilDouble.ico" />
+    <None Include="Resources\Common\Icons\iconactivemonster1.ico" />
+    <None Include="Resources\Common\Icons\iconarrowfullup1.ico" />
+    <None Include="Resources\Common\Icons\iconarrowfullup2.ico" />
+    <None Include="Resources\Common\Icons\iconBar.ico" />
+    <None Include="Resources\Common\Icons\iconCross.ico" />
+    <None Include="Resources\Common\Icons\iconArrowCap.ico" />
+    <None Include="Resources\Common\Icons\iconArrowCapDiag.ico" />
+    <Content Include="Resources\Common\Icons\iconLockedFullHoriz.ico" />
+    <Content Include="Resources\Common\Icons\iconLockedHalfTop.ico" />
+    <Content Include="Resources\Common\Icons\iconMonsterAndNPC.ico" />
+    <Content Include="Resources\Common\Icons\iconMonsterAndNPCHighlighted.ico" />
+    <None Include="Resources\Common\Icons\iconNorthwestToSouth.ico" />
+    <None Include="Resources\Common\Icons\iconSoutheastToNorth.ico" />
+    <None Include="Resources\Common\Icons\iconSouthwestToNorth.ico" />
+    <None Include="Resources\Common\Icons\iconNorthwestToEast.ico" />
+    <None Include="Resources\Common\Icons\iconSouthwestToEast.ico" />
+    <None Include="Resources\Common\Icons\iconNorthToEast.ico" />
+    <None Include="Resources\Common\Icons\iconSouthToEast.ico" />
+    <None Include="Resources\Common\Icons\iconSlash.ico" />
+    <None Include="Resources\Common\Icons\iconNorthwestToNorthEast.ico" />
+    <Content Include="Resources\Common\Icons\iconThreeItems.ico" />
+    <Content Include="Resources\Common\Icons\iconTwoItems.ico" />
+    <Content Include="Resources\Common\Icons\iconOneItem.ico" />
+    <Content Include="Resources\Common\Icons\iconOneNPCHighlighted.ico" />
+    <Content Include="Resources\Common\Icons\iconOneNPC.ico" />
+    <Content Include="Resources\Common\Icons\iconPentagram.ico" />
+    <Content Include="Resources\Common\Icons\iconRotateCCW.ico" />
+    <Content Include="Resources\Common\Icons\iconRotateCW.ico" />
+    <Content Include="Resources\Common\Icons\iconActiveMonster.ico" />
+    <Content Include="Resources\Common\Icons\iconActiveSquare.ico" />
+    <Content Include="Resources\Common\Icons\iconAnchor.ico" />
+    <Content Include="Resources\Common\Icons\iconArrowFullUp.ico" />
+    <Content Include="Resources\Common\Icons\iconArrowHalfUp.ico" />
+    <Content Include="Resources\Common\Icons\iconCursor.ico" />
+    <Content Include="Resources\Common\Icons\iconDoorFullHoriz.ico" />
+    <Content Include="Resources\Common\Icons\iconDoorHalfTop.ico" />
+    <Content Include="Resources\Common\Icons\iconExit.ico" />
+    <Content Include="Resources\Common\Icons\iconFragileHalfUp.ico" />
+    <Content Include="Resources\Common\Icons\iconGrateFullHoriz.ico" />
+    <Content Include="Resources\Common\Icons\iconGrateHalfTop.ico" />
+    <Content Include="Resources\Common\Icons\iconNone.ico" />
+    <Content Include="Resources\Common\Icons\iconOneMonster.ico" />
+    <Content Include="Resources\Common\Icons\iconOneMonsterHighlighted.ico" />
+    <Content Include="Resources\Common\Icons\iconSafe.ico" />
+    <Content Include="Resources\Common\Icons\iconSpinner.ico" />
+    <Content Include="Resources\Common\Icons\iconStairsDown.ico" />
+    <Content Include="Resources\Common\Icons\iconStairsUp.ico" />
+    <Content Include="Resources\Common\Icons\iconThreeMonsters.ico" />
+    <Content Include="Resources\Common\Icons\iconThreeMonstersHighlighted.ico" />
+    <Content Include="Resources\Common\Icons\iconTwoMonsters.ico" />
+    <Content Include="Resources\Common\Icons\iconTwoMonstersHighlighted.ico" />
+    <None Include="Resources\Common\Icons\iconWestToSoutheast.ico" />
+    <None Include="Resources\Common\Icons\iconWestToNortheast.ico" />
+    <None Include="Resources\Common\Icons\iconWestToNorth.ico" />
+    <None Include="Resources\Common\Icons\iconWestToSouth.ico" />
+    <Content Include="Resources\Common\Icons\iconWhereAreWe.ico" />
+    <None Include="Resources\Common\Icons\iconY.ico" />
+    <None Include="Resources\Common\Icons\iconX.ico" />
+    <Content Include="Resources\Common\Icons\iconYouAreHereDirectionless.ico" />
+    <Content Include="Resources\Common\Icons\iconYouAreHere.ico" />
+    <Content Include="Resources\Common\pngActive.png" />
+    <Content Include="Resources\Common\pngGrid.png" />
+    <Content Include="Resources\Common\pngMeleeCheck.png" />
+    <Content Include="Resources\Common\pngSequentialGoal.png" />
+    <Content Include="Resources\Common\pngSimultaneousGoal.png" />
+    <Content Include="Resources\Common\UnicodeSymbols.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>cd $(ProjectDir)\Resources
+GZipWAWFiles.bat</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

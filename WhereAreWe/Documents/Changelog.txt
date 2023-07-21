@@ -1,0 +1,34 @@
+﻿- Added colored and textured MapSquare backgrounds
+- Undo now works for notes
+- Can edit notes in non-note modes
+- Can change color of notes without editing the note text/symbol
+- Context menu for grid
+- Alt+Keypad for color selection
+- Alt+Ctrl+Keypad to expand grid
+- Fixed undo to allow for notes-only changes
+- Fixed undo to allow for grid-size-changing changes vs. data-only changes
+- Added icons, with undo and save
+- Added 100% and 200% specific zoom levels
+- Fixed cursor to be correct size icon at 100% and 200% zoom levels
+- Added picture-based icon dropdown
+- Reworked line-drawing system so that dotted lines look better
+- Separated styles for blocks vs. lines and added another page to the color dialog
+- Added "Crop unused blocks"
+- Added info form
+- Added "You Are Here" icon
+- Changed undo for notes and squares to not store/draw the entire map
+- Added shortcut dialog
+- Fixed n-1 shortcut combinations
+- Fixed right/down inner lines being off by a pixel
+- Added selections in edit mode
+- Move/Copy selections (no feedback)
+- Note templates
+- Way to edit map origin and change x/y positive/negative mode
+- "fit window to map"
+- Sheet organizer (subfolders in menu for e.g. Town, Outdoor, Caverns, etc.)
+- Save window size
+- Crop selection instead of map when selected
+- Easy way to put unicode arrows, etc. into note symbols
+- Right-click on a note to go to the map linked to that note (e.g. "Entrance to Sorpigal" -> Go to sorpigal map)
+- Memory hacker to get party location directly from game
+- Party information window

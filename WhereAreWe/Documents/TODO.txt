@@ -1,0 +1,213 @@
+﻿FIXED:
+X Opening a file from the recently-used list and then hitting "save" doesn't have the path set correctly.  [needed "saveFileDialog.FileName = m_strCurrentFile" in MenuFileSaveAs]
+X Some folders were moved to "Games" but old versions are still in the root
+
+DEFER:
+
+FEATURES:
+- Option to prevent windows (e.g. combat) from opening (or becoming visible) entirely off-screen
+- Suggest user disable the "fast scan" if it fails to find the magic bytes
+- Option to hide user-selected collection of map icons (run, exit, etc.)
+
+- Opening a file from the recently-used list and then hitting "save" doesn't have the path set correctly.
+
+MM1:
+  x Training assistant max HP is one lower than the game can give in some circumstances?  (29 END paladin or archer maybe?)  [sure enough, GetStatModifier() for endurance was wrong]
+  ? Also for the Scale of Judgement, my knight received +25856 experience (see attachment), which is more than the standard +24576 for all other classes (1280 difference).  Not sure if there are other factor(s) that caused the discrepancy.  Where Are We? has the following notes for it, which you may want to update:  "6 JP: Your actions reflect your views 6/6: +24576 EXP and +3 to a random attribute (if less than 26)"     [This happens if the "PrisonerXP" byte is 0xC9 (usually it would be 0xC0 for "six prisoners treated appropriately"), but I have no idea why this would be.]
+
+MM2:
+  X Active character isn't followed when in the store (at least, in the Middlegate store) [SetCharacterByAddress needed to use m_addresses[] not just iCharAddress directly]
+  X "Trade your intellect" is (D-4, Castle Hillstone, B1: 0,0)   not Castle Woodhaven 15,0 as listed in the quests
+MM3:
+  - Newer versions need to hit '1' in the DOS window (need to add to "skip introductions")
+MM4:
+  - MM4Map.DeepMineKappa,16,7 - Live-square here shows half of a doorway to the east now; don't think it used to do that
+  - It is not obvious when SelectGameFiles() needs to be called (right-click from root node of any quest tree) due to the XEEN.CUR / DARK.CUR paths being wrong.  This should be a warning dialog at least.
+
+WIZARDRY 1:
+WIZARDRY 2:
+WIZARDRY 3:
+WIZARDRY 4:
+WIZARDRY 5:
+
+BT 1:
+BT 2:
+BT 3:
+
+ULTIMA 1:
+ X "Keep party location centered" doesn't seem to do anything with the big overworld map [Actually it does, or it's sporadic]
+ - Center definitely doesn't usually work when moving from a castle/town in e.g. the lower-right to the main map
+ X Dungeons are random (seeded on character creation) - so either make all of the squares "live" or make a new indicator that "entire map is live" [Live setting now on sheets]
+ - Main search doesn't work during the intro so the memory scanner fails
+ X overworld encounter window tooltips are often for the wrong enemy [EncounterForm's UpdateUI, after lvMonsters.BeginUpdate(), was not setting the ToolTipText]
+ - Need to find:  Space ace bit.  Monster XP.  Whether Wisdom does anything.  Vehicle info.
+ - Put "last used signpost" on the main character form
+ - Editing the inventory could use some convenience, like focusing on the item that was edited via the context menu, and things like "clear inventory" or "one of everything"
+ - HP in the main monster list for monsters is 0; not sure what it should be
+ X Some of the indices in the main monster list are -1 [Misusing internal index]
+ - Should probably have the "spell list" in some fashion.  Needs to indicate "dungeon only" spells
+ - Chests and Coffins on the map - might be good to use the blue "item" bars from EOB
+ - Outdoor creature HP, damage, etc. missing
+ - Overworld monsters with negative HP are showing regardless of "show dead monsters" is checked 
+
+EOB1:
+X "skip intro" needs to include the DOS part (i.e. "4, 4, y")
+X "In melee" checkbox on encounter window is always true.  Rear row characters can not melee monsters in front! [seems super-simplistic - first two rows are melee even if they are dead]
+X It would be nice to have a live indicator of loot-on-the-ground in a square.  Maybe something ... blue?
+X live item should have hover text like monsters do (add to monster text if both)
+X Items in alcoves may technically be in a different square, but the live item icon should show it in the "other" square, if possible
+X Kenku might be 500 XP, not 5000; test [they do seem to be worth 5000]
+X When not in full visibility mode, stair/ladder squares are never revealed because the party is never actually in those squares; need to reveal on being next to
+X Quests bits should have "reverse bit index" for this game by default (to match with the scripts)
+- Game state is missing for is-casting-spell (need game states in general)
+- Need to get the actual GOG version for registry keys (GetRegistry, GetDefaultLink)
+- Implement AutoCombat() ?  Might not be terribly useful given the real-time nature of the game
+- Remove entries from EOBMemory that aren't relevant (copied from BTMemory)
+- There is a lot of BT junk in EOB1MemoryHacker and EOBMemoryHacker
+- Fix the game state so that the party window doesn't show trash during startup
+- Saved loadouts for memorized spells (similar to "favorites")
+- Allow spellbook editing in non-cheat mode (changing selected spells only, for that particular character)
+- Quiver is different than other equipped items (has a count for stacked items; uses linked list of items)
+- EOB1ItemList initialized with the wrong bytes (need to fix GameState and not load during initial screens)
+- Helmets have an AC value of -1, but don't seem to actually adjust in-game AC (even with modifiers)
+- Item comparison form needs help (is showing equip slot by item type; should be by actual equip location, since "left hand" can hold accessories and weapons/shields/etc)
+- "Item Consume" (0xED) sometimes has 3 bytes and sometimes 4 ?
+- Put the script flag descriptions in the GameInfo (editable bit array)
+- Does a +10 sword improve THAC0?  If so it needs to be in the THAC0 tooltip
+- The "new item" command (0xEA) doesn't seem to do much (level 1, 13,22)
+- "Show monsters only within the detect magic range" doesn't make any sense for this game.  "Show monsters in line-of-sight only" might be better
+- Make sure doors have notes about how to open them
+- Monster bytes are not 100% known
+- Skeleton Warrior seems to take half damage from weapons; that needs to be verified and shown somewhere (special U04)
+- Driders are U40 and Hellhounds are U02 (some resistance?)
+- Make sure holes and teleporters (especially to other maps) have the (the X from Y sends the party here) note
+- Auto-Combat - auto-attack and swap front/back row for more attacks?
+- Restarting DOSBox via File->Reset shows "Game process re-acquired" but stops showing party/map/etc info
+- "Summon monster every 50 steps" squares need to be noted on the map
+- "Proximity" combat column doesn't seem to work on lowest level with golems ?
+- Level 12 and global bits seem to overlap; figure out which is which
+- Selecting "Duplicate" on an empty item in the item table editor creates an axe; should probably not do that
+- the "Only bold the first entry for a particular location" feature of the bolded nearby quest items looks strange for things like the EOB1 "Loot" quest; might need to rethink it
+- Quest bit descriptions are incomplete
+- Game info window is pretty sparse.  Surely there are spell effects that can go there
+- The GameReady function should understand when the DOSBox pre-launch screen is ready to accept keyboard input ("4, 1, y" or similar) and not just make the main form wait 2 seconds
+- EOB1MemoryHacker still references Bard's Tale (e.g. FindNextInventoryChar)
+
+EOB2:
+- Looks like the monster list is different/loaded per-map.  Right now EOB2.MonsterList.Value.Reinitialize in the memory hacker is only called once so it will probably be wrong on map changes
+
+SPOILERS:
+- All portal destinations
+
+BUGS:
+X GOG installers registry keys are changed: [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\GOG.com\Games\1207661203]
+- Error messages like "surface map not present" are showing up behind the other windows
+- If the wizard form specifies a game to launch but it can't be launched, the party and game information windows should not appear
+- After a "--resetsettings" the first auto-arrange sometimes puts the windows way off to the right
+- "C:\Games\Wizardry" probably shouldn't be the default in the Wizard
+- Add Note -> $variables don't work in Wizardry (except 4)
+- Active squares still don't always show up when first starting the program
+- Clicking on an already-selected monster group in the encounter editor makes the monster list blink and lose its selected items
+- hook-based shortcuts don't work well while (SVN?) DOSBox is in focus (ex: Ctrl+Shift+D -> Disarm Trap).  Works when not in focus.
+X Sorting of columns in combat window is not saved between sessions
+X Finding the installation directories doesn't work when installing with GOG Galaxy (reg files in home\edv\waw)  [This was 1.1.x only; 1.2 fixes it]
+X There is no "current character" in the spell hotkeys (only "all characters" and "character 1" through "character 8") for MM3-5  [this is correct; the "current character" is very fleeting in those games]
+- Newer installations of MM3-5 (at least) have a text choice before starting the game; need to add it to the auto-skip-intro
+- Selecting a different roster file from the Bag of Holding (at least in MM4-5) doesn't remember that file if WaW is exited and restarted.  Seems kind of random whether it saves the roster file name or not.
+- OnCharacterInfoSet() doesn't handle duplicate item descriptions well (if the player picks up a new item, that one would be nice to mark as "new")
+X MM4/5 (A-3, Winterkill: 8,13) - notes for square - Gong should be 13,1 not 6,13 in each place mentioned. 6,13 is another gong for the well.
+X MM1: "Inventory item did not have an InventoryItemTag" logged constantly [MM1/2 have null items with no tags in the fixed-size backpack]
+X "Update" and "Cancel" a note needs to re-spoilerize the display text
+X If the first word of a note is spoiler'd, editing the note leaves the entire text box unreadable. « »  [Need to set tbNote.Rtf = "" to clear formatting before setting text]
+- Selecting the rotated version of an icon, then selecting the unrotated version, still leaves selected the rotated version
+- Get an OutOfMemory exception in ResumeDrawing() occasionally, also tvQuests.EndUpdate() 
+
+OPTIMIZATIONS:
+- Put the MemoryGuesses in the actual properties, not just in MainForm.Upgrade()
+- PruneDroppedItems() seems very loop-intensive just to remove old items
+
+FEATURES:
+- Scripts like "When character picks up arrow, put it in quiver"
+- Option for visible borders on the windows (might be OS/theme involved)
+- There are multiple language versions of some of these games (patrick.hammes@gmail.com), specifically German would be nice to have correct memory offsets for
+X Add keyboard shortcuts for "teleport party one square in a direction" cheat (make sure it checks to see if cheats are enabled)
+- Way to search for settings in the options would be nice
+X [from Kris] Way to hide "spoilers" in the notes
+- [from Kris] Option to "set ready spell" from the spell window (as well as "show info" and "cast spell")
+X [from Kris] a way to ping a reminder as a day gets near, like day 60 of a month. There are a lot of places one needs to sit or use during day 1/53/60 whatever, and some kind of “alarm clock” might be a handy addition since you track the days in the party window anyway. Could just be a trigger like the other stat triggers [Added date/time entities to triggers]
+- Might want to make Hacker.DelayBetweenSpellKeys a UI-configurable setting instead of a compiler constant
+- Hover-text help over column titles (especially combat window, but others too
+X Gradient option for triggers (Range between color1 and color2 for a range of values for a field), also a way to set arbitrary RGB instead of only named colors.
+X [from Kris] Being able to flag, warn, note, or trigger for inventory space might be nice. I tend to fill up quick and since the characters share inventory with their equipment, well, it’s hard to see at a glance how many “items” of loot you have slots for *total* with the party (since in MM your party is like one big inventory bag, each one filling before the next starts filling) [added "Entire Party" to trigger Who]
+- [from Kris] Audio notifications as one of the things a trigger can do (make sure it doesn't play repeatedly though...)
+- [from Kris] Way to trigger on "character takes damage" (will need a "Which:" of, essentially, "The last polled value of the What: field")
+X Should be able to edit custom colors on the trigger color editor
+X Triggers should be importable/exportable by themselves
+X Compare items in shops to inventory like the inventory items can
+X Trigger for "newly added inventory items" [Added Item.Age and BackpackItemAge trigger, still need to actually set the Age to something useful, not -1]
+X Add some of Kris' triggers to the examples
+
+X [Kris] A way to trigger based on + to hit and the like. Unless I’m mistaken, the item trigger only triggers based on the in game name, not your expanded info like Hit+2 or the like in the inventory window. Could the “matching” text also match this extended inventory box info? Maybe I just did it the wrong way, but triggering based on item containing Hit+ didn’t seem to match any items listed as Hit+.
+- [Kris] Stat info for the extended stats of Xeen (Dragonslayer, etc.) (+damage to dragons, etc., in the inv window much like the Hit+3 etc.) https://xeen.fandom.com/wiki/Item_Enchantments
+- [Kris] A shortcut in the right click menu for notes where one can change the note text (Du, etc.) to maybe light grey or something along those lines, for quickly “marking this as done” visually
+
+REFACTORING:
+
+TEST (Specific games):
+MM3/4/5: Make sure monster treasure is still working (changed "int Item" to "int[] Items")
+MM3/4/5: LOS through doors and portcullis might be busted because of changes to IsSightBlocking()
+MM3/4/5: Make sure favorite spells and hotkeys work
+MM2: Make sure the new GameTime didn't break MM2's era-based information
+MM3: Test triggers (especially gradients)
+
+TEST (All games):
+X This guy might like the program: http://addictedgamewise.com/author/Admin/
+X All monster and item lists
+X Editing and adding backpack items
+X Trash Item form
+X Monster viewer form in all games
+X Re-test things that now use GameStrings (Roster Editor, Game Shortcuts, AutoLaunch Maps, DOSBox Titles)
+X "Drop Trash" with custom items in all games
+X tabbed spell list (all games; MM1 shows Sorcerer as "Druid" and shows a blank dialog when a Robber tries to cast a spell in combat)
+X Damage with average shown in multilinedescription for items in all games (especially wizardry)
+X Triggers (especially on non-common-to-all-games items)
+X reverify that all squares are unvisited in the default maps
+X Make sure DebugMonitor isn't running
+X Bump version number
+X Hiding dashed lines in unseeen areas has been putzed with; make sure it still works in other games
+X "Current character casts spell" hotkey needs serious testing (also a regression of the mm3-5 hotkeys)
+X Make sure Release version actually works properly on a different machine or VM
+- ScanAllBlocks when memoryguess fails
+- Test all quests with new questdata object
+- GetAllQuests() should prevent incidental changes from constantly updating the quest list UI
+- No idea why "ShowCharges" property in the Item base defaulted to "false" if there is a Use string... took that out, but need to re-test other games
+- "Stack charges" needs testing in other games (especially MM3-5 with its prefixes and suffixes; might need to disable the feature there)
+- The "monitor backpack" feature got refactored to CheckMonitorBackpack()
+- Make sure "Default for Game" is correct for the EditBitsForm
+
+DOCUMENTATION:
+- Added eob1-eob3 as command line startup options
+- Kris suggested setting to fix MM4-5 crashing:Speech: SB (IRQ 5! Not 7), Music:SB PRO. Dosbox ini, change IRQ to 5. When it asks to adjust the volumes automatically, say no.
+- Mention that the "Notes Panel" can be hidden via the view menu to help prevent seeing spoilers
+- Mention that GOG versions are very strongly recommended (skull_kun45@hotmail.com - "So initially I downloaded a copy of M&M2 where it can with an installer that didn’t start up for some reason, but starting the game itself worked....If I used the DOSBox command ‘loadfix’ -- I went to ‘options’ in ‘view’, and went to ‘DOSbox’ tab and unchecked ‘DOSBox memory quick-scan only’ And it worked! The game was detected!.  But the spell window only shows up in combat, not while adventuring)
+
+NEW GAMES:
+- Eye of the Beholder 1-3
+- Swords of Xeen
+- Dungeon Master 1-2
+- Ultima 1-3
+- Might and Magic 6-9 (need rethinking of automap)
+- Ultima Underworld 1-2 (adding mouselook, etc?)
+
+WEB:
+People who want to know when the source is released:
+ardash1100@gmail.com (Maxim Kovalenko)
+crashbanito@hotmail.com (Chaz Louviere)
+
+
+Things all new games probably need:
+Quests, Maps, Character Record, Character Control, Spells, Encounters, Items, Monsters, Character Creation, Training Assistant
+Shop Inventories, QuickRef, Game Info, Scripts, Roster Editor, Cure All, Superchars, Cheating, Monsters Form, Items Form, Spells Form,
+Bag of Holding, Drop Trash
+
+Things I forget to test:  Trade Backpacks, Auto-Attack

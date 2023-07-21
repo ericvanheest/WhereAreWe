@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Might_and_Magic_2_waw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Might_and_Magic_2\might_and_magic_2.waw.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MM4MonsterDefaults" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\might_and_magic_45\mm4monsterdefaults.dat.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MM5MonsterDefaults" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\might_and_magic_45\mm5monsterdefaults.dat.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MM45InventoryChar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\might_and_magic_45\mm45inventorychar.dat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MM4Monsters" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\might_and_magic_45\mm4monsters.dat.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ClickToAddNote" xml:space="preserve">
+    <value>Click here to add a note.</value>
+  </data>
+  <data name="MM3Monsters" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\might_and_magic_3\mm3monsters.dat.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Might_and_Magic_1_waw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Might_and_Magic_1\might_and_magic_1.waw.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MM3MonsterDefaults" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Might_and_Magic_3\mm3monsterdefaults.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pngActive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\pngactive.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MM2ExternalScripts" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Might_and_Magic_2\mm2externalscripts.dat.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MM1MonsterDefaults" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Might_and_Magic_1\mm1monsterdefaults.dat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Might_and_Magic_3_waw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Might_and_Magic_3\might_and_magic_3.waw.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pngMeleeCheck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\pngMeleeCheck.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MM2_Hirelings" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Might_and_Magic_2\MM2-Hirelings.dat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NotesModeNotice" xml:space="preserve">
+    <value>(Switch mode to "Notes" to enter notes for a square)</value>
+  </data>
+  <data name="pngGrid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\pngGrid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MM3InventoryChar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Might_and_Magic_3\mm3inventorychar.dat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="app" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\app.config;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="Might_and_Magic_45_waw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Might_and_Magic_45\might_and_magic_45.waw.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MM2MonsterDefaults" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\Might_and_Magic_2\mm2monsterdefaults.dat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MM3MonstersNames" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\might_and_magic_3\mm3monstersnames.dat.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MM5Monsters" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\might_and_magic_45\mm5monsters.dat.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="iconCursorAnchor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\cursors\iconcursoranchor.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCursorAnchorDouble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\cursors\iconcursoranchordouble.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCursorBlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\cursors\iconcursorblock.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCursorBlockDouble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\cursors\iconcursorblockdouble.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCursorCopy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\cursors\iconcursorcopy.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCursorCopyDouble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\cursors\iconcursorcopydouble.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCursorFill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\cursors\iconcursorfill.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCursorFillDouble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\cursors\iconcursorfilldouble.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCursorFillLines" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\cursors\iconcursorfilllines.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCursorFillLinesDouble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\cursors\iconcursorfilllinesdouble.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCursorHybrid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\cursors\iconcursorhybrid.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCursorHybridDouble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\cursors\iconcursorhybriddouble.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCursorNote" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\cursors\iconcursornote.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCursorNoteCopy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\cursors\iconcursornotecopy.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCursorNoteCopyDouble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\cursors\iconcursornotecopydouble.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCursorNoteDouble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\cursors\iconcursornotedouble.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCursorPencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\cursors\iconcursorpencil.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCursorPencilDouble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\cursors\iconcursorpencildouble.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconActiveMonster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconactivemonster.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconActiveSquare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconactivesquare.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconAnchor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconanchor.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconArrowFullUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconarrowfullup.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconArrowHalfUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconarrowhalfup.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCursor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconcursor.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconDoorFullHoriz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\icondoorfullhoriz.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconDoorHalfTop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\icondoorhalftop.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconExit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconexit.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconFragileHalfUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconfragilehalfup.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconGrateFullHoriz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\icongratefullhoriz.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconGrateHalfTop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\icongratehalftop.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconNone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconnone.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconOneMonster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\icononemonster.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconOneMonsterHighlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\icononemonsterhighlighted.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconSafe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconsafe.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconSpinner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconspinner.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconStairsDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconstairsdown.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconStairsUp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconstairsup.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconThreeMonsters" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconthreemonsters.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconThreeMonstersHighlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconthreemonstershighlighted.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconTwoMonsters" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\icontwomonsters.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconTwoMonstersHighlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\icontwomonstershighlighted.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconWhereAreWe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconwherearewe.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconYouAreHere" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconyouarehere.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wizardry_1_waw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_1\wizardry_1.waw.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_1_Item_List_mem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_1\wizardry_1-item_list.mem.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_1_Monster_List_mem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_1\wizardry_1-monster_list.mem.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_1_Treasure_List_mem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_1\wizardry_1-treasure_list.mem.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_1_Maps_mem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_1\wizardry_1-maps.mem.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_1_Inventory_Char" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_1\wizardry_1-inventory_char.dat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_2_Item_List_mem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_2\wizardry_2-item_list.mem.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_2_Maps_mem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_2\wizardry_2-maps.mem.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_2_Monster_List_mem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_2\wizardry_2-monster_list.mem.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_2_waw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_2\wizardry_2.waw.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_2_Treasure_List_mem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_2\wizardry_2-treasure_list.mem.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_3_Item_List_mem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_3\wizardry_3-item_list.mem.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_3_Maps_mem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_3\wizardry_3-maps.mem.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_3_Monster_List_mem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_3\wizardry_3-monster_list.mem.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_3_Treasure_List_mem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_3\wizardry_3-treasure_list.mem.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_3_waw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_3\wizardry_3.waw.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_4_Item_List_mem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_4\wizardry_4-item_list.mem.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_4_Monster_List_mem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_4\wizardry_4-monster_list.mem.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_4_waw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_4\wizardry_4.waw.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="iconRotateCCW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconrotateccw.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconRotateCW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconrotatecw.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wizardry_4_Maps_mem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_4\wizardry_4-maps.mem.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="iconPentagram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconpentagram.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCursorLive" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\cursors\iconcursorlive.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCursorLiveDouble" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\cursors\iconcursorlivedouble.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconOneNPC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\icononenpc.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconOneNPCHighlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\icononenpchighlighted.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconMonsterAndNPC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconmonsterandnpc.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconMonsterAndNPCHighlighted" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconmonsterandnpchighlighted.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wizardry_5_waw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_5\wizardry_5.waw.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_5_Item_List_mem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_5\wizardry_5-item_list.mem.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_5_Monster_List_mem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_5\wizardry_5-monster_list.mem.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="iconLockedFullHoriz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconlockedfullhoriz.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconLockedHalfTop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconlockedhalftop.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Wizardry_5_Inventory_Char" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_5\wizardry_5-inventory_char.dat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_5_Sector_Remap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_5\wizardry_5-sector_remap.dat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Wizardry_5_Treasure_List_mem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\wizardry_5\wizardry_5-treasure_list.mem.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Bards_Tale_1_waw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bards_tale_1\bards_tale_1.waw.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BT1InventoryChar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bards_tale_1\bt1inventorychar.dat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BT1_Item_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bards_tale_1\bt1_item_list.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BT1_Monster_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bards_tale_1\bt1_monster_list.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Bards_Tale_2_waw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bards_tale_2\bards_tale_2.waw.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BT2InventoryChar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bards_tale_2\bt2inventorychar.dat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BT2_Item_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bards_tale_2\bt2_item_list.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BT2_Monster_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bards_tale_2\bt2_monster_list.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Bards_Tale_3_waw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bards_tale_3\bards_tale_3.waw.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BT3_Item_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bards_tale_3\bt3_item_list.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BT3_Monster_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bards_tale_3\bt3_monster_list.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BT3InventoryChar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\bards_tale_3\bt3inventorychar.dat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EOB1InventoryChar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eye_of_the_beholder_1\eob1inventorychar.dat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EOB1_Monster_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eye_of_the_beholder_1\eob1_monster_list.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Eye_of_the_Beholder_1_waw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eye_of_the_beholder_1\eye_of_the_beholder_1.waw.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EOB1_Item_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eye_of_the_beholder_1\eob1_item_list.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="iconOneItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\icononeitem.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconTwoItems" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\icontwoitems.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconThreeItems" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconthreeitems.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconNortheastToSouth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\Icons\iconNortheastToSouth.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconNorthwestToSouth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\Icons\iconNorthwestToSouth.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\Icons\iconBar.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconSlash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\Icons\iconSlash.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconWestToNorth" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\Icons\iconWestToNorth.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconNorthwestToNorthEast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\Icons\iconNorthwestToNorthEast.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconArrowCap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\Icons\iconArrowCap.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconArrowCapDiag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\Icons\iconArrowCapDiag.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconCross" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\Icons\iconCross.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\Icons\iconX.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="iconY" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Common\Icons\iconY.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="EOB2InventoryChar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eye_of_the_beholder_2\eob2inventorychar.dat;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EOB2_Item_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eye_of_the_beholder_2\eob2_item_list.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="EOB2_Monster_List" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eye_of_the_beholder_2\eob2_monster_list.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Eye_of_the_Beholder_2_waw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\eye_of_the_beholder_2\eye_of_the_beholder_2.waw.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Ultima_1_waw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\ultima\ultima_1\ultima_1.waw.gz;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="iconYouAreHereDirectionless" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\common\icons\iconyouareheredirectionless.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

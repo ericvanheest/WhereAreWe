@@ -1,0 +1,2752 @@
+<MapBook version="1.0" title="Wizardry 5: Heart of the Maelstrom" IncreaseX="0" IncreaseY="1" OffsetX="-1" OffsetY="-1" QuickDoor="0">
+  <Bag>
+  </Bag>
+  <GridLines color="FFC0FFFF" style="0" width="1" />
+  <Unvisited fore="FFD3D3D3" back="FFA9A9A9" style="35" />
+  <FlaggedQuests />
+  <Sheet width="18" height="18" title="Legend" path="\" zoom="200" gameIndex="-1">
+    <Grid>H4sIAAAAAAAEAO2XQQ7CIBBF7d+ZuHHZW3pEFr3XyKAjaJto4oBQPwkh7StTSocXEBE5iwQp6xTLQYu0obdrpWj6XtIvaAjBL7LeixCZaltWxPLc17ImRUbXc0XqSu3PW4vkDXQ9ZtLCGyevyIU3kHPj1RvJHY++K2+g27kidaVb3sDPR0X6EdUHjm1yI3lj4n6DdJ0b2sL9nGKReQJyp4ssrXLD1xs00ui0njfqRSa908s8+51TWq5uemN0Wt8bVtHF9+6KxkXXbr8hm6tbcl+u7j+i9bxBOjqlN0jf5YZV7gpISUlJSUl3Sa8Rr5fM+CUAAA==</Grid>
+    <Notes>
+      <Note x="1" y="1" symbol="B">A border square that is not actually part of the map.  Cannot be accessed by any means.</Note>
+      <Note x="4" y="1" symbol="W">An ordinary solid wall in the dungeon.</Note>
+      <Note x="7" y="1" symbol="E">Forced Encounter:  The party will encounter the monster(s) specified.</Note>
+      <Note x="8" y="1" symbol="T">A teleporter to another location on the current map.</Note>
+      <Note x="7" y="2" symbol="s">A sign or other noninteractive information.</Note>
+      <Note x="8" y="2" symbol="n">Note - Contains information about the game that has no corresponding text or action in this square.</Note>
+      <Note x="9" y="2" symbol="t">A trap square that has only negative effects.</Note>
+      <Note x="1" y="3" symbol="U">A location that is generally unimportant and typically inaccessible by any means other than the Malor spell.</Note>
+      <Note x="4" y="3" symbol="!W">Secret Door: A passage that appears to be a wall, blocking vision, but can be walked through if detected.</Note>
+      <Note x="7" y="3" symbol=".">Stairs going down to a lower level.</Note>
+      <Note x="8" y="3" symbol=".">Stairs going up to a higher level.</Note>
+      <Note x="9" y="3" symbol="↺">A spinner that automatically rotates the party when activated.</Note>
+      <Note x="10" y="3" symbol="↓">Stepping on this square will move the party a specific number of squares in the direction indicated.  All intervening squares are activated (e.g., traps), but no barriers (e.g., walls) will prevent the movement.</Note>
+      <Note x="1" y="5" symbol="D">A location in which it is too dark for the party to see the details of the area (and will cancel any Milwa/Lomilwa spells that are active).</Note>
+      <Note x="4" y="5" symbol=".">One-Way: Party may pass through in the direction of the arrow but may not return (except by casting the teleportation spell "Malor")</Note>
+      <Note x="1" y="7" symbol="Ro">An internal room (cosmetic only).</Note>
+      <Note x="4" y="7" symbol=".">Door: Party may pass through both directions freely but must use the "Kick" command to do so.  Kicking down a door has a higher chance of a random encounter than walking through open areas.</Note>
+      <Note x="7" y="7" symbol=".">Locked Door: The door is locked only in the direction indicated by the solid block.  Some locked doors may be picked (or unlocked via the Desto spell); others may need a particular item to unlock it.</Note>
+      <Note x="1" y="9" symbol="Wa">A wall of solid rock that will instantly eradicate the party if they become located in it.</Note>
+      <Note x="4" y="9" symbol=".">One-way door:  Party may pass through in the direction from which the door exists (by using the "Kick" command), but may not return (except by casting the teleportation spell "Malor").    Kicking down a door has a higher chance of a random encounter than walking through open areas.</Note>
+      <Note x="7" y="9" symbol=".">Locked Door: A door that is locked from both directions.  Some locked doors may be picked (or unlocked via the Desto spell); others may need a particular item to unlock it.</Note>
+      <Note x="1" y="11" symbol="00">This square indicates the map position that corresponds to (0,0), for reference purposes.  Sometimes this square is not in an accessible location (e.g. solid rock).</Note>
+      <Note x="4" y="11" symbol=".">An invisible barrier that appears to be open space but cannot be passed through.</Note>
+      <Note x="4" y="13" symbol=".">An invisible barrier that appears to be open space but cannot be passed through, except in the direction indicated by the arrow.</Note>
+    </Notes>
+    <Icons>
+      <Icon x="7" y="3" id="10" dir="1" />
+      <Icon x="8" y="3" id="9" dir="1" />
+      <Icon x="4" y="5" id="2" dir="2" />
+      <Icon x="4" y="7" id="4" dir="2" />
+      <Icon x="5" y="7" id="4" dir="4" />
+      <Icon x="7" y="7" id="16" dir="2" />
+      <Icon x="8" y="7" id="4" dir="4" />
+      <Icon x="5" y="9" id="4" dir="4" />
+      <Icon x="7" y="9" id="16" dir="2" />
+      <Icon x="8" y="9" id="16" dir="4" />
+      <Icon x="4" y="13" id="2" dir="2" />
+    </Icons>
+  </Sheet>
+  <Sheet width="3" height="3" title="Castle" path="" zoom="200" gameIndex="0">
+    <Grid>H4sIAAAAAAAEAH2OAQoAIAgDaz/o/5/pZ8sVklE2GBHHqSTZyM7YaikKI11/UTzo33XfIDbVGwvL6frOORnZ5Htv9FSkVx3uAI5KEMQOAQAA</Grid>
+    <Notes>
+      <Note x="1" y="1" symbol="Ca">The Castle is not a map in the traditional sense; it is simply the only location "outside of the Maze."  The Tavern, Inn, Temple, Trading Post, and Edge of Town may all be accessed from the in-game menus from this location.</Note>
+    </Notes>
+    <Icons />
+  </Sheet>
+  <Sheet width="34" height="42" title="Maze Level 1" path="" zoom="100" gameIndex="1">
+    <Sections>
+      <Section x="25" y="1" w="8" h="8" tx="-109" ty="-102" />
+      <Section x="0" y="0" w="34" h="42" tx="-2" ty="31" />
+    </Sections>
+    <Grid>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</Grid>
+    <Notes>
+      <Note x="2" y="0" symbol="0">This is map column 0</Note>
+      <Note x="24" y="1" symbol="La">A little kettle filled with gold smiles and says, "Feed me".
+Talk:
+gold/feed/secret/eat:  Feed me gold and I'll tell a secret!  Donations 100 500 1000 2500 5000 G.P.
+aspect:  That will cost you extra!  That will cost 10000 G.P.  Will you pay it ?
+Yes:  (-10000 Gold) A man of knowledge knows nothing, until he knows of his own "Kingdom".
+No:  Feed me Feed me Feed me Feed me!
+Give gold:
+100:  Greet everyone with a hearty "Hail!" 
+500:  Find out why the Mad Stomper *stomps* 
+1000:  Use the power of the demon to open the gate of the mocking face.
+2500:  Beyond the hall of mirrors doth lie the Loon.
+5000:  To master the triaxial balance requires the power of the staffs, the sign of the cards, and the secret of the sacred rites!</Note>
+      <Note x="29" y="1" symbol="n">(the teleporter on level 8 at 39,91 brings the party here)</Note>
+      <Note x="9" y="3" symbol=".">Stairs leading down follow them (Y/N) ?
+Y: {map:Maze Level 2} (-9,8)</Note>
+      <Note x="7" y="4" symbol="Si">If you have not unlocked the door: Upon the wall lies a silver door
+Use "Silver Key": Click!  The door unlocks</Note>
+      <Note x="8" y="4" symbol="Si">If you have not unlocked the door: Upon the wall lies a silver door
+Use "Silver Key": Click!  The door unlocks</Note>
+      <Note x="22" y="4" symbol="Va">A dark statue of some great fanged beast stands a lonely vigil of the hallway.  Inscribed upon its base are the following words:  I am the creature of the night and dwell in shadows of the light, who shall feel my thirsting breath is doomed the life of living death!  What am I ?
+Answer VAMPIRE:  The statue trembles!  It slowly inches across the floor, revealing a secret entrance!  (creates a door to the east)
+Otherwise:  From deep within the bowels of the statue comes the beating sound of leathery wings!  (Forced Encounter with Werebat, Black Bat)</Note>
+      <Note x="23" y="4" symbol="Ir">(Entering this square activates Ironose; after being activated you have about a 10% chance to encounter him regardless of your location.)
+hail: Hail friends!  I trade in selected fine wares, crafted especially for those with discerning tastes and a flair for the unique.  Might you be interested ?
+N: Perhaps some other time... (Ironose leaves)
+Y: My prices are the best anywhere!
+prices: Why don't you "barter" and take a look for yourself.
+If you buy "Brass Key" from Ironose: The key belonged to the conveyor repairman, if that's of any help.</Note>
+      <Note x="29" y="4" color="FF000000" symbol="Mo">If you have not defeated Lala Moo-Moo:  An ominous aura glows from a throne within the center of the room... A great wooly figure arises from the mist and says, "We meet at last, my little tarts!"  "If power you seek, then arise!"  (Forced Encounter with Lala Moo-Moo)
+Victory: A chute!  (Teleport to 8,9)</Note>
+      <Note x="10" y="7" symbol="Gb">Encounter with G'bli Gedook
+I am G'bli Gedook, High Priest of the Brotherhood.  La-La be praised!
+Buy:  Figurine (Holy Talisman) (25000 Gold)
+Talk:
+help: What can I help you with?
+orb/llylgamyn: The Divine Orb of Llylgamyn!  Use the orb to open the triaxial gate, and then descend into the fury, into the heart of the maelstrom!  May La-La be with you!
+thank: Don't mention it...
+maybe: Is that a maybe-yes or a maybe-no ?
+(profanity): Same to you, bud...
+temple: What about the temple?
+vanished: That's what I said!
+triaxial/gate/portal:  The triaxial gate is the portal for the elemental forces, earth, water, fire, and air to enter our plane of existence.  It is the gatekeeper who maintains the eternal balance among these forces.  La-La be praised!
+la-la: La-La be praised!
+gatekeeper:  The Gatekeeper is the high guardian of the triaxial gate.  It is he that understands the true nature of the the triaxial gate and the elemental forces that travel through it.  Do you seek the gatekeeper ? 
+Yes:  La-La be praised!  We have great need of thee.  The gatekeeper has vanished into the triaxial gate.  It is there that you must seek him out.
+No:  Then you are not the ones I await.
+water/earth/fire/air:  Whenever the elemental forces become unstable, the balance is disturbed, and a powerful rift materializes in our world.  The gatekeeper enters into the nexus of this rift, known as the heart, and therein performs the sacred rites, thus realigning the forces and restoring the balance.
+heart/nexus/rift:  The elemental rift has appeared once again, caused by evil incantations originating from within this temple.  These dark incantations were invoked by an archrival of the gatekeeper, a demonic diety known as "The SORN".  La-La protect us!
+incantations/demonic/evil/sorn: The SORN is the very essence of evil incarnate, a diabolical fiend whose source of power comes from spreading chaos and destruction in our world.   Once the rift had appeared, the SORN waited until the gatekeeper entered into the nexus, and then trapped him there, within the very heart of the forces over which the gatekeeper was the only source of control!  La-La have mercy!
+hello:  Welcome to the temple of the brotherhood.  La-la be praised!
+brotherhood:  The brotherhood is an ancient order of disciples that follow the wisdom and teachings of the gatekeeper.  La-La be praised!
+sacred/rites: Only the gatekeeper knows the secret of the sacred rites!</Note>
+      <Note x="15" y="8" symbol="s">And a voice echoed from far away: Where death reigns under moonlit sky, there too shall fall time and all time lost </Note>
+      <Note x="17" y="8" symbol="E">Forced Encounter with Golem A</Note>
+      <Note x="10" y="14" symbol="Br">* Temple of the Brotherhood * Enter Here Ye Worthy 
+If you have "Orb of Llylgamyn": A voice calls: "Welcome brothers!  Thou art worthy"
+Otherwise: A voice calls: Ye forgot to bring the orb!! (teleport back one space)</Note>
+      <Note x="29" y="17" symbol="Si">Inspect Hidden Items: Hmmmm...  Looks like a small coffer!  Will you search (Y/N) ?
+Y: +Item "Silver Key" (unless you already have one)</Note>
+      <Note x="30" y="17" symbol="s">Old crates lie broken and scattered about the room.  What a load of junk.</Note>
+      <Note x="15" y="20" symbol="n">(entering this square unlocks the door in both directions)</Note>
+      <Note x="28" y="21" symbol="t">Pit: 1d8 damage</Note>
+      <Note x="10" y="22" symbol="s">You stand in the center of a great chamber.  Engraved upon the floor are these peculiar marks:
+ // !  * :,: ====
+// !  U ; : ---- 
+(The chute at -105,-105 brings the party here)</Note>
+      <Note x="17" y="22" symbol="Po">A shimmering portal enter it (Y/N) ?
+Y: {map:Maze Level 4} (6,3)</Note>
+      <Note x="20" y="22" symbol="Or">A radiant glow bathes the room in a rose colored light.  It appears to be coming from a small stone altar.  Will you search (Y/N) ?
+Y: +Item "Orb of Llylgamyn" (unless you already have one)</Note>
+      <Note x="11" y="26" symbol=".">Rope going below.  Climb it (Y/N) ?
+Y: {map:Maze Level 2} (-5, 2)</Note>
+      <Note x="6" y="27" symbol="Zo">Bones and rusting armor lie rotting upon the floor.  Alas, poor warriors!
+Inspect Hidden Items: The bones begin to rattle! (Forced Encounter with Zombie)
+Victory: +Item "Bag of Tokens"</Note>
+      <Note x="8" y="27" symbol="Mo">Attached to a large motor is a series of inter-connected parts, each with a corresponding lever.  A plaque upon the motor reads:
+&lt;To drive conveyor&gt; Attach belt(A) to pulley(C) then connect shaft(B) after affixing pulley(C) before engaging gear(D) 
+&lt;To stop conveyor&gt; Reverse the above procedure  Warning!  You must disengage all (4) parts to prevent unwanted accidents 
+There are 4 levers here  Press letter (A) through (D) to disengage parts
+If you enter DBCA: Bruptt!!  The motor grinds to a halt!
+Otherwise: A sign flashes &lt;EMERGENCY&gt; and a warning buzzer goes "EEP EEP" (teleport to {map:Maze Level 2} -13,7)</Note>
+      <Note x="14" y="27" symbol=".">* Ye Castle Transport * Visit the torture chamber!  See the Hurkle Beast!!  &lt;Deposit 1 token&gt; 
+Use "Bag of Tokens":  Whirrr!  Glitzzzz!!  Buuzzzzztt!!!  The transport comes to life.  A shimmering portal.  Enter it (Y/N) ?
+Y: Teleport to {map:Maze Level 2} (1,-8)</Note>
+      <Note x="8" y="28" symbol="s">* Ye Motor Room * Access limited to top brass and service personnel only!
+If you use "Brass Key": Unlock the north door</Note>
+      <Note x="8" y="29" symbol="s">Warning!  Do not enter when motor is * ON * 
+If you have not deactivated the motor at (6,4): A little red light blinks ominously </Note>
+      <Note x="8" y="30" symbol="→">If you have not deactivated the motor at (6,4): A conveyor belt! (Move east 6 squares)</Note>
+      <Note x="14" y="30" symbol=".">A shaft!  (Teleport to {map:Maze Level 2} -16,-6)</Note>
+      <Note x="0" y="31" symbol="0">This is map row 0</Note>
+      <Note x="2" y="31" symbol=".">(This is the map origin - 0,0)
+Stairs leading up.  Follow them (Y/N) ?
+Y: {map:Castle} (0,0)</Note>
+      <Note x="33" y="31" symbol="0">This is map row 0</Note>
+      <Note x="2" y="32" symbol="s">A sign upon the wall reads: Enter ye who seek the Heart to one day rule the Maelstrom </Note>
+      <Note x="20" y="37" symbol=".">A shaft!  (teleport to {map:Maze Level 6} 3,-27)</Note>
+      <Note x="21" y="37" symbol="s">Adix non viote monous!</Note>
+      <Note x="2" y="41" symbol="0">This is map column 0</Note>
+    </Notes>
+    <Icons>
+      <Icon x="2" y="1" id="4" dir="3" />
+      <Icon x="10" y="1" id="4" dir="2" />
+      <Icon x="11" y="1" id="4" dir="4" />
+      <Icon x="11" y="1" id="4" dir="3" />
+      <Icon x="13" y="1" id="4" dir="3" />
+      <Icon x="14" y="1" id="4" dir="3" />
+      <Icon x="16" y="1" id="4" dir="3" />
+      <Icon x="18" y="1" id="4" dir="2" />
+      <Icon x="19" y="1" id="4" dir="4" />
+      <Icon x="2" y="2" id="4" dir="1" />
+      <Icon x="11" y="2" id="4" dir="1" />
+      <Icon x="11" y="2" id="4" dir="3" />
+      <Icon x="13" y="2" id="4" dir="1" />
+      <Icon x="14" y="2" id="4" dir="1" />
+      <Icon x="16" y="2" id="4" dir="1" />
+      <Icon x="16" y="2" id="4" dir="3" />
+      <Icon x="17" y="2" id="4" dir="3" />
+      <Icon x="22" y="2" id="4" dir="3" />
+      <Icon x="9" y="3" id="10" dir="1" />
+      <Icon x="11" y="3" id="4" dir="1" />
+      <Icon x="11" y="3" id="4" dir="2" />
+      <Icon x="12" y="3" id="4" dir="4" />
+      <Icon x="15" y="3" id="4" dir="2" />
+      <Icon x="16" y="3" id="4" dir="4" />
+      <Icon x="16" y="3" id="4" dir="1" />
+      <Icon x="17" y="3" id="4" dir="1" />
+      <Icon x="22" y="3" id="4" dir="1" />
+      <Icon x="3" y="4" id="4" dir="3" />
+      <Icon x="7" y="4" id="16" dir="2" />
+      <Icon x="8" y="4" id="16" dir="4" />
+      <Icon x="22" y="4" id="4" dir="2" />
+      <Icon x="23" y="4" id="4" dir="4" />
+      <Icon x="3" y="5" id="4" dir="1" />
+      <Icon x="7" y="5" id="4" dir="2" />
+      <Icon x="8" y="5" id="4" dir="4" />
+      <Icon x="9" y="5" id="4" dir="3" />
+      <Icon x="10" y="5" id="4" dir="3" />
+      <Icon x="11" y="5" id="4" dir="3" />
+      <Icon x="12" y="5" id="4" dir="2" />
+      <Icon x="13" y="5" id="4" dir="4" />
+      <Icon x="13" y="5" id="4" dir="2" />
+      <Icon x="14" y="5" id="4" dir="4" />
+      <Icon x="17" y="5" id="4" dir="2" />
+      <Icon x="18" y="5" id="4" dir="4" />
+      <Icon x="29" y="5" id="4" dir="3" />
+      <Icon x="7" y="6" id="4" dir="2" />
+      <Icon x="8" y="6" id="4" dir="4" />
+      <Icon x="9" y="6" id="4" dir="1" />
+      <Icon x="10" y="6" id="4" dir="1" />
+      <Icon x="10" y="6" id="4" dir="3" />
+      <Icon x="11" y="6" id="4" dir="1" />
+      <Icon x="12" y="6" id="4" dir="2" />
+      <Icon x="13" y="6" id="4" dir="4" />
+      <Icon x="15" y="6" id="4" dir="2" />
+      <Icon x="16" y="6" id="4" dir="4" />
+      <Icon x="29" y="6" id="4" dir="1" />
+      <Icon x="4" y="7" id="4" dir="2" />
+      <Icon x="5" y="7" id="4" dir="4" />
+      <Icon x="7" y="7" id="4" dir="2" />
+      <Icon x="8" y="7" id="4" dir="4" />
+      <Icon x="9" y="7" id="4" dir="2" />
+      <Icon x="10" y="7" id="4" dir="4" />
+      <Icon x="10" y="7" id="4" dir="1" />
+      <Icon x="10" y="7" id="4" dir="2" />
+      <Icon x="10" y="7" id="4" dir="3" />
+      <Icon x="11" y="7" id="4" dir="4" />
+      <Icon x="12" y="7" id="4" dir="2" />
+      <Icon x="13" y="7" id="4" dir="4" />
+      <Icon x="22" y="7" id="4" dir="3" />
+      <Icon x="7" y="8" id="4" dir="2" />
+      <Icon x="8" y="8" id="4" dir="4" />
+      <Icon x="10" y="8" id="4" dir="1" />
+      <Icon x="12" y="8" id="4" dir="2" />
+      <Icon x="13" y="8" id="4" dir="4" />
+      <Icon x="15" y="8" id="4" dir="3" />
+      <Icon x="17" y="8" id="4" dir="3" />
+      <Icon x="17" y="8" id="4" dir="3" />
+      <Icon x="17" y="8" id="4" dir="3" />
+      <Icon x="22" y="8" id="4" dir="1" />
+      <Icon x="15" y="9" id="4" dir="1" />
+      <Icon x="17" y="9" id="4" dir="1" />
+      <Icon x="26" y="9" id="4" dir="2" />
+      <Icon x="27" y="9" id="4" dir="4" />
+      <Icon x="32" y="9" id="4" dir="3" />
+      <Icon x="2" y="10" id="4" dir="3" />
+      <Icon x="7" y="10" id="4" dir="2" />
+      <Icon x="8" y="10" id="4" dir="4" />
+      <Icon x="12" y="10" id="4" dir="2" />
+      <Icon x="13" y="10" id="4" dir="4" />
+      <Icon x="28" y="10" id="4" dir="2" />
+      <Icon x="29" y="10" id="4" dir="4" />
+      <Icon x="32" y="10" id="4" dir="1" />
+      <Icon x="32" y="10" id="4" dir="3" />
+      <Icon x="2" y="11" id="4" dir="1" />
+      <Icon x="7" y="11" id="4" dir="3" />
+      <Icon x="9" y="11" id="4" dir="3" />
+      <Icon x="11" y="11" id="4" dir="3" />
+      <Icon x="13" y="11" id="4" dir="3" />
+      <Icon x="19" y="11" id="4" dir="2" />
+      <Icon x="20" y="11" id="4" dir="4" />
+      <Icon x="21" y="11" id="4" dir="3" />
+      <Icon x="32" y="11" id="4" dir="1" />
+      <Icon x="3" y="12" id="4" dir="2" />
+      <Icon x="4" y="12" id="4" dir="4" />
+      <Icon x="7" y="12" id="4" dir="1" />
+      <Icon x="9" y="12" id="4" dir="1" />
+      <Icon x="11" y="12" id="4" dir="1" />
+      <Icon x="13" y="12" id="4" dir="1" />
+      <Icon x="18" y="12" id="16" dir="3" />
+      <Icon x="21" y="12" id="4" dir="1" />
+      <Icon x="14" y="13" id="4" dir="3" />
+      <Icon x="18" y="13" id="4" dir="1" />
+      <Icon x="21" y="13" id="4" dir="2" />
+      <Icon x="22" y="13" id="4" dir="4" />
+      <Icon x="23" y="13" id="4" dir="3" />
+      <Icon x="9" y="14" id="4" dir="2" />
+      <Icon x="10" y="14" id="4" dir="4" />
+      <Icon x="10" y="14" id="4" dir="2" />
+      <Icon x="10" y="14" id="4" dir="3" />
+      <Icon x="11" y="14" id="4" dir="4" />
+      <Icon x="14" y="14" id="4" dir="1" />
+      <Icon x="15" y="14" id="4" dir="2" />
+      <Icon x="16" y="14" id="4" dir="4" />
+      <Icon x="22" y="14" id="4" dir="3" />
+      <Icon x="23" y="14" id="4" dir="1" />
+      <Icon x="23" y="14" id="4" dir="3" />
+      <Icon x="3" y="15" id="4" dir="3" />
+      <Icon x="10" y="15" id="4" dir="1" />
+      <Icon x="15" y="15" id="4" dir="3" />
+      <Icon x="16" y="15" id="4" dir="2" />
+      <Icon x="17" y="15" id="4" dir="4" />
+      <Icon x="18" y="15" id="4" dir="3" />
+      <Icon x="21" y="15" id="4" dir="3" />
+      <Icon x="22" y="15" id="4" dir="1" />
+      <Icon x="22" y="15" id="4" dir="3" />
+      <Icon x="23" y="15" id="4" dir="1" />
+      <Icon x="23" y="15" id="4" dir="3" />
+      <Icon x="24" y="15" id="4" dir="3" />
+      <Icon x="25" y="15" id="4" dir="3" />
+      <Icon x="28" y="15" id="4" dir="3" />
+      <Icon x="3" y="16" id="4" dir="1" />
+      <Icon x="15" y="16" id="4" dir="1" />
+      <Icon x="15" y="16" id="4" dir="2" />
+      <Icon x="16" y="16" id="4" dir="4" />
+      <Icon x="16" y="16" id="4" dir="2" />
+      <Icon x="17" y="16" id="4" dir="4" />
+      <Icon x="18" y="16" id="4" dir="1" />
+      <Icon x="19" y="16" id="4" dir="3" />
+      <Icon x="20" y="16" id="4" dir="3" />
+      <Icon x="21" y="16" id="4" dir="1" />
+      <Icon x="21" y="16" id="4" dir="3" />
+      <Icon x="22" y="16" id="4" dir="1" />
+      <Icon x="22" y="16" id="4" dir="3" />
+      <Icon x="23" y="16" id="4" dir="1" />
+      <Icon x="24" y="16" id="4" dir="1" />
+      <Icon x="24" y="16" id="4" dir="3" />
+      <Icon x="25" y="16" id="4" dir="1" />
+      <Icon x="25" y="16" id="4" dir="3" />
+      <Icon x="28" y="16" id="4" dir="1" />
+      <Icon x="14" y="17" id="4" dir="3" />
+      <Icon x="15" y="17" id="4" dir="2" />
+      <Icon x="16" y="17" id="4" dir="4" />
+      <Icon x="17" y="17" id="4" dir="3" />
+      <Icon x="19" y="17" id="4" dir="1" />
+      <Icon x="19" y="17" id="4" dir="3" />
+      <Icon x="20" y="17" id="4" dir="1" />
+      <Icon x="20" y="17" id="4" dir="3" />
+      <Icon x="21" y="17" id="4" dir="1" />
+      <Icon x="21" y="17" id="4" dir="3" />
+      <Icon x="22" y="17" id="4" dir="1" />
+      <Icon x="23" y="17" id="4" dir="3" />
+      <Icon x="24" y="17" id="4" dir="1" />
+      <Icon x="24" y="17" id="4" dir="3" />
+      <Icon x="25" y="17" id="4" dir="1" />
+      <Icon x="30" y="17" id="4" dir="3" />
+      <Icon x="2" y="18" id="4" dir="2" />
+      <Icon x="3" y="18" id="4" dir="4" />
+      <Icon x="14" y="18" id="4" dir="1" />
+      <Icon x="14" y="18" id="4" dir="2" />
+      <Icon x="15" y="18" id="4" dir="4" />
+      <Icon x="17" y="18" id="4" dir="1" />
+      <Icon x="17" y="18" id="4" dir="3" />
+      <Icon x="19" y="18" id="4" dir="1" />
+      <Icon x="20" y="18" id="4" dir="1" />
+      <Icon x="21" y="18" id="4" dir="1" />
+      <Icon x="21" y="18" id="4" dir="3" />
+      <Icon x="22" y="18" id="4" dir="3" />
+      <Icon x="23" y="18" id="4" dir="1" />
+      <Icon x="23" y="18" id="4" dir="3" />
+      <Icon x="24" y="18" id="4" dir="1" />
+      <Icon x="30" y="18" id="4" dir="1" />
+      <Icon x="30" y="18" id="16" dir="1" />
+      <Icon x="31" y="18" id="4" dir="2" />
+      <Icon x="32" y="18" id="4" dir="4" />
+      <Icon x="7" y="19" id="4" dir="3" />
+      <Icon x="12" y="19" id="4" dir="2" />
+      <Icon x="13" y="19" id="4" dir="4" />
+      <Icon x="13" y="19" id="4" dir="3" />
+      <Icon x="14" y="19" id="4" dir="2" />
+      <Icon x="15" y="19" id="4" dir="4" />
+      <Icon x="17" y="19" id="4" dir="1" />
+      <Icon x="19" y="19" id="4" dir="2" />
+      <Icon x="20" y="19" id="4" dir="4" />
+      <Icon x="21" y="19" id="4" dir="1" />
+      <Icon x="22" y="19" id="4" dir="1" />
+      <Icon x="22" y="19" id="4" dir="3" />
+      <Icon x="23" y="19" id="4" dir="1" />
+      <Icon x="29" y="19" id="4" dir="3" />
+      <Icon x="31" y="19" id="4" dir="3" />
+      <Icon x="3" y="20" id="4" dir="3" />
+      <Icon x="5" y="20" id="4" dir="3" />
+      <Icon x="7" y="20" id="4" dir="1" />
+      <Icon x="13" y="20" id="4" dir="1" />
+      <Icon x="15" y="20" id="4" dir="2" />
+      <Icon x="16" y="20" id="16" dir="4" />
+      <Icon x="17" y="20" id="4" dir="2" />
+      <Icon x="18" y="20" id="4" dir="4" />
+      <Icon x="22" y="20" id="4" dir="1" />
+      <Icon x="23" y="20" id="16" dir="3" />
+      <Icon x="29" y="20" id="4" dir="1" />
+      <Icon x="30" y="20" id="4" dir="2" />
+      <Icon x="31" y="20" id="4" dir="4" />
+      <Icon x="31" y="20" id="4" dir="1" />
+      <Icon x="3" y="21" id="4" dir="1" />
+      <Icon x="4" y="21" id="4" dir="3" />
+      <Icon x="5" y="21" id="4" dir="1" />
+      <Icon x="14" y="21" id="4" dir="3" />
+      <Icon x="17" y="21" id="4" dir="3" />
+      <Icon x="20" y="21" id="4" dir="3" />
+      <Icon x="23" y="21" id="4" dir="1" />
+      <Icon x="4" y="22" id="4" dir="1" />
+      <Icon x="14" y="22" id="4" dir="1" />
+      <Icon x="16" y="22" id="4" dir="2" />
+      <Icon x="17" y="22" id="4" dir="4" />
+      <Icon x="17" y="22" id="4" dir="1" />
+      <Icon x="17" y="22" id="4" dir="2" />
+      <Icon x="17" y="22" id="4" dir="3" />
+      <Icon x="18" y="22" id="4" dir="4" />
+      <Icon x="19" y="22" id="4" dir="2" />
+      <Icon x="20" y="22" id="4" dir="4" />
+      <Icon x="20" y="22" id="4" dir="1" />
+      <Icon x="20" y="22" id="4" dir="2" />
+      <Icon x="20" y="22" id="4" dir="3" />
+      <Icon x="21" y="22" id="4" dir="4" />
+      <Icon x="29" y="22" id="4" dir="2" />
+      <Icon x="30" y="22" id="4" dir="4" />
+      <Icon x="13" y="23" id="4" dir="3" />
+      <Icon x="14" y="23" id="4" dir="3" />
+      <Icon x="17" y="23" id="4" dir="1" />
+      <Icon x="20" y="23" id="4" dir="1" />
+      <Icon x="2" y="24" id="4" dir="2" />
+      <Icon x="3" y="24" id="4" dir="4" />
+      <Icon x="5" y="24" id="4" dir="2" />
+      <Icon x="6" y="24" id="4" dir="4" />
+      <Icon x="13" y="24" id="4" dir="1" />
+      <Icon x="13" y="24" id="4" dir="3" />
+      <Icon x="14" y="24" id="4" dir="1" />
+      <Icon x="14" y="24" id="4" dir="2" />
+      <Icon x="14" y="24" id="4" dir="3" />
+      <Icon x="15" y="24" id="4" dir="4" />
+      <Icon x="12" y="25" id="4" dir="2" />
+      <Icon x="13" y="25" id="4" dir="1" />
+      <Icon x="14" y="25" id="4" dir="1" />
+      <Icon x="4" y="26" id="4" dir="2" />
+      <Icon x="5" y="26" id="4" dir="4" />
+      <Icon x="11" y="26" id="10" dir="1" />
+      <Icon x="14" y="26" id="4" dir="3" />
+      <Icon x="8" y="27" id="4" dir="3" />
+      <Icon x="8" y="27" id="4" dir="3" />
+      <Icon x="9" y="27" id="4" dir="2" />
+      <Icon x="10" y="27" id="4" dir="4" />
+      <Icon x="13" y="27" id="4" dir="2" />
+      <Icon x="14" y="27" id="4" dir="4" />
+      <Icon x="14" y="27" id="4" dir="1" />
+      <Icon x="14" y="27" id="4" dir="2" />
+      <Icon x="14" y="27" id="4" dir="3" />
+      <Icon x="14" y="27" id="10" dir="1" />
+      <Icon x="15" y="27" id="4" dir="4" />
+      <Icon x="4" y="28" id="16" dir="2" />
+      <Icon x="5" y="28" id="4" dir="4" />
+      <Icon x="8" y="28" id="16" dir="1" />
+      <Icon x="8" y="28" id="16" dir="1" />
+      <Icon x="8" y="28" id="16" dir="1" />
+      <Icon x="14" y="28" id="4" dir="1" />
+      <Icon x="6" y="29" id="4" dir="3" />
+      <Icon x="8" y="29" id="4" dir="3" />
+      <Icon x="10" y="29" id="4" dir="3" />
+      <Icon x="12" y="29" id="4" dir="3" />
+      <Icon x="4" y="30" id="4" dir="2" />
+      <Icon x="5" y="30" id="4" dir="4" />
+      <Icon x="6" y="30" id="4" dir="1" />
+      <Icon x="6" y="30" id="4" dir="3" />
+      <Icon x="8" y="30" id="4" dir="1" />
+      <Icon x="8" y="30" id="4" dir="3" />
+      <Icon x="10" y="30" id="4" dir="1" />
+      <Icon x="10" y="30" id="4" dir="3" />
+      <Icon x="12" y="30" id="4" dir="1" />
+      <Icon x="12" y="30" id="4" dir="3" />
+      <Icon x="13" y="30" id="4" dir="2" />
+      <Icon x="14" y="30" id="4" dir="4" />
+      <Icon x="14" y="30" id="10" dir="1" />
+      <Icon x="17" y="30" id="16" dir="2" />
+      <Icon x="18" y="30" id="4" dir="4" />
+      <Icon x="2" y="31" id="9" dir="1" />
+      <Icon x="6" y="31" id="4" dir="1" />
+      <Icon x="8" y="31" id="4" dir="1" />
+      <Icon x="10" y="31" id="4" dir="1" />
+      <Icon x="12" y="31" id="4" dir="1" />
+      <Icon x="20" y="36" id="4" dir="2" />
+      <Icon x="20" y="36" id="4" dir="3" />
+      <Icon x="21" y="36" id="4" dir="4" />
+      <Icon x="21" y="36" id="4" dir="3" />
+      <Icon x="20" y="37" id="4" dir="1" />
+      <Icon x="20" y="37" id="10" dir="1" />
+      <Icon x="21" y="37" id="4" dir="1" />
+    </Icons>
+  </Sheet>
+  <Sheet width="34" height="34" title="Maze Level 2" path="" zoom="100" gameIndex="2">
+    <Sections>
+      <Section x="0" y="0" w="34" h="34" tx="-18" ty="15" />
+    </Sections>
+    <Grid>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</Grid>
+    <Notes>
+      <Note x="18" y="0" symbol="0">This is map column 0</Note>
+      <Note x="31" y="2" symbol="?">(there is an event associated with this square, but there seems to be no way to activate it)</Note>
+      <Note x="27" y="5" symbol="Du">Quack!  A humble shrine sits peacefully beside a bubbling fountain.  A small plaque upon the shrine reads as follows: Bubba's Health Spa.
+Who will wade ?
+A/B/C:  Restore all HP, character becomes Asleep
+(Entering this square gets the attention of the Duck of Sparks.  Afterward, you have a good chance of encountering the Duck of Sparks regardless of your location.)
+Encounter with The Duck of Sparks
+Quack Quack!  The duck of sparks, spiritual consultant at yer service.
+Talk:
+hail: Quack!  If ya wanna know about spirits then ya've come to the right place!
+consultant:  My consultant's fee is 500 G.P.  That will cost 500 G.P.  Will you pay it ?
+Yes: Quack!  If ya wanna get rid of a pesky spirit, just mix one part slime to one part jelly, then add a bit of Mugwump.  Or was it newt?  Quack!  It's been awhile ya know...
+No: Quack!  Cheapskates.  The duck of sparks leaves...
+pool/swim: Quack!  Swimming's a snap!  Just wade in the shallow parts fer awhile, till ya get the hang of it.  Then dive on down a little deeper.  The more ya swim, the The best divers can get all the way to the bottom, where lots of stuff is just waiting ta be found.
+Give "Rubber Duck":  Quack!  O wunderful day, my little lost ducky has found its way home!  Quack!!!  Here, take the wand.  Hope it's of use.  (+Item "Munke Wand")  A thief by the name of The Snatch sold it ta me.  It was supposed to have some kind of magic power, but it never did anything fer me.  Quack!</Note>
+      <Note x="31" y="5" symbol="s">* Ye * * Dragon's * * Flagon * &lt;Fine Food and Ale&gt; </Note>
+      <Note x="31" y="6" symbol="Dr">Encounter with random friendly character
+Talk:
+Hail: Hail strangers!  Buy us a drink ?  That will cost 100 G.P.  Will you pay it ? 
+Y: (-100 Gold) Cheers!
+(Ferocious Fred): I've heard tales of a golden pool, whose bottom is laden with gold!
+(Evil Roe Slade): Though a hawk may fly like the wind, it is the lark that calmly travels.
+(Renegade Rob):  "Seek thy destiny," so sayeth Loon.
+(Ribald Ron):  I'd trade my kingdom for a fuff, but thee needs a wand from the duck!
+(Norman the Noble):  I heard a rumor that in "one" of the "eight", a useful item was concealed!
+N: Go get em, boys!  (Forced Encounter with Level 4 Fighter)
+hawk/lark/wand/duck/loon:  What about the &lt;word&gt; ?</Note>
+      <Note x="9" y="7" symbol=".">Stairs leading up.  Follow them (Y/N) ?
+Y: {map:Maze Level 1} (7,28)</Note>
+      <Note x="5" y="8" symbol="t">A pit!  (2d8 damage)</Note>
+      <Note x="26" y="8" symbol="Gu">Forced Encounter with The Guardian</Note>
+      <Note x="11" y="12" symbol="Ru">Encounter with The Ruby Warlock
+"Hold!  I am the Ruby Warlock, and no one may pass without drink for the mettle of my cup!" 
+Give "Bottle of Rum":   Ahhh!  My Favorite Brand!  You may pass.   The Ruby Warlock leaves...</Note>
+      <Note x="22" y="12" symbol="Ha">Forced Encounter
+Inspect Hidden Items:  A hidden compartment lies uncovered... Will you search (Y/N) ?
+Y: +Item "Hacksaw"</Note>
+      <Note x="13" y="13" symbol=".">Rope from above.  Climb it (Y/N) ?
+Y: {map:Maze Level 1} (9,5)</Note>
+      <Note x="0" y="15" symbol="0">This is map row 0</Note>
+      <Note x="18" y="15" symbol="00">(This is the map origin - 0,0)</Note>
+      <Note x="20" y="15" symbol="s">A voice cries in the dark: Find the tomb to find the Loon.  Find the room else find your doom!</Note>
+      <Note x="22" y="15" symbol="Sp">Before you sits a small encrusted chest, adorned with fine jewels.  Suddenly, a spirit emerges and says, "Begone!" And the chest disappears!  Haunting laughter echoes through the chamber.
+Use "Potion of Spirit-Away":  A billowing smoke emerges from the potion and engulfs the room, seeping into every corner of the chamber...  From high above comes the sound of a spectral scream.  Before you sits a small encrusted chest, adorned with fine jewels.  Will you search (Y/N) ?
+Y: +Item "Jeweled Scepter"</Note>
+      <Note x="26" y="15" symbol="Ru">Upon a table in the center of the roomare bottles of various potions.  A sign above the table reads:  * Rudolph's Spirit Emporium * Good for ails of a spiritual nature.  Caution!  Use only as directed.  The fee is 250 G.P.  Will you pay (Y/N) ?
+Y: (-250 Gold) There are 6 bottles here press letter (A) through (F) to mix potions
+(A) Juice of Newt 
+(B) Mulched Batlips 
+(C) Amoeba Jelly 
+(D) Mugwump Squeezings
+(E) Bugworm Seltzer 
+(F) Minced Slime 
+Use A, C, F (in any order):  Success!  You made a magic potion!!  (+Item "Potion of Spirit-Away")
+Otherwise:  Oops!  The mixture explodes!!  (4d6 damage)</Note>
+      <Note x="33" y="15" symbol="0">This is map row 0</Note>
+      <Note x="1" y="16" symbol="t">A pit!  (2d8 damage)</Note>
+      <Note x="25" y="19" symbol="⇅">There are buttons here marked (A) through (D)  Press one.
+A: (remain at this location)
+B: {map:Maze Level 3} (7,-4)
+C: {map:Maze Level 4} (7,-4)
+D: {map:Maze Level 5} (7,-4)</Note>
+      <Note x="2" y="21" symbol="t">A pit!  (2d8 damage)</Note>
+      <Note x="19" y="23" symbol="Po">A shimmering portal. Enter it (Y/N) ?
+Y: {map:Maze Level 1} (12,4)
+(Entering this square activates the Hurkle Beast.  After activation, there is a chance to encounter the Hurkle Beast regardless of your location on this level.)</Note>
+      <Note x="8" y="24" symbol="s">You stand in the middle of a large cavern.  Carved into the floor are these mysterious runes:
+*--- + : !  ====
+ '--- : ; '/ ---- </Note>
+      <Note x="2" y="27" symbol="Po">Small black toads and warty things lie puddled in a foul smelling pool.
+Who will wade ?
+A: Character becomed poisoned
+B: 1d8 damage
+C: Character becomes paralyzed
+D: 2d8 damage
+E: +10 spell points (4/3/2/1)
+F: Encounter with Spelunker</Note>
+      <Note x="22" y="27" symbol="s">A sign reads: please do not feed the Hurkle Beast</Note>
+      <Note x="26" y="27" symbol="t">A pit!  (3d8 damage)</Note>
+      <Note x="8" y="29" symbol="t">A pit!  (2d8 damage)</Note>
+      <Note x="15" y="29" symbol="Ru">You find a large crate, covered with dust and webs.  It looks very old.  Will you search (Y/N) ?
+Y: Creakkk!  You pry the crate open... (+Item "Bottle of Rum")</Note>
+      <Note x="30" y="29" symbol=".">Ladder going down.  Take it (Y/N) ?
+Y: {map:Maze Level 3} (12,-14)</Note>
+      <Note x="20" y="30" symbol="Ch">You stand before a door sealed with heavy chains.
+Use "Hacksaw":  Whew!  This is hard work!!  You sawed through the chains! (unlock the east door)
+</Note>
+      <Note x="21" y="30" symbol="Ch">You stand before a door sealed with heavy chains.
+Use "Hacksaw":  Whew!  This is hard work!!  You sawed through the chains! (unlock the west door)
+</Note>
+      <Note x="18" y="33" symbol="0">This is map column 0</Note>
+    </Notes>
+    <Icons>
+      <Icon x="14" y="1" id="4" dir="2" />
+      <Icon x="15" y="1" id="4" dir="4" />
+      <Icon x="12" y="2" id="4" dir="2" />
+      <Icon x="13" y="2" id="4" dir="4" />
+      <Icon x="15" y="2" id="4" dir="3" />
+      <Icon x="12" y="3" id="4" dir="3" />
+      <Icon x="15" y="3" id="4" dir="1" />
+      <Icon x="6" y="4" id="4" dir="3" />
+      <Icon x="12" y="4" id="4" dir="1" />
+      <Icon x="27" y="4" id="4" dir="3" />
+      <Icon x="4" y="5" id="4" dir="2" />
+      <Icon x="5" y="5" id="4" dir="4" />
+      <Icon x="6" y="5" id="4" dir="1" />
+      <Icon x="14" y="5" id="4" dir="2" />
+      <Icon x="15" y="5" id="4" dir="4" />
+      <Icon x="25" y="5" id="16" dir="2" />
+      <Icon x="26" y="5" id="4" dir="4" />
+      <Icon x="26" y="5" id="4" dir="2" />
+      <Icon x="27" y="5" id="4" dir="4" />
+      <Icon x="27" y="5" id="4" dir="1" />
+      <Icon x="27" y="5" id="4" dir="2" />
+      <Icon x="27" y="5" id="4" dir="3" />
+      <Icon x="28" y="5" id="4" dir="4" />
+      <Icon x="31" y="5" id="4" dir="3" />
+      <Icon x="16" y="6" id="4" dir="2" />
+      <Icon x="17" y="6" id="4" dir="4" />
+      <Icon x="20" y="6" id="4" dir="2" />
+      <Icon x="21" y="6" id="4" dir="4" />
+      <Icon x="21" y="6" id="4" dir="2" />
+      <Icon x="22" y="6" id="4" dir="4" />
+      <Icon x="27" y="6" id="4" dir="1" />
+      <Icon x="31" y="6" id="4" dir="1" />
+      <Icon x="9" y="7" id="9" dir="1" />
+      <Icon x="26" y="7" id="4" dir="3" />
+      <Icon x="20" y="8" id="4" dir="2" />
+      <Icon x="21" y="8" id="4" dir="4" />
+      <Icon x="21" y="8" id="4" dir="2" />
+      <Icon x="22" y="8" id="4" dir="4" />
+      <Icon x="25" y="8" id="4" dir="2" />
+      <Icon x="26" y="8" id="4" dir="4" />
+      <Icon x="26" y="8" id="4" dir="1" />
+      <Icon x="26" y="8" id="4" dir="2" />
+      <Icon x="26" y="8" id="4" dir="3" />
+      <Icon x="27" y="8" id="4" dir="4" />
+      <Icon x="18" y="9" id="16" dir="2" />
+      <Icon x="18" y="9" id="16" dir="2" />
+      <Icon x="18" y="9" id="16" dir="2" />
+      <Icon x="19" y="9" id="4" dir="4" />
+      <Icon x="26" y="9" id="4" dir="1" />
+      <Icon x="20" y="10" id="4" dir="2" />
+      <Icon x="21" y="10" id="4" dir="4" />
+      <Icon x="21" y="10" id="4" dir="2" />
+      <Icon x="22" y="10" id="4" dir="4" />
+      <Icon x="25" y="10" id="4" dir="2" />
+      <Icon x="26" y="10" id="4" dir="4" />
+      <Icon x="26" y="10" id="4" dir="2" />
+      <Icon x="27" y="10" id="4" dir="4" />
+      <Icon x="25" y="11" id="4" dir="2" />
+      <Icon x="26" y="11" id="4" dir="4" />
+      <Icon x="26" y="11" id="4" dir="2" />
+      <Icon x="27" y="11" id="4" dir="4" />
+      <Icon x="11" y="12" id="4" dir="2" />
+      <Icon x="12" y="12" id="4" dir="4" />
+      <Icon x="20" y="12" id="4" dir="2" />
+      <Icon x="21" y="12" id="4" dir="4" />
+      <Icon x="21" y="12" id="4" dir="2" />
+      <Icon x="22" y="12" id="4" dir="4" />
+      <Icon x="13" y="13" id="9" dir="1" />
+      <Icon x="26" y="13" id="16" dir="3" />
+      <Icon x="20" y="14" id="4" dir="3" />
+      <Icon x="22" y="14" id="4" dir="3" />
+      <Icon x="26" y="14" id="4" dir="1" />
+      <Icon x="26" y="14" id="4" dir="3" />
+      <Icon x="19" y="15" id="4" dir="2" />
+      <Icon x="20" y="15" id="4" dir="4" />
+      <Icon x="20" y="15" id="4" dir="1" />
+      <Icon x="20" y="15" id="4" dir="2" />
+      <Icon x="20" y="15" id="4" dir="3" />
+      <Icon x="21" y="15" id="4" dir="4" />
+      <Icon x="21" y="15" id="4" dir="2" />
+      <Icon x="22" y="15" id="4" dir="4" />
+      <Icon x="22" y="15" id="4" dir="1" />
+      <Icon x="22" y="15" id="4" dir="2" />
+      <Icon x="22" y="15" id="4" dir="3" />
+      <Icon x="23" y="15" id="4" dir="4" />
+      <Icon x="26" y="15" id="4" dir="1" />
+      <Icon x="20" y="16" id="4" dir="1" />
+      <Icon x="22" y="16" id="4" dir="1" />
+      <Icon x="26" y="18" id="4" dir="3" />
+      <Icon x="26" y="19" id="4" dir="1" />
+      <Icon x="19" y="22" id="4" dir="3" />
+      <Icon x="23" y="22" id="4" dir="2" />
+      <Icon x="24" y="22" id="4" dir="4" />
+      <Icon x="18" y="23" id="4" dir="2" />
+      <Icon x="19" y="23" id="4" dir="4" />
+      <Icon x="19" y="23" id="4" dir="1" />
+      <Icon x="19" y="23" id="4" dir="2" />
+      <Icon x="19" y="23" id="4" dir="3" />
+      <Icon x="20" y="23" id="4" dir="4" />
+      <Icon x="19" y="24" id="4" dir="1" />
+      <Icon x="21" y="26" id="4" dir="2" />
+      <Icon x="22" y="26" id="4" dir="4" />
+      <Icon x="30" y="29" id="10" dir="1" />
+      <Icon x="20" y="30" id="16" dir="2" />
+      <Icon x="21" y="30" id="16" dir="4" />
+    </Icons>
+  </Sheet>
+  <Sheet width="34" height="42" title="Maze Level 3" path="" zoom="100" gameIndex="3">
+    <Sections>
+      <Section x="0" y="0" w="34" h="42" tx="-4" ty="11" />
+    </Sections>
+    <Grid>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</Grid>
+    <Notes>
+      <Note x="4" y="0" symbol="0">This is map column 0</Note>
+      <Note x="10" y="2" symbol="Ti">* Ye Timeless Room * 
+Inspect Hidden Items:  In the northwest corner of the room stands a funny little machine affixed to a heavy metal base, upon which are numerous buttons.  Examining the strange device further, you uncover this inscription: &lt;Acme Safe Company&gt; * Paradimensional Etherializer *  Extruding from the back of the metal base are two wires: 1 red wire (+) 1 black wire (-) 
+Use "Battery":  The machine begins to shimmer with an eerie light.  The buttons blink as if awaiting some kind of response.
+There are 9 buttons here.  Press letter (A) through (I) to press button
+(A) Carbon 
+(B) Lead 
+(C) Quartz 
+(D) Gold 
+(E) Silicon
+(F) Iron 
+(G) Brass 
+(H) Emerald
+(I) Mercury
+If you enter C, D, E, G: The machine begins to whine!  Suddenly a flash!  The strange machine rests quietly...  Will you search (Y/N) ?  Y: +Item "Pocketwatch"
+Otherwise:  The machine begins to whine!  An alarm rings!!  (Teleport to 18,9)</Note>
+      <Note x="22" y="2" symbol="t">Lightning Bolt!  (3d12 damage)</Note>
+      <Note x="10" y="3" symbol="s">A note upon the door reads: Below the moon doth dwell the loon, the answer soon in a timeless room...</Note>
+      <Note x="16" y="3" symbol="Bl">Fine wisps of a fragrant smoke rise from an alter of burning incense.  Suddenly a swirling wind engulfs the room!  (Forced Encounter with The Dejin Wind King, Toga Llama)
+Victory: (+Item "Blue Candle") Engraved upon a large stone slab are these cryptic marks:
+: / !  +, ( :-*
+-+/ : ; '!  :--/ </Note>
+      <Note x="11" y="5" symbol="T">(Teleport to 11,1)</Note>
+      <Note x="21" y="5" symbol="T">(Teleport to 13,1)</Note>
+      <Note x="16" y="6" symbol="Hi">* The Temple of Kama Kazi * 
+Encounter with Lord Hienmitey:  A big fat priest waddles up, grinning with large white teeth.
+Talk:
+Hail: My!  What fine looking visitors we have at our humble temple today!
+staff/door:  Hmmm, I tell you what, I'll trade my staff with you, if you will find for me a "staff" that is very ornate and covered with jewels in exchange.
+spell/magic: Perhaps I can do something for you.  That will cost 500 G.P.  Will you pay it ?  
+Y: Repent, o ye sinner, and be healed!  (Restore HP)
+N: You'll be sorry.  (Hienmitey attempts to steal an item)
+ressurect: For that, visit the Temple of Cant.
+Give "Jeweled Staff":  Thank you very much!  Ha ha ha  Fools!  Now that I have the jeweled sceptre which opens the temple door, you'll never get inside!  Prepare to die, you lowly heathens!  (Forced Encounter with Lord Hienmitey)
+Use "Jeweled Scepter": You wave the scepter before the door.  Click! (unlock the north door)</Note>
+      <Note x="10" y="7" symbol="s">A quiet silence echoes in a room with walls lined in white curtains.
+(The teleporter at 7,1 sends the party here)</Note>
+      <Note x="22" y="7" symbol="s">A voice whispers: "Death" in a room with walls lined in black curtains 
+(The teleporter at 17,1 sends the party here)</Note>
+      <Note x="11" y="10" symbol="T">(Teleport to 6,4)</Note>
+      <Note x="15" y="10" symbol="n">(The teleporter at 7,6 sends the party here)</Note>
+      <Note x="16" y="10" symbol="t">A gastrap!  (2d6 damage and cause Sleep condition)</Note>
+      <Note x="17" y="10" symbol="n">(The teleporter at 17,6 sends the party here)</Note>
+      <Note x="21" y="10" symbol="T">(Teleport to 18,4)</Note>
+      <Note x="0" y="11" symbol="0">This is map row 0</Note>
+      <Note x="4" y="11" symbol="00">(This is the map origin - 0,0)</Note>
+      <Note x="33" y="11" symbol="0">This is map row 0</Note>
+      <Note x="11" y="15" symbol="⇅">There are buttons here marked (A) through (D)  Press one.
+A: {map:Maze Level 2} (7,-4)
+B: (remain at this location)
+C: {map:Maze Level 4} (7,-4)
+D: {map:Maze Level 5} (7,-4)</Note>
+      <Note x="20" y="17" symbol="t">A pit!  (4d8 damage)</Note>
+      <Note x="15" y="19" symbol="Ma">(Entering this square activates The Mad Stomper, unless you have already met him; after being activated you have about a 10% chance to encounter him regardless of your location.)
+Encounter with The Mad Stomper:   Ooooo!  My feet!  *Stomp* *Stomp* 
+Buy:  Strange Item (Rubber Duck):  6000 Gold
+Talk:
+hail:  Hey there!  *Stomp* Pleased ta meet'cha.  *Stomp* *Stomp*   Pardon me for *Stomp*ing, but my feet are killing me!  *Stomp* *Stomp* *Stomp* 
+killing/stomp:  Believe it or not, I used ta be a handsome prince.  *Stomp* Then one day, a jealous rival made a pact with a diabolical fiend known as "Evil Eyes".  It was he who transformed me into this ugly monster.  *Stomp* *Stomp* Then, as if that wasn't enough, he cast an itching spell on my feet!  *Stomp* Just to torture me!!  *Stomp* Oooooooooo!  *Stomp* *Stomp* *Stomp*
+itch: You bet they do!!  *Stomp* *Stomp* 
+evil/spell: Evil Eyes loves ta torture things.  *Stomp* That's why he made my feet itch.  *Stomp* *Stomp* Now, I have ta jump up and down all the time!  *Stomp* It's the only way for me ta scratch them!!!  *Stomp* *Stomp*
+prince: O, verily I was a handsome lad
+torture/jumping:  Evil Eyes said that he would turn me back into a prince, if I could just stop jumping for one minute.  *Stomp* but I can't stop!  *Stomp*  It's even worse than what he did ta the mighty Yog!
+yog:  Yog used ta be a fearsome warrior, *Stomp* but evil eyes turned him into a big white monkey!  *Stomp* Yog was so enraged, he bit off one of Evil Eye's legs and ate it!  Ha!  Boy, was evil eyes mad about that!  *Stomp* *Stomp* but evil eyes had the last laugh, because he put Yog into a deep sleep and then imprisoned him inside a glass cylinder.  *Stomp* *Stomp* *Stomp*
+sleep/imprisoned/cylinder/locket:  Evil Eyes wears a powerful locket around his neck.  *Stomp* *Stomp* only it can open the cylinder and awaken Yog.  *Stomp* *Stomp* You'd awaken Yog.  *Stomp* *Stomp* You'd have to be very clever and quick to sneak it away from him!  *Stomp* 
+clever/quick: Nimble as an artful dodger, if you get my drift!  *Stomp* *Stomp*</Note>
+      <Note x="17" y="20" symbol="t">A pit!  (3d8 damage)</Note>
+      <Note x="9" y="22" symbol="t">A pit!  (3d8 damage)</Note>
+      <Note x="21" y="24" symbol="t">A pit!  (3d8 damage)</Note>
+      <Note x="22" y="24" symbol="Ma">(Entering this square activates The Mad Stomper, unless you have already met him; after being activated you have about a 10% chance to encounter him regardless of your location.)
+Encounter with The Mad Stomper:   Ooooo!  My feet!  *Stomp* *Stomp* 
+Buy:  Strange Item (Rubber Duck):  6000 Gold
+Talk:
+hail:  Hey there!  *Stomp* Pleased ta meet'cha.  *Stomp* *Stomp*   Pardon me for *Stomp*ing, but my feet are killing me!  *Stomp* *Stomp* *Stomp* 
+killing/stomp:  Believe it or not, I used ta be a handsome prince.  *Stomp* Then one day, a jealous rival made a pact with a diabolical fiend known as "Evil Eyes".  It was he who transformed me into this ugly monster.  *Stomp* *Stomp* Then, as if that wasn't enough, he cast an itching spell on my feet!  *Stomp* Just to torture me!!  *Stomp* Oooooooooo!  *Stomp* *Stomp* *Stomp*
+itch: You bet they do!!  *Stomp* *Stomp* 
+evil/spell: Evil Eyes loves ta torture things.  *Stomp* That's why he made my feet itch.  *Stomp* *Stomp* Now, I have ta jump up and down all the time!  *Stomp* It's the only way for me ta scratch them!!!  *Stomp* *Stomp*
+prince: O, verily I was a handsome lad
+torture/jumping:  Evil Eyes said that he would turn me back into a prince, if I could just stop jumping for one minute.  *Stomp* but I can't stop!  *Stomp*  It's even worse than what he did ta the mighty Yog!
+yog:  Yog used ta be a fearsome warrior, *Stomp* but evil eyes turned him into a big white monkey!  *Stomp* Yog was so enraged, he bit off one of Evil Eye's legs and ate it!  Ha!  Boy, was evil eyes mad about that!  *Stomp* *Stomp* but evil eyes had the last laugh, because he put Yog into a deep sleep and then imprisoned him inside a glass cylinder.  *Stomp* *Stomp* *Stomp*
+sleep/imprisoned/cylinder/locket:  Evil Eyes wears a powerful locket around his neck.  *Stomp* *Stomp* only it can open the cylinder and awaken Yog.  *Stomp* *Stomp* You'd awaken Yog.  *Stomp* *Stomp* You'd have to be very clever and quick to sneak it away from him!  *Stomp* 
+clever/quick: Nimble as an artful dodger, if you get my drift!  *Stomp* *Stomp*</Note>
+      <Note x="2" y="25" symbol="Fo">A grotesque figurine smiles down upon a fountain which froths forth a brew the color of blood.
+Who will wade ?
+A: 1d8 damage
+B: 2d8 damage
+C: 3d8 damage
+D: 3d8 damage, character becomes Poisoned
+E: HP reduced to 1
+F: Remove minor conditions
+G: +1d4 MaxHP, -1 Vitality
+H: Forced Encounter with Makara, Sea Cobra.  Victory:  +Item "Petrified Demon"</Note>
+      <Note x="4" y="25" symbol="s">A voice whispers: "The Physical" in a room with walls lined in red curtains.</Note>
+      <Note x="16" y="25" symbol=".">Ladder going up.  Take it (Y/N) ?
+Y: {map:Maze Level 2} (12,-14)</Note>
+      <Note x="28" y="25" symbol="s">A voice whispers: "The Ephemeral" in a room with walls lined in yellow curtains.</Note>
+      <Note x="30" y="25" symbol="Go">Before you lies a quiet pool, whose still waters shine as if liquid gold.
+Who will wade ?
+A: Lose 50-100 Gold
+B: +6 SP (3/2/1)
+C: +10 SP (4/3/2/1)
+D: +15 SP (5/4/3/2/1)
+E: +21 SP (6/5/4/3/2/1)
+F: Lose 200-400 Gold, +28 SP (7/6/5/4/3/2/1)
+G: Gain or lose some gold, +Item "Gold Key"</Note>
+      <Note x="10" y="26" symbol="Ma">(Entering this square activates The Mad Stomper, unless you have already met him; after being activated you have about a 10% chance to encounter him regardless of your location.)
+Encounter with The Mad Stomper:   Ooooo!  My feet!  *Stomp* *Stomp* 
+Buy:  Strange Item (Rubber Duck):  6000 Gold
+Talk:
+hail:  Hey there!  *Stomp* Pleased ta meet'cha.  *Stomp* *Stomp*   Pardon me for *Stomp*ing, but my feet are killing me!  *Stomp* *Stomp* *Stomp* 
+killing/stomp:  Believe it or not, I used ta be a handsome prince.  *Stomp* Then one day, a jealous rival made a pact with a diabolical fiend known as "Evil Eyes".  It was he who transformed me into this ugly monster.  *Stomp* *Stomp* Then, as if that wasn't enough, he cast an itching spell on my feet!  *Stomp* Just to torture me!!  *Stomp* Oooooooooo!  *Stomp* *Stomp* *Stomp*
+itch: You bet they do!!  *Stomp* *Stomp* 
+evil/spell: Evil Eyes loves ta torture things.  *Stomp* That's why he made my feet itch.  *Stomp* *Stomp* Now, I have ta jump up and down all the time!  *Stomp* It's the only way for me ta scratch them!!!  *Stomp* *Stomp*
+prince: O, verily I was a handsome lad
+torture/jumping:  Evil Eyes said that he would turn me back into a prince, if I could just stop jumping for one minute.  *Stomp* but I can't stop!  *Stomp*  It's even worse than what he did ta the mighty Yog!
+yog:  Yog used ta be a fearsome warrior, *Stomp* but evil eyes turned him into a big white monkey!  *Stomp* Yog was so enraged, he bit off one of Evil Eye's legs and ate it!  Ha!  Boy, was evil eyes mad about that!  *Stomp* *Stomp* but evil eyes had the last laugh, because he put Yog into a deep sleep and then imprisoned him inside a glass cylinder.  *Stomp* *Stomp* *Stomp*
+sleep/imprisoned/cylinder/locket:  Evil Eyes wears a powerful locket around his neck.  *Stomp* *Stomp* only it can open the cylinder and awaken Yog.  *Stomp* *Stomp* You'd awaken Yog.  *Stomp* *Stomp* You'd have to be very clever and quick to sneak it away from him!  *Stomp* 
+clever/quick: Nimble as an artful dodger, if you get my drift!  *Stomp* *Stomp*</Note>
+      <Note x="10" y="30" symbol="t">A pit!  (3d8 damage)</Note>
+      <Note x="17" y="31" symbol="Ma">A pit!  (3d8 damage)
+(Entering this square activates The Mad Stomper, unless you have already met him; after being activated you have about a 10% chance to encounter him regardless of your location.)
+Encounter with The Mad Stomper:   Ooooo!  My feet!  *Stomp* *Stomp* 
+Buy:  Strange Item (Rubber Duck):  6000 Gold
+Talk:
+hail:  Hey there!  *Stomp* Pleased ta meet'cha.  *Stomp* *Stomp*   Pardon me for *Stomp*ing, but my feet are killing me!  *Stomp* *Stomp* *Stomp* 
+killing/stomp:  Believe it or not, I used ta be a handsome prince.  *Stomp* Then one day, a jealous rival made a pact with a diabolical fiend known as "Evil Eyes".  It was he who transformed me into this ugly monster.  *Stomp* *Stomp* Then, as if that wasn't enough, he cast an itching spell on my feet!  *Stomp* Just to torture me!!  *Stomp* Oooooooooo!  *Stomp* *Stomp* *Stomp*
+itch: You bet they do!!  *Stomp* *Stomp* 
+evil/spell: Evil Eyes loves ta torture things.  *Stomp* That's why he made my feet itch.  *Stomp* *Stomp* Now, I have ta jump up and down all the time!  *Stomp* It's the only way for me ta scratch them!!!  *Stomp* *Stomp*
+prince: O, verily I was a handsome lad
+torture/jumping:  Evil Eyes said that he would turn me back into a prince, if I could just stop jumping for one minute.  *Stomp* but I can't stop!  *Stomp*  It's even worse than what he did ta the mighty Yog!
+yog:  Yog used ta be a fearsome warrior, *Stomp* but evil eyes turned him into a big white monkey!  *Stomp* Yog was so enraged, he bit off one of Evil Eye's legs and ate it!  Ha!  Boy, was evil eyes mad about that!  *Stomp* *Stomp* but evil eyes had the last laugh, because he put Yog into a deep sleep and then imprisoned him inside a glass cylinder.  *Stomp* *Stomp* *Stomp*
+sleep/imprisoned/cylinder/locket:  Evil Eyes wears a powerful locket around his neck.  *Stomp* *Stomp* only it can open the cylinder and awaken Yog.  *Stomp* *Stomp* You'd awaken Yog.  *Stomp* *Stomp* You'd have to be very clever and quick to sneak it away from him!  *Stomp* 
+clever/quick: Nimble as an artful dodger, if you get my drift!  *Stomp* *Stomp*</Note>
+      <Note x="7" y="34" symbol="Mo">Poking up from the floor is the mouth of a deep, deep well.  A sign above it reads as follows: * Moser's Mystic Moat * &lt;Enter at own risk&gt; 
+Who will wade ?
+A: Gain or Lose 2d8 HP
+B: Character becomes Asleep, Petrified, Paralyzed or Poisoned
+C: Gain (5/4/3/2/1 or 4/3/2/1) or Lose (down to 4/3/2/1 or zero) SP
+D: Age +1/-1 year (minimum 19)
+E: I.Q. +1/-1</Note>
+      <Note x="25" y="34" symbol="t">A gastrap!  (2d6 damage and cause Sleep condition)</Note>
+      <Note x="16" y="36" symbol="Bl">Blue phosphor letters glow brightly upon a pale blue wall.  They read:  Upon this wall of deepest blues shall live the light of somber hues, to venture through the cobalt light live ye here, the light of life.
+Use "Blue Candle": As the light from the candle strikes the wall, the glowing words begin to slowly fade...  The translucent outline of a door reveals the passage through (create south door).</Note>
+      <Note x="16" y="37" symbol="s">A voice whispers: "The Spiritual" in a room with walls lined in blue curtains.</Note>
+      <Note x="16" y="39" symbol=".">Stairs leading down.  Follow them (Y/N) ?
+Y: {map:Maze Level 4} (-6,-20)</Note>
+      <Note x="4" y="41" symbol="0">This is map column 0</Note>
+    </Notes>
+    <Icons>
+      <Icon x="10" y="1" id="4" dir="3" />
+      <Icon x="22" y="1" id="4" dir="3" />
+      <Icon x="9" y="2" id="4" dir="2" />
+      <Icon x="10" y="2" id="4" dir="4" />
+      <Icon x="10" y="2" id="4" dir="1" />
+      <Icon x="10" y="2" id="4" dir="2" />
+      <Icon x="10" y="2" id="4" dir="3" />
+      <Icon x="11" y="2" id="4" dir="4" />
+      <Icon x="16" y="2" id="4" dir="3" />
+      <Icon x="21" y="2" id="4" dir="2" />
+      <Icon x="22" y="2" id="4" dir="4" />
+      <Icon x="22" y="2" id="4" dir="1" />
+      <Icon x="22" y="2" id="4" dir="2" />
+      <Icon x="22" y="2" id="4" dir="3" />
+      <Icon x="23" y="2" id="4" dir="4" />
+      <Icon x="10" y="3" id="4" dir="1" />
+      <Icon x="15" y="3" id="4" dir="2" />
+      <Icon x="16" y="3" id="4" dir="4" />
+      <Icon x="16" y="3" id="4" dir="1" />
+      <Icon x="16" y="3" id="4" dir="2" />
+      <Icon x="16" y="3" id="4" dir="3" />
+      <Icon x="17" y="3" id="4" dir="4" />
+      <Icon x="22" y="3" id="4" dir="1" />
+      <Icon x="9" y="4" id="4" dir="3" />
+      <Icon x="11" y="4" id="4" dir="3" />
+      <Icon x="16" y="4" id="4" dir="1" />
+      <Icon x="21" y="4" id="4" dir="3" />
+      <Icon x="23" y="4" id="4" dir="3" />
+      <Icon x="9" y="5" id="4" dir="1" />
+      <Icon x="11" y="5" id="4" dir="1" />
+      <Icon x="16" y="5" id="4" dir="3" />
+      <Icon x="21" y="5" id="4" dir="1" />
+      <Icon x="23" y="5" id="4" dir="1" />
+      <Icon x="15" y="6" id="4" dir="2" />
+      <Icon x="16" y="6" id="4" dir="4" />
+      <Icon x="16" y="6" id="16" dir="1" />
+      <Icon x="16" y="6" id="4" dir="2" />
+      <Icon x="16" y="6" id="4" dir="3" />
+      <Icon x="17" y="6" id="4" dir="4" />
+      <Icon x="16" y="7" id="4" dir="1" />
+      <Icon x="11" y="9" id="4" dir="3" />
+      <Icon x="21" y="9" id="4" dir="3" />
+      <Icon x="10" y="10" id="4" dir="2" />
+      <Icon x="11" y="10" id="4" dir="4" />
+      <Icon x="11" y="10" id="4" dir="1" />
+      <Icon x="11" y="10" id="4" dir="2" />
+      <Icon x="11" y="10" id="4" dir="3" />
+      <Icon x="12" y="10" id="4" dir="4" />
+      <Icon x="15" y="10" id="4" dir="3" />
+      <Icon x="17" y="10" id="4" dir="3" />
+      <Icon x="20" y="10" id="4" dir="2" />
+      <Icon x="21" y="10" id="4" dir="4" />
+      <Icon x="21" y="10" id="4" dir="1" />
+      <Icon x="21" y="10" id="4" dir="2" />
+      <Icon x="21" y="10" id="4" dir="3" />
+      <Icon x="22" y="10" id="4" dir="4" />
+      <Icon x="9" y="11" id="4" dir="3" />
+      <Icon x="11" y="11" id="4" dir="1" />
+      <Icon x="13" y="11" id="4" dir="3" />
+      <Icon x="15" y="11" id="4" dir="1" />
+      <Icon x="17" y="11" id="4" dir="1" />
+      <Icon x="19" y="11" id="4" dir="3" />
+      <Icon x="21" y="11" id="4" dir="1" />
+      <Icon x="23" y="11" id="4" dir="3" />
+      <Icon x="9" y="12" id="4" dir="1" />
+      <Icon x="13" y="12" id="4" dir="1" />
+      <Icon x="19" y="12" id="4" dir="1" />
+      <Icon x="23" y="12" id="4" dir="1" />
+      <Icon x="16" y="14" id="4" dir="3" />
+      <Icon x="10" y="15" id="4" dir="2" />
+      <Icon x="11" y="15" id="4" dir="4" />
+      <Icon x="16" y="15" id="4" dir="1" />
+      <Icon x="21" y="15" id="4" dir="2" />
+      <Icon x="22" y="15" id="4" dir="4" />
+      <Icon x="9" y="16" id="4" dir="3" />
+      <Icon x="23" y="16" id="4" dir="3" />
+      <Icon x="9" y="17" id="4" dir="1" />
+      <Icon x="23" y="17" id="4" dir="1" />
+      <Icon x="9" y="18" id="4" dir="2" />
+      <Icon x="10" y="18" id="4" dir="4" />
+      <Icon x="24" y="19" id="4" dir="3" />
+      <Icon x="24" y="20" id="4" dir="1" />
+      <Icon x="2" y="25" id="4" dir="2" />
+      <Icon x="3" y="25" id="4" dir="4" />
+      <Icon x="4" y="25" id="4" dir="2" />
+      <Icon x="5" y="25" id="16" dir="4" />
+      <Icon x="16" y="25" id="9" dir="1" />
+      <Icon x="27" y="25" id="16" dir="2" />
+      <Icon x="28" y="25" id="4" dir="4" />
+      <Icon x="29" y="25" id="4" dir="2" />
+      <Icon x="30" y="25" id="4" dir="4" />
+      <Icon x="7" y="33" id="4" dir="3" />
+      <Icon x="25" y="33" id="4" dir="3" />
+      <Icon x="4" y="34" id="4" dir="2" />
+      <Icon x="4" y="34" id="4" dir="3" />
+      <Icon x="5" y="34" id="4" dir="4" />
+      <Icon x="5" y="34" id="4" dir="3" />
+      <Icon x="6" y="34" id="4" dir="2" />
+      <Icon x="7" y="34" id="4" dir="4" />
+      <Icon x="7" y="34" id="4" dir="1" />
+      <Icon x="7" y="34" id="4" dir="2" />
+      <Icon x="7" y="34" id="4" dir="3" />
+      <Icon x="8" y="34" id="4" dir="4" />
+      <Icon x="24" y="34" id="4" dir="2" />
+      <Icon x="25" y="34" id="4" dir="4" />
+      <Icon x="25" y="34" id="4" dir="1" />
+      <Icon x="25" y="34" id="4" dir="2" />
+      <Icon x="25" y="34" id="4" dir="3" />
+      <Icon x="26" y="34" id="4" dir="4" />
+      <Icon x="27" y="34" id="4" dir="2" />
+      <Icon x="27" y="34" id="4" dir="3" />
+      <Icon x="28" y="34" id="4" dir="4" />
+      <Icon x="28" y="34" id="4" dir="3" />
+      <Icon x="4" y="35" id="4" dir="1" />
+      <Icon x="4" y="35" id="4" dir="2" />
+      <Icon x="4" y="35" id="4" dir="3" />
+      <Icon x="5" y="35" id="4" dir="4" />
+      <Icon x="5" y="35" id="4" dir="1" />
+      <Icon x="5" y="35" id="4" dir="2" />
+      <Icon x="5" y="35" id="4" dir="3" />
+      <Icon x="6" y="35" id="4" dir="4" />
+      <Icon x="6" y="35" id="4" dir="3" />
+      <Icon x="7" y="35" id="4" dir="1" />
+      <Icon x="25" y="35" id="4" dir="1" />
+      <Icon x="26" y="35" id="4" dir="2" />
+      <Icon x="26" y="35" id="4" dir="3" />
+      <Icon x="27" y="35" id="4" dir="4" />
+      <Icon x="27" y="35" id="4" dir="1" />
+      <Icon x="27" y="35" id="4" dir="2" />
+      <Icon x="27" y="35" id="4" dir="3" />
+      <Icon x="28" y="35" id="4" dir="4" />
+      <Icon x="28" y="35" id="4" dir="1" />
+      <Icon x="28" y="35" id="4" dir="3" />
+      <Icon x="4" y="36" id="4" dir="1" />
+      <Icon x="4" y="36" id="4" dir="2" />
+      <Icon x="4" y="36" id="4" dir="3" />
+      <Icon x="5" y="36" id="4" dir="4" />
+      <Icon x="5" y="36" id="4" dir="1" />
+      <Icon x="5" y="36" id="4" dir="2" />
+      <Icon x="5" y="36" id="4" dir="3" />
+      <Icon x="6" y="36" id="4" dir="4" />
+      <Icon x="6" y="36" id="4" dir="1" />
+      <Icon x="6" y="36" id="4" dir="2" />
+      <Icon x="6" y="36" id="4" dir="3" />
+      <Icon x="7" y="36" id="4" dir="4" />
+      <Icon x="7" y="36" id="4" dir="3" />
+      <Icon x="16" y="36" id="4" dir="3" />
+      <Icon x="25" y="36" id="4" dir="2" />
+      <Icon x="25" y="36" id="4" dir="3" />
+      <Icon x="26" y="36" id="4" dir="4" />
+      <Icon x="26" y="36" id="4" dir="1" />
+      <Icon x="26" y="36" id="4" dir="2" />
+      <Icon x="26" y="36" id="4" dir="3" />
+      <Icon x="27" y="36" id="4" dir="4" />
+      <Icon x="27" y="36" id="4" dir="1" />
+      <Icon x="27" y="36" id="4" dir="2" />
+      <Icon x="27" y="36" id="4" dir="3" />
+      <Icon x="28" y="36" id="4" dir="4" />
+      <Icon x="28" y="36" id="4" dir="1" />
+      <Icon x="28" y="36" id="4" dir="3" />
+      <Icon x="4" y="37" id="4" dir="1" />
+      <Icon x="4" y="37" id="4" dir="2" />
+      <Icon x="5" y="37" id="4" dir="4" />
+      <Icon x="5" y="37" id="4" dir="1" />
+      <Icon x="5" y="37" id="4" dir="2" />
+      <Icon x="6" y="37" id="4" dir="4" />
+      <Icon x="6" y="37" id="4" dir="1" />
+      <Icon x="6" y="37" id="4" dir="2" />
+      <Icon x="7" y="37" id="4" dir="4" />
+      <Icon x="7" y="37" id="4" dir="1" />
+      <Icon x="16" y="37" id="4" dir="1" />
+      <Icon x="25" y="37" id="4" dir="1" />
+      <Icon x="25" y="37" id="4" dir="2" />
+      <Icon x="26" y="37" id="4" dir="4" />
+      <Icon x="26" y="37" id="4" dir="1" />
+      <Icon x="26" y="37" id="4" dir="2" />
+      <Icon x="27" y="37" id="4" dir="4" />
+      <Icon x="27" y="37" id="4" dir="1" />
+      <Icon x="27" y="37" id="4" dir="2" />
+      <Icon x="28" y="37" id="4" dir="4" />
+      <Icon x="28" y="37" id="4" dir="1" />
+      <Icon x="16" y="38" id="4" dir="3" />
+      <Icon x="16" y="39" id="4" dir="1" />
+      <Icon x="16" y="39" id="10" dir="1" />
+    </Icons>
+  </Sheet>
+  <Sheet width="75" height="42" title="Maze Level 4" path="" zoom="100" gameIndex="4">
+    <Sections>
+      <Section x="0" y="0" w="75" h="42" tx="-19" ty="5" />
+    </Sections>
+    <Grid>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</Grid>
+    <Notes>
+      <Note x="19" y="0" symbol="0">This is map column 0</Note>
+      <Note x="25" y="2" symbol="Po">A shimmering portal enter it (Y/N) ?
+Y: (teleport to {map:Maze Level 1} 15,9)</Note>
+      <Note x="27" y="3" symbol="?">(there is an event associated with this square, but there seems to be no way to activate it)</Note>
+      <Note x="0" y="5" symbol="0">This is map row 0</Note>
+      <Note x="19" y="5" symbol="00">(This is the map origin - 0,0)</Note>
+      <Note x="74" y="5" symbol="0">This is map row 0</Note>
+      <Note x="29" y="6" symbol="s">* Ye Legendary * * Den of Thieves * </Note>
+      <Note x="29" y="7" symbol="De">Encounter with random thief NPC: A gang of thieves surround you.
+Talk:
+hail: Psssst!  Want some information ?  That will cost 250 G.P.  Will you pay it ?
+Y: (-250 Gold) Psssst!
+(The Taistik Man): I've been inside the ladies room!
+(Rick the Pick): La-La Moo Moo is an Egyptian!
+(John Fingers): I heard the Duck lost his ducky...
+(Le Dombo):  I forgot what I was gonna tell ya!  Oh yea...  Did you find the secret door that leads to the Kettle in the north-east corner on level one ?! Ooops!  I don't think I was supposed ta tell ya that one...  Shhhhh! 
+(Busted Brian): There's an old crate hidden near Nessie's pool... 
+N: Sound the alarm!  (forced encounter with Level 8 Thief)</Note>
+      <Note x="26" y="9" symbol="⇅">There are buttons here marked (A) through (D)  Press one.
+A: {map:Maze Level 2} (7,-4)
+B: {map:Maze Level 3} (7,-4)
+C: (remain at this location)
+D: {map:Maze Level 5} (7,-4)</Note>
+      <Note x="27" y="9" symbol="s">* The Long Dungeon Hall * </Note>
+      <Note x="30" y="12" symbol="Ba">Inspect Hidden Items: There is an old trunk marked "D.H."   Will you search (Y/N) ?
+Y: (+Item "Battery")</Note>
+      <Note x="37" y="12" symbol="t">A pit!  (4d8 damage)</Note>
+      <Note x="37" y="13" symbol="t">A pit!  (4d8 damage)</Note>
+      <Note x="28" y="14" symbol="Po">A sexy woman in black leather with a whip stands before a foggy pool.  "Well boys, how about a swim ?"  The fee is 2500 G.P.  Will you pay (Y/N) ?
+Y: She cracks her whip and laughs...  Who will wade?
+A: (nothing happens)
+B: (nothing happens)
+C: 17-32 damage
+D: Character becomes Poisoned and Asleep
+E: 17-32 damage, forced encounter with Loch Babies (32)
+F: Character becomes Paralyzed, forced encounter with Loch Babies (32)
+G: 32-64 damage
+H: +1 Piety, +Age 2 years, forced encounter with Loch Babies (32)
+I: Character becomes Petrified, forced encounter with Loch Babies (32)
+J: Gain or Lose gold, forced encounter with Nessie, Loch Babies (8) (Victory: +Item "Skeleton Key")</Note>
+      <Note x="17" y="18" symbol="T">(Teleport to -6,-17)</Note>
+      <Note x="24" y="18" symbol=".">A Trapdoor!  (teleport to {map:Maze Level 5} 13,2)</Note>
+      <Note x="23" y="19" symbol="?">(there is a message event associated with this square, but there seems to be no way to activate it)</Note>
+      <Note x="30" y="21" symbol="Ja">A beautiful nymphette sits cooing upon a little chest... Will you search (Y/N) ?
+Y: The nymphette watches in earnest as you open up her little box... (Forced Encounter with The Copper Demon, The Sly Nymph)
+Victory: +Item "Jack of Spades"
+</Note>
+      <Note x="13" y="22" symbol="s">* The Hall of Mirrors * 
+(the tunnel at -8,-21 and the teleporter at -2,-13 send the party here)</Note>
+      <Note x="25" y="22" symbol="De">Carved upon the east wall is the laughing face of an ugly demon.
+Use "Petrified Demon":  Holding the small figure before the mocking face, you anxiously wait...  Suddenly, a coppery mist pours from the mouth of the carving, and forms itself into a devilish image.  In a tingling voice it warns: "as my spirit protects these walls, so my flesh protects these chambers!"  A secret door emerges from the wall. (create east door)</Note>
+      <Note x="20" y="24" symbol="s">Inscribed upon the wall are these strange figures:
+!  * * +, (
+ ;=== U u ; '!</Note>
+      <Note x="13" y="25" symbol=".">Stairs leading up.  Follow them (Y/N) ?
+Y: {map:Maze Level 3} (12,-28)</Note>
+      <Note x="16" y="25" symbol="s">* * * * * This way * * to Loons * * * * * 
+&lt;Detour&gt; Hallway closed for repairs.  Use secret tunnel.</Note>
+      <Note x="4" y="26" symbol="Go">A sign upon the door reads: * Ye Gold Vault * 
+Use "Gold Key": Click! Clack!  Clunk!</Note>
+      <Note x="11" y="26" symbol="St">The room is bare except for a small altar with a tiny box and two great big statues looking nonchalant...  Will you search (Y/N) ?
+Y: There is a button in the box oops!  You accidently pressed it...  (Forced Encounter with Gold Statue)
+Victory:  A mysterious tunnel enter it (Y/N) ?
+Y: (teleport to -6,-17)</Note>
+      <Note x="6" y="29" symbol="L">A black disc rests upon the floor.
+Will you search (Y/N) ?
+Y: When you touch the disc is begins to blink, and the following words appear: Safe deposit box opened! (+Item "Ring of Frozz")</Note>
+      <Note x="18" y="29" symbol="Ri">A large totem of many strange faces stands before the doorway.  The eyes from one of the faces seems to be watching you.  After a moment, one of the mouths begins to speak: The illusion of future, present and past, seduces all to believe that each moment will last.  But the pulse of the heart and each measure of breath draws a man from his dawn unto his death.  As promise of summer becomes winter of wrath, as son becomes father along the invisible path.  Name this illusion, this future/past cross, and the spell will be broken while all illusions are lost.
+What is your answer ?
+Answer TIME: The totem says: You may pass.
+Otherwise:  The totem says: Wrong!  And it womps you on the head!  WOMP!!  (8d12 damage)</Note>
+      <Note x="21" y="29" symbol="Lo">You stand before a small stone monolith, while high above you hangs a silver crescent.  Wiping the dust off the stone, you uncover these words: *** R.I.P.  *** *** The Loon *** * His time comes again * * May he rest in peace * 
+Use "Pocketwatch":  You press a button on the watch.  Everyone begins feeling dizzy.  As if caught in a whirlpool, round and round you go.  Falling, endlessly falling...  You feel the centuries slip away.  Everyone passes out and there is dark.  You open your eyes and a voice rings in your ears.  One day soon we'll all sing a tune, in the timeless room underneath the mooooonnn...
+Encounter with The Loon:   I am the prophet by name of The Loon.
+Buy:  Lark in a Cage (10000 Gold)
+Talk:
+hail:  Please allow me to introduce myself!   I am Thelonius P. Loon, master of time and prophet extrordinaire.  Welcome to my humble abode.  Did you have any trouble finding the place ?
+No: Humph!  Cocky little rapscallions...
+Yes:  Hee-hee!  I thought so.  You have that "confused" look on your face.
+You see, I live in a world beyond all time, never aging, never dying.  Here, I live forever, and so everything is revealed to me.  That is the secret of  time, never aging, never dying.  Here, I live forever, and so everything is revealed to me.  That is the secret of my prophecy, and of all the prophets!   Please allow me to demonstrate!  You have come seeking knowledge of the triaxial gate, am I correct ?
+Yes: Then you must seek to understand the true nature of the triaxial balance and the elemental forces!
+No: Humph!  Either I'm a bit rusty or you must be more confused than I thought.
+nature/balance/triaxial/elemental: Throughout the history of the world, the sages have spoken of an alliance of power which moves all things within our universe, an eternal balance of cosmic forces.  Most mortal men are able to see only two of these forces, and thus, call them by such names as, "good and evil", "right and wrong", "true and false".  It is these two opposing powers which have apparently long battled within the soul of all men, but I am here to tell you that this struggle is naught but illusion.  To understand the true nature of the triaxial balance, you must pierce the veil of this illusion, and see that there are "three" forces at work, not "two", and they are of a different nature than what you now believe, for they exist in realms non-opposite one another.  Each of these realms has its own laws, its own code of "good" and "evil", and it is your task to learn of these forces, so that you might achieve a balance between them.  There are three "divine aspects" you must discover about each of the elemental forces.  Learn of these aspects and you will begin to understand what it is that I am speaking of.  Remember what I have told you, and think well upon it! 
+future/destiny/prophecy: Tee-hee!  Thy future is clear to me!  That will cost 10000 G.P.  Will you pay it ?
+No: Then thy past shall be thy future! 
+Yes: Listen closely: Three lords and a fourth must you pass, each with a sign, each with a purpose.  Into the triaxial gate must you go, three times and a fourth, each with a rod, each with an answer.  And when at last you stand before the final confrontation, fear not, for he that is vanished shall not be lost, if you will but cast the spell of summoning to save them from their fate.
+time: Time time is merely the irreversable order of temporal succession by which change and permanence are predicated...  or in other words, our destiny lies in the future!
+aspects: Learn them well!
+realms: The realms of three that are four!</Note>
+      <Note x="23" y="29" symbol="Sk">A massive door made of solid steel looms from the west wall.  Centered upon the door is the gleaming face of an ivory skull.
+Use "Skeleton Key":  The skull winks and says: "Welcome to Loon's" </Note>
+      <Note x="7" y="30" symbol="E">A black disc rests upon the floor.  Will you search (Y/N) ?
+Y: When you touch the disc it begins to blink, and the following words appear: Intruder Alert! (Forced Encounter)</Note>
+      <Note x="11" y="30" symbol="Ac">A black disc rests upon the floor.
+Will you search (Y/N) ?
+Y: When you touch the disc it begins to blink, and the following words appear: Access gate now activated! (Activates discs at -15,-26)</Note>
+      <Note x="4" y="31" symbol="Di">If you have activated the disc at (-8,-25): In the center of the floor are four coloured discs, each engraved with with a strange looking word.
+There are 4 discs here.  Press letter (A) through (D) to touch disc
+(A) nofe
+(B) eitz
+(C) saot
+(D) wuxt
+A, B,C:  Remove the north wall
+D:  Remove the west wall</Note>
+      <Note x="9" y="31" symbol="Di">If you have activated the disc at (-12,-28): In the center of the floor are four coloured discs, each engraved with with a strange looking word.
+There are 4 discs here.  Press letter (A) through (D) to touch disc
+(A) nofe
+(B) eitz
+(C) saot
+(D) wuxt
+A, B,C:  Remove the north wall
+D:  Remove the west wall</Note>
+      <Note x="2" y="33" symbol="Ac">A black disc rests upon the floor.
+Will you search (Y/N) ?
+Y: When you touch the disc it begins to blink, and the following words appear: Access gate now activated! (Activates discs at -10,-29)</Note>
+      <Note x="6" y="33" symbol="E">A black disc rests upon the floor.  Will you search (Y/N) ?
+Y: When you touch the disc it begins to blink, and the following words appear: Intruder Alert! (Forced Encounter)</Note>
+      <Note x="7" y="33" symbol="Ac">A black disc rests upon the floor.
+Will you search (Y/N) ?
+Y: When you touch the disc it begins to blink, and the following words appear: Access gate now activated! (Activates discs at -10,-26)</Note>
+      <Note x="11" y="33" symbol="L">A black disc rests upon the floor.
+Will you search (Y/N) ?
+Y: When you touch the disc is begins to blink, and the following words appear: Safe deposit box opened! (+Item "Crested Shield")</Note>
+      <Note x="4" y="34" symbol="Di">If you have activated the disc at (-17,-34): In the center of the floor are four coloured discs, each engraved with with a strange looking word.
+There are 4 discs here.  Press letter (A) through (D) to touch disc
+(A) nofe
+(B) eitz
+(C) saot
+(D) wuxt
+B, C, D:  Remove the east wall
+A:  Remove the north wall</Note>
+      <Note x="9" y="34" symbol="Di">If you have activated the disc at (-17,-28): In the center of the floor are four coloured discs, each engraved with with a strange looking word.
+There are 4 discs here.  Press letter (A) through (D) to touch disc
+(A) nofe
+(B) eitz
+(C) saot
+(D) wuxt
+B,C,D:  Remove the east wall
+A:  Remove the north wall</Note>
+      <Note x="3" y="35" symbol="Ac">A black disc rests upon the floor.
+Will you search (Y/N) ?
+Y: When you touch the disc it begins to blink, and the following words appear: Access gate now activated! (Remove the south and west walls at -15,-23)</Note>
+      <Note x="6" y="35" symbol="L">A black disc rests upon the floor.
+Will you search (Y/N) ?
+Y: When you touch the disc is begins to blink, and the following words appear: Safe deposit box opened! (+Item "Iron Gloves")</Note>
+      <Note x="10" y="36" symbol="Ac">A black disc rests upon the floor.
+Will you search (Y/N) ?
+Y: When you touch the disc it begins to blink, and the following words appear: Access gate now activated! (Activates discs at -15,-32)</Note>
+      <Note x="4" y="37" symbol="Di">If you have activated the disc at (-9,-31): In the center of the floor are four coloured discs, each engraved with with a strange looking word.
+There are 4 discs here.  Press letter (A) through (D) to touch disc
+(A) nofe
+(B) eitz
+(C) saot
+(D) wuxt
+A, B, D:  Remove the north wall
+C:  Remove the south wall</Note>
+      <Note x="9" y="37" symbol="Di">If you have activated the disc at (-11,-33): In the center of the floor are four coloured discs, each engraved with with a strange looking word.
+There are 4 discs here.  Press letter (A) through (D) to touch disc
+(A) nofe
+(B) eitz
+(C) saot
+(D) wuxt
+A,C,D:  Remove the west wall
+B:  Remove the east wall</Note>
+      <Note x="8" y="38" symbol="Ac">A black disc rests upon the floor.
+Will you search (Y/N) ?
+Y: When you touch the disc it begins to blink, and the following words appear: Access gate now activated! (Activates discs at -10,-32)
+(Encounter with Busted Brian)
+Talk:
+hail:  Psssst!  Want some information ?  That will cost 250 G.P.  Will you pay it ? 
+No:  Sound the alarm!  (Forced Encounter with Level 8 Thief)
+Yes:  (-250 Gold)  Psssst!  There's an old crate hidden near Nessie's pool... </Note>
+      <Note x="2" y="39" symbol="Ac">A black disc rests upon the floor.
+Will you search (Y/N) ?
+Y: When you touch the disc it begins to blink, and the following words appear: Access gate now activated! (Activates discs at -15,-29)</Note>
+      <Note x="10" y="39" symbol="E">A black disc rests upon the floor.  Will you search (Y/N) ?
+Y: When you touch the disc it begins to blink, and the following words appear: Intruder Alert! (Forced Encounter)</Note>
+      <Note x="9" y="40" symbol="s">* The Jigsaw Bank and Trust * </Note>
+      <Note x="19" y="41" symbol="0">This is map column 0</Note>
+    </Notes>
+    <Icons>
+      <Icon x="22" y="4" id="4" dir="3" />
+      <Icon x="22" y="5" id="4" dir="1" />
+      <Icon x="29" y="5" id="4" dir="3" />
+      <Icon x="23" y="6" id="4" dir="3" />
+      <Icon x="25" y="6" id="4" dir="2" />
+      <Icon x="26" y="6" id="4" dir="4" />
+      <Icon x="29" y="6" id="4" dir="1" />
+      <Icon x="29" y="6" id="4" dir="3" />
+      <Icon x="23" y="7" id="4" dir="1" />
+      <Icon x="29" y="7" id="4" dir="1" />
+      <Icon x="23" y="8" id="4" dir="3" />
+      <Icon x="24" y="8" id="4" dir="3" />
+      <Icon x="25" y="8" id="4" dir="2" />
+      <Icon x="26" y="8" id="4" dir="4" />
+      <Icon x="18" y="9" id="4" dir="2" />
+      <Icon x="19" y="9" id="4" dir="4" />
+      <Icon x="23" y="9" id="4" dir="1" />
+      <Icon x="24" y="9" id="4" dir="1" />
+      <Icon x="26" y="9" id="4" dir="3" />
+      <Icon x="26" y="10" id="4" dir="1" />
+      <Icon x="26" y="10" id="4" dir="2" />
+      <Icon x="27" y="10" id="4" dir="4" />
+      <Icon x="29" y="10" id="4" dir="2" />
+      <Icon x="30" y="10" id="4" dir="4" />
+      <Icon x="31" y="10" id="4" dir="2" />
+      <Icon x="32" y="10" id="4" dir="4" />
+      <Icon x="42" y="10" id="4" dir="2" />
+      <Icon x="43" y="10" id="4" dir="4" />
+      <Icon x="43" y="10" id="4" dir="2" />
+      <Icon x="43" y="10" id="4" dir="3" />
+      <Icon x="44" y="10" id="4" dir="4" />
+      <Icon x="44" y="10" id="4" dir="2" />
+      <Icon x="44" y="10" id="4" dir="3" />
+      <Icon x="45" y="10" id="4" dir="4" />
+      <Icon x="45" y="10" id="4" dir="2" />
+      <Icon x="45" y="10" id="4" dir="3" />
+      <Icon x="46" y="10" id="4" dir="4" />
+      <Icon x="46" y="10" id="4" dir="2" />
+      <Icon x="46" y="10" id="4" dir="3" />
+      <Icon x="47" y="10" id="4" dir="4" />
+      <Icon x="47" y="10" id="4" dir="2" />
+      <Icon x="47" y="10" id="4" dir="3" />
+      <Icon x="48" y="10" id="4" dir="4" />
+      <Icon x="20" y="11" id="4" dir="2" />
+      <Icon x="21" y="11" id="4" dir="4" />
+      <Icon x="22" y="11" id="4" dir="3" />
+      <Icon x="26" y="11" id="4" dir="2" />
+      <Icon x="27" y="11" id="4" dir="4" />
+      <Icon x="28" y="11" id="4" dir="3" />
+      <Icon x="42" y="11" id="4" dir="2" />
+      <Icon x="43" y="11" id="4" dir="4" />
+      <Icon x="43" y="11" id="4" dir="1" />
+      <Icon x="43" y="11" id="4" dir="2" />
+      <Icon x="43" y="11" id="4" dir="3" />
+      <Icon x="44" y="11" id="4" dir="4" />
+      <Icon x="44" y="11" id="4" dir="1" />
+      <Icon x="44" y="11" id="4" dir="2" />
+      <Icon x="44" y="11" id="4" dir="3" />
+      <Icon x="45" y="11" id="4" dir="4" />
+      <Icon x="45" y="11" id="4" dir="1" />
+      <Icon x="45" y="11" id="4" dir="2" />
+      <Icon x="45" y="11" id="4" dir="3" />
+      <Icon x="46" y="11" id="4" dir="4" />
+      <Icon x="46" y="11" id="4" dir="1" />
+      <Icon x="46" y="11" id="4" dir="2" />
+      <Icon x="46" y="11" id="4" dir="3" />
+      <Icon x="47" y="11" id="4" dir="4" />
+      <Icon x="47" y="11" id="4" dir="1" />
+      <Icon x="50" y="11" id="4" dir="3" />
+      <Icon x="22" y="12" id="4" dir="1" />
+      <Icon x="28" y="12" id="4" dir="1" />
+      <Icon x="29" y="12" id="4" dir="2" />
+      <Icon x="30" y="12" id="4" dir="4" />
+      <Icon x="42" y="12" id="4" dir="2" />
+      <Icon x="43" y="12" id="4" dir="4" />
+      <Icon x="43" y="12" id="4" dir="1" />
+      <Icon x="43" y="12" id="4" dir="2" />
+      <Icon x="43" y="12" id="4" dir="3" />
+      <Icon x="44" y="12" id="4" dir="4" />
+      <Icon x="44" y="12" id="4" dir="1" />
+      <Icon x="44" y="12" id="4" dir="2" />
+      <Icon x="44" y="12" id="4" dir="3" />
+      <Icon x="45" y="12" id="4" dir="4" />
+      <Icon x="45" y="12" id="4" dir="1" />
+      <Icon x="45" y="12" id="4" dir="2" />
+      <Icon x="45" y="12" id="4" dir="3" />
+      <Icon x="46" y="12" id="4" dir="4" />
+      <Icon x="46" y="12" id="4" dir="1" />
+      <Icon x="48" y="12" id="4" dir="2" />
+      <Icon x="49" y="12" id="4" dir="4" />
+      <Icon x="49" y="12" id="4" dir="2" />
+      <Icon x="50" y="12" id="4" dir="4" />
+      <Icon x="50" y="12" id="4" dir="1" />
+      <Icon x="28" y="13" id="4" dir="3" />
+      <Icon x="29" y="13" id="4" dir="2" />
+      <Icon x="30" y="13" id="4" dir="4" />
+      <Icon x="42" y="13" id="4" dir="2" />
+      <Icon x="43" y="13" id="4" dir="4" />
+      <Icon x="43" y="13" id="4" dir="1" />
+      <Icon x="43" y="13" id="4" dir="2" />
+      <Icon x="43" y="13" id="4" dir="3" />
+      <Icon x="44" y="13" id="4" dir="4" />
+      <Icon x="44" y="13" id="4" dir="1" />
+      <Icon x="44" y="13" id="4" dir="2" />
+      <Icon x="44" y="13" id="4" dir="3" />
+      <Icon x="45" y="13" id="4" dir="4" />
+      <Icon x="45" y="13" id="4" dir="1" />
+      <Icon x="45" y="13" id="4" dir="2" />
+      <Icon x="45" y="13" id="4" dir="3" />
+      <Icon x="46" y="13" id="4" dir="4" />
+      <Icon x="46" y="13" id="4" dir="3" />
+      <Icon x="48" y="13" id="4" dir="2" />
+      <Icon x="49" y="13" id="4" dir="4" />
+      <Icon x="49" y="13" id="4" dir="2" />
+      <Icon x="50" y="13" id="4" dir="4" />
+      <Icon x="50" y="13" id="4" dir="3" />
+      <Icon x="26" y="14" id="4" dir="2" />
+      <Icon x="27" y="14" id="4" dir="4" />
+      <Icon x="28" y="14" id="4" dir="1" />
+      <Icon x="42" y="14" id="4" dir="2" />
+      <Icon x="43" y="14" id="4" dir="4" />
+      <Icon x="43" y="14" id="4" dir="1" />
+      <Icon x="43" y="14" id="4" dir="2" />
+      <Icon x="43" y="14" id="4" dir="3" />
+      <Icon x="44" y="14" id="4" dir="4" />
+      <Icon x="44" y="14" id="4" dir="1" />
+      <Icon x="44" y="14" id="4" dir="2" />
+      <Icon x="44" y="14" id="4" dir="3" />
+      <Icon x="45" y="14" id="4" dir="4" />
+      <Icon x="45" y="14" id="4" dir="1" />
+      <Icon x="45" y="14" id="4" dir="2" />
+      <Icon x="45" y="14" id="4" dir="3" />
+      <Icon x="46" y="14" id="4" dir="4" />
+      <Icon x="46" y="14" id="4" dir="1" />
+      <Icon x="46" y="14" id="4" dir="2" />
+      <Icon x="46" y="14" id="4" dir="3" />
+      <Icon x="47" y="14" id="4" dir="4" />
+      <Icon x="47" y="14" id="4" dir="3" />
+      <Icon x="50" y="14" id="4" dir="1" />
+      <Icon x="26" y="15" id="4" dir="2" />
+      <Icon x="27" y="15" id="4" dir="4" />
+      <Icon x="29" y="15" id="4" dir="2" />
+      <Icon x="30" y="15" id="4" dir="4" />
+      <Icon x="31" y="15" id="4" dir="2" />
+      <Icon x="32" y="15" id="4" dir="4" />
+      <Icon x="42" y="15" id="4" dir="2" />
+      <Icon x="43" y="15" id="4" dir="4" />
+      <Icon x="43" y="15" id="4" dir="1" />
+      <Icon x="43" y="15" id="4" dir="2" />
+      <Icon x="44" y="15" id="4" dir="4" />
+      <Icon x="44" y="15" id="4" dir="1" />
+      <Icon x="44" y="15" id="4" dir="2" />
+      <Icon x="45" y="15" id="4" dir="4" />
+      <Icon x="45" y="15" id="4" dir="1" />
+      <Icon x="45" y="15" id="4" dir="2" />
+      <Icon x="46" y="15" id="4" dir="4" />
+      <Icon x="46" y="15" id="4" dir="1" />
+      <Icon x="46" y="15" id="4" dir="2" />
+      <Icon x="47" y="15" id="4" dir="4" />
+      <Icon x="47" y="15" id="4" dir="1" />
+      <Icon x="47" y="15" id="4" dir="2" />
+      <Icon x="48" y="15" id="4" dir="4" />
+      <Icon x="18" y="16" id="4" dir="3" />
+      <Icon x="20" y="16" id="4" dir="3" />
+      <Icon x="21" y="16" id="4" dir="3" />
+      <Icon x="18" y="17" id="4" dir="1" />
+      <Icon x="20" y="17" id="4" dir="1" />
+      <Icon x="21" y="17" id="4" dir="1" />
+      <Icon x="23" y="17" id="4" dir="3" />
+      <Icon x="24" y="17" id="4" dir="3" />
+      <Icon x="19" y="18" id="4" dir="3" />
+      <Icon x="22" y="18" id="4" dir="2" />
+      <Icon x="23" y="18" id="4" dir="4" />
+      <Icon x="23" y="18" id="4" dir="1" />
+      <Icon x="24" y="18" id="4" dir="1" />
+      <Icon x="24" y="18" id="4" dir="2" />
+      <Icon x="24" y="18" id="10" dir="1" />
+      <Icon x="25" y="18" id="4" dir="4" />
+      <Icon x="14" y="19" id="2" dir="3" />
+      <Icon x="15" y="19" id="2" dir="4" />
+      <Icon x="16" y="19" id="2" dir="3" />
+      <Icon x="16" y="19" id="2" dir="1" />
+      <Icon x="19" y="19" id="4" dir="1" />
+      <Icon x="22" y="19" id="4" dir="2" />
+      <Icon x="23" y="19" id="4" dir="4" />
+      <Icon x="23" y="19" id="4" dir="3" />
+      <Icon x="23" y="19" id="4" dir="4" />
+      <Icon x="23" y="19" id="4" dir="3" />
+      <Icon x="24" y="19" id="4" dir="2" />
+      <Icon x="24" y="19" id="4" dir="3" />
+      <Icon x="25" y="19" id="4" dir="4" />
+      <Icon x="13" y="20" id="2" dir="2" />
+      <Icon x="14" y="20" id="2" dir="3" />
+      <Icon x="15" y="20" id="2" dir="4" />
+      <Icon x="15" y="20" id="2" dir="3" />
+      <Icon x="17" y="20" id="2" dir="4" />
+      <Icon x="21" y="20" id="4" dir="3" />
+      <Icon x="23" y="20" id="4" dir="1" />
+      <Icon x="24" y="20" id="4" dir="1" />
+      <Icon x="29" y="20" id="4" dir="3" />
+      <Icon x="15" y="21" id="2" dir="4" />
+      <Icon x="16" y="21" id="2" dir="4" />
+      <Icon x="21" y="21" id="4" dir="1" />
+      <Icon x="28" y="21" id="4" dir="2" />
+      <Icon x="29" y="21" id="4" dir="4" />
+      <Icon x="29" y="21" id="4" dir="1" />
+      <Icon x="29" y="21" id="4" dir="2" />
+      <Icon x="29" y="21" id="4" dir="3" />
+      <Icon x="30" y="21" id="4" dir="4" />
+      <Icon x="13" y="22" id="2" dir="2" />
+      <Icon x="15" y="22" id="2" dir="4" />
+      <Icon x="15" y="22" id="2" dir="1" />
+      <Icon x="16" y="22" id="2" dir="3" />
+      <Icon x="25" y="22" id="4" dir="2" />
+      <Icon x="26" y="22" id="4" dir="4" />
+      <Icon x="28" y="22" id="4" dir="2" />
+      <Icon x="29" y="22" id="4" dir="4" />
+      <Icon x="29" y="22" id="4" dir="1" />
+      <Icon x="29" y="22" id="4" dir="2" />
+      <Icon x="29" y="22" id="4" dir="3" />
+      <Icon x="30" y="22" id="4" dir="4" />
+      <Icon x="14" y="23" id="2" dir="1" />
+      <Icon x="15" y="23" id="2" dir="2" />
+      <Icon x="17" y="23" id="2" dir="4" />
+      <Icon x="28" y="23" id="4" dir="2" />
+      <Icon x="29" y="23" id="4" dir="4" />
+      <Icon x="29" y="23" id="4" dir="1" />
+      <Icon x="29" y="23" id="4" dir="2" />
+      <Icon x="29" y="23" id="4" dir="3" />
+      <Icon x="30" y="23" id="4" dir="4" />
+      <Icon x="29" y="24" id="4" dir="1" />
+      <Icon x="13" y="25" id="9" dir="1" />
+      <Icon x="20" y="25" id="4" dir="1" />
+      <Icon x="1" y="26" id="4" dir="2" />
+      <Icon x="2" y="26" id="4" dir="4" />
+      <Icon x="3" y="26" id="4" dir="2" />
+      <Icon x="4" y="26" id="4" dir="4" />
+      <Icon x="4" y="26" id="16" dir="2" />
+      <Icon x="5" y="26" id="4" dir="4" />
+      <Icon x="10" y="26" id="4" dir="2" />
+      <Icon x="11" y="26" id="4" dir="4" />
+      <Icon x="3" y="27" id="4" dir="2" />
+      <Icon x="4" y="27" id="4" dir="4" />
+      <Icon x="4" y="27" id="4" dir="2" />
+      <Icon x="5" y="27" id="4" dir="4" />
+      <Icon x="8" y="29" id="4" dir="2" />
+      <Icon x="9" y="29" id="4" dir="4" />
+      <Icon x="9" y="29" id="4" dir="2" />
+      <Icon x="10" y="29" id="4" dir="4" />
+      <Icon x="18" y="29" id="16" dir="2" />
+      <Icon x="19" y="29" id="4" dir="4" />
+      <Icon x="22" y="29" id="4" dir="2" />
+      <Icon x="23" y="29" id="16" dir="4" />
+      <Icon x="1" y="30" id="4" dir="2" />
+      <Icon x="2" y="30" id="4" dir="4" />
+      <Icon x="5" y="30" id="4" dir="3" />
+      <Icon x="5" y="31" id="4" dir="1" />
+      <Icon x="3" y="32" id="4" dir="2" />
+      <Icon x="4" y="32" id="4" dir="4" />
+      <Icon x="4" y="32" id="4" dir="2" />
+      <Icon x="5" y="32" id="4" dir="4" />
+      <Icon x="8" y="32" id="4" dir="2" />
+      <Icon x="9" y="32" id="4" dir="4" />
+      <Icon x="9" y="32" id="4" dir="2" />
+      <Icon x="10" y="32" id="4" dir="4" />
+      <Icon x="8" y="34" id="4" dir="3" />
+      <Icon x="8" y="35" id="4" dir="1" />
+      <Icon x="11" y="35" id="4" dir="2" />
+      <Icon x="12" y="35" id="4" dir="4" />
+      <Icon x="1" y="36" id="4" dir="2" />
+      <Icon x="2" y="36" id="4" dir="4" />
+      <Icon x="5" y="36" id="4" dir="3" />
+      <Icon x="3" y="37" id="4" dir="3" />
+      <Icon x="5" y="37" id="4" dir="1" />
+      <Icon x="3" y="38" id="4" dir="1" />
+      <Icon x="11" y="38" id="4" dir="2" />
+      <Icon x="12" y="38" id="4" dir="4" />
+      <Icon x="6" y="39" id="4" dir="3" />
+      <Icon x="7" y="39" id="4" dir="3" />
+      <Icon x="6" y="40" id="4" dir="1" />
+      <Icon x="7" y="40" id="4" dir="1" />
+    </Icons>
+  </Sheet>
+  <Sheet width="42" height="58" title="Maze Level 5" path="" zoom="100" gameIndex="5">
+    <Sections>
+      <Section x="0" y="0" w="42" h="58" tx="-25" ty="24" />
+    </Sections>
+    <Grid>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</Grid>
+    <Notes>
+      <Note x="25" y="0" symbol="0">This is map column 0</Note>
+      <Note x="37" y="9" symbol="?">(there is an event associated with this square, but there seems to be no way to activate it)</Note>
+      <Note x="37" y="10" symbol="Lu">Encounter with Lucianna Skye, Royal Lady: A gathering of ladies look very surprised to see you.
+Talk:
+hail:   I'll bet you don't want us to call the guards, now do you ?  That will cost 500 G.P.  Will you pay it ?
+Y: I knew I could count on you!  Picture yourself on a duck in a pool!
+N: Let's get'em, girls! (forced encounter with Royal Guard, Royal Lady)</Note>
+      <Note x="37" y="11" symbol="s">Toilette Royale * Ye Ladies * </Note>
+      <Note x="27" y="18" symbol="s">* The Crystal Ballroom * Festive Social Tonight </Note>
+      <Note x="40" y="18" symbol="n">(The slide on level 6 at 7,2 sends the party here)</Note>
+      <Note x="17" y="22" symbol="s">If (level 5, bit 6 is not set): Hope you enjoyed the show!</Note>
+      <Note x="20" y="22" symbol="T">There is a button on the wall.  Will you search (Y/N) ?
+Y: You tripped over a hidden wire!  A chute!  (teleport to -4,0)</Note>
+      <Note x="27" y="22" symbol="s">Toilette Royale * Ye Lords * </Note>
+      <Note x="38" y="22" symbol="n">(The trap door on level 4 at 5,-13 sends the party here)</Note>
+      <Note x="23" y="23" symbol="T">There is a button on the wall.  Will you search (Y/N) ?
+Y: You tripped over a hidden wire!  A chute!  (teleport to -4,0)</Note>
+      <Note x="27" y="23" symbol="E">Forced Encounter with Royal Lord</Note>
+      <Note x="0" y="24" symbol="0">This is map row 0</Note>
+      <Note x="21" y="24" symbol="↻">A pit!  (6d6 damage, change facing to random direction)
+(The chutes at -5,2; -2,1; -3,-2; -6,-1 send the party here)</Note>
+      <Note x="25" y="24" symbol="00">(This is the map origin - 0,0)</Note>
+      <Note x="41" y="24" symbol="0">This is map row 0</Note>
+      <Note x="5" y="25" symbol="Fo">A gentle pool of clear blue waters flows around a white marble fountain.  Who (#) will wade ? 
+A: Restore all HP
+B: Restore all HP, remove minor conditions
+C: Resurrect, restore all HP, remove minor conditions</Note>
+      <Note x="12" y="25" symbol=".">Rope going below.  Climb it (Y/N) ?
+Y: {map:Maze Level 6} (-13,-3)</Note>
+      <Note x="19" y="25" symbol="T">There is a button on the wall.  Will you search (Y/N) ?
+Y: You tripped over a hidden wire!  A chute!  (teleport to -4,0)</Note>
+      <Note x="24" y="25" symbol="Pl">* The Playhouse Mystery Theatre * Suspense &amp; Intrigue Tonight
+The fee is 5000 G.P.  Will you pay (Y/N) ?
+Y: (-5000 Gold) Enjoy the show!  A chute! (teleport to -4,0)</Note>
+      <Note x="32" y="25" symbol="Ma">Encounter with Big Max: Good evening folks!  Welcome to Manfretti's.  May I have your tickets please.
+Buy: Tickets (4375 Gold)
+Talk:
+hail: Good evening!  Your tickets please.
+tickets: If you don't have any tickets then I can't let you come inside...  Of course, I do have some I might be willing to sell you, (heh) for a (heh heh) modest fee... 
+Give "Tickets" or "Ticket Stubs": Thank you very much!  Please keep your stubs.  Go on inside and have a good time!  Big Max leaves... (remove north/south doors, add east/west doors, +Item "Ticket Stubs")</Note>
+      <Note x="35" y="25" symbol="s">A large colorful poster stands on display proclaiming the following message: Welcome to Manfretti's * The place for entertainment *   * Big Gala Event * Costume party tonight &lt;featuring&gt; The Mad Room; The Crystal Ballroom; The Playhouse Mystery Theatre.  Everyone has a good time at * Manfretti's * </Note>
+      <Note x="22" y="26" symbol="T">There is a button on the wall.  Will you search (Y/N) ?
+Y: You tripped over a hidden wire!  A chute!  (teleport to -4,0)</Note>
+      <Note x="32" y="28" symbol="⇅">There are buttons here marked (A) through (D)  Press one.
+A: {map:Maze Level 2} (7,-4)
+B: {map:Maze Level 3} (7,-4)
+C: {map:Maze Level 4} (7,-4)
+D: (remain at this location)</Note>
+      <Note x="27" y="32" symbol="s">* The Mad Room * Gala Dance Tonight </Note>
+      <Note x="40" y="32" symbol=".">A slide!  (teleport to {map:Maze Level 6} 13,2)</Note>
+      <Note x="27" y="35" symbol="↓">Oom Pah Pah!  (move three squares in any random direction except north)</Note>
+      <Note x="26" y="36" symbol="We">(Entering this square activates a Werewolf encounter; after being activated you have about a 10% chance to have the encounter regardless of your location.)</Note>
+      <Note x="28" y="36" symbol="t">A pit! (5d8 damage)</Note>
+      <Note x="30" y="36" symbol="Sn">Encounter with The Snatch:  They call me The Snatch!
+Talk:
+hail: Got any "spare change" ?
+Y: Lay it on me then!
+N: Well then, how about an interesting trinket or two ? 
+Y: Haw haw haw!  I'll just take a look for myself... (The Snatch attempts to steal an item)
+N: Don't be wasting all my time, dudes! 
+Give Gold (any amount): Since you have given me your cash, I shall continue to give you my time.   Time can be important, especially if you are looking for somebody.</Note>
+      <Note x="25" y="37" symbol="→">Oom Pah Pah!  (move three squares in any random direction except west)</Note>
+      <Note x="27" y="37" symbol="T">Oom Pah Pah!  (move three squares in any random direction)</Note>
+      <Note x="29" y="37" symbol="←">Oom Pah Pah!  (move three squares in any random direction except east)</Note>
+      <Note x="26" y="38" symbol="t">A pit! (5d8 damage)</Note>
+      <Note x="28" y="38" symbol="We">(Entering this square activates a Werewolf encounter; after being activated you have about a 10% chance to have the encounter regardless of your location.)</Note>
+      <Note x="27" y="39" symbol="↑">Oom Pah Pah!  (move three squares in any random direction except south)</Note>
+      <Note x="32" y="52" symbol="s">A red and white metal sign hangs upon the wall and displays these bizarre symbols:
+*--- * !,/ ====
+'--- U + ; ---- </Note>
+      <Note x="19" y="55" symbol=".">Ladder going down.  Take it (Y/N) ?
+Y: {map:Maze Level 6} (-6,-33)</Note>
+      <Note x="25" y="57" symbol="0">This is map column 0</Note>
+    </Notes>
+    <Icons>
+      <Icon x="30" y="1" id="4" dir="3" />
+      <Icon x="32" y="1" id="4" dir="3" />
+      <Icon x="30" y="2" id="4" dir="1" />
+      <Icon x="30" y="2" id="4" dir="2" />
+      <Icon x="31" y="2" id="4" dir="4" />
+      <Icon x="32" y="2" id="4" dir="1" />
+      <Icon x="29" y="3" id="4" dir="3" />
+      <Icon x="30" y="3" id="4" dir="3" />
+      <Icon x="32" y="3" id="4" dir="2" />
+      <Icon x="33" y="3" id="4" dir="4" />
+      <Icon x="29" y="4" id="4" dir="1" />
+      <Icon x="30" y="4" id="4" dir="1" />
+      <Icon x="32" y="4" id="4" dir="2" />
+      <Icon x="33" y="4" id="4" dir="4" />
+      <Icon x="29" y="5" id="4" dir="2" />
+      <Icon x="30" y="5" id="4" dir="4" />
+      <Icon x="30" y="6" id="4" dir="2" />
+      <Icon x="31" y="6" id="4" dir="4" />
+      <Icon x="32" y="6" id="4" dir="2" />
+      <Icon x="33" y="6" id="4" dir="4" />
+      <Icon x="29" y="7" id="4" dir="3" />
+      <Icon x="32" y="7" id="4" dir="3" />
+      <Icon x="29" y="8" id="4" dir="1" />
+      <Icon x="30" y="8" id="4" dir="2" />
+      <Icon x="31" y="8" id="4" dir="4" />
+      <Icon x="32" y="8" id="4" dir="1" />
+      <Icon x="37" y="8" id="4" dir="3" />
+      <Icon x="28" y="9" id="4" dir="3" />
+      <Icon x="30" y="9" id="4" dir="3" />
+      <Icon x="33" y="9" id="4" dir="3" />
+      <Icon x="37" y="9" id="4" dir="1" />
+      <Icon x="28" y="10" id="4" dir="1" />
+      <Icon x="30" y="10" id="4" dir="1" />
+      <Icon x="31" y="10" id="4" dir="2" />
+      <Icon x="31" y="10" id="4" dir="3" />
+      <Icon x="32" y="10" id="4" dir="4" />
+      <Icon x="33" y="10" id="4" dir="1" />
+      <Icon x="33" y="10" id="4" dir="2" />
+      <Icon x="34" y="10" id="4" dir="4" />
+      <Icon x="37" y="10" id="4" dir="3" />
+      <Icon x="27" y="11" id="4" dir="2" />
+      <Icon x="28" y="11" id="4" dir="4" />
+      <Icon x="28" y="11" id="4" dir="2" />
+      <Icon x="29" y="11" id="4" dir="4" />
+      <Icon x="31" y="11" id="4" dir="1" />
+      <Icon x="32" y="11" id="4" dir="2" />
+      <Icon x="33" y="11" id="4" dir="4" />
+      <Icon x="37" y="11" id="4" dir="1" />
+      <Icon x="27" y="12" id="4" dir="2" />
+      <Icon x="28" y="12" id="4" dir="4" />
+      <Icon x="30" y="12" id="4" dir="3" />
+      <Icon x="33" y="12" id="4" dir="2" />
+      <Icon x="34" y="12" id="4" dir="4" />
+      <Icon x="29" y="13" id="4" dir="2" />
+      <Icon x="30" y="13" id="4" dir="4" />
+      <Icon x="30" y="13" id="4" dir="1" />
+      <Icon x="31" y="13" id="4" dir="2" />
+      <Icon x="32" y="13" id="4" dir="4" />
+      <Icon x="28" y="14" id="4" dir="2" />
+      <Icon x="29" y="14" id="4" dir="4" />
+      <Icon x="29" y="14" id="4" dir="3" />
+      <Icon x="30" y="14" id="4" dir="3" />
+      <Icon x="32" y="14" id="4" dir="2" />
+      <Icon x="33" y="14" id="4" dir="4" />
+      <Icon x="29" y="15" id="4" dir="1" />
+      <Icon x="30" y="15" id="4" dir="1" />
+      <Icon x="31" y="15" id="4" dir="2" />
+      <Icon x="32" y="15" id="4" dir="4" />
+      <Icon x="27" y="17" id="4" dir="3" />
+      <Icon x="27" y="18" id="4" dir="1" />
+      <Icon x="31" y="18" id="4" dir="3" />
+      <Icon x="34" y="18" id="4" dir="3" />
+      <Icon x="37" y="18" id="4" dir="3" />
+      <Icon x="40" y="18" id="4" dir="3" />
+      <Icon x="31" y="19" id="4" dir="1" />
+      <Icon x="34" y="19" id="4" dir="1" />
+      <Icon x="37" y="19" id="4" dir="1" />
+      <Icon x="40" y="19" id="4" dir="1" />
+      <Icon x="2" y="21" id="4" dir="2" />
+      <Icon x="3" y="21" id="4" dir="4" />
+      <Icon x="5" y="21" id="4" dir="3" />
+      <Icon x="7" y="21" id="4" dir="2" />
+      <Icon x="8" y="21" id="4" dir="4" />
+      <Icon x="10" y="21" id="4" dir="2" />
+      <Icon x="11" y="21" id="4" dir="4" />
+      <Icon x="15" y="21" id="4" dir="2" />
+      <Icon x="16" y="21" id="4" dir="4" />
+      <Icon x="1" y="22" id="4" dir="3" />
+      <Icon x="5" y="22" id="4" dir="1" />
+      <Icon x="13" y="22" id="4" dir="3" />
+      <Icon x="27" y="22" id="4" dir="3" />
+      <Icon x="1" y="23" id="4" dir="1" />
+      <Icon x="5" y="23" id="16" dir="3" />
+      <Icon x="13" y="23" id="4" dir="1" />
+      <Icon x="20" y="23" id="4" dir="1" />
+      <Icon x="21" y="23" id="4" dir="1" />
+      <Icon x="22" y="23" id="4" dir="2" />
+      <Icon x="23" y="23" id="4" dir="4" />
+      <Icon x="27" y="23" id="4" dir="1" />
+      <Icon x="33" y="23" id="4" dir="2" />
+      <Icon x="33" y="23" id="4" dir="3" />
+      <Icon x="34" y="23" id="4" dir="4" />
+      <Icon x="35" y="23" id="4" dir="3" />
+      <Icon x="36" y="23" id="4" dir="2" />
+      <Icon x="37" y="23" id="4" dir="4" />
+      <Icon x="37" y="23" id="4" dir="3" />
+      <Icon x="5" y="24" id="4" dir="1" />
+      <Icon x="5" y="24" id="4" dir="3" />
+      <Icon x="12" y="24" id="4" dir="2" />
+      <Icon x="13" y="24" id="4" dir="4" />
+      <Icon x="13" y="24" id="4" dir="2" />
+      <Icon x="14" y="24" id="4" dir="4" />
+      <Icon x="20" y="24" id="4" dir="4" />
+      <Icon x="22" y="24" id="4" dir="2" />
+      <Icon x="27" y="24" id="4" dir="3" />
+      <Icon x="32" y="24" id="4" dir="3" />
+      <Icon x="33" y="24" id="4" dir="1" />
+      <Icon x="35" y="24" id="4" dir="1" />
+      <Icon x="35" y="24" id="4" dir="3" />
+      <Icon x="37" y="24" id="4" dir="1" />
+      <Icon x="37" y="24" id="4" dir="3" />
+      <Icon x="4" y="25" id="4" dir="2" />
+      <Icon x="5" y="25" id="4" dir="4" />
+      <Icon x="5" y="25" id="4" dir="1" />
+      <Icon x="5" y="25" id="4" dir="2" />
+      <Icon x="6" y="25" id="4" dir="4" />
+      <Icon x="12" y="25" id="4" dir="2" />
+      <Icon x="12" y="25" id="10" dir="1" />
+      <Icon x="13" y="25" id="4" dir="4" />
+      <Icon x="13" y="25" id="4" dir="2" />
+      <Icon x="14" y="25" id="4" dir="4" />
+      <Icon x="19" y="25" id="4" dir="2" />
+      <Icon x="20" y="25" id="4" dir="4" />
+      <Icon x="21" y="25" id="4" dir="3" />
+      <Icon x="22" y="25" id="4" dir="3" />
+      <Icon x="27" y="25" id="4" dir="1" />
+      <Icon x="27" y="25" id="4" dir="3" />
+      <Icon x="31" y="25" id="4" dir="2" />
+      <Icon x="32" y="25" id="4" dir="1" />
+      <Icon x="32" y="25" id="4" dir="3" />
+      <Icon x="32" y="25" id="4" dir="2" />
+      <Icon x="32" y="25" id="4" dir="4" />
+      <Icon x="33" y="25" id="4" dir="4" />
+      <Icon x="33" y="25" id="4" dir="2" />
+      <Icon x="34" y="25" id="4" dir="4" />
+      <Icon x="34" y="25" id="4" dir="2" />
+      <Icon x="35" y="25" id="4" dir="4" />
+      <Icon x="35" y="25" id="4" dir="1" />
+      <Icon x="35" y="25" id="4" dir="2" />
+      <Icon x="35" y="25" id="4" dir="3" />
+      <Icon x="36" y="25" id="4" dir="4" />
+      <Icon x="36" y="25" id="4" dir="2" />
+      <Icon x="37" y="25" id="4" dir="1" />
+      <Icon x="37" y="25" id="4" dir="3" />
+      <Icon x="37" y="25" id="4" dir="4" />
+      <Icon x="38" y="25" id="4" dir="4" />
+      <Icon x="22" y="26" id="4" dir="1" />
+      <Icon x="27" y="26" id="4" dir="1" />
+      <Icon x="32" y="26" id="4" dir="1" />
+      <Icon x="33" y="26" id="4" dir="3" />
+      <Icon x="35" y="26" id="4" dir="1" />
+      <Icon x="35" y="26" id="4" dir="3" />
+      <Icon x="37" y="26" id="4" dir="1" />
+      <Icon x="37" y="26" id="4" dir="3" />
+      <Icon x="33" y="27" id="4" dir="1" />
+      <Icon x="33" y="27" id="4" dir="2" />
+      <Icon x="34" y="27" id="4" dir="4" />
+      <Icon x="35" y="27" id="4" dir="1" />
+      <Icon x="36" y="27" id="4" dir="2" />
+      <Icon x="37" y="27" id="4" dir="4" />
+      <Icon x="37" y="27" id="4" dir="1" />
+      <Icon x="31" y="31" id="4" dir="3" />
+      <Icon x="34" y="31" id="4" dir="3" />
+      <Icon x="37" y="31" id="4" dir="3" />
+      <Icon x="40" y="31" id="4" dir="3" />
+      <Icon x="27" y="32" id="4" dir="3" />
+      <Icon x="31" y="32" id="4" dir="1" />
+      <Icon x="34" y="32" id="4" dir="1" />
+      <Icon x="37" y="32" id="4" dir="1" />
+      <Icon x="40" y="32" id="4" dir="1" />
+      <Icon x="40" y="32" id="10" dir="1" />
+      <Icon x="27" y="33" id="4" dir="1" />
+      <Icon x="27" y="33" id="4" dir="3" />
+      <Icon x="27" y="34" id="4" dir="1" />
+      <Icon x="24" y="36" id="4" dir="3" />
+      <Icon x="30" y="36" id="4" dir="3" />
+      <Icon x="24" y="37" id="4" dir="1" />
+      <Icon x="24" y="37" id="4" dir="3" />
+      <Icon x="30" y="37" id="4" dir="1" />
+      <Icon x="30" y="37" id="4" dir="3" />
+      <Icon x="24" y="38" id="4" dir="1" />
+      <Icon x="30" y="38" id="4" dir="1" />
+      <Icon x="27" y="40" id="4" dir="3" />
+      <Icon x="19" y="41" id="4" dir="3" />
+      <Icon x="20" y="41" id="4" dir="3" />
+      <Icon x="27" y="41" id="4" dir="1" />
+      <Icon x="18" y="42" id="4" dir="2" />
+      <Icon x="19" y="42" id="4" dir="4" />
+      <Icon x="19" y="42" id="4" dir="1" />
+      <Icon x="20" y="42" id="4" dir="1" />
+      <Icon x="20" y="42" id="4" dir="2" />
+      <Icon x="21" y="42" id="4" dir="4" />
+      <Icon x="18" y="43" id="4" dir="2" />
+      <Icon x="19" y="43" id="4" dir="4" />
+      <Icon x="19" y="43" id="4" dir="3" />
+      <Icon x="20" y="43" id="4" dir="2" />
+      <Icon x="20" y="43" id="4" dir="3" />
+      <Icon x="21" y="43" id="4" dir="4" />
+      <Icon x="19" y="44" id="4" dir="1" />
+      <Icon x="20" y="44" id="4" dir="1" />
+      <Icon x="22" y="46" id="16" dir="3" />
+      <Icon x="22" y="47" id="4" dir="1" />
+      <Icon x="19" y="53" id="4" dir="3" />
+      <Icon x="20" y="53" id="4" dir="3" />
+      <Icon x="31" y="53" id="4" dir="3" />
+      <Icon x="32" y="53" id="4" dir="3" />
+      <Icon x="18" y="54" id="4" dir="2" />
+      <Icon x="19" y="54" id="4" dir="4" />
+      <Icon x="19" y="54" id="4" dir="1" />
+      <Icon x="20" y="54" id="4" dir="1" />
+      <Icon x="20" y="54" id="4" dir="2" />
+      <Icon x="21" y="54" id="4" dir="4" />
+      <Icon x="30" y="54" id="4" dir="2" />
+      <Icon x="31" y="54" id="4" dir="4" />
+      <Icon x="31" y="54" id="4" dir="1" />
+      <Icon x="32" y="54" id="4" dir="1" />
+      <Icon x="32" y="54" id="4" dir="2" />
+      <Icon x="33" y="54" id="4" dir="4" />
+      <Icon x="18" y="55" id="4" dir="2" />
+      <Icon x="19" y="55" id="4" dir="4" />
+      <Icon x="19" y="55" id="4" dir="3" />
+      <Icon x="19" y="55" id="10" dir="1" />
+      <Icon x="20" y="55" id="4" dir="2" />
+      <Icon x="20" y="55" id="4" dir="3" />
+      <Icon x="21" y="55" id="4" dir="4" />
+      <Icon x="30" y="55" id="4" dir="2" />
+      <Icon x="31" y="55" id="4" dir="4" />
+      <Icon x="31" y="55" id="4" dir="3" />
+      <Icon x="32" y="55" id="4" dir="2" />
+      <Icon x="32" y="55" id="4" dir="3" />
+      <Icon x="33" y="55" id="4" dir="4" />
+      <Icon x="19" y="56" id="4" dir="1" />
+      <Icon x="20" y="56" id="4" dir="1" />
+      <Icon x="31" y="56" id="4" dir="1" />
+      <Icon x="32" y="56" id="4" dir="1" />
+    </Icons>
+  </Sheet>
+  <Sheet width="43" height="42" title="Maze Level 6" path="" zoom="100" gameIndex="6">
+    <Sections>
+      <Section x="0" y="0" w="43" h="42" tx="-16" ty="4" />
+    </Sections>
+    <Grid>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</Grid>
+    <Notes>
+      <Note x="16" y="0" symbol="0">This is map column 0</Note>
+      <Note x="23" y="2" symbol=".">A slide!  (teleport to {map:Maze Level 5} 15,6)</Note>
+      <Note x="29" y="2" symbol="n">(The slide on level 5 at 15,-8 sends the party here)</Note>
+      <Note x="0" y="4" symbol="0">This is map row 0</Note>
+      <Note x="16" y="4" symbol="00">(This is the map origin - 0,0)</Note>
+      <Note x="42" y="4" symbol="0">This is map row 0</Note>
+      <Note x="39" y="5" symbol="Bo">A fine mist rises from a stagnant bog which lies serene and still.  Who will wade ?
+A: (nothing)
+B: Forced encounter with Swamp Thing
+C: Character becomes Poisoned
+D: 16d4 damage
+E: +15 SP (5/4/3/2/1) or lose SP
+F: (nothing)
+G: Character becomes Petrified
+H: Forced encounter with Swamp Thing
+I: (nothing)
+J: +3d2 MaxHP, character becomes Dead
+K: Lose all SP, gain or lose 1-1000 Gold
+L: +Age 1d3+1 years, +1 Agility, forced encounter with Triton</Note>
+      <Note x="8" y="6" symbol="Ev">(Entering this square activates Evil Eyes, unless you have already met him; after being activated you have about a 10% chance to encounter him regardless of your location.)
+Encounter with Evil Eyes: A haunting hooded figure looms before you.  An ebony peg juts out from under his dark flowing robes.
+Buy: Scarlet Robes (18000), Emerald Robes (18000), Ring of Skulls (20000), Staff of Summoning (31000)
+Steal: Gold Medallion
+Talk:
+hail: My eyes see what mortal eyes cannot.  Dost thou seek my services ? 
+Y: Then you must pay!  My fee is 4000 G.P. per vision.
+N: Then perhaps you seek your death!  (forced encounter with Evil Eyes)
+Give 4000 Gold:  Through the mists I see... 
+Vision 1: One card lies guarded by the etherial fists of a coppery demon!
+Vision 2: One card lies guarded on the bottom of a watery grave!
+Vision 3: One card lies guarded by the lord of ice and frost!
+Vision 4: No, wait!  The mist is parting... The final card lies guarded by ones most familiar, after the first three are solved, but not yet the fourth!
+Vision 5: Once past a first knight, and even after the last, no more exit to thy castle, till all the dice are cast.  A quest to be completed, three times and then four, ne'er parting from thy dungeon, till SORN doth breathe no more!
+Vision 6: A savage animal... no...  it's a...  a little pig squealing, "th-h-haat's all, folks!" </Note>
+      <Note x="16" y="6" symbol="Ic">Inspect Hidden Items: There is a sealed sarcophagus buried underneath the floor of the chamber.  Will you search (Y/N) ?
+Y: Reeech!  You slowly open the crypt...  (forced encounter with Horbule; victory: +Item "Ice Key")</Note>
+      <Note x="3" y="7" symbol=".">Rope from above.  Climb it (Y/N) ?
+Y: {map:Maze Level 5} (-13,-1)</Note>
+      <Note x="30" y="9" symbol="Yo">Lying upon an ebony altar is a long frosted glass cylinder, whose surface is cold to the touch.  Across the face of the milky tube is a blazon emblem etched in gold.  From within the tube you can discern the faint outline of a dark silhouette.
+Use "Gold Medallion":  A cold vapor jets from the cylinder as the seal becomes broken...  The creature within begins to stir!  The glass cylinder opens up, and emerging from it is a white furry creature over ten feet tall...
+Encounter with The Mighty Yog:  A great white ape towers over you, stretching and yawning as if arising from a deep slumber...
+Talk:
+hail: I am Yog, master of the ice ferry.
+ferry: The ice ferry leads to the crystal castle, domain of the Ice King.  I took the ferry apart, because the ice king refused to pay for rides.
+king/crystal/castle:  The Ice King is lord of the Crystal Castle.  It's rumored that he guards the entrance to some kind of sacred temple that lies far below us.
+apart: Have you found the ice ferry?
+N: It's really quite a thrill!
+Y: Describe it for me
+parts:  That's it!  If you want to put it together again, all you need to do is connect the crank to the chain, and screw the cog on the axle.  Once that is done, just turn the wheel, wind up the spring, and pull the lever.  It's really quite simple!
+entrance: Some say the temple leads straight into the bowels of the netherworld itself!
+netherworld: The world of demons, devils, and the damned!
+evil/eyes:  Evil Eyes!?!!  Why, that low-down, good-for-nothing, sly, stinking, sidewinding snake-in-the-grass!  When I get my hands on him, I'll murderize him, that's what!!</Note>
+      <Note x="8" y="13" symbol="Da">A dark well descends into the floor.  Who will wade?
+A: Lose 50-250 Gold
+B: Lose 200-600 Gold
+C: Heal 3d8 HP
+D: Forced encounter with Triton
+E: Lose 500-1500 Gold
+F: Lose random SP
+G: Forced encounter with Triton
+H: (nothing)
+I: Gain or lose 3d2 MaxHP
+J: (nothing)
+K: Forced encounter with Triton
+L: +1 Strength, +Age 1d2 years, character becomes Petrified, forced encounter with Triton
+M: Character becomes Dead
+N: Forced encounter with Lady Neptune, Triton (Victory: +Item "Queen of Hearts")</Note>
+      <Note x="28" y="13" symbol="t">Quicksand! (6d6 damage)</Note>
+      <Note x="30" y="15" symbol="t">Quicksand! (6d6 damage)</Note>
+      <Note x="17" y="18" symbol="s">In the center of the floor you find these amorphous glyphs:
++ !--) : /--' ====
+; : : ', ; ,--) ---- </Note>
+      <Note x="17" y="20" symbol="↓">Ice slide!  (move south 10 squares)</Note>
+      <Note x="19" y="21" symbol="↓">(move south 8 squares)</Note>
+      <Note x="21" y="21" symbol="←">(move west 2 squares)</Note>
+      <Note x="23" y="22" symbol="Ic">A jolly mannequin droops lifelessly inside a strange looking contraption.  Behind the colorful figure is a dark glass panel, and resting beside it is a small box of metal parts.  Looking at the device a little closer, you discover that the parts were at one time connected to the odd machine.  There are 7 parts here press letter (A) through (G) to assemble part:
+(A) cog
+(B) spring
+(C) lever
+(D) chain
+(E) wheel
+(F) axle
+(G) crank
+Enter G, D, A, F, E, B, C: The mosaic figure starts dancing a jig while little bells begin to chime.  After a few moments the dance comes to a close, and the mannequin slowly winds to a halt with its palms out- stretched...  The glass panel behind the oddly positioned figure illuminates, and upon it glow these neon words:  * Yog's Ice Capades * Ice ferry to the crystal castle home of the Ice King.  The fee is 5000 G.P.  Will you pay (Y/N) ?
+Y: Hold on!  Ice slide!  (move south two squares)</Note>
+      <Note x="7" y="23" symbol="t">A pit! (8d8 damage)</Note>
+      <Note x="21" y="24" symbol="↑">(move north 3 squares)</Note>
+      <Note x="23" y="24" symbol="←">(move west 2 squares)</Note>
+      <Note x="9" y="26" symbol="t">A gastrap!  (Character becomes Poisoned)</Note>
+      <Note x="22" y="27" symbol="De">* * * * * Potion-o-matic * * * * * 
+Courtesy of Rudolph's Vending Company 
+The fee is 1500 G.P.  Will you pay (Y/N) ?
+Y: There are 6 knobs here press letter (A) through (F) to pull one
+(A) Potion of Latumofis
+(B) Potion of Dios 
+(C) Potion of Dialko 
+(D) Potion of Madi 
+(E) Potion of Demon-Out
+(F) Potion of Youth 
+Select E: Thank you!  Don't forget your change.  (+Item "Potion of Demon-Out")
+Otherwise: Sold Out</Note>
+      <Note x="19" y="29" symbol="→">(move east 2 squares)</Note>
+      <Note x="21" y="29" symbol="Ca">You are standing at the end of a cavern carved from the ice.  On the east wall is a small hole, almost as if it were made for a key.
+Use "Ice Key":  Nothing happens.  Until the cavern starts to rumble!  A chute!  (teleport to 8,-25)</Note>
+      <Note x="24" y="29" symbol="Ro">You land within a small temple, all of which is hewn from solid ice.  Suddenly a blizzard blasts the room!
+(forced encounter with The Robuna Ice King; Victory: +Item "King of Diamonds")</Note>
+      <Note x="19" y="31" symbol="n">(the shaft on level 1 at 18,-6 brings the party here)</Note>
+      <Note x="26" y="31" symbol=".">Stairs to somewhere.  Follow them (Y/N) ?
+Y: {map:Maze Level 7} (14,-15)</Note>
+      <Note x="10" y="37" symbol=".">Ladder going up.  Take it (Y/N) ?
+Y: {map:Maze Level 5} (-6,-31)</Note>
+      <Note x="16" y="41" symbol="0">This is map column 0</Note>
+    </Notes>
+    <Icons>
+      <Icon x="23" y="2" id="9" dir="1" />
+      <Icon x="39" y="4" id="4" dir="3" />
+      <Icon x="8" y="5" id="4" dir="3" />
+      <Icon x="16" y="5" id="4" dir="3" />
+      <Icon x="38" y="5" id="4" dir="2" />
+      <Icon x="39" y="5" id="4" dir="4" />
+      <Icon x="39" y="5" id="4" dir="1" />
+      <Icon x="39" y="5" id="4" dir="2" />
+      <Icon x="39" y="5" id="4" dir="3" />
+      <Icon x="40" y="5" id="4" dir="4" />
+      <Icon x="3" y="6" id="4" dir="3" />
+      <Icon x="5" y="6" id="16" dir="2" />
+      <Icon x="6" y="6" id="4" dir="4" />
+      <Icon x="7" y="6" id="4" dir="2" />
+      <Icon x="8" y="6" id="4" dir="4" />
+      <Icon x="8" y="6" id="4" dir="1" />
+      <Icon x="8" y="6" id="4" dir="2" />
+      <Icon x="8" y="6" id="4" dir="3" />
+      <Icon x="9" y="6" id="4" dir="4" />
+      <Icon x="15" y="6" id="4" dir="2" />
+      <Icon x="16" y="6" id="4" dir="4" />
+      <Icon x="16" y="6" id="4" dir="1" />
+      <Icon x="16" y="6" id="4" dir="2" />
+      <Icon x="16" y="6" id="4" dir="3" />
+      <Icon x="17" y="6" id="4" dir="4" />
+      <Icon x="39" y="6" id="4" dir="1" />
+      <Icon x="2" y="7" id="4" dir="2" />
+      <Icon x="3" y="7" id="4" dir="4" />
+      <Icon x="3" y="7" id="4" dir="1" />
+      <Icon x="3" y="7" id="4" dir="2" />
+      <Icon x="3" y="7" id="4" dir="3" />
+      <Icon x="3" y="7" id="9" dir="1" />
+      <Icon x="4" y="7" id="4" dir="4" />
+      <Icon x="8" y="7" id="4" dir="1" />
+      <Icon x="16" y="7" id="4" dir="1" />
+      <Icon x="3" y="8" id="4" dir="1" />
+      <Icon x="30" y="8" id="4" dir="3" />
+      <Icon x="28" y="9" id="16" dir="2" />
+      <Icon x="29" y="9" id="4" dir="4" />
+      <Icon x="29" y="9" id="4" dir="2" />
+      <Icon x="30" y="9" id="4" dir="4" />
+      <Icon x="30" y="9" id="4" dir="1" />
+      <Icon x="30" y="9" id="4" dir="2" />
+      <Icon x="30" y="9" id="4" dir="3" />
+      <Icon x="31" y="9" id="4" dir="4" />
+      <Icon x="13" y="10" id="4" dir="2" />
+      <Icon x="14" y="10" id="4" dir="4" />
+      <Icon x="30" y="10" id="4" dir="1" />
+      <Icon x="10" y="11" id="4" dir="2" />
+      <Icon x="11" y="11" id="4" dir="4" />
+      <Icon x="12" y="11" id="4" dir="3" />
+      <Icon x="15" y="11" id="4" dir="3" />
+      <Icon x="16" y="11" id="4" dir="3" />
+      <Icon x="11" y="12" id="4" dir="2" />
+      <Icon x="12" y="12" id="4" dir="4" />
+      <Icon x="12" y="12" id="4" dir="1" />
+      <Icon x="12" y="12" id="4" dir="3" />
+      <Icon x="15" y="12" id="4" dir="1" />
+      <Icon x="16" y="12" id="4" dir="1" />
+      <Icon x="20" y="12" id="4" dir="2" />
+      <Icon x="21" y="12" id="4" dir="4" />
+      <Icon x="7" y="13" id="4" dir="2" />
+      <Icon x="8" y="13" id="4" dir="4" />
+      <Icon x="8" y="13" id="4" dir="2" />
+      <Icon x="8" y="13" id="4" dir="3" />
+      <Icon x="9" y="13" id="4" dir="4" />
+      <Icon x="10" y="13" id="4" dir="2" />
+      <Icon x="11" y="13" id="4" dir="4" />
+      <Icon x="11" y="13" id="4" dir="2" />
+      <Icon x="12" y="13" id="4" dir="4" />
+      <Icon x="12" y="13" id="4" dir="1" />
+      <Icon x="12" y="13" id="4" dir="3" />
+      <Icon x="8" y="14" id="4" dir="1" />
+      <Icon x="12" y="14" id="4" dir="1" />
+      <Icon x="13" y="15" id="4" dir="2" />
+      <Icon x="14" y="15" id="4" dir="4" />
+      <Icon x="10" y="17" id="4" dir="2" />
+      <Icon x="10" y="17" id="4" dir="3" />
+      <Icon x="11" y="17" id="4" dir="4" />
+      <Icon x="11" y="17" id="4" dir="2" />
+      <Icon x="11" y="17" id="4" dir="3" />
+      <Icon x="12" y="17" id="4" dir="4" />
+      <Icon x="12" y="17" id="4" dir="3" />
+      <Icon x="17" y="17" id="4" dir="3" />
+      <Icon x="10" y="18" id="4" dir="1" />
+      <Icon x="10" y="18" id="4" dir="2" />
+      <Icon x="10" y="18" id="4" dir="3" />
+      <Icon x="11" y="18" id="4" dir="4" />
+      <Icon x="11" y="18" id="4" dir="1" />
+      <Icon x="11" y="18" id="4" dir="2" />
+      <Icon x="12" y="18" id="4" dir="4" />
+      <Icon x="12" y="18" id="4" dir="1" />
+      <Icon x="12" y="18" id="4" dir="3" />
+      <Icon x="16" y="18" id="4" dir="2" />
+      <Icon x="17" y="18" id="4" dir="4" />
+      <Icon x="17" y="18" id="4" dir="1" />
+      <Icon x="17" y="18" id="4" dir="2" />
+      <Icon x="17" y="18" id="4" dir="3" />
+      <Icon x="18" y="18" id="4" dir="4" />
+      <Icon x="7" y="19" id="4" dir="3" />
+      <Icon x="8" y="19" id="4" dir="3" />
+      <Icon x="10" y="19" id="4" dir="1" />
+      <Icon x="12" y="19" id="4" dir="1" />
+      <Icon x="12" y="19" id="4" dir="2" />
+      <Icon x="12" y="19" id="4" dir="3" />
+      <Icon x="13" y="19" id="4" dir="4" />
+      <Icon x="13" y="19" id="4" dir="2" />
+      <Icon x="13" y="19" id="4" dir="3" />
+      <Icon x="14" y="19" id="4" dir="4" />
+      <Icon x="14" y="19" id="4" dir="3" />
+      <Icon x="17" y="19" id="4" dir="1" />
+      <Icon x="7" y="20" id="4" dir="1" />
+      <Icon x="8" y="20" id="4" dir="1" />
+      <Icon x="12" y="20" id="4" dir="1" />
+      <Icon x="12" y="20" id="4" dir="2" />
+      <Icon x="12" y="20" id="4" dir="3" />
+      <Icon x="13" y="20" id="4" dir="4" />
+      <Icon x="13" y="20" id="4" dir="1" />
+      <Icon x="13" y="20" id="4" dir="2" />
+      <Icon x="14" y="20" id="4" dir="4" />
+      <Icon x="14" y="20" id="4" dir="1" />
+      <Icon x="14" y="20" id="4" dir="3" />
+      <Icon x="6" y="21" id="4" dir="2" />
+      <Icon x="6" y="21" id="4" dir="3" />
+      <Icon x="7" y="21" id="4" dir="4" />
+      <Icon x="7" y="21" id="4" dir="3" />
+      <Icon x="8" y="21" id="4" dir="2" />
+      <Icon x="8" y="21" id="4" dir="3" />
+      <Icon x="9" y="21" id="4" dir="4" />
+      <Icon x="9" y="21" id="4" dir="3" />
+      <Icon x="12" y="21" id="4" dir="1" />
+      <Icon x="14" y="21" id="4" dir="1" />
+      <Icon x="14" y="21" id="4" dir="2" />
+      <Icon x="15" y="21" id="4" dir="4" />
+      <Icon x="6" y="22" id="4" dir="1" />
+      <Icon x="7" y="22" id="4" dir="1" />
+      <Icon x="8" y="22" id="4" dir="1" />
+      <Icon x="9" y="22" id="4" dir="1" />
+      <Icon x="17" y="22" id="4" dir="2" />
+      <Icon x="18" y="22" id="4" dir="4" />
+      <Icon x="14" y="23" id="4" dir="2" />
+      <Icon x="15" y="23" id="4" dir="4" />
+      <Icon x="23" y="23" id="4" dir="1" />
+      <Icon x="13" y="24" id="4" dir="3" />
+      <Icon x="17" y="24" id="4" dir="2" />
+      <Icon x="18" y="24" id="4" dir="4" />
+      <Icon x="9" y="25" id="4" dir="3" />
+      <Icon x="13" y="25" id="4" dir="1" />
+      <Icon x="14" y="25" id="4" dir="2" />
+      <Icon x="15" y="25" id="4" dir="4" />
+      <Icon x="8" y="26" id="4" dir="2" />
+      <Icon x="9" y="26" id="4" dir="4" />
+      <Icon x="9" y="26" id="4" dir="1" />
+      <Icon x="9" y="26" id="4" dir="2" />
+      <Icon x="9" y="26" id="4" dir="3" />
+      <Icon x="10" y="26" id="4" dir="4" />
+      <Icon x="17" y="26" id="4" dir="2" />
+      <Icon x="18" y="26" id="4" dir="4" />
+      <Icon x="22" y="26" id="4" dir="3" />
+      <Icon x="24" y="26" id="4" dir="3" />
+      <Icon x="26" y="26" id="4" dir="3" />
+      <Icon x="9" y="27" id="4" dir="1" />
+      <Icon x="14" y="27" id="4" dir="2" />
+      <Icon x="15" y="27" id="4" dir="4" />
+      <Icon x="21" y="27" id="4" dir="2" />
+      <Icon x="22" y="27" id="4" dir="4" />
+      <Icon x="22" y="27" id="4" dir="1" />
+      <Icon x="22" y="27" id="4" dir="2" />
+      <Icon x="22" y="27" id="4" dir="3" />
+      <Icon x="23" y="27" id="4" dir="4" />
+      <Icon x="24" y="27" id="4" dir="1" />
+      <Icon x="24" y="27" id="4" dir="3" />
+      <Icon x="25" y="27" id="4" dir="2" />
+      <Icon x="26" y="27" id="4" dir="4" />
+      <Icon x="26" y="27" id="4" dir="1" />
+      <Icon x="26" y="27" id="4" dir="2" />
+      <Icon x="26" y="27" id="4" dir="3" />
+      <Icon x="27" y="27" id="4" dir="4" />
+      <Icon x="17" y="28" id="4" dir="2" />
+      <Icon x="18" y="28" id="4" dir="4" />
+      <Icon x="22" y="28" id="4" dir="1" />
+      <Icon x="24" y="28" id="4" dir="1" />
+      <Icon x="24" y="28" id="4" dir="3" />
+      <Icon x="26" y="28" id="4" dir="1" />
+      <Icon x="22" y="29" id="4" dir="2" />
+      <Icon x="23" y="29" id="4" dir="4" />
+      <Icon x="23" y="29" id="4" dir="2" />
+      <Icon x="24" y="29" id="4" dir="4" />
+      <Icon x="24" y="29" id="4" dir="1" />
+      <Icon x="24" y="29" id="4" dir="2" />
+      <Icon x="24" y="29" id="4" dir="3" />
+      <Icon x="25" y="29" id="4" dir="4" />
+      <Icon x="25" y="29" id="4" dir="2" />
+      <Icon x="26" y="29" id="4" dir="4" />
+      <Icon x="7" y="30" id="4" dir="3" />
+      <Icon x="8" y="30" id="4" dir="3" />
+      <Icon x="15" y="30" id="4" dir="3" />
+      <Icon x="16" y="30" id="4" dir="3" />
+      <Icon x="19" y="30" id="4" dir="3" />
+      <Icon x="22" y="30" id="4" dir="3" />
+      <Icon x="24" y="30" id="4" dir="1" />
+      <Icon x="24" y="30" id="4" dir="3" />
+      <Icon x="26" y="30" id="4" dir="3" />
+      <Icon x="7" y="31" id="4" dir="1" />
+      <Icon x="8" y="31" id="4" dir="1" />
+      <Icon x="14" y="31" id="4" dir="2" />
+      <Icon x="15" y="31" id="4" dir="4" />
+      <Icon x="15" y="31" id="4" dir="1" />
+      <Icon x="16" y="31" id="4" dir="1" />
+      <Icon x="16" y="31" id="4" dir="2" />
+      <Icon x="17" y="31" id="4" dir="4" />
+      <Icon x="18" y="31" id="4" dir="2" />
+      <Icon x="19" y="31" id="4" dir="4" />
+      <Icon x="19" y="31" id="4" dir="1" />
+      <Icon x="19" y="31" id="4" dir="2" />
+      <Icon x="19" y="31" id="4" dir="3" />
+      <Icon x="20" y="31" id="4" dir="4" />
+      <Icon x="21" y="31" id="4" dir="2" />
+      <Icon x="22" y="31" id="4" dir="4" />
+      <Icon x="22" y="31" id="4" dir="1" />
+      <Icon x="22" y="31" id="4" dir="2" />
+      <Icon x="22" y="31" id="4" dir="3" />
+      <Icon x="23" y="31" id="4" dir="4" />
+      <Icon x="24" y="31" id="4" dir="1" />
+      <Icon x="25" y="31" id="4" dir="2" />
+      <Icon x="26" y="31" id="4" dir="4" />
+      <Icon x="26" y="31" id="4" dir="1" />
+      <Icon x="26" y="31" id="4" dir="2" />
+      <Icon x="26" y="31" id="4" dir="3" />
+      <Icon x="26" y="31" id="10" dir="1" />
+      <Icon x="27" y="31" id="4" dir="4" />
+      <Icon x="19" y="32" id="4" dir="1" />
+      <Icon x="22" y="32" id="4" dir="1" />
+      <Icon x="26" y="32" id="4" dir="1" />
+      <Icon x="8" y="36" id="4" dir="3" />
+      <Icon x="8" y="37" id="4" dir="1" />
+      <Icon x="10" y="37" id="9" dir="1" />
+    </Icons>
+  </Sheet>
+  <Sheet width="34" height="34" title="Maze Level 7" path="" zoom="100" gameIndex="7">
+    <Sections>
+      <Section x="0" y="0" w="34" h="34" tx="-17" ty="16" />
+    </Sections>
+    <Grid>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</Grid>
+    <Notes>
+      <Note x="17" y="0" symbol="0">This is map column 0</Note>
+      <Note x="2" y="2" symbol=".">A shaft!  (teleport to {map:Maze Level 8} 26,98)</Note>
+      <Note x="31" y="2" symbol=".">A shaft!  (teleport to {map:Maze Level 8} 90,-62)</Note>
+      <Note x="27" y="4" symbol="Po">A deep pool of midnight blues gurgles silently like the calm before a storm.  Who will wade ?
+A: Heal 4d2 HP
+B: 8d2 damage
+C: Heal 12d2 HP or 12d2 damage 
+D: (nothing)
+E: Forced encounter with water elemental
+F: (nothing)
+G: (nothing)
+H: Gain or lose 100-1000 Gold
+I: Age +1 or -1 years (19 minimum)
+J: +1 to +42 SP (1 to 9/8/7/6/5/4/3)
+K: Heal all HP
+L: Remove minor conditions
+M: +1 or -1 to random primary statistic
+N: Gain or lose 1d3 MaxHP
+O: Remove all conditions (including Ashes)
+P: Forced encounter with Dragonfinn, Water Elemental (victory: +Item "Staff of Water")</Note>
+      <Note x="8" y="8" symbol="n">(the portal on level 8 at -11,0 brings the party here)
+(performing the ritual incorrectly on level 8 at -4,0 brings the party here)</Note>
+      <Note x="25" y="8" symbol="n">(the portal on level 8 at 0,-11 brings the party here)
+(performing the ritual incorrectly on level 8 at 0,-4 brings the party here)</Note>
+      <Note x="30" y="8" symbol="Ki">The temple walls appear charred and black, scorched from a raging heat.  Suddenly a blazing flame descends upon you!  (forced Encounter with The Kanzi Fire King)
+Victory: +Item "Lightning Rod"</Note>
+      <Note x="5" y="10" symbol="t">A gastrap!  (8d8 damage)</Note>
+      <Note x="11" y="11" symbol="Sp">Encounter with The Lord of Spades: A red knight stands boldly before you and proclaims, "I am the lord of spades, appointed guardian of the triaxial gate!" 
+hail: Three questions you may ask, for three answers will I give, but no one shall pass without the sign!
+time: I am the past, the memory of your fathers and the origin of all gaits.
+sign/card:  The sign of the card!
+Give "Jack of Spades":  You may pass.  The Lord of Spades leaves...  (+Item "Jack of Spades") (otherwise teleport back one square)
+If you fight and defeat the Lord of Spades:  A chute!  (teleport to {map:Maze Level 8} 79, -65)</Note>
+      <Note x="22" y="11" symbol="He">Encounter with The Lord of Hearts: A blue knight stands boldly before you and proclaims, "I am the lord of hearts, appointed guardian of the triaxial gate!"
+hail: Three questions you may ask, for three answers will I give, but no one shall pass without the sign!
+time: I am the present, the bearer of today and the slave of the past.
+sign/card:  The sign of the card!
+Give "Queen of Hearts":  You may pass.  The Lord of Hearts leaves...  (+Item "Queen of Hearts") (otherwise teleport back one square)
+If you fight and defeat the Lord of Hearts:  A chute!  (teleport to {map:Maze Level 8} 36,86)</Note>
+      <Note x="30" y="13" symbol="t">If you have not defeated The Kanzi Fire King at (13,8): Firestorm! (9d9 damage)</Note>
+      <Note x="0" y="16" symbol="0">This is map row 0</Note>
+      <Note x="4" y="16" symbol="Wi">A great howling wind pours from within the entrance before you.
+If you have "Lark in a Cage": The little lark begins to whistle a very strange sounding tune...  After a moment the winds die down, and all is calm once more...
+Otherwise: The entire party is blown away! (teleport back one square)</Note>
+      <Note x="16" y="16" symbol="Wh">A cold white flame that does not burn dances up from the depths below.
+If you have given "Ace of Clubs" to the Lord of Clubs at 5,-6 and use "Orb of Llylgamyn": A gateway appears within the center of the translucent flame!  A shimmering portal.  Enter it (Y/N) ?
+Y: (teleport to {map:Maze Level 8} (0,11)</Note>
+      <Note x="17" y="16" symbol="Ye">A cool yellow flame that does not burn dances up from the depths below.
+If you have given "King of Diamonds" to the Lord of Diamonds at -6,-6 and use "Orb of Llylgamyn": A gateway appears within the center of the translucent flame!  A shimmering portal.  Enter it (Y/N) ?
+Y: (teleport to {map:Maze Level 8} 11,0)
+(This is the map origin - 0,0)</Note>
+      <Note x="33" y="16" symbol="0">This is map row 0</Note>
+      <Note x="4" y="17" symbol="Wi">A great howling wind pours from within the entrance before you.
+If you have "Lark in a Cage": The little lark begins to whistle a very strange sounding tune...  After a moment the winds die down, and all is calm once more...
+Otherwise: The entire party is blown away! (teleport back one square)</Note>
+      <Note x="16" y="17" symbol="Bl">A warm blue flame that does not burn dances up from the depths below.
+If you have given "Queen of Hearts" to the Lord of Hearts at 5,5 and use Use "Orb of Llylgamyn": A gateway appears within the center of the translucent flame!  A shimmering portal.  Enter it (Y/N) ?
+Y: (teleport to {map:Maze Level 8} 0,-11)</Note>
+      <Note x="17" y="17" symbol="Re">A hot red flame that does not burn dances up from the depths below.
+If you have given "Jack of Spades" to the Lord of Spades at -6,5 and use "Orb of Llylgamyn": A gateway appears within the center of the translucent flame!  A shimmering portal.  Enter it (Y/N) ?
+Y: (teleport to {map:Maze Level 8} -11,0)</Note>
+      <Note x="30" y="20" symbol="Li">A powerful electric current sparks across the doorway in a wide arc.  Suddenly it leaps out at the party,
+If you do not have "Lightning Rod": and everyone runs from the room! (teleport back one square)
+Otherwise: and strikes your lightning rod!  It shorted itself out!</Note>
+      <Note x="11" y="22" symbol="Di">Encounter with The Lord of Diamonds: A yellow knight stands boldly before you and proclaims, "I am the lord of diamonds, appointed guardian of the triaxial gate!"
+Talk:
+hail: Three questions you may ask, for three answers will I give, but no one shall pass without the sign!
+time:   I am the future, prophet of tomorrow and the child of the present.
+sign/card:  The sign of the card!
+Give "King of Diamonds":  You may pass.  The King of Diamonds leaves...  (+Item "King of Diamonds") (otherwise teleport back one square)
+If you fight and defeat the Lord of Diamonds:  A chute!  (teleport to {map:Maze Level 8} 18,89)</Note>
+      <Note x="22" y="22" symbol="Cl">Encounter with The Lord of Clubs:  A white knight stands boldly before you and proclaims, "I am the Lord of Clubs, appointed guardian of the Triaxial Gate!"  "I await the sign!" 
+Talk:
+hail: Three questions you may ask, for three answers will I give, but no one shall pass without the sign!
+time:  I am the infinite, reaching beyond all beginnings and all ends, transcending all limits of reality.
+sign/card:  The sign of the card!
+Give "Ace of Clubs":  You may pass.  The Lord of Clubs leaves...  (note that this Lord does not return your card to you) (otherwise teleport back one square)
+If you fight and defeat the Lord of Clubs:  A chute!  (teleport to {map:Maze Level 8} -112,-104)</Note>
+      <Note x="5" y="23" symbol="Ph">A great speckled bird is perched atop a thick brazier, eyeballing the party with a piercing gaze.  The bird then poses this question:  After the fires came the frost, and after the winds came the rain and once the sun had warmed the earth an astounding miracle there remained.  And this miracle is called...
+Answer LIFE: Very good!  The act is done.  Thou hast earned the staff.  (+Item "Staff of Air")
+Otherwise: Tsk tsk.  The act is done (forced encounter with Phoenix)</Note>
+      <Note x="8" y="25" symbol="n">(the portal on level 8 at 11,0 brings the party here)
+(performing the ritual incorrectly on level 8 at 4,0 brings the party here)</Note>
+      <Note x="25" y="25" symbol="n">(the portal on level 8 at 0,11 brings the party here)
+(performing the ritual incorrectly on level 8 at 0,4 brings the party here)</Note>
+      <Note x="30" y="25" symbol="Qu">The temple walls appear charred and black, scorched from a raging heat.  Suddenly a blazing flame descends upon you!  (forced Encounter with The Zana Fire Queen)
+Victory: +Item "Staff of Fire"</Note>
+      <Note x="12" y="29" symbol="Ko">High above you looms a huge towering beast, beating wildly upon his chest and guarding a tall blond female...  Suddenly he drops down on top of you!  (forced encounter with Kong, Fay)
+Victory: +Item "Staff of Earth"</Note>
+      <Note x="16" y="29" symbol="Mu">A large arcadium of brass monkeys are revolving all around a turnstile.
+If you have "Munke Wand": As you enter the room, the Munke wand begins to vibrate, and as it does the swinging monkeys grind to a halt.
+Otherwise: They swing so violently back and forth that you are forced to flee the room! (teleport back one square)</Note>
+      <Note x="17" y="29" symbol="Mu">A large arcadium of brass monkeys are revolving all around a turnstile.
+If you have "Munke Wand": As you enter the room, the Munke wand begins to vibrate, and as it does the swinging monkeys grind to a halt.
+Otherwise: They swing so violently back and forth that you are forced to flee the room! (teleport back one square)</Note>
+      <Note x="2" y="31" symbol=".">A shaft!  (teleport to {map:Maze Level 8} -120,-116)</Note>
+      <Note x="31" y="31" symbol=".">Stairs leading up.  Follow them (Y/N) ?
+Y: {map:Maze Level 6} (10,-27)</Note>
+      <Note x="17" y="33" symbol="0">This is map column 0</Note>
+    </Notes>
+    <Icons>
+      <Icon x="2" y="1" id="4" dir="3" />
+      <Icon x="16" y="1" id="4" dir="3" />
+      <Icon x="17" y="1" id="4" dir="3" />
+      <Icon x="31" y="1" id="4" dir="3" />
+      <Icon x="1" y="2" id="4" dir="2" />
+      <Icon x="2" y="2" id="4" dir="4" />
+      <Icon x="2" y="2" id="4" dir="1" />
+      <Icon x="2" y="2" id="4" dir="2" />
+      <Icon x="2" y="2" id="4" dir="3" />
+      <Icon x="2" y="2" id="10" dir="1" />
+      <Icon x="3" y="2" id="4" dir="4" />
+      <Icon x="4" y="2" id="4" dir="2" />
+      <Icon x="5" y="2" id="4" dir="4" />
+      <Icon x="6" y="2" id="4" dir="2" />
+      <Icon x="7" y="2" id="4" dir="4" />
+      <Icon x="9" y="2" id="4" dir="2" />
+      <Icon x="10" y="2" id="4" dir="4" />
+      <Icon x="10" y="2" id="4" dir="2" />
+      <Icon x="11" y="2" id="4" dir="4" />
+      <Icon x="16" y="2" id="4" dir="1" />
+      <Icon x="17" y="2" id="4" dir="1" />
+      <Icon x="22" y="2" id="4" dir="2" />
+      <Icon x="23" y="2" id="4" dir="4" />
+      <Icon x="23" y="2" id="4" dir="2" />
+      <Icon x="24" y="2" id="4" dir="4" />
+      <Icon x="26" y="2" id="4" dir="2" />
+      <Icon x="27" y="2" id="4" dir="4" />
+      <Icon x="28" y="2" id="4" dir="2" />
+      <Icon x="29" y="2" id="4" dir="4" />
+      <Icon x="30" y="2" id="4" dir="2" />
+      <Icon x="31" y="2" id="4" dir="4" />
+      <Icon x="31" y="2" id="4" dir="1" />
+      <Icon x="31" y="2" id="4" dir="2" />
+      <Icon x="31" y="2" id="4" dir="3" />
+      <Icon x="31" y="2" id="10" dir="1" />
+      <Icon x="32" y="2" id="4" dir="4" />
+      <Icon x="2" y="3" id="4" dir="1" />
+      <Icon x="6" y="3" id="4" dir="3" />
+      <Icon x="16" y="3" id="4" dir="3" />
+      <Icon x="17" y="3" id="4" dir="3" />
+      <Icon x="27" y="3" id="4" dir="3" />
+      <Icon x="31" y="3" id="4" dir="1" />
+      <Icon x="6" y="4" id="4" dir="1" />
+      <Icon x="16" y="4" id="4" dir="1" />
+      <Icon x="16" y="4" id="4" dir="3" />
+      <Icon x="17" y="4" id="4" dir="1" />
+      <Icon x="17" y="4" id="4" dir="3" />
+      <Icon x="27" y="4" id="4" dir="1" />
+      <Icon x="31" y="4" id="4" dir="3" />
+      <Icon x="7" y="5" id="4" dir="2" />
+      <Icon x="8" y="5" id="4" dir="4" />
+      <Icon x="12" y="5" id="4" dir="2" />
+      <Icon x="13" y="5" id="4" dir="4" />
+      <Icon x="16" y="5" id="4" dir="1" />
+      <Icon x="17" y="5" id="4" dir="1" />
+      <Icon x="20" y="5" id="4" dir="2" />
+      <Icon x="21" y="5" id="4" dir="4" />
+      <Icon x="25" y="5" id="4" dir="2" />
+      <Icon x="26" y="5" id="4" dir="4" />
+      <Icon x="30" y="5" id="4" dir="3" />
+      <Icon x="31" y="5" id="4" dir="1" />
+      <Icon x="31" y="5" id="4" dir="3" />
+      <Icon x="3" y="6" id="4" dir="2" />
+      <Icon x="4" y="6" id="4" dir="4" />
+      <Icon x="9" y="6" id="4" dir="2" />
+      <Icon x="10" y="6" id="4" dir="4" />
+      <Icon x="10" y="6" id="4" dir="2" />
+      <Icon x="11" y="6" id="4" dir="4" />
+      <Icon x="22" y="6" id="4" dir="2" />
+      <Icon x="23" y="6" id="4" dir="4" />
+      <Icon x="23" y="6" id="4" dir="2" />
+      <Icon x="24" y="6" id="4" dir="4" />
+      <Icon x="29" y="6" id="4" dir="3" />
+      <Icon x="30" y="6" id="4" dir="1" />
+      <Icon x="30" y="6" id="4" dir="3" />
+      <Icon x="31" y="6" id="4" dir="1" />
+      <Icon x="31" y="6" id="4" dir="3" />
+      <Icon x="29" y="7" id="4" dir="1" />
+      <Icon x="30" y="7" id="4" dir="1" />
+      <Icon x="31" y="7" id="4" dir="1" />
+      <Icon x="3" y="8" id="4" dir="2" />
+      <Icon x="4" y="8" id="4" dir="4" />
+      <Icon x="5" y="8" id="4" dir="2" />
+      <Icon x="6" y="8" id="4" dir="4" />
+      <Icon x="8" y="8" id="4" dir="2" />
+      <Icon x="8" y="8" id="4" dir="3" />
+      <Icon x="9" y="8" id="4" dir="4" />
+      <Icon x="24" y="8" id="4" dir="2" />
+      <Icon x="25" y="8" id="4" dir="4" />
+      <Icon x="25" y="8" id="4" dir="3" />
+      <Icon x="27" y="8" id="4" dir="2" />
+      <Icon x="28" y="8" id="4" dir="4" />
+      <Icon x="30" y="8" id="4" dir="3" />
+      <Icon x="8" y="9" id="4" dir="1" />
+      <Icon x="25" y="9" id="4" dir="1" />
+      <Icon x="27" y="9" id="4" dir="2" />
+      <Icon x="28" y="9" id="4" dir="4" />
+      <Icon x="30" y="9" id="4" dir="1" />
+      <Icon x="3" y="10" id="4" dir="2" />
+      <Icon x="4" y="10" id="4" dir="4" />
+      <Icon x="5" y="10" id="4" dir="2" />
+      <Icon x="6" y="10" id="4" dir="4" />
+      <Icon x="27" y="10" id="4" dir="2" />
+      <Icon x="28" y="10" id="4" dir="4" />
+      <Icon x="11" y="11" id="4" dir="2" />
+      <Icon x="11" y="11" id="4" dir="3" />
+      <Icon x="12" y="11" id="4" dir="4" />
+      <Icon x="21" y="11" id="4" dir="2" />
+      <Icon x="22" y="11" id="4" dir="4" />
+      <Icon x="22" y="11" id="4" dir="3" />
+      <Icon x="27" y="11" id="4" dir="2" />
+      <Icon x="28" y="11" id="4" dir="4" />
+      <Icon x="3" y="12" id="4" dir="2" />
+      <Icon x="4" y="12" id="4" dir="4" />
+      <Icon x="5" y="12" id="4" dir="2" />
+      <Icon x="6" y="12" id="4" dir="4" />
+      <Icon x="11" y="12" id="4" dir="1" />
+      <Icon x="22" y="12" id="4" dir="1" />
+      <Icon x="27" y="12" id="4" dir="2" />
+      <Icon x="28" y="12" id="4" dir="4" />
+      <Icon x="29" y="13" id="4" dir="2" />
+      <Icon x="30" y="13" id="4" dir="4" />
+      <Icon x="30" y="13" id="4" dir="2" />
+      <Icon x="30" y="13" id="4" dir="3" />
+      <Icon x="31" y="13" id="4" dir="4" />
+      <Icon x="3" y="14" id="4" dir="2" />
+      <Icon x="4" y="14" id="4" dir="4" />
+      <Icon x="30" y="14" id="4" dir="1" />
+      <Icon x="3" y="16" id="4" dir="2" />
+      <Icon x="4" y="16" id="4" dir="4" />
+      <Icon x="4" y="16" id="4" dir="2" />
+      <Icon x="5" y="16" id="4" dir="4" />
+      <Icon x="28" y="16" id="4" dir="2" />
+      <Icon x="29" y="16" id="4" dir="4" />
+      <Icon x="29" y="16" id="4" dir="2" />
+      <Icon x="30" y="16" id="4" dir="4" />
+      <Icon x="3" y="17" id="4" dir="2" />
+      <Icon x="4" y="17" id="4" dir="4" />
+      <Icon x="4" y="17" id="4" dir="2" />
+      <Icon x="5" y="17" id="4" dir="4" />
+      <Icon x="28" y="17" id="4" dir="2" />
+      <Icon x="29" y="17" id="4" dir="4" />
+      <Icon x="29" y="17" id="4" dir="2" />
+      <Icon x="30" y="17" id="4" dir="4" />
+      <Icon x="3" y="19" id="4" dir="2" />
+      <Icon x="4" y="19" id="4" dir="4" />
+      <Icon x="30" y="19" id="4" dir="3" />
+      <Icon x="29" y="20" id="4" dir="2" />
+      <Icon x="30" y="20" id="4" dir="4" />
+      <Icon x="30" y="20" id="4" dir="1" />
+      <Icon x="30" y="20" id="4" dir="2" />
+      <Icon x="31" y="20" id="4" dir="4" />
+      <Icon x="3" y="21" id="4" dir="2" />
+      <Icon x="4" y="21" id="4" dir="4" />
+      <Icon x="5" y="21" id="4" dir="2" />
+      <Icon x="6" y="21" id="4" dir="4" />
+      <Icon x="11" y="21" id="4" dir="3" />
+      <Icon x="22" y="21" id="4" dir="3" />
+      <Icon x="27" y="21" id="4" dir="2" />
+      <Icon x="28" y="21" id="4" dir="4" />
+      <Icon x="11" y="22" id="4" dir="1" />
+      <Icon x="11" y="22" id="4" dir="2" />
+      <Icon x="12" y="22" id="4" dir="4" />
+      <Icon x="21" y="22" id="4" dir="2" />
+      <Icon x="22" y="22" id="4" dir="4" />
+      <Icon x="22" y="22" id="4" dir="1" />
+      <Icon x="22" y="22" id="4" dir="4" />
+      <Icon x="22" y="22" id="4" dir="1" />
+      <Icon x="27" y="22" id="4" dir="2" />
+      <Icon x="28" y="22" id="4" dir="4" />
+      <Icon x="3" y="23" id="4" dir="2" />
+      <Icon x="4" y="23" id="4" dir="4" />
+      <Icon x="5" y="23" id="4" dir="2" />
+      <Icon x="6" y="23" id="4" dir="4" />
+      <Icon x="27" y="23" id="4" dir="2" />
+      <Icon x="28" y="23" id="4" dir="4" />
+      <Icon x="8" y="24" id="4" dir="3" />
+      <Icon x="25" y="24" id="4" dir="3" />
+      <Icon x="27" y="24" id="4" dir="2" />
+      <Icon x="28" y="24" id="4" dir="4" />
+      <Icon x="30" y="24" id="4" dir="3" />
+      <Icon x="3" y="25" id="4" dir="2" />
+      <Icon x="4" y="25" id="4" dir="4" />
+      <Icon x="5" y="25" id="4" dir="2" />
+      <Icon x="6" y="25" id="4" dir="4" />
+      <Icon x="8" y="25" id="4" dir="1" />
+      <Icon x="8" y="25" id="4" dir="2" />
+      <Icon x="9" y="25" id="4" dir="4" />
+      <Icon x="24" y="25" id="4" dir="2" />
+      <Icon x="25" y="25" id="4" dir="4" />
+      <Icon x="25" y="25" id="4" dir="1" />
+      <Icon x="27" y="25" id="4" dir="2" />
+      <Icon x="28" y="25" id="4" dir="4" />
+      <Icon x="30" y="25" id="4" dir="1" />
+      <Icon x="29" y="26" id="4" dir="3" />
+      <Icon x="30" y="26" id="4" dir="3" />
+      <Icon x="31" y="26" id="4" dir="3" />
+      <Icon x="3" y="27" id="4" dir="2" />
+      <Icon x="4" y="27" id="4" dir="4" />
+      <Icon x="12" y="27" id="4" dir="3" />
+      <Icon x="21" y="27" id="4" dir="3" />
+      <Icon x="29" y="27" id="4" dir="1" />
+      <Icon x="30" y="27" id="4" dir="1" />
+      <Icon x="30" y="27" id="4" dir="3" />
+      <Icon x="31" y="27" id="4" dir="1" />
+      <Icon x="31" y="27" id="4" dir="3" />
+      <Icon x="8" y="28" id="4" dir="3" />
+      <Icon x="9" y="28" id="4" dir="3" />
+      <Icon x="10" y="28" id="4" dir="2" />
+      <Icon x="11" y="28" id="4" dir="4" />
+      <Icon x="12" y="28" id="4" dir="1" />
+      <Icon x="16" y="28" id="4" dir="3" />
+      <Icon x="17" y="28" id="4" dir="3" />
+      <Icon x="21" y="28" id="4" dir="1" />
+      <Icon x="22" y="28" id="4" dir="2" />
+      <Icon x="23" y="28" id="4" dir="4" />
+      <Icon x="24" y="28" id="4" dir="3" />
+      <Icon x="25" y="28" id="4" dir="3" />
+      <Icon x="30" y="28" id="4" dir="1" />
+      <Icon x="31" y="28" id="4" dir="1" />
+      <Icon x="31" y="28" id="4" dir="3" />
+      <Icon x="7" y="29" id="4" dir="2" />
+      <Icon x="8" y="29" id="4" dir="4" />
+      <Icon x="8" y="29" id="4" dir="1" />
+      <Icon x="9" y="29" id="4" dir="1" />
+      <Icon x="11" y="29" id="4" dir="2" />
+      <Icon x="12" y="29" id="4" dir="4" />
+      <Icon x="13" y="29" id="4" dir="2" />
+      <Icon x="14" y="29" id="4" dir="4" />
+      <Icon x="16" y="29" id="4" dir="1" />
+      <Icon x="16" y="29" id="4" dir="3" />
+      <Icon x="17" y="29" id="4" dir="1" />
+      <Icon x="17" y="29" id="4" dir="3" />
+      <Icon x="19" y="29" id="4" dir="2" />
+      <Icon x="20" y="29" id="4" dir="4" />
+      <Icon x="21" y="29" id="4" dir="2" />
+      <Icon x="22" y="29" id="4" dir="4" />
+      <Icon x="24" y="29" id="4" dir="1" />
+      <Icon x="25" y="29" id="4" dir="1" />
+      <Icon x="25" y="29" id="4" dir="2" />
+      <Icon x="26" y="29" id="4" dir="4" />
+      <Icon x="31" y="29" id="4" dir="1" />
+      <Icon x="2" y="30" id="4" dir="3" />
+      <Icon x="5" y="30" id="4" dir="2" />
+      <Icon x="6" y="30" id="4" dir="4" />
+      <Icon x="7" y="30" id="4" dir="2" />
+      <Icon x="8" y="30" id="4" dir="4" />
+      <Icon x="16" y="30" id="4" dir="1" />
+      <Icon x="17" y="30" id="4" dir="1" />
+      <Icon x="25" y="30" id="4" dir="2" />
+      <Icon x="26" y="30" id="4" dir="4" />
+      <Icon x="27" y="30" id="4" dir="2" />
+      <Icon x="28" y="30" id="4" dir="4" />
+      <Icon x="31" y="30" id="4" dir="3" />
+      <Icon x="1" y="31" id="4" dir="2" />
+      <Icon x="2" y="31" id="4" dir="4" />
+      <Icon x="2" y="31" id="4" dir="1" />
+      <Icon x="2" y="31" id="4" dir="2" />
+      <Icon x="2" y="31" id="4" dir="3" />
+      <Icon x="2" y="31" id="10" dir="1" />
+      <Icon x="3" y="31" id="4" dir="4" />
+      <Icon x="4" y="31" id="4" dir="2" />
+      <Icon x="5" y="31" id="4" dir="4" />
+      <Icon x="28" y="31" id="4" dir="2" />
+      <Icon x="29" y="31" id="4" dir="4" />
+      <Icon x="30" y="31" id="4" dir="2" />
+      <Icon x="31" y="31" id="4" dir="4" />
+      <Icon x="31" y="31" id="4" dir="1" />
+      <Icon x="31" y="31" id="4" dir="2" />
+      <Icon x="31" y="31" id="4" dir="3" />
+      <Icon x="31" y="31" id="9" dir="1" />
+      <Icon x="32" y="31" id="4" dir="4" />
+      <Icon x="2" y="32" id="4" dir="1" />
+      <Icon x="31" y="32" id="4" dir="1" />
+    </Icons>
+  </Sheet>
+  <Sheet width="45" height="45" title="Maze Level 8" path="" zoom="100" gameIndex="8">
+    <Sections>
+      <Section x="27" y="27" w="12" h="16" tx="-120" ty="-101" />
+      <Section x="27" y="15" w="16" h="11" tx="76" ty="-59" />
+      <Section x="2" y="2" w="22" h="16" tx="18" ty="100" />
+      <Section x="0" y="0" w="45" h="45" tx="-13" ty="31" />
+    </Sections>
+    <Grid>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</Grid>
+    <Notes>
+      <Note x="13" y="0" symbol="0">This is map column 0 (for the main 24x24 area in the lower left)</Note>
+      <Note x="10" y="4" symbol="n">(the shaft on level 7 at -15,14 brings the party here)</Note>
+      <Note x="13" y="5" symbol="s">Burned into the ground beneath your feet are these searing runes: 
+ // !  + :-* ==== /--' 
+// !  : ; :--/ ---- ,--/ </Note>
+      <Note x="3" y="8" symbol=".">Stairs leading up.  Follow them (Y/N) ?
+Y: {map:Castle} (0,0)</Note>
+      <Note x="11" y="8" symbol="t">A firepit!  (8d8 damage)</Note>
+      <Note x="20" y="11" symbol="s">The gods of Wizardry gather above you for a moment of silent salute.  Then they laugh and depart...</Note>
+      <Note x="23" y="11" symbol="T">(Teleport to {map:Maze Level 1} -105,-102)</Note>
+      <Note x="7" y="12" symbol="t">A firepit!  (8d8 damage)</Note>
+      <Note x="2" y="13" symbol="n">(Defeating the Lord of Diamonds on level 7 at -6,-6 sends the party here)</Note>
+      <Note x="18" y="13" symbol="t">A firepit!  (8d8 damage)</Note>
+      <Note x="20" y="16" symbol="n">(Defeating the Lord of Hearts on level 7 at 5,5 sends the party here)</Note>
+      <Note x="28" y="16" symbol=".">Stairs leading up.  Follow them (Y/N) ?
+Y: {map:Castle} (0,0)</Note>
+      <Note x="41" y="18" symbol="s">Burned into the ground beneath your feet are these searing words: Welcome mortals into the Pits of Hades
+(the shaft on level 7 at 14,14 brings the party here)</Note>
+      <Note x="27" y="19" symbol="s">* * * * * * * The Ghost's Nest * * * * * * * &lt;Boos and Spirits&gt; </Note>
+      <Note x="30" y="19" symbol="Ma">Encounter with random ghost, Manfretti's Ghost:  "Scared ya, didn't I ?" 
+Talk:
+hail: I've got a secret!  That will cost 2000 G.P.  Will you pay it ?
+Y: Oooooo!  I just love gold!
+(Davy's Ghost) It's in my "nature"...  You might say it's a divine aspect...  Oh, and one more thing... It's gonna be a hot time in the old towne tonight, yea!
+(Robby's Ghost) But you know... I don't like... Fighters... Little mages... Pompous priests... and especially bungling thieves!  (Forced Encounter with Manfretti's Ghost)
+(Andy's Ghost) Any playing cards!  That's why I only play the Ace after the Jack, Queen and King have fallen. 
+N: Boo!  (forced encounter with Manfretti's Ghost)
+Buy: (random assortment of items from the following:)
+Ankh of Intellect (30000)
+Ankh of Life (30000)
+Ankh of Power (30000)
+Ankh of Sanctity (30000)
+Ankh of Wonder (30000)
+Ankh of Youth (30000)
+Axe of Death (21250)
+Bascinet (8750)
+Battle Axe +2 (21250)
+Bracers +1 (25000)
+Cloak of Capricorn (22500)
+Cone of Fire (7500)
+Emerald Robes (11250)
+Faust Halberd (25000)
+Gloves of Myrdall (100000)
+Heavy Crossbow (30000)
+Jeweled Armet (32250)
+Leather Armor +2 (10000)
+Long Sword +3 (50000)
+Mage's Yew Bow (30000)
+Master Katana (33750)
+Plate Mail +2 (25000)
+Plate Mail +3 (62500)
+Ring of Solitude (50000)
+Robinsword (17500)
+Sacred Basher (18750)
+Scale Mail +2 (20000)
+Scarlet Robes (11250)
+Shield Pro Magic (50000)
+Silver Gloves (18750)
+Silver Hammer (25000)
+Soulstealer (33750)
+Sword of Fire (25000)
+Wizard's Cap (20000)</Note>
+      <Note x="33" y="19" symbol="t">A firepit!  (8d8 damage)</Note>
+      <Note x="13" y="20" symbol="Po">A shimmering portal enter it (Y/N) ?
+Y: {map:Maze Level 7} (8,-9)</Note>
+      <Note x="30" y="21" symbol="n">(Defeating the Lord of Spades on level 7 at -6,5 sends the party here)</Note>
+      <Note x="41" y="21" symbol="t">A firepit!  (8d8 damage)</Note>
+      <Note x="13" y="25" symbol="Cl">A voice cries out: "Aparre Modus Cloni" and an astral gate appears with strange figures emerging therefrom!
+Forced Encounter with clones of first four party members</Note>
+      <Note x="13" y="27" symbol="Wh">In the center of the room, a flaming white sphere hovers above a golden circle etched into the floor.
+An aura around the sphere prevents the party from entering the circle. 
+Use "Staff of Air":  The great staff glows in your hands, opening a portal into the circle.  The circle is divided up into nine parts, each bearing an inscription and one unlit candle.
+There are 9 candles here press letter (A) through (I) to light candle
+(A) The Physical 
+(B) The Spiritual 
+(C) The Ephemeral 
+(D) The Past 
+(E) The Present 
+(F) The Future 
+(G) The Knowledge 
+(H) The Passion 
+(I) The Sustenance
+If you light A, B, C, D, E, F, G, H, I: A face appears within the white sphere and speaks in a solemn tone, saying: I am none and yet all of the three and yet more, though I have no name and no face.  My symbol is the air, for I am the invisible surrounding of life, and my color is all colors, for I am the enlightening light of life.  Now consider this most carefully: Three times were you asked a question, and three times you gave an answer.  The question three times was the same,the answers were three times changed.  Consider yet still further: Three answers were all three correct.  This is the nature of the realms of the three, each with its own truth, each with its own truthful answer.  Now consider this: I represent the unity of the three, and my kingdom is the whole of all parts, and my name is known through understanding.  So I ask you this question:  Within all of life, there is but one creature in whom all three kingdoms can be found, a creature which can only be understood by understanding the whole of the three.  What is the name of this creature ?
+Answer MAN: Thy understanding is great...  The balance may yet be restored!  And the sphere dissolves...
+Otherwise: Wrong!  (teleport to {map:Maze Level 7} 8,-9))</Note>
+      <Note x="32" y="30" symbol="t">A firepit!  (8d8 damage)</Note>
+      <Note x="35" y="30" symbol="n">(Defeating the Lord of Clubs on level 7 at 5,-6 sends the party here)</Note>
+      <Note x="0" y="31" symbol="0">This is map row 0 (for the main 24x24 area in the lower left)</Note>
+      <Note x="2" y="31" symbol="Po">A shimmering portal enter it (Y/N) ?
+Y: {map:Maze Level 7} (-9,8)</Note>
+      <Note x="7" y="31" symbol="Cl">A voice cries out: "Aparre Modus Cloni" and an astral gate appears with strange figures emerging therefrom!
+Forced Encounter with clones of first four party members</Note>
+      <Note x="9" y="31" symbol="Re">In the center of the room, a flaming red sphere hovers above a golden circle etched into the floor.
+An aura around the sphere prevents the party from entering the circle. 
+Use "Staff of Earth": The great staff glows in your hands, opening a portal into the circle.  The circle is divided up into nine parts, each bearing an inscription and one unlit candle.
+There are 9 candles here press letter (A) through (I) to light candle
+(A) The Physical 
+(B) The Spiritual 
+(C) The Ephemeral 
+(D) The Past 
+(E) The Present 
+(F) The Future 
+(G) The Knowledge 
+(H) The Passion 
+(I) The Sustenance
+If you light A, D, I: A face appears within the red sphere and speaks in a solemn tone, saying: I am but one of three, though I have many faces and I am called by many names.  My symbol is the earth, for I am the body of life, and red is my color, for I am the blood of life.  Now consider carefully this question: I have a kingdom, but over what do I rule ?
+Answer NATURE: Thou hast considered rightly!  And the sphere dissolves...
+Otherwise: Wrong! (teleport to {map:Maze Level 7} -9,8)</Note>
+      <Note x="13" y="31" symbol="So">Within a nexus of roaring flames, you see a trapped and helpless figure.
+If you have not completed the rituals at (0,4; 0,-4; 4,0; -4,0): Suddenly a powerful force pushes you back, and a snarling voice proclaims: Begone fools!  Or I shall rip out your livers, and squash them in my teeth!! (teleport back one square)
+Otherwise: The flames seem to be dying out, and they part before you as you walk...  The figure within the flames looks at you and starts to speak...  But suddenly the figure vanishes!  A demonic snarl is heard from above, "the gatekeeper is gone, you vermin!"  "I have teleported him into the great etherial void, to remain forever!"  "And now to keep my promise, you slimy little toads!!"  (forced encounter with The S*O*R*N)
+If you cast "socordi": The Gatekeeper returns from the void!  (summon "The Gatekeeper" who will cast "Abriel" and make S*O*R*N vulnerable)
+Victory: The ancient figure of a tired man stands quietly before you.  He gazes deep into your eyes, and then begins to speak:  I am the Gatekeeper, and guardian of the Triaxial Balance.  It is through your courage, and more importantly, your understanding and wisdom, that the triaxial balance of the forces has been restored.  Hereafter, I bequeath to you the power to guard this mortal plane, for none are more worthy or more deserving than thee.  I thank thee, both for my life and for thy effort.  And now that I have found worthy successors, my duty is done in this world, and I shall soon return to that higher plane of the everafter.  You shall be remembered, and I offer this small token, for which I hope that you shall remember, not me, but what you yourself have done this day.  "Fare thee well, my friends" and he is gone (+Item "Heart of Abriel")
+(return to the Castle to finish the game)
+(This is the map origin - 0,0)</Note>
+      <Note x="17" y="31" symbol="Ye">In the center of the room, a flaming yellow sphere hovers above a golden circle etched into the floor.
+An aura around the sphere prevents the party from entering the circle.
+Use "Staff of Fire": The great staff glows in your hands, opening a portal into the circle.  The circle is divided up into nine parts, each bearing an inscription and one unlit candle.
+There are 9 candles here press letter (A) through (I) to light candle
+(A) The Physical 
+(B) The Spiritual 
+(C) The Ephemeral 
+(D) The Past 
+(E) The Present 
+(F) The Future 
+(G) The Knowledge 
+(H) The Passion 
+(I) The Sustenance
+If you light C, F, G: A face appears in the yellow sphere and speaks in a solemn tone, saying: I am but one of three, though I have many faces and I am called by many names.  My symbol is the fire, for I am the forging intellect of life, and yellow is my color, for I am the transforming flame of life.  Now consider carefully this question: I have a kingdom, but over what do I rule ?
+Answer CHANGE: Thou hast considered rightly!  And the sphere dissolves...
+Otherwise: Wrong! (teleport to {map:Maze Level 7} -9,-9)</Note>
+      <Note x="19" y="31" symbol="Cl">A voice cries out: "Aparre Modus Cloni" and an astral gate appears with strange figures emerging therefrom!
+Forced Encounter with clones of first four party members
+Victory:  (If you have defeated the clones from the Earth and Water portals: +Item "Ace of Clubs")</Note>
+      <Note x="24" y="31" symbol="Po">A shimmering portal enter it (Y/N) ?
+Y: {map:Maze Level 7} (0,0)</Note>
+      <Note x="44" y="31" symbol="0">This is map row 0 (for the main 24x24 area in the lower left)</Note>
+      <Note x="34" y="34" symbol=".">Stairs leading up.  Follow them (Y/N) ?
+Y: {map:Castle} (0,0)</Note>
+      <Note x="13" y="35" symbol="Bl">In the center of the room, a flaming blue sphere hovers above a golden circle etched into the floor.
+An aura around the sphere prevents the party from entering the circle.
+Use "Staff of Water": The great staff glows in your hands, opening a portal into the circle.  The circle is divided up into nine parts, each bearing an inscription and one unlit candle.
+There are 9 candles here press letter (A) through (I) to light candle
+(A) The Physical 
+(B) The Spiritual 
+(C) The Ephemeral 
+(D) The Past 
+(E) The Present 
+(F) The Future 
+(G) The Knowledge 
+(H) The Passion 
+(I) The Sustenance
+If you light B, E, H: A face appears within the blue sphere and speaks in a solemn tone, saying: I am but one of three, though I have many faces and I am called by many names.  My symbol is the water, for I am the unstable emotion of life, and blue is my color, for I am the restless sea of life.  Now consider carefully this question: I have a kingdom, but over what do I rule ?
+Answer GROWTH: Thou hast considered rightly!  And the sphere dissolves...
+Otherwise: Wrong! (teleport to {map:Maze Level 7} 8,8)</Note>
+      <Note x="13" y="37" symbol="Cl">A voice cries out: "Aparre Modus Cloni" and an astral gate appears with strange figures emerging therefrom!
+Forced Encounter with clones of first four party members</Note>
+      <Note x="29" y="40" symbol="t">A firepit!  (8d8 damage)</Note>
+      <Note x="13" y="42" symbol="Po">A shimmering portal enter it (Y/N) ?
+Y: {map:Maze Level 7} (8,8)</Note>
+      <Note x="27" y="42" symbol="s">Burned into the ground beneath your feet are these searing words: Welcome mortals into the Pits of Hades
+(the shaft on level 7 at -15,-15 brings the party here)</Note>
+      <Note x="13" y="44" symbol="0">This is map column 0 (for the main 24x24 area in the lower left)</Note>
+    </Notes>
+    <Icons>
+      <Icon x="3" y="8" id="9" dir="1" />
+      <Icon x="21" y="10" id="4" dir="2" />
+      <Icon x="22" y="10" id="4" dir="4" />
+      <Icon x="28" y="16" id="9" dir="1" />
+      <Icon x="27" y="19" id="4" dir="2" />
+      <Icon x="28" y="19" id="4" dir="4" />
+      <Icon x="34" y="34" id="9" dir="1" />
+    </Icons>
+  </Sheet>
+</MapBook>
