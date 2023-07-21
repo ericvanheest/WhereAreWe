@@ -1,0 +1,610 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="WhereAreWe.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DefaultMapSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">18, 18</Value>
+    </Setting>
+    <Setting Name="DefaultGridBackground" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">White</Value>
+    </Setting>
+    <Setting Name="DefaultGridLines" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">192, 255, 255</Value>
+    </Setting>
+    <Setting Name="DefaultSquareSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">16, 16</Value>
+    </Setting>
+    <Setting Name="ActionWheelUp" Type="WhereAreWe.Action" Scope="User">
+      <Value Profile="(Default)">RotateIconCW</Value>
+    </Setting>
+    <Setting Name="ActionWheelDown" Type="WhereAreWe.Action" Scope="User">
+      <Value Profile="(Default)">RotateIconCCW</Value>
+    </Setting>
+    <Setting Name="MaxSquareSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">64, 64</Value>
+    </Setting>
+    <Setting Name="MinSquareSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">3, 3</Value>
+    </Setting>
+    <Setting Name="ActionRightMouse" Type="WhereAreWe.Action" Scope="User">
+      <Value Profile="(Default)">ScrollSheet</Value>
+    </Setting>
+    <Setting Name="ActionLeftMouse" Type="WhereAreWe.Action" Scope="User">
+      <Value Profile="(Default)">Draw</Value>
+    </Setting>
+    <Setting Name="ActionMiddleMouse" Type="WhereAreWe.Action" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="ActionX1Mouse" Type="WhereAreWe.Action" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="ActionX2Mouse" Type="WhereAreWe.Action" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="ScrollStyle" Type="WhereAreWe.ScrollStyle" Scope="User">
+      <Value Profile="(Default)">Drag</Value>
+    </Setting>
+    <Setting Name="DefaultFilledSquare" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Gray</Value>
+    </Setting>
+    <Setting Name="DefaultSolidLine" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">Black</Value>
+    </Setting>
+    <Setting Name="DefaultLineWidth" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">2</Value>
+    </Setting>
+    <Setting Name="DefaultGridLineWidth" Type="System.Byte" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="MaxUndoActions" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="SheetWraparound" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ZoomLineScale" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">32</Value>
+    </Setting>
+    <Setting Name="ZoomScale" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="DefaultOrigin" Type="WhereAreWe.Origin" Scope="User">
+      <Value Profile="(Default)">UpperLeft</Value>
+    </Setting>
+    <Setting Name="DefaultGridOffset" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">0, 0</Value>
+    </Setting>
+    <Setting Name="DefaultGridBackgroundStyle" Type="System.Drawing.Drawing2D.HatchStyle" Scope="User">
+      <Value Profile="(Default)">Percent90</Value>
+    </Setting>
+    <Setting Name="DefaultZoom" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
+    <Setting Name="NoteTemplates" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;?	Possible Encounter&lt;/string&gt;
+  &lt;string&gt;E	Forced Encounter&lt;/string&gt;
+  &lt;string&gt;E	Forced Encounter with $uniqueEncounterMonsters&lt;/string&gt;
+  &lt;string&gt;E	Forced Encounter with $allEncounterMonsters&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="Game" Type="WhereAreWe.GameNames" Scope="User">
+      <Value Profile="(Default)">MightAndMagic1</Value>
+    </Setting>
+    <Setting Name="ReadLocationFromGame" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AutoSwitchSheets" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="YouAreHereOpacity" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="EnableMemoryWrite" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="HideUnvisitedSquares" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AlwaysRevealEdges" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ReadOnlyMaps" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ReadOnlyNotes" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="FollowCharWindows" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ShowEncounters" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AutoLoadFiles" Type="WhereAreWe.GameStrings" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Strings&gt;
+  &lt;String game="MightAndMagic1"&gt;(Internal Game Map)&lt;/String&gt;
+  &lt;String game="MightAndMagic2"&gt;(Internal Game Map)&lt;/String&gt;
+  &lt;String game="MightAndMagic3"&gt;(Internal Game Map)&lt;/String&gt;
+  &lt;String game="MightAndMagic45"&gt;(Internal Game Map)&lt;/String&gt;
+  &lt;String game="Wizardry1"&gt;(Internal Game Map)&lt;/String&gt;
+  &lt;String game="Wizardry2"&gt;(Internal Game Map)&lt;/String&gt;
+  &lt;String game="Wizardry3"&gt;(Internal Game Map)&lt;/String&gt;
+  &lt;String game="Wizardry4"&gt;(Internal Game Map)&lt;/String&gt;
+  &lt;String game="Wizardry5"&gt;(Internal Game Map)&lt;/String&gt;
+  &lt;String game="BardsTale1"&gt;(Internal Game Map)&lt;/String&gt;
+  &lt;String game="BardsTale2"&gt;(Internal Game Map)&lt;/String&gt;
+  &lt;String game="BardsTale3"&gt;(Internal Game Map)&lt;/String&gt;
+&lt;/Strings&gt;</Value>
+    </Setting>
+    <Setting Name="ShowSpells" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DOSBoxPosition" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">-32767, -32767</Value>
+    </Setting>
+    <Setting Name="EnableGlobalShortcuts" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="MarkVisitedProperly" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ShowEncounterWindow" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ShowTreasureWindow" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DefaultMode" Type="WhereAreWe.BlockMode" Scope="User">
+      <Value Profile="(Default)">Play</Value>
+    </Setting>
+    <Setting Name="MaxHPOnLevelUp" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="SnapWindowsToDOSBox" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AutoLaunchShortcuts" Type="WhereAreWe.GameStrings" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Strings&gt;
+  &lt;String game="MightAndMagic1"&gt;C:\GOG Games\Might and Magic VI Limited Edition\Might and Magic 1\Launch Might and Magic 1 - Book I.lnk&lt;/String&gt;
+  &lt;String game="MightAndMagic2"&gt;C:\GOG Games\Might and Magic VI Limited Edition\Might and Magic 2\Launch Might and Magic 2 - Gates to Another World.lnk&lt;/String&gt;
+  &lt;String game="MightAndMagic3"&gt;C:\GOG Games\Might and Magic VI Limited Edition\Might and Magic 3\Launch Might and Magic 3 - Isles of Terra.lnk&lt;/String&gt;
+  &lt;String game="MightAndMagic45"&gt;C:\GOG Games\Might and Magic VI Limited Edition\Might and Magic 4-5\Launch Might and Magic 4-5 - World of Xeen.lnk&lt;/String&gt;
+  &lt;String game="Wizardry1"&gt;C:\Games\Wizardry\Wizardry-01\Wizardry 1.lnk&lt;/String&gt;
+  &lt;String game="Wizardry2"&gt;C:\Games\Wizardry\Wizardry-02\Wizardry 2.lnk&lt;/String&gt;
+  &lt;String game="Wizardry3"&gt;C:\Games\Wizardry\Wizardry-03\Wizardry 3.lnk&lt;/String&gt;
+  &lt;String game="Wizardry4"&gt;C:\Games\Wizardry\Wizardry-04\Wizardry 4.lnk&lt;/String&gt;
+  &lt;String game="Wizardry5"&gt;C:\Games\Wizardry\Wizardry-05\Wizardry 5.lnk&lt;/String&gt;
+  &lt;String game="BardsTale1"&gt;C:\Games\Bard's_Tale\Bard's_Tale-01\Bard's Tale 1.lnk&lt;/String&gt;
+  &lt;String game="BardsTale2"&gt;C:\Games\Bard's_Tale\Bard's_Tale-02\Bard's Tale 2.lnk&lt;/String&gt;
+  &lt;String game="BardsTale3"&gt;C:\Games\Bard's_Tale\Bard's_Tale-03\Bard's Tale 3.lnk&lt;/String&gt;
+&lt;/Strings&gt;</Value>
+    </Setting>
+    <Setting Name="AutoLaunchGame" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TreasureOpacity" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="EnableCheats" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="PollTime" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
+    <Setting Name="UnvisitedSquareOpacity" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="AutoShowNoteAtLocation" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="MonsterOpacity" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">65</Value>
+    </Setting>
+    <Setting Name="MonsterPositionTimer" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">250</Value>
+    </Setting>
+    <Setting Name="EncounterListColumns" Type="WhereAreWe.ColumnHeaderList" Scope="User">
+      <Value Profile="(Default)">100,0,41,1,33,2,27,3,85,4,34,5,38,6,114,7,203,8,54,9</Value>
+    </Setting>
+    <Setting Name="ShowMonstersOnMaps" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="MM3SpellKeys" Type="WhereAreWe.SpellHotkeyList" Scope="User">
+      <Value Profile="(Default)">3,0,0,-1,1,0,-1,2,0,-1,3,0,-1,4,0,-1,5,0,-1,6,0,-1,7,0,-1,8,0,-1,9,0,-1</Value>
+    </Setting>
+    <Setting Name="SingleTaskbarWindow" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ShowShopInventories" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="FocusDOSBoxWhenSelected" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AutoSave" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AutoSaveFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">%TEMP%\WhereAreWe-autosave.waw</Value>
+    </Setting>
+    <Setting Name="UseInGameCartography" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="InventoryOrientation" Type="WhereAreWe.Orient" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="ShowActiveSquares" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ShowActiveEncountersOnly" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DosBoxProcessName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dosbox</Value>
+    </Setting>
+    <Setting Name="MM45SpellKeys" Type="WhereAreWe.SpellHotkeyList" Scope="User">
+      <Value Profile="(Default)">4,0,0,-1,1,0,-1,2,0,-1,3,0,-1,4,0,-1,5,0,-1,6,0,-1,7,0,-1,8,0,-1,9,0,-1</Value>
+    </Setting>
+    <Setting Name="RevealAdjacentInaccessible" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="CureAllHPWithConditions" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DosBoxWindowRect" Type="System.Drawing.Rectangle" Scope="User">
+      <Value Profile="(Default)">0, 0, 968, 646</Value>
+    </Setting>
+    <Setting Name="ForceDosBoxLocation" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ShowDeadMonsters" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ShowUnvisitedNotes" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CopyLocationFormat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">({Title}: {x},{y})</Value>
+    </Setting>
+    <Setting Name="ScriptsDumpFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">%TEMP%\WAW_Scripts.txt</Value>
+    </Setting>
+    <Setting Name="QuickRefColumns" Type="WhereAreWe.ColumnHeaderList" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="QuestShowGiver" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="QuestShowReward" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="QuestShowInfoPanel" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="QuestBoldNearby" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="OfferToSwitchBooks" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DosBoxProcessName2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">dosbox_debug</Value>
+    </Setting>
+    <Setting Name="QuickScanDOSBox" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="HideInvalidQuestGoals" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="WarnMultipleReacquire" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ShowOnlyDetectableMonsters" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ShowCPU" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ForceDosBoxSize" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ShowActivatedMonstersIcon" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ShowListMonstersUnexplored" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="UpdateCartWhenInaccessibleRevealed" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="HideScriptMonsters" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="RefreshDOSBox" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="GameStartDelay" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">8000</Value>
+    </Setting>
+    <Setting Name="WatchdogTimer" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">3000</Value>
+    </Setting>
+    <Setting Name="WizardRun" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="NeedAutoArrange" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="CenterPartyInMap" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="HideScrollbarsInPlayMode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="MaxLineWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="ShowGridLinesAboveZoom" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="ShowGridLines" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DefaultGridLineStyle" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="EditCopyBackgrounds" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="EditCopyInnerLines" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="EditCopyOuterLines" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="EditCopyIcons" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="EditCopyNotes" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="AutoSwitchToPlayMode" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ActionCtrlWheelDown" Type="WhereAreWe.Action" Scope="User">
+      <Value Profile="(Default)">DecreaseSquareSize</Value>
+    </Setting>
+    <Setting Name="ActionCtrlWheelUp" Type="WhereAreWe.Action" Scope="User">
+      <Value Profile="(Default)">IncreaseSquareSize</Value>
+    </Setting>
+    <Setting Name="ActionShiftWheelDown" Type="WhereAreWe.Action" Scope="User">
+      <Value Profile="(Default)">PrevIcon</Value>
+    </Setting>
+    <Setting Name="ActionShiftWheelUp" Type="WhereAreWe.Action" Scope="User">
+      <Value Profile="(Default)">NextIcon</Value>
+    </Setting>
+    <Setting Name="ActionAltWheelDown" Type="WhereAreWe.Action" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="ActionAltWheelUp" Type="WhereAreWe.Action" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="ActionCtrlShiftWheelDown" Type="WhereAreWe.Action" Scope="User">
+      <Value Profile="(Default)">DecreaseSquareSizeFixed</Value>
+    </Setting>
+    <Setting Name="ActionCtrlShiftWheelUp" Type="WhereAreWe.Action" Scope="User">
+      <Value Profile="(Default)">IncreaseSquareSizeFixed</Value>
+    </Setting>
+    <Setting Name="ActionCtrlAltWheelDown" Type="WhereAreWe.Action" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="ActionCtrlAltWheelUp" Type="WhereAreWe.Action" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="ActionShiftAltWheelDown" Type="WhereAreWe.Action" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="ActionShiftAltWheelUp" Type="WhereAreWe.Action" Scope="User">
+      <Value Profile="(Default)">None</Value>
+    </Setting>
+    <Setting Name="RevealTeleports" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="HideUnvisitedDottedLines" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="BitmapCacheFull" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10000000</Value>
+    </Setting>
+    <Setting Name="BitmapCacheCrop" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">10000000</Value>
+    </Setting>
+    <Setting Name="ShowMapLabels" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DebugShowDirtySquares" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ShowToolbar" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SquareStyles" Type="WhereAreWe.SquareStyleList" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Items&gt;&lt;Solid color="FF191970" style="12" /&gt;&lt;Sky color="FF87CEFA" /&gt;&lt;Space color="FF9370DB" style="15" /&gt;&lt;Border color="FFA9A9A9" /&gt;&lt;Solid color="FF191970" style="12" /&gt;&lt;Sky color="FF87CEFA" /&gt;&lt;Space color="FF9370DB" style="15" /&gt;&lt;Border color="FFA9A9A9" /&gt;&lt;Solid color="FF191970" style="12" /&gt;&lt;Sky color="FF87CEFA" /&gt;&lt;Space color="FF9370DB" style="15" /&gt;&lt;Border color="FFA9A9A9" /&gt;&lt;Solid color="FF191970" style="12" /&gt;&lt;Sky color="FF87CEFA" /&gt;&lt;Space color="FF9370DB" style="15" /&gt;&lt;Border color="FFA9A9A9" /&gt;&lt;/Items&gt;</Value>
+    </Setting>
+    <Setting Name="DrawColors" Type="WhereAreWe.DrawColors" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Colors&gt;&lt;Blocks&gt;&lt;Block color="FF000000" style="17" /&gt;&lt;Block color="FFFF0000" style="17" /&gt;&lt;Block color="FF008000" style="17" /&gt;&lt;Block color="FF0000FF" style="17" /&gt;&lt;Block color="FF808080" style="17" /&gt;&lt;Block color="FFFFA500" style="17" /&gt;&lt;Block color="FF800080" style="17" /&gt;&lt;Block color="FF00FFFF" style="17" /&gt;&lt;Block color="FFFF00FF" style="17" /&gt;&lt;Block color="FFFFFF00" style="17" /&gt;&lt;Block color="FF000000" style="12" /&gt;&lt;Block color="FFFF0000" style="12" /&gt;&lt;Block color="FF008000" style="12" /&gt;&lt;Block color="FF0000FF" style="12" /&gt;&lt;Block color="FF808080" style="12" /&gt;&lt;Block color="FFFFA500" style="12" /&gt;&lt;Block color="FF800080" style="12" /&gt;&lt;Block color="FF00FFFF" style="12" /&gt;&lt;Block color="FFFF00FF" style="12" /&gt;&lt;Block color="FFFFFF00" style="12" /&gt;&lt;/Blocks&gt;&lt;Lines&gt;&lt;Line color="FF000000" style="0" width="2" /&gt;&lt;Line color="FFFF0000" style="0" width="2" /&gt;&lt;Line color="FF008000" style="0" width="2" /&gt;&lt;Line color="FF0000FF" style="0" width="2" /&gt;&lt;Line color="FF808080" style="0" width="2" /&gt;&lt;Line color="FFFFA500" style="0" width="2" /&gt;&lt;Line color="FF800080" style="0" width="2" /&gt;&lt;Line color="FF00FFFF" style="0" width="2" /&gt;&lt;Line color="FFFF00FF" style="0" width="2" /&gt;&lt;Line color="FFFFFF00" style="0" width="2" /&gt;&lt;Line color="FF000000" style="2" width="2" /&gt;&lt;Line color="FFFF0000" style="2" width="2" /&gt;&lt;Line color="FF008000" style="2" width="2" /&gt;&lt;Line color="FF0000FF" style="2" width="2" /&gt;&lt;Line color="FF808080" style="2" width="2" /&gt;&lt;Line color="FFFFA500" style="2" width="2" /&gt;&lt;Line color="FF800080" style="2" width="2" /&gt;&lt;Line color="FF00FFFF" style="2" width="2" /&gt;&lt;Line color="FFFF00FF" style="2" width="2" /&gt;&lt;Line color="FFFFFF00" style="2" width="2" /&gt;&lt;/Lines&gt;&lt;Notes&gt;&lt;Note color="FF000000" /&gt;&lt;Note color="FFFF0000" /&gt;&lt;Note color="FF008000" /&gt;&lt;Note color="FFF5DEB3" /&gt;&lt;Note color="FFD2B48C" /&gt;&lt;Note color="FFC0C0C0" /&gt;&lt;Note color="FF0000FF" /&gt;&lt;Note color="FF6495ED" /&gt;&lt;Note color="FF7FFFD4" /&gt;&lt;Note color="FF008080" /&gt;&lt;Note color="FF7FFF00" /&gt;&lt;Note color="FF808000" /&gt;&lt;Note color="FFFFFF00" /&gt;&lt;Note color="FFDAA520" /&gt;&lt;Note color="FF808080" /&gt;&lt;Note color="FFFF69B4" /&gt;&lt;Note color="FF9400D3" /&gt;&lt;Note color="FFFFA500" /&gt;&lt;Note color="FFDDA0DD" /&gt;&lt;Note color="FF800000" /&gt;&lt;/Notes&gt;&lt;/Colors&gt;</Value>
+    </Setting>
+    <Setting Name="WarnIfMissingCustomBackground" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="GracefulShutdown" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Windows" Type="WhereAreWe.WindowInfoList" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Windows&gt;&lt;Info window="2"&gt;&lt;Size&gt;0, 625, 966, 376&lt;/Size&gt;&lt;Max&gt;False&lt;/Max&gt;&lt;Auto&gt;True&lt;/Auto&gt;&lt;Split /&gt;&lt;/Info&gt;&lt;Info window="3"&gt;&lt;Size&gt;1558, 0, 350, 755&lt;/Size&gt;&lt;Max&gt;False&lt;/Max&gt;&lt;Auto&gt;True&lt;/Auto&gt;&lt;Split&gt;&lt;Num&gt;169&lt;/Num&gt;&lt;Num&gt;96&lt;/Num&gt;&lt;/Split&gt;&lt;/Info&gt;&lt;Info window="1"&gt;&lt;Size&gt;966, 0, 592, 755&lt;/Size&gt;&lt;Max&gt;False&lt;/Max&gt;&lt;Auto&gt;True&lt;/Auto&gt;&lt;Split&gt;&lt;Num&gt;584&lt;/Num&gt;&lt;/Split&gt;&lt;/Info&gt;&lt;Info window="4"&gt;&lt;Size&gt;966, 755, 592, 246&lt;/Size&gt;&lt;Max&gt;False&lt;/Max&gt;&lt;Auto&gt;True&lt;/Auto&gt;&lt;Split /&gt;&lt;/Info&gt;&lt;/Windows&gt;</Value>
+    </Setting>
+    <Setting Name="PollQuests" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">500</Value>
+    </Setting>
+    <Setting Name="PollEncounters" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">200</Value>
+    </Setting>
+    <Setting Name="SaveDOSBoxPosition" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="MemoryGuesses" Type="WhereAreWe.MemoryGuesses" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Guesses&gt;&lt;Game index="1"&gt;&lt;Guess length="4000000" index="89113" /&gt;&lt;Guess length="4000000" index="89481" /&gt;&lt;Guess length="4000000" index="89513" /&gt;&lt;/Game&gt;&lt;Game index="2"&gt;&lt;Guess length="4000000" index="72528" /&gt;&lt;Guess length="4000000" index="72496" /&gt;&lt;Guess length="4000000" index="72464" /&gt;&lt;Guess length="4000000" index="72096" /&gt;&lt;/Game&gt;&lt;Game index="3"&gt;&lt;Guess length="16781312" index="131401" /&gt;&lt;Guess length="16781312" index="131369" /&gt;&lt;Guess length="16781312" index="131337" /&gt;&lt;Guess length="16781312" index="130969" /&gt;&lt;/Game&gt;&lt;Game index="4"&gt;&lt;Guess length="16781312" index="7984" /&gt;&lt;Guess length="16781312" index="7552" /&gt;&lt;Guess length="16781312" index="8352" /&gt;&lt;Guess length="16781312" index="7920" /&gt;&lt;Guess length="16781312" index="8320" /&gt;&lt;Guess length="16781312" index="7888" /&gt;&lt;Guess length="16781312" index="7952" /&gt;&lt;Guess length="16781312" index="8344" /&gt;&lt;/Game&gt;&lt;Game index="5"&gt;&lt;Guess length="1000000" index="8066" /&gt;&lt;Guess length="1000000" index="7514" /&gt;&lt;/Game&gt;&lt;Game index="6"&gt;&lt;Guess length="1000000" index="8066" /&gt;&lt;Guess length="1000000" index="7514" /&gt;&lt;/Game&gt;&lt;/Guesses&gt;</Value>
+    </Setting>
+    <Setting Name="Notifications" Type="WhereAreWe.Notifications" Scope="User">
+      <Value Profile="(Default)">&gt;&lt;Notifications enable="1"&gt;&lt;Note type="1" action="170"&gt;&lt;Message&gt;$ActionChar: $SpellAction $SpellName $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="171"&gt;&lt;Message&gt;$ActionChar: $SpellAction $SpellName $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="172"&gt;&lt;Message&gt;$ActionChar: $SpellAction $SpellName $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="173"&gt;&lt;Message&gt;$ActionChar: $SpellAction $SpellName $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="174"&gt;&lt;Message&gt;$ActionChar: $SpellAction $SpellName $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="175"&gt;&lt;Message&gt;$ActionChar: $SpellAction $SpellName $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="176"&gt;&lt;Message&gt;$ActionChar: $SpellAction $SpellName $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="177"&gt;&lt;Message&gt;$ActionChar: $SpellAction $SpellName $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="178"&gt;&lt;Message&gt;$ActionChar: $SpellAction $SpellName $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="179"&gt;&lt;Message&gt;$ActionChar: $SpellAction $SpellName $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="149"&gt;&lt;Message&gt;$curChar: Cure-All $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="150"&gt;&lt;Message&gt;$ActionChar: Cure-All $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="151"&gt;&lt;Message&gt;$ActionChar: Cure-All $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="152"&gt;&lt;Message&gt;$ActionChar: Cure-All $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="153"&gt;&lt;Message&gt;$ActionChar: Cure-All $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="154"&gt;&lt;Message&gt;$ActionChar: Cure-All $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="155"&gt;&lt;Message&gt;$ActionChar: Cure-All $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="156"&gt;&lt;Message&gt;$ActionChar: Cure-All $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="157"&gt;&lt;Message&gt;$ActionChar: Cure-All $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="161"&gt;&lt;Message&gt;$curChar traded with $actionChar: $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="162"&gt;&lt;Message&gt;$curChar traded with $actionChar: $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="163"&gt;&lt;Message&gt;$curChar traded with $actionChar: $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="164"&gt;&lt;Message&gt;$curChar traded with $actionChar: $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="165"&gt;&lt;Message&gt;$curChar traded with $actionChar: $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="166"&gt;&lt;Message&gt;$curChar traded with $actionChar: $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="167"&gt;&lt;Message&gt;$curChar traded with $actionChar: $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;Note type="1" action="168"&gt;&lt;Message&gt;$curChar traded with $actionChar: $successState&lt;/Message&gt;&lt;Audio&gt;&lt;/Audio&gt;&lt;/Note&gt;&lt;/Notifications&gt;</Value>
+    </Setting>
+    <Setting Name="NotificationDelay" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2000</Value>
+    </Setting>
+    <Setting Name="ShowNotesPanel" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SeenSquareOpacity" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">50</Value>
+    </Setting>
+    <Setting Name="RevealSeenSquares" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ItemFormat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">$[Cursed] $[Broken] $[Name] ($[Why]), $[Type] $[DamAC], $[Equip], $[Use] [$[Charges]], $[Value]</Value>
+    </Setting>
+    <Setting Name="BagItemFormat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">$[Cursed] $[Broken] $[Name] ($[Why]), $[Type] $[DamAC], $[Equip], $[Use] [$[Charges]], $[Value]</Value>
+    </Setting>
+    <Setting Name="ShopItemFormat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">$[Cursed] $[Broken] $[Name] ($[Why]), $[Type] $[DamAC], $[Equip], $[Use] [$[Charges]], $[Value]</Value>
+    </Setting>
+    <Setting Name="EditItemFormat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">$[Cursed] $[Broken] $[Name] ($[Why]), $[Type] $[DamAC], $[Equip], $[Use] [$[Charges]], $[Value]</Value>
+    </Setting>
+    <Setting Name="WarnNonAdmin" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DOSBoxClass" Type="System.String" Scope="User">
+      <Value Profile="(Default)">^SDL_App$</Value>
+    </Setting>
+    <Setting Name="DOSBoxCaption" Type="System.String" Scope="User">
+      <Value Profile="(Default)">^DOSBox [S0]</Value>
+    </Setting>
+    <Setting Name="Shortcuts" Type="WhereAreWe.Shortcuts" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MRUList" Type="WhereAreWe.MRUFileList" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SkipIntroductions" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="LinkedMinimizeAndRestore" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="SkipIntroTimingTweak" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">100</Value>
+    </Setting>
+    <Setting Name="HideUnidentifiedItems" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="TrainMaximizeHP" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TrainPreventStatLoss" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DoubleClickSpellSendsKeys" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="IndicateNewInventoryItems" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="TrainMaximizeCreatures" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DisplayReverseBitIndex" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Setting" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="GameTitles" Type="WhereAreWe.GameStrings" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Strings&gt;
+  &lt;String game="MightAndMagic1"&gt;    MM$|    MM &lt;/String&gt;
+  &lt;String game="MightAndMagic2"&gt;   MM2$|   MM2 &lt;/String&gt;
+  &lt;String game="MightAndMagic3"&gt;   MM3$|   MM3 &lt;/String&gt;
+  &lt;String game="MightAndMagic45"&gt;  XEEN$|  XEEN &lt;/String&gt;
+  &lt;String game="Wizardry1"&gt;     WIZ1$|     WIZ1 &lt;/String&gt;
+  &lt;String game="Wizardry2"&gt;     WIZ2$|     WIZ2 &lt;/String&gt;
+  &lt;String game="Wizardry3"&gt;     WIZ3$|     WIZ3 &lt;/String&gt;
+  &lt;String game="Wizardry4"&gt;     WIZ4$|     WIZ4 &lt;/String&gt;
+  &lt;String game="Wizardry5"&gt;     WIZ5$|     WIZ5 &lt;/String&gt;
+  &lt;String game="BardsTale1"&gt;     BARD$|     BARD &lt;/String&gt;
+&lt;/Strings&gt;</Value>
+    </Setting>
+    <Setting Name="RosterFiles" Type="WhereAreWe.GameStrings" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;Strings&gt;
+  &lt;String game="MightAndMagic1"&gt;ROSTER.DTA&lt;/String&gt;
+  &lt;String game="MightAndMagic2"&gt;ROSTER.DAT&lt;/String&gt;
+  &lt;String game="MightAndMagic3"&gt;MM3.CUR&lt;/String&gt;
+  &lt;String game="MightAndMagic4"&gt;XEEN.CUR&lt;/String&gt;
+  &lt;String game="MightAndMagic5"&gt;DARK.CUR&lt;/String&gt;
+  &lt;String game="Wizardry1"&gt;SAVE1.DSK&lt;/String&gt;
+  &lt;String game="Wizardry2"&gt;SAVE2.DSK&lt;/String&gt;
+  &lt;String game="Wizardry3"&gt;SAVE3.DSK&lt;/String&gt;
+  &lt;String game="Wizardry4"&gt;SAVE4.DSK&lt;/String&gt;
+  &lt;String game="Wizardry5"&gt;SAVE5.DSK&lt;/String&gt;
+  &lt;String game="BardsTale1"&gt;BARD.EXE&lt;/String&gt;
+  &lt;String game="BardsTale2"&gt;DK.EXE&lt;/String&gt;
+  &lt;String game="BardsTale3"&gt;THIEVES.INF&lt;/String&gt;
+&lt;/Strings&gt;</Value>
+    </Setting>
+    <Setting Name="RosterPaths" Type="WhereAreWe.GameStrings" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;Strings /&gt;</Value>
+    </Setting>
+    <Setting Name="ZOrder" Type="WhereAreWe.WindowTypeList" Scope="User">
+      <Value Profile="(Default)">-1</Value>
+    </Setting>
+    <Setting Name="IgnoreZOrderList" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="MaxSPOnLevelUp" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="WindowSnapMargins" Type="WhereAreWe.ExpandSizes" Scope="User">
+      <Value Profile="(Default)">0,0,0,0</Value>
+    </Setting>
+    <Setting Name="UIElementOptions" Type="WhereAreWe.UIElementOptions" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DropTrash" Type="WhereAreWe.DropTrashOptions" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PartyQuickrefSplitPosition" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="AutosaveSeconds" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">300</Value>
+    </Setting>
+    <Setting Name="FavoriteSpells" Type="WhereAreWe.FavoriteSpells" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="SpellHotkeys" Type="WhereAreWe.SpellHotkeyCollection" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Triggers" Type="WhereAreWe.TriggerList" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UseExtendedWindowRect" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

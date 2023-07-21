@@ -1,0 +1,84 @@
+﻿FIXED:
+
+DEFER:
+
+FEATURES:
+
+MM1:
+MM2:
+MM3:
+MM4:
+
+WIZARDRY 1:
+WIZARDRY 2:
+WIZARDRY 3:
+WIZARDRY 4:
+WIZARDRY 5:
+
+BT 1:
+BT 2:
+BT 3:
+
+BUGS:
+- Error messages like "surface map not present" are showing up behind the other windows
+- If the wizard form specifies a game to launch but it can't be launched, the party and game information windows should not appear
+- After a "--resetsettings" the first auto-arrange sometimes puts the windows way off to the right
+- "C:\Games\Wizardry" probably shouldn't be the default in the Wizard
+- Add Note -> $variables don't work in Wizardry (except 4)
+- Active squares still don't always show up when first starting the program
+- Clicking on an already-selected monster group in the encounter editor makes the monster list blink and lose its selected items
+- hook-based shortcuts don't work well while (SVN?) DOSBox is in focus (ex: Ctrl+Shift+D -> Disarm Trap).  Works when not in focus.
+
+OPTIMIZATIONS:
+- Put the MemoryGuesses in the actual properties, not just in MainForm.Upgrade()
+
+FEATURES:
+
+REFACTORING:
+
+TEST (Specific games):
+
+
+TEST (All games):
+X This guy might like the program: http://addictedgamewise.com/author/Admin/
+X All monster and item lists
+X Editing and adding backpack items
+X Trash Item form
+X Monster viewer form in all games
+X Re-test things that now use GameStrings (Roster Editor, Game Shortcuts, AutoLaunch Maps, DOSBox Titles)
+X "Drop Trash" with custom items in all games
+X tabbed spell list (all games; MM1 shows Sorcerer as "Druid" and shows a blank dialog when a Robber tries to cast a spell in combat)
+X Damage with average shown in multilinedescription for items in all games (especially wizardry)
+X Triggers (especially on non-common-to-all-games items)
+- ScanAllBlocks when memoryguess fails
+- reverify that all squares are unvisited in the default maps
+- Make sure DebugMonitor isn't running
+- Test all quests with new questdata object
+- GetAllQuests() should prevent incidental changes from constantly updating the quest list UI
+- No idea why "ShowCharges" property in the Item base defaulted to "false" if there is a Use string... took that out, but need to re-test other games
+- Bump version number
+- "Stack charges" needs testing in other games (especially MM3-5 with its prefixes and suffixes; might need to disable the feature there)
+- Hiding dashed lines in unseeen areas has been putzed with; make sure it still works in other games
+- "Current character casts spell" hotkey needs serious testing (also a regression of the mm3-5 hotkeys)
+- Make sure Release version actually works properly on a different machine or VM
+
+DOCUMENTATION:
+
+NEW GAMES:
+- Eye of the Beholder 1-3
+- Dungeon Master 1-2
+- Ultima 1-3
+- Might and Magic 6-9 (need rethinking of automap)
+
+WEB:
+People who want to know when the source is released:
+ardash1100@gmail.com (Maxim Kovalenko)
+crashbanito@hotmail.com (Chaz Louviere)
+
+
+Things all new games probably need:
+Quests, Maps, Character Record, Character Control, Spells, Encounters, Items, Monsters, Character Creation, Training Assistant
+Shop Inventories, QuickRef, Game Info, Scripts, Roster Editor, Cure All, Superchars, Cheating, Monsters Form, Items Form, Spells Form,
+Bag of Holding, Drop Trash
+
+Things I forget to test:  Trade Backpacks, Auto-Attack

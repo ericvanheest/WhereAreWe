@@ -1,0 +1,1728 @@
+﻿FIXED:
+X BT3: Check spells carefully for minor differences (SP cost, range, etc.) from BT2 (and find actual ranges for spells like NUKE)
+X BT2: Reset map to unexplored after playtesting
+X BT2: Check multiline description and make sure all monster parts are present (like "attacks")
+X BT2: Make sure monster list shows attacks properly (like BT3)
+X BT2: Find monster types (for spells like HOWA) [not worth it]
+X BT2: BT1/BT2 need to either make use of the Identify and Disarm labels or hide them [hidden]
+X BT2: Check debug->read map (wall flags changed)
+X BT2: Check the "Quest:" line in the main character window
+X BT2: Add trigger targets
+X Would be good to be able to move the party-window quickref somehow (especially in vertical-inventory mode)
+X Try using DwmGetWindowAttribute(hwnd, DWMWA_EXTENDED_FRAME_BOUNDS, &frame, sizeof(RECT)) for Win10 borders?
+X The Win10 margins hack doesn't work with old-style DOSBox, because it isn't resizable.  Need more hacks.
+X Wiz3: Test training assistant
+X BT1: "Send Disarm Command" appears to not be working in original DOSBox [probably because no character was selected]
+X Wiz5: Add trigger targets for Wiz5-specific character sheet (Regen, Poison, ID Trap, Disarm, Dispel, Swimming, Critical, Deaths)
+X BT1: Add Trigger targets
+X Customizable colors (for the quest list and other dialogs with colored text)
+X MM3-5: Port "GetKeys()" for Spell class to MM3-5 ?  Might be complicated
+X Wiz: Magic Screen and Fizzle Fields (on the encounter edit form) need to be disabled for Wiz1-3
+X Doc: DOSBoxClass and DOSBoxCaption internal settings
+X Doc: "Skip Introductions" feature  
+X Doc: Wizardry character creation and training assistant are quite different from MM1-5 (especially the 10% and 1% chance of an extra 10 bonus points)
+X Doc: Wizardry cure-all is very different (must be in the Castle)
+X Doc: Double-click on party tabs to clear the delta signs (also mention the delta option)
+? Doc: Wizardry will re-enable (un-"lost") the Inventory characters if they are deleted, unless they have no items [forgot what this means]
+X Doc: Autocombat
+X Doc: Live squares (important to not change the map book offsets when using live squares!)
+X Doc: NPC monster icon (for the Wizardry hint-giver)
+X Doc: "Selection" coordinates are for the grid, not the game (unlike Cursor and Party)
+X Doc: Map Sections (mainly for Wizardry 5)
+X Doc: LightDistance and effect on map revealing (don't forget to update the example map image to include some seen-but-unvisited squares if appropriate)
+X Doc: Prefix a byte with '.' in byte string editors to use decimal value
+X Doc: Manually-completable quest goals and quests via context menu
+X Doc: Configurable colors for UI items (mainly quests)
+X Doc: Spell list favorites (including Favorite Spell #1-#10 in the keyboard shortcuts for spells)
+X Doc: Spell hotkeys probably needs updating with regard to favorite spells
+X Doc: Combining item stacks (cheat-only)
+X Doc: Leaving the quest window open all the time might not be the best idea (occasional out-of-memory on the treeview; constant memory updates)
+X Doc: Triggers (specifically that not all items are available or work the same way in all games, e.g. "spell points" in Wizardry is unusual)
+X Doc: Make sure all menu items and options dialog items have entries in the doc
+X Doc: Mention the "talking" version of MM4/5 somewhere
+X Doc: Actually read through the doc and see where "except Wizardry" or "except Bard's Tale" might need to be written
+X Test: MM345 spell hotkeys
+X Test: MM1 item-based quests
+X Test: Make sure MM1 perm/temp stats are still in the right order (changed OneByteStat)
+X Test: supercharacter in Wiz1
+X Test: Hover over stats for Wiz2/3
+X Test: Bag of Holding in Wiz1-4
+X Test: Wiz1 needs full end-to-end test with new "save1.dsk" version
+X Test: Wiz1/Wiz2 treasure lists (on monster page and encounter editor) (1024-byte padding was not being parsed properly)
+X Test: Wiz1 werdna main quest (points in rectangles on level 10)
+X Test: Roster Editor for Wiz3/4
+X Test: Wiz1-3 treasure list
+X Test: Wiz1 traps form
+X Test: Wiz1-4's encounter editors need to ignore or hide the Magic ScreenX MM3: Sending spell keys needs complete testing for each spell (sorcerer mostly finished; need cleric and druid); some spells are out of order internally
+X Wiz1: Combat is showing summoned monsters when there are none [Wizardry 1 doesn't have summoned monsters; needed MaxEncounterGroups in WizEncounterInfo]
+X Wiz1: Spell list during combat shows Priest spells for Mage characters and isn't dimming unknown spells [Showing all spell types is intentional; can't replicate dimming issue]
+X Wiz1: Wiz 1-4 encounter/monster editing might be writing to the wrong place now (Group 1 vs. group 0, changes to EncounterInfo starting with group 0)
+X Wiz1: Add trigger targets
+X Wiz1: Test custom UI colors for spell and shop items
+X MM4: The "Full Speech" version has completely different memory offsets, probably needs a different MM45Memory class
+X MM4: script opcode 0x3c might have something to do with speech [indeed]
+X MM4: quests like "Rescue Jasper's Brother" are shown as completed until actually started (script offsets in MM5FileOffsets/MM4FileOffsets are probably wrong for speech version)
+X MM4: Make utility to take offsets from MM4FileOffsets/MM5FileOffsets and find the locations of those bytes in the Full-Speech version of those files [In debug console]
+X MM4: "Solve the second CastleView chest puzzle" is marked as completed when party is not in CastleView (monsters-as-script-bits may not be correct in full-voice version)
+X MM4: Character sheet should not show "None" for alignment; it should be blank
+X MM4: Valia's quest (MM4Map.F4Surface,9,3) shows the alacorn subtask as complete when it is not [wrong map and wrong offset]
+X MM4: "Retrieve the Scroll of Insight" quest is not working [wrong offset for final quest script status]
+X MM4: Hanging around on the opening title screen causes a "process re-acquired too much" error (for full speech version only?) [haven't seen it since adding the IMGMOUNT wait]
+X MM4: Add trigger targets
+X MM4: Check the Dwarf Mine near Fountainhead; voice version needed extra bytes in CreatePairBytes() for some reason
+X MM4: Do a quick check of the quests in the non-voice version
+X MM1: Make sure one-way visible walls are marked with the "bash" icon and not the half-arrow (Don't forget places like Sorpigal in the hidden areas)
+X MM1: Generic "If [Any character's] [HP] [are less than] [%X] of [that characters's] [MaxHP] then change [HP] color to [Red]" style
+X MM1: Update GetTriggerControl, IntValue, StringValue in CharacterInfoControl
+X MM1: Add to trigger entities: alignment, currentlevel, maxlevel, agecurrent, agepermanent
+X MM1: Make TriggerEntity "Name" point to the tab, not the level/sex/align/etc.
+X MM1: Trigger order needs to be comprehensible (right now <30% SP = red, <60%SP = yellow behaved for listviews but not panel controls) [last one wins]
+X MM1: More trigger examples: something italic; make sure all trigger targets actually work properly
+X MM1: When finished, copy fixed map1.waw as built-in
+X MM1: Dragadune 4 is missing some doors when using debug->replace lines and icons
+X MM1: Trigger target of "resistance" doesn't do anything [created TriggerControl class]
+X MM2: Add trigger targets for MM2-specific character sheet items
+X MM2: Character creation increase/decrease sometimes thinks the updated values is a new roll and erases all of the stored points
+X MM3: Add trigger targets for MM3-specific character sheet items (may not be any; gems/gold/food are per-party, not per-character)
+X MM3: Mage/Druid spells are backwards on the spell reference (also Mage is supposed to be "Arcane")
+X MM3: Shop inventories not showing when in shop
+X MM3: Monster list not updating all the time; sometimes m_lastEncounterInfo.Monsters == info.Monsters even when the "m_lastEncounterInfo = info" line was never executed
+X MM3: Keyboard hook isn't eating keys properly.  Options dialog can't set Shift+Home as key because it moves around in the listview
+X MM3: Bashable walls should be visible if bashed (add some live squares)
+X MM3: Spell window takes a few seconds to appear; not terribly annoying but suspicious, general slowness moving around in the options forms [seems to be laptop-specific]
+X MM3: Go back through with a new game and make sure the live-square bash walls are correct for a new game
+X MM3: Teleporting to The Arena from D2 leaves the memoryhacker main state in "LoadingMap" forever
+X Bag of Holding got busted somehow [CharacterMemorySize vs. CharacterSize issue in hacker]
+X B1: TradeBackpacks is not implemented
+X BT2: (0x5b, 0x05) is not sufficient to determing MainState.Treasure (it happens sometimes during adventuring as well) [3AD7 seems better]
+X BT2: Combat options display is not showing last two characters (e.g. defend/attack/cast/etc.)
+X BT2: Find out what WZWA and VOPL actually do (and what memory locations they modify) (WZWA is a summon, VOPL is a new array, CharDamage2)
+X BT2: Implement/test SetEncounterInfo()
+X BT2: Bonus-on-touch is missing from encounter info
+X BT2: Archmage dex 12 no equipment AC = 8 ?  Thought it should be 10 ? [had a YMCA type spell cast]
+X BT2: Maze of Dread and Oscon's Fortress have the teleport targets reversed (Y/X -> X/Y)
+X BT2: Use Spots to add map notes to the wilderness auto-map
+X BT2: Town/Wilderness has reversed Y-axis from dungeons... map books don't support that [flip manually in hacker]
+X BT2: Spinners and etc don't have the right note symbol
+X BT2: PrepareCheatMenu is going to need to understand the BT1Stats/BT2Stats difference
+X BT2: GetActiveSquares is unimplemented
+X BT2: Spell list needs "how long it lasts" (e.g. LEVI)
+X (BT2) Attacks, Critical, and Hide are the wrong offsets
+X (BT2) Spellsong, Melee March, and Rhyme of Duotime have nonspecific effects
+X (BT2) Number of attacks is always zero
+X (BT2) Sometimes during the random treasure generation, the main window receives thousands of "WINDOWPOSCHANGING" messages, which causes focusing problems (CheckEncounters was bringing invisible form to front)
+X (BT2) ShopBuyItem state stays in stack during other states (like just "Shop") and confuses the StackLocations scan.  Need to figure out where stack pointer-ish area is.
+X (BT2) Check active character is correct in shop, training, town inspecting, dungeon inspecting, combat (because of stack changes)
+X (BT2) Make sure all "Message [x]" notes are resolved
+X (BT2) Make sure Destiny Stone level 3 has some walls in the maze when the game isn't running (live squares)
+X (BT2) ReadBT123PartyInfo() is using magic number (92) instead of Games.CharacterMemorySize
+X (BT2) Find BT1 references in BTMemoryHacker
+X (BT2) Find out what the monster attacks above 76 are
+X (BT2) Treasure
+X (BT2) Roster Editor
+X (BT2) Bag of Holding
+X (BT2) Shop Inventories
+X (BT2) Drop Trash
+X (BT2) Character Creation
+X (BT2) Training Assistant
+X (BT2) See if "EquipEffects" and "Charges" are part of the BT2 item lists [yes]X (BT3) Editing an item's Identified flag or Charges writes to the wrong bytes and trashes the inventory
+X (BT3) Need a way to edit Wineskin (and other item type?) flags to change the content (water, spirits, etc)
+X (BT3) Editing command bytes of Message script lines doesn't let you edit the last byte properly (at least on Unterbrae 4, 1,20, line 2)
+X (BT3) Opcode 0x1b is unimplemented (Forced encounter, number of groups, two bytes per group)
+X (BT3) The SelectSpell/CombatSelectSpell stack bytes are off depending on a bunch of things, such as the character name.  Need a better way of determining this
+X (BT3) "is in combat" is false sometimes between user inputs (e.g. holding down "d" or whatever).  Need something better than the current stack nonsense for determining this
+X (BT3) Rogue abilities (Disarm Traps, Identify Chest, Identify Item, Hide in Shadows, Critical Hit) are not shown on character sheet
+X (BT3) Dex 15 is +1 AC in BT3
+X (BT3) The "quick state" (via memory.State1) doesn't know which character is casting a spell; is that information only in the stack? [yes]
+X (BT3) "Monsters in Group" in encounter editor has a "#" column that's always '0'
+X (BT3) Songs/Won/Attacks/Critical/Hide are all the same offset [Some actually are overloaded]
+X (BT3) Need mainstate/inspecting char/etc
+X (BT3) Use the script squares to add things to the map squares (messages, teleports, stairs, etc)
+X (BT3) Spell Ref appears during character inspection (in dungeon)
+X (BT3) Up/Down script (0/1) is backwards in some (most? all?) places (e.g. Map15 0,0 cmd 0x00 in-game is "down") [there is a flag bit in MapFlags]
+X (BT3) Would be nice if the script editor shows the monster names instead of #1, #2, etc.
+X (BT3) Need to set the "Learned" for BT3 spells that have specific locations (GILL, KINE, etc.)
+X (BT3) Make sure XP/level is correct [All classes are now +400000 after level 13]
+X (BT3) BT3 has actual cartography information (for the current level at any rate); use it for the visited squares
+X (BT3) Portalling from Unterbrae 4 to the town by killing the boss doesn't update the map index
+X (BT3) May want colors instead of (or in addition to) symbols for some square flags (HP restore, MP restore, sticky, etc.)
+X (BT3) Scripts for surface maps are not correct
+X (BT3) Changing a character's sex doesn't change the profile picture
+X (BT3) Find out where "phase door permitted" for a map is
+X (BT3) Active Squares is completely wrong (needs to show active traps, at a minimum, as the flags disappear when the trap is sprung)
+X (BT3) Arboria has some unknown opcodes
+X (BT3) Moving between levels still sometimes leaves the active squares wrong (e.g. from Unterbrae 4 -> Unterbrae 3) [GetInternalMapDelta didn't include previous-squares outside of current-map]
+X (BT3) Identify or remove from the map notes all of the "Unknown flags" text
+X (BT3) Current map is wrong (59) when in the refugee camp in the wilderness
+X (BT3) Window snapping margins don't use any automatic system metrics [bah]  
+X (BT3) Exception when finishing game
+X (BT3) Double-click-to-cast-spell from the spell window would be extremely nice to have working somehow [home, pgdn, down]
+X (BT3) combat casting spell state during fixed encounters is completely broken (e.g. WhiteTower4,4,0) [new StackStates should fix this]
+X (BT3) Research the new "must start with BC 00 00 00" states for the StackStates Find()
+X (BT3) StackGuesses is hopefully obsolete; verify and remove all that rubbish from BT3MemoryHacker
+X (BT3) Need to differentiate "cast spell" from "use item" states
+X (BT3) Check common locations of "BC 00 00 00" before searching the entire stack
+X (BT3) "Award Bits" 0-63 don't seem to be actually used for awards; probably need to drop them from the awards bit editor
+X (BT3) Ability to mark entire quest as completed manually as an override
+X (BT3) Add "known colors" to context menu for UI elements
+X (BT3) Per-map cartography editability
+X (BT3) Colored stairs icons in Malefia for useless portals
+X (BT3) Script bits 62 and 70 were set somewhere along the way (during the Malefia quest?); need to track those down [relate to guild elder dying after giving Werra's Shield]
+X (BT3) Using an item in Ciera Brannia (at least) doesn't have the correct active character when selecting the item
+X (BT3) Are items sellable?  No values for items? [sure seems so]
+X (BT3) Monster list can't sort by HP or Damage [AverageDamage and AverageHP needed implementations]
+X (BT3) Make sure "d" squares don't have other things in them (particularly "s")
+X (BT3) show DIIL/PREC status in encounter window
+X (BT3) Some bard songs are still missing stats [Minstrel Shield appears to be broken]
+X (BT3) Find out where SHSH, etc. are stored and show them in game info (and encounter window, perhaps)
+X (BT3) Don't forget training assistant (HP/SP per level may not be correct)
+X (BT3) Strength has no effect on melee damage? (16+ only for minimal benefit like con/iq ?) [nope, seems to really do absolutely nothing]
+X (BT3) "Thief Dagger" does way more damage (40-68) than its damage stat would suggest; must have some sort of other ability [was using completely wrong formula for damage dice]
+X (BT3) Trap disarming is using the wrong names for BT3 traps
+X (BT3) Risk/Reward is known but the actual min/max for treasure is not [manually found item ranges for all risk/rewards 0-7]
+X (BT3) Item "Black Arrows" has no description [and doesn't do much either]
+X (BT3) Load/Save roster file
+X (BT3) Save the settings of the Drop Trash form
+X (BT3) Bag of Holding is completely unimplemented
+X (BT3) Make auto-combat wait until the current character has changed (or timeout) before sending a zillion attack commands
+X (BT3) Monk has an AC modifier that isn't being displayed in the tooltip
+X (BT3) Missile weapons seem to have wildly varying damage that isn't in the item bytes
+X (BT3) "Long Bow" and throwing-only weapons show "1d2" as melee damage; that's not useful to display on the party window
+X (BT3) Need to show missile weapon damage as a separate item on the party window
+X (BT3) Way to stack items with charges would be nice
+X (BT3) Need to hide spellbook from non-casters (Rogues, at least, use the same bits for their thief skills and looks confusing)
+X (BT3) Cartography bytes are different just turning around repeatedly in a dungeon ? [was trying to set visited squares to "unseen"]
+X (BT3) "Drop Trash" could use a bit of an overhaul and a "custom" setting where the user can check/uncheck specific items to keep/trash
+X (BT3) Collection of selected "quick spells" would be convenient
+X (BT3) Verify stats between 20-30 really have no effect?  Dex 30 is no better than Dex 18 ?? [seems so]
+X (BT3) Moving between maps visits the target X,Y on the previous map (especially exiting the Festering Pit L1)
+X (BT3) Hover-text in backpack thinks Titan Plate is usable by Archmages and Chronomancers (but Item List does not) [Clone busted again]
+X (BT3) Grey tower level 1 is being odd with the cartography (showing one-way walls as solid instead of open when the opposite square is unvisited)
+X (BT3) Need to put m_shkMM3 and m_shkMM45 into a more generic container that that all games can use spell hotkeys
+X (BT3) Moving between key conflicts with F8 is not finished  - SelectNextKeyConflict
+X (BT3) [after playtest] Don't forget to remove the "BC000000 in uncommon location" debug output line in BT3MemoryHacker
+X (BT3) [after playtest] Make sure the manual-completion quests aren't saved as completed into the internal mapX (MM1) Some way to remember and set the current party when an inn is selected [Added to "Skip Introductions" feature]
+X Some way to mark a square as "needs updates from game" (e.g. the time squares in A-1, Castle Alamar Level 2) [Added "live" flag to squares]
+X "If you are Good and have removed Trebor's curse: ?" needs text (CastleSecondFloor,15,11)
+X MM2 - Peabody's quest should be a pre-requisite for the Queen Lamanda quest
+X Export/Import for roster editor? [no; not necessary]
+X Change the memory offsets for the SAVE1.DSK version, which seems to work much better
+X Add Trashable and ItemNoun
+X Wiz2MonsterIndex, Wiz2Monster.GetName
+X CreateSuperCharacter (Wiz2 has better items)
+X Check Exp for wiz2 monsters [no longer calculated; in the record directly]
+X Treasure list (internal and external) might not be offset correctly
+X There are unknown item effects (24-27)
+X Find the TreasureCouldNotDisarm, CombatSelectFightTarget states
+X Quest bugs from Stephanie - Lord Haart, Murray's
+X Find "Dumapic forbidden" and etc. (e.g. Malor) [looks hard-coded to level 6]
+X Find the bits that allow you to fight the Magic Armor, etc.
+X Some squares on the map that are "dark" seem to not actually be (top row of level 5)
+X Skipintroductions [seems good]
+X See if any of the levels have the "not really dark" flag [no]
+X Characters records appear to be slightly different - alignment/race/class/age/status [no; offset was just off by one]
+X Way to move characters from Wiz1 to Wiz2 outside of the game (from roster form?) [not necessary]
+X Item list
+X Monster list
+X Treasure list
+X Missing parts of Wiz3Memory
+X Game Info
+X Up/Down are reversed
+X Fight map
+X Createsuperchar
+X Editing an item shows a multiline description that has >1000 item numbers; those should be normalized
+X Finish the AutoCombat() function (specifically the bCanAttack)
+X Reward Levels such as 10 and 11 show "#4 to #5" and the like when they are really only a single item
+X Wiz3 actually makes use of the "+x% chance to add y" to the rewards; needs to be reflected in the monster treasure description somehow
+X Maps
+X Replace "Maze" with "Tower" in the WAW file
+X Color rooms green
+X Make sure notes for the "forbidden" stairways (evil/good chars in party) have that text [Is it "any good" or "more good than evil" ?]
+X Treasure screen is going to be different
+X "Delay" in the game info is wrong
+X Fight map is missing
+X Bag of Holding should probably be removed since there is no roster
+X Do something with the Black Box
+X Add names for the maps (e.g. "Cosmic Cube Level 1" instead of just "Maze level x")
+X Find out what the ? Spinners on level 4 actually do [really seems to be nothing; no map changes whatsoever]
+X May want to remove the fight map from level 11 and the castle levels (since they don't seem to trigger combats)
+X "You fell down two stories" traps need teleport coordinates
+X The Hopalong Carrot supposedly does something at {Level 7: Temple of the Dreampainter} (5,8)
+X Exp -> Keys, remove Dispel/ID/Disarm controls
+X Encounter editor (works in combat, but not out of combat; probably want to disable out of combat editing)
+X supercharacter
+X maps
+X items
+X treasures [no treasures in wiz4]
+X monsters
+X Create the correct Item List, Monster List, Maps, and Treasure List *mem.gz files and test the internal vs. external data [compressed; not really worthwhile to decode]
+X Need a way to always summon the maximum number of monsters (ex. 1d6 = 6) (like the Training Assistant)
+X Trebor should be on the map with an "M" (and the other parties, if they have coordinates) [suspect the other parties do not]
+X Werdna shouldn't show "Train!" in the quick ref
+X Really might want to re-think having updatable parts of the map (room rotators and such) [MapSquareFlags.Live ?  Probably want to provide an array of squares to the hacker, not one-at-a-time]
+X Need a non-debug way to modify the "Live" flag on squares (edit mode that shows a clickable highlight over top of the map sheet?)
+X Live squares aren't working on 32x32 maps (e.g. B-3, Dark Warrior Keep 25,1)
+X Update the live squares on various maps [Seems to be only two with movable walls]
+X Update the live squares on various maps [make sure the default saved map makes sense without the game running, though - visit live maps with fresh party]
+X Visit the live squares again with a fresh game to make sure the default map is correct
+X Add live squares to crazy maze level
+X Add live squares to MM3/4/5 for the movable walls
+X Wizard Skullcap "makes tiltowait stronger" ?
+X Twilight cloak "improves to-hit" ?
+X The Black Box description says "Cast Kadordo" but that isn't what it does at all; need an exception for it
+X The Get Out Of Jail Free description says "Cast Latumofis" but that isn't what it does at all; need an exception for it [teleport one square in a random direction if in a cage]
+X Live squares need to not update when the map is not available (e.g. when speaking to the Witch, or Mron, or almost anything other than "Adventuring")
+X "DAIBALO" is both bit 58 and bit 65 ? [65 is DRIP]
+X Add "Victory: +Item" to the encounters that have interesting items
+X Apparently the wandering Oracle has x,y coordinates?  Show on the map somewhere (new icon?)
+X The party and singles bits overlap; need to not show the one bits on the other bits' edit form [both now on same form]
+X If there's not going to be any "Map" Game information, that panel should not be there
+X Monster 223 (ARMANIR) seems to be on level 1 and 2; is that correct? [seems to be true for several monsters]
+X Add the "No" responses to (CastleThirdFloor,11,9)
+X Crystal Rose makes castle guards leave you along ?  Note on map squares [doesn't seem to affect castle guard encounters]
+X Add "Find" for Awards window
+X Add "leave the current level" to the "Cleared When" for the Do-Gooder bits
+X quests
+X Apparently Kandi tells you where Trebor's Ghost is
+X CastleSecondFloor,15,13 -> The ? is probably "Restored the Temple of the Dreampainter" - need to check quest bits
+X CastleSecondFloor,15,11 -> need to find "remove trebor's curse" bit
+X Set/Reset quest bits might actually be useful for Wiz4
+X autocombat
+X autostart is completely different
+X Implement "GameReady" for all games
+X The monster offsets aren't quite right (Lycurgus probably doesn't summon Creeping Coins) [not sure; changed to just "Summon"]
+X ? at The Castle, Second Floor (15,13) and (14,11)
+X Oxygen Mask game bit seems to always be true; probably not correct [don't see anything else though; not terribly important]
+X Test Editing monster data for particular combat (is it writing 76 bytes as it should?) [yes]
+X several maps could use the "Live" feature (especially for barriers - Castle WW, cavern under Erliquin, ...)
+X At least one map has a removable wall (pull torch); use "Live squares"
+X Live squares are removing the green "internal room" colorX "Dagger of Speed" doesn't show the AC -3 in the backpack description
+X Option to hide unidentified items?
+X "Do not lose stats" on the training assistant
+X Hover over unidentified item still shows all info (also bag of holding, roster editor)
+X Add character age to the creation assistant [age is set afterward]
+X Wiz1 is missing some of the Wiz1Resist and Wiz1Target enums
+X Saving your map file - default folder should be executable directory? ["my documents" is probably the right answer]
+X The regex that matches DOSBox should be in the settings, not a constant
+X Identify unknown bytes in character record (out, maze location, honors, etc)
+X Add/edit/delete items
+X Are there actually 5 possible groups in a combat? [no]
+X CalculateExp has a "10000 * (MagicResist / 10 - 7)" line that is a hack; what is actually supposed to be making that number? (bug in ADDLONGS)
+X Cheat edit AC (are there two values or not?)
+X Cheat edit spellpoints
+X Create Supercharacter
+X Edit Monster (on encounter form)
+X Edit/View spellbook
+X Editing level and age doesn't work
+X Encounter square highlighting and Reset/Remove all monster menu items
+X Encounter window
+X Equipped (cursed?) items not showing in the "Equipped" list
+X Figure out Reward1 and Reward2 for monsters
+X Find out when regeneration / poison happens
+X Fix the Legend
+X Implement Wiz1EncounterData()
+X Implement Wiz1Treasure.ShortDescription and show in the encounter window
+X Item List
+X Make the Encounter Square text a little less verbose (put the verbose text on the Legend instead)
+X Monster exp is based on stats (so editing them on the form should update the value) [my calculation is wrong for many enemies; maybe number of attacks?]
+X Monster List (treasure incomplete)
+X Monsters are always showing up as (asleep) [using wrong column]
+X Need to implement SetBackpack (amidst many other things...)
+X Party Info
+X Poison seems to be percentage based (also "1" seems to be the same as any other number
+X Right-click to select columns on encounter form should use "Initiative" and "AC Bonus" instead of "Speed" and "Accuracy"
+X Select party tab when inspecting a character
+X Shopping Form
+X Show poison level and saving throws
+X Show regen and poison on the character record
+X show something in the Resistance listview or remove it
+X Show the encounter chance somewhere (from procedure CHENCOUN)
+X Since the (X / Y) monster treasures always have the same gold values, they can be collapsed a little better [separated is okay]
+X Spell Reference
+X Trap damage is based on the maze level and the Aux values; note on the map (also % chance to avoid based on agility)
+X Treasure table might be after the monster data (there are at least 21 of them)
+X Use ATTK012 to show "double gold" and "better treasures" (or whatever) on the encounter form
+X View vs. Edit spellbook
+X warning on treasure window if someone's inventory is full? [added to conditions] 
+X Add to Wizard dialog
+X Creation Assistant
+X switching between characters on the bag of holding doesn't show the backpack items
+X Changing the stat values normally during character creation adds a new line to the previous rolls in the Assistant
+X bag of holding
+X roster editor
+X Implement SkipIntroductions
+X Minimize either DOSBox or WAW minimizes the other (and vice-versa)
+X Training Assistant
+X Make sure right-click options make sense (e.g. get rid of "Set Surface Here" and "Set Lloyd's Beacon Here")
+X Party/Info window says "Exit the inn" - should be "the Castle" for Wizardry
+X Prox, Pos, Spd, Acc should probably all be hidden by default for Wiz1 on the encounter for (or used for something else)
+X Wiz1 chars can gain more than one level at a time (maybe?); make sure the Training Assistant can handle that [can only gain one level at a time]
+X HP and stat gain/loss chance are not the same as the source code; needs some empirical statistics
+X Word wrap on ViewInfoForm is not good.  The "HP info" doesn't shrink well at all.
+X "Fit Window" is completely borked [overrode OnSizeChanged without calling base]
+X Spellcasters don't all learn spells at the same rate (e.g. Bishops learn Priest spells at level 4)
+X Bag of Holding doesn't select the right character on Doussa's party ["Position" was not the right value]
+X Is cure-all worth doing? (needs to be either implemented or the link removed from party window and quickref form) [yes, castle-only]
+X "Silenced" is not shown anywhere
+X "Maporfic" AC reduction is not shown anywhere (also it seems to be 2 and not 4 as listed in the manual)
+X "Click to cast" doesn't always work in combat ["Castable" was not appropriate for the Spell class; made SpellTag instead]
+X Verify if stoned party members gain XP or not [they do not]
+X cure-all needs to send appropriate keys for refresh depending on the location (right now it sends 1,esc which is never right)
+X Add number prefixes to inventory items
+X Find the treasure index for the current chest
+X Put the possible traps types for the maze level in the game info [they're for the monster, not the maze level]
+X Auto-position the trap disarm splitter position closer to the treasure panel
+X Some way to send the trap type to the disarm screen (that isn't just "send the right one" - user needs to choose)
+X The trap type probably shouldn't actually be in the game info screen [debug only]
+X Take the Wizardry-specific odd monitoring out of the QuickRefForm [debug only]
+X AC and Regen don't have tooltips showing what items are affecting the value
+X Treasure window [may be pointless; treasure seems to be randomly generated after chest is opened, but the trap type at least seems constant; need the type 3 sub-type though]
+X Find out when characters learn spells (supposedly based on IQ/Piety as well as class?), put in the Wiz1Spell objects
+X Editing monsters changes the monster list and encounter info but not the data for the fight (e.g. experience given is the original value) [oh well]
+X Item.CompareTo needs help (Dagger of Speed is -3 AC; needs to be Not Comparable to most other weapons)
+X Check (Maze Level 3: 13,17) and see what it actually means [it means exactly what it says]
+X Quests
+X Show monster's "InAudCnt" somewhere (silenced rounds)
+X Make sure the wizardry spells all do what they say (e.g. Kalki seems broken - perhaps nobody was in the maze at that time though)
+X "Initiative" column may be pointless (number is not generated until combat starts, and isn't valid for the next round) [eh]
+X Find out exactly what "protects vs." and "purposed for" do [50% damage, double damage]
+X Show critical hit chance and tooltip
+X Add sleep/paralyze resistances to char record
+X Add the chance for spells to work to the short spell descriptions
+X Verify the damage types of spells (in particular "physical" is probably "magical" in most cases)
+X Verify that swings are a minimum (either the character's built-in per-level or the weapon's, whichever is higher)
+X Changing a silence value on the encounter editor doesn't reflect in the party window UI until refreshed manually
+X Show "Porfic" effect somewhere (AC tooltip)
+X "Edit internal cartography data" needs to be removed
+X The names of the columns which right-clicking on the column headers for the quick ref window are not right for Wizardry
+X Werdna's monster dialog tooltip is crashing [seems okay now]
+X Port "Backpack Full" condition to the MM games? [backpack full isn't as important in those games as you can re-search to collect items]
+X Spell abbreviations [not particularly important; the click-to-cast serves that purpose]
+X Finish maps
+X Find the other Wiz1Target types [guessed]
+X Find out the numeric effects of Dilto, Mabadi, etc.
+X Implement BaseHPForClass [irrelevant as HP are calculated from scratch after each level]
+X Add weapon effects to MeleeDamageString
+X Show "protection vs" somewhere (other than the equip list) [equip list is sufficient]
+X Wiz1Character's MultiLineDescription needs wiz-specific items [not meant to be exhaustive]
+X Show chance to ID items: (10 + 5*level)% to ID, (35 - 3*lev)% to touch cursed item [these do not seem correct; need empirical trials]
+X Show the "dispell" chance somewhere (50 + (5 * level) - (10 * monsterlevel) - [lord ? 40 : bishop ? 20]
+X Game Info [not really a lot of info]
+X Find out what monster family #4 is [Midget?]
+X find out what "afraid" does (for ConditionDescription) [source says nothing]X Right-click on quest goal to see how far it is from the current location (especially on surface maps)
+X MM4/5 "temporary stat increase" needs to be a bit more segmented (level/resistances/primary stats at least) [added search and put stat first]
+X The order of the columns in the encounter window may not be saving properly (ResizeHeadersAndContent was mucking it up)
+X If DOSBox crashes on startup after the Wizard, the Party and Game forms show up at (0,0) instead of near the main window [fullscreen bumps the off-screen windows to 0,0]
+X The advanced quickref form has the same "column order not being preserved" problem that the encounter window had
+X LoadingMap memory address (MM3) in 32-bit SVN and old DOSBox versions
+X Anchor rectangle listview needs add/remove
+X Anchor rectangle listview is showing grid coordinates instead of in-game coordinates
+X Change label anchors from points to rectangles (prep for MM6)
+X Move/Copy/Paste labels with new anchor rectangles
+X $[Equip] isn't working in MM2
+X Notification to set all arcane caster's spell to "Teleport" shows as "Town Portal"
+X Double-click item (weapon/armor) to show list of characters and what their current AC/damage for that type of weapon is (two-handed should show the 1h+shield, if applicable)
+X (MM3) Implement MMItem.CompareTo()
+X (MM45) Implement MMItem.CompareTo()
+X (MM3) Helms aren't showing their AC in the item comparison window (apparently Helms are not of type Armor)
+X Window snapping doesn't work if a corner of the window isn't in the snap range [needed to snap edges, not corners]
+X MM3 EquipString is adding commas when only one element is present (e.g. "Dense Ring")
+X (Doc) Labels form is different with the anchor rectangles now
+X (Doc) Double-click/enter on backpack/equipped items for detail (Compare Item form probably needs separate entry)
+X (Doc) 1-8 keys on ViewItemInfo form
+X (Doc) First "better" entry is selected automatically on ViewItemInfo form
+X (Doc) Mention that the Bag of Holding is not designed to prevent you from pulling silly tricks like trading items to other characters while the bag is open
+X Check when Bag of Holding is closed to verify that the party inventory info is the same as it was when it was opened
+X No exe/shortcut icon
+X SeenSquareOpacity needs a nud in the options
+X Keyboard actions for reveal seen square toggle and cycle seen square opacity
+X NorthView 0,2 needs 1,3,north + 1,3,west  (and similar for other orientations and squares)
+X "Indicate squares with active scripts / encounters only" moved to Encounters tab
+X Keyboard actions for reveal seen square toggle and cycle seen square opacity
+X Setup wizard modes need to change the seensquareopacity
+X new item format string in all games
+X Bag of Holding, Shop Inventory need to use FormatDescription
+X Check AC for materials for accessories in mm3/4/5 again [lots of little bugs]
+X Remove "show item names" and "show item information" menu items in backpack and bag of holding
+X (MM3) moving between surface maps places "seen" squares where the other map's visible squares were [Added MapLoading to MemoryHacker]
+X (MM3) Spell window is hidden when selecting a new spell
+X (MM3) add hireling, remove hireline, use cure-all causes an exception
+X Cure-all should be on advanced quickref as well
+X (MM3) Monsters sometimes stay on the map when killed (until F5 refresh) [possibly fixed; intermittent]
+X (MM3) Monsters aren't always appearing on the map (especially (B-4, Arachnoid Cavern: 26,0) then teleport to 27,30) [possibly fixed; intermittent]
+X (MM3) MapLoaded not fully encompassing town portal time [Added grace timers]
+X surface maps again [Added grace timers]
+X Dying in MM2 often doesn't draw the You Are Here icon in the inn when you restart
+X MM2 back and forth between maps mucks with the seen squares too
+X Editing monster conditions in MM4/5 doesn't seem to do anything [fixed]
+X Warn the user if unvisited .jpg files in the map book are not found (create a "do not show this again" dialog).
+X Can't close encounter window any more since form.Owner change
+X Default window positions need to be set again using the new WindowInfoList (only Party, GameInfo, Encounter; others can default to CenterParent)
+X no right-click on keyboard list for notification selection
+X no Setting for saving and loading notifications
+X does not play audio notification
+X does not show text notification
+X no variables for text notification message (selected char, spell name, etc)
+X Notification (large-ish temporary window?) when Spell Hotkeys or Cure-All (or etc.) are pressed (perhaps a list of sounds that can be set for each action in the listviw?)
+X $successState, $enabledState not implemented [need success state for more functions, e.g. cureall]
+X Test saving/loading keyboard settings with notifications
+X Closing the spell list manually can cause access to a disposed object (TipListView) after some number of seconds. [m_tip not disposed first]
+X Remove note symbol, color, unicode button, etc from "play mode" somehow (but keep party location)
+X (doc) Cure-all keyboard hotkeys don't show errors
+X (doc) Variables in Notifications are title-cased if the first letter is uppercase
+X (doc) Audio notification files will be looked-for in the EXE directory, if the full path can't be located
+X (doc) Mention clicking on 3/4/5 monsters directly on the main window (Ctrl+click for multi-select) or selecting via the encounter window
+X (doc) Requires .NET 4.5 framework (not included)
+X (doc) Need to actually write documentation
+X (doc) Click to draw, click to erase for squares
+X (doc) Hold Shift to draw straight lines/blocks
+X (doc) Undo is separate for each sheet
+X (doc) Mention "Un-cancel note" feature
+X (doc) Ctrl+Enter to insert a newline in a note
+X (doc) Enter in Mode.Keyboard to edit note
+X (doc) Right-click and hold on block/line colors to select from the quick colors
+X (doc) Hold Ctrl to erase lines
+X (doc) Note exactly which versions of the games and builds of DOSBox that I tested with
+X (doc) Selecting the "Legend" map item is a toggle
+X (doc) Explain saving visited squares vs. in-game cartography
+X (doc) Hold Ctrl to fill lines instead of squares in fill mode
+X (doc) Shift+F3 to search backwards on forms that have a search
+X (doc) Ctrl+F to bring up search box (quests, keyboard shortcuts, monsters, items)
+X (doc) WAW files are ordinary XML except for "Sheet/Grid" which is a GZipStream
+X (doc) Note all of the command line options, including debug [no debug in doc]
+X (doc) Arrows, Shift/Ctrl+Arrows on unvisited image selection form
+X (doc) copy/paste on map sheet custom bitmap context menu
+X (doc) How anchor values in map labels are affected by square visibility
+X (doc) Double-click Anchor and Location labels to copy from the other one in the label editor dialog
+X (doc) Notes mode can move notes or labels around; Ctrl+drag to copy
+X (doc) "." symbol on notes makes the note have no symbol on the map
+X (doc) Ctrl+Arrows to move labels around
+X (doc) Edit mode disables the "hide unvisited" while active
+X (doc) Use "Notes" mode to move notes and labels around (not "Play" mode)
+X (doc) explain all of the context menu items
+X (doc) Mention that window positions will save/load on exit/start (user should move to comfortable positions, especially spell and shop inventories)
+X (doc) What "at an inn" means for bag of holding (any square inside, or outside the front door in MM1/2, or just "in a city with an inn" forn 3/4/5)
+X (doc) Explain the autoload file (saving a map while running the game sets the autoload file for that game)
+X (doc) Explain the "show inaccessible" feature (note it is disabled for MM1/2)
+X (doc) If DOSBox is running as Admin, WhereAreWe also must be run as Admin
+X (doc) Fill and Edit mode ignore the unvisited squares, but line/block/hybrid will only draw on visible squares
+X (doc) Make sure (See xxx) actually links to a part of the document
+X (doc) Make two sections; "Playing" vs. "Editing" and put playing first ["Quick Start"]
+X (doc) Notes on how to build the project (especially the pre-build step and perl vs. powershell)
+X (doc) "Bring dosbox to front with WAW windows" may cause the focus to shift inappropriately sometimes, because DOSBox is a separate process with its own mind
+X (doc) Where to put (and what to name) the default surface map files
+X (doc) quick-start guide explaining the wizard and char creation assistant
+X (doc) mention tooltip showing size during mouse wheel zoom
+X (doc) Warning if zoom level is too high for the grid size
+X (doc) Window positions will not be restored if parts of them are off the screen
+X (doc) Add images as examples
+X (doc) Check that all Forms are accounted for in the document
+X (doc) Proofread everything
+X (doc) Make sure cross-references are all correct
+X (doc) Full-justify ?
+X (doc) Lots of headers have backslashes in front of them; may cause trouble
+X GetDOSBoxVersion is an extreme hack; check other SVN builds [SVN-Daum is really the only contender]
+X Things that use the roster file (editor, quests, bag of holding), especially with new install [all kinds of pesky bugs squashed]
+X Test in non-administrator mode [surprisingly few problems, though if DOSBox is admin then WAW needs admin too]
+X MM2 Middlegate is setting the cartography for the west edge of the map on startup, even with a fresh install [ShowInaccessible feature disabled for MM1/2]
+X Test with large Windows font sizes (especially icons and image lists for listviews) [not nearly as bad as I feared; toolbar is odd]
+X Title is missing from toolbar in 150% font mode [GetPreferredSize seems to return odd results in high DPI modes]
+X If an item is "<Not Found>" in the wizard, the error message when ForceWindowed fails doesn't make a lot of sense (should be skipped if not found)
+X Custom mouse cursors are smaller than the default in 150% font mode [Added double size cursors]
+X Scripts with SVN/nonSVN DOSBox
+X Test exchanging characters with quest window, combat window, etc. open
+X Editing monsters
+X Cureall
+X Make sure .Log() and .MeasureTime() calls are removed (aside from the debug monitors for HP, etc.)
+X Changing games with various windows open [occasionally scripts window needs refresh; others seem mostly okay]
+X Right-click, "toggle visited" jumps the pbMain scroll position to 0,0 if the scrollbars are not visible [save point in CheckShowScrollbars]
+X Opacity of 100 for map overlay is still showing some lines (probably from the "hide arrows and dotted lines" code) [render one extra pixel before copying]
+X Surface overlays for new MM3 map file
+X Opening up a pile of windows seems to have made the hacker stop working (because of SVN dosbox?) [CheckGameMemory should not have added a new event each time]
+X large line widths with both keyboard and mouse [slightly odd but acceptably; set maximum line width to 4]
+X quit/restart DOSBox repeatedly [needed to close the wait form and terminate the game launch thread if "launch game" is called when already active]
+X Find some way to determine if drawing map updates only is really working (performance) [added checkbox to debug tab in options]
+X Setting the surface map in all games [MM3-5 don't have a surface map per se]
+X Shop inventories in all games [needed names for the MM1/2 towns]
+X Quickref
+X Default GameInfo size
+X tab order for all dialogs
+X MM4/5 does not implement the TradeBackpacks() function
+X Windows should either have the WAW icon or no icon
+X Built-in maps should be all unvisited and have no flagged quests
+X Automatically set the DOSBox to windowed mode? [default option in the wizard]
+X Read the DOSBox config file to set the default window positions based on whether the screen is 2x or 3x [not necessary; the auto-arrange on first run will handle it]
+X Installing games to a different path [seems good]
+X Get the latest version from GOG and make sure it doesn't break things [Hasn't changed since 2.0.0.41]
+X Initial startup - all squares should be unvisited (MM1 still has some set)
+X Default keys for fresh installations [good enough]
+X Mouse/wheel default actions on new install
+X Resize all resizable windows and check anchors
+X Entire monster list is checked for every square drawn [the monster list is a dictionary; shouldn't be a big performance impact]
+X Might be a good idea to read GameState regularly and have that data available cached instead of having party, monsters, etc. all reading it constantly [was reading every 5 ms!]
+X Make sure Image and Bitmap objects are disposed
+X MenuStripIgnoreFocus focuses on DevStudio when clicked from the EditLabelsForm [this seems suspiciously fixed somehow]
+X Leave Ctrl+Alt+Shift in debug mode to show dirty squares? [added checkbox to debug window]
+X If no squares are actually dirty in CreateImage() then the entire map is redrawn instead (can happen when dragging a note off of the map)
+X Changes to map labels are marking far too many squares as dirty [SetLabelSquaresDirty was using pixels instead of mapsquares]
+X Is the map redrawn repeatedly when the keyboard-mode cursor is drawn?  [no; the squares are marked as dirty, but MainForm's SetDirty() isn't called unless necessary]
+X Processor usage is high (10%) when moving around the map in-game.  Doesn't appear to be because of monsters [seems better now]
+X Ctrl+drag in notes mode needs some active feedback for the original label and the new note (functionally working but visually odd)
+X Pressing/Releasing Ctrl while dragging label doesn't update feedback until OnMouseMove
+X Labels should be hidden in unvisited squares (use Anchor property of MapLabel)
+X Settings.Default.ShowMapLabels should be toggleable somewhere (also add keyboard Action)
+X Add "A1" style notes around the arrows on the borders of the surface maps (use bittwiddler)
+X Add labels to the towns 
+X Selected label(s) become unselected when changing attributes of the label (x/y, color, etc.)
+X Zooming in and out while labels are selected is causing graphical trouble when selecting other labels [label dirty rectangle needed some Math.Round()]
+X Cursor is leaving graphical rubbish on the right/bottom squares again [cropped rcMinDirty improperly]
+X Indicate selected notes on the map
+X Map labels are using grid coordinates instead of game coordinates [no it isn't; new map books have no default offset]
+X Changing the x/y position for a map label with the mouse wheel causes too many updates and makes the refresh slow
+X Map labels are being drawn one square off when drawing the entire grid instead of drawing only changes [offset was wrong]
+X "1:1" checkbox with scrollbars for SelectImageRectangleForm
+X Add keyboard Actions for moving the selected piece of the unvisited bitmap while on the mainform (so you can see what you're doing with the map overlay instead of guessing)
+X Remove the full path from the UnvisitedImage for a map if it is in the same directory as the .WAW file
+X Command line options (load settings from file, etc.) [already had CLOptions; added -i for import and --resetsettings]
+X Save custom unvisited brush on a per-mapbook basis [in the map book info dialog]
+X Selecting a large vertical region in the SelectImageRectangleForm is slow.  horizontal is not slow. [Update timer mitigates this]
+X Edit mode, select all and move shows the ghost of the previously moved selection instead of the entire map [needed m_bRecaptureSelection = true]
+X Add a maximum size with kill-oldest logic to ImageCache
+X Show custom bitmap over unexplored squares (e.g. the map of VARN or similar)
+X Add unvisited maps for MM3,4,5
+X Expand/crop need to move the MapLabels appropriately
+X Move/Copy areas with map labels (EditFlags currently uses "notes" as "labels" too; might want to separate)
+X Free-floating text labels at non-integer positions and variable font sizes (e.g. at (7.5,3.5, size 2: "Inn of Sorpigal" or etc.)
+X Copy/Paste an area with map labels (especially to a new map with different mapbook offsets)
+X Better way to move labels around (especially large labels on zoomed-out maps), probably need some form of mouse drag
+X Undo needs to include map labels
+X Should rotate/flip include labels? (yes)
+X Map labels with alpha backgrounds are behaving oddly when lines/blocks are drawn through them (and drawing through the anchor square is oddly slow)
+X Selecting block and moving them is blinking the selection marquee in and out while moving (probably the recent SuspendDrawing putzing)
+X Edit box on toolstrip needs to extend to the right edge (tsEdit_ClientSizeChanged is not working properly)
+X Move toolbar to a "real" one that will wrap if the window width is too small
+X Add "ClearLine" to the common keys (Ctrl+U) and put them on the search fields (quests, monsters, items, etc)
+X Moving the keyboard cursor on the bottom or right edge leaves graphical junk [bottom and right squares needed extra margins in CreateImage]
+X Some options should probably be per-game instead of global to all games [added compromise of import/export all settings]
+X miAllScriptsSetNote_Click should probably use the same code as MMScriptLine's SetNoteText [don't remember what this was; not seeing a problem currently]
+X Hotkeys for note templates
+X Warn user if editing roster while game is running
+X Some options should probably be per-game instead of global to all games [added compromise of import/export all settings]
+X miAllScriptsSetNote_Click should probably use the same code as MMScriptLine's SetNoteText [don't remember what this was; not seeing a problem currently]
+X Hotkeys for note templates
+X Warn user if editing roster while game is running
+X per-map notes (in addition to per-square) [added to book info form]
+X per-book notes (e.g. spell reference) [added to book info form]
+X Go to a sheet by finding a substring in the name (/ + text ?) [Added Sheet->Goto]
+X Show tooltips on subitems of full-row-select listviews (this seems complicated but would be very nice to have) [created TipListView]
+X Message if the auto-acquire failed after launching DOSBox (tell user to re-acquire when ready)
+X Option to draw double-width lines in keyboard mode [added to keyboard shortcuts]
+X Clone a map sheet to a new map [Edit->Clone]
+X Draw rectangle/circle/etc. (perhaps "draw into selected rectangle") [Fill blocks/Outline, skipping circles for now]
+X "Turn half-lines into full lines" edit menu item
+X More mouse wheel actions:  next/prev sheet, next/prev character
+X Using the NextCharacter and PrevCharacter keyboard shortcuts brings the party window active for some reason [tabcontrol oddity; needed to disable before changing tabs]
+X The second column of keyboard shortcuts doesn't work any more (in BeginEdit, the InputOption length is only 1 instead of 2 as it should be)
+X Ctrl+Shift+P as the secondary keyboard shortcut for File:New seems to work, but Ctrl+O as the secondary for View:Options doesn't [ProcessKeyPreview needed some tweaks]
+X Fill should respect solid non-grid lines (and go through dotted ones)
+X Different mouse cursors for modes (block/fill/line/etc.) 
+X Fill area
+X Main grid context menu is getting big; needs organization [isn't too bad now]
+X Way to hide unsolid walls until the player has passed through them (option to not draw dotted lines unless the opposite square is marked as visited)
+X Map export dialog should really be modal; making sure the maps don't change in the background is error-prone
+X Faster way to pick common colors for notes (right-click?)
+X Colors for icons like for text (ColorMap might work well)
+X Save as PNG [and ZIP for entire book]
+X Rotate/flip map/selection
+X Select icon from keyboard (Pad*, Direction, Enter ?) [NextIcon and PrevIcon actions]
+X Quick list of icons (keyboard hotkey) [NextIcon and PrevIcon actions]
+X Select icon from context menu [keyboard and wheel shortcuts are good enough for now]
+X Save keyboard shortcuts on a per-game basis (or at least to external files) [added import/export to XML]
+X Surround area with lines [Fill mode + Control key]
+X Need something generic that looks at the square in front of the party and reveals it if it is a teleporter (possibly based on note text) ["(Teleport" or "x% chance: (Teleport"]
+X "Find teleporter" code doesn't work if a teleport or jump was used to get to the teleporter initially [fixed via known squares]
+X "Find teleporter" code doesn't work if the teleporter sends you back 1 square (unless you are moving backwards) [fixed via known squares]
+X Unvisited squares are occasionally revealed (probably because of the teleporter code) - running still sometimes reveals the next square, load state can do it [fixed via known squares]
+X Snowdrift teleporters, etc. reveal the next square forward after the teleport; may need special knowledge of those squares (LastKeypress doesn't work) [fixed via known squares]
+X Find some way to not draw the windows during BringAllToFront() so that e.g. DOSBox won't flash to the front before a full-screen script window covers it [DeferWindowPos is great]
+X Change default save name from "Map1.waw" [not really important]
+X make lockscroll.com e-mail address and put on about box [wherearewe@lockscroll.com]
+X Easier way to put a door on both sides of a wall [rotating icons with mousewheel is decent]
+X Accidentally clicking "clear" when adding a new (lengthy!) note [added "Un-cancel note" which is a little hokey but gets the job done]
+X Delete key to erase selection
+X When using Windows 7 Themes, the "snap windows" function doesn't work quite right (with old DOSBox) [now using DwmGetWindowAttribute]
+X "Change to play mode if a game is detected" next to "default mode" dropdown
+X Customizable mousewheel with ctrl/shift/alt functions (rotate icons, zoom, pan, etc)
+X Add something during Redraw() that shows the actual zoom level to the user as feedback
+X Show the currently selected icon in the square the mouse is currently over (like a brush stamp)
+X Shortcuts for select next/prev icon, line, block
+X CenterControl() does bad things to the panelMain margins around pbMain if the pbMain is larger than the panel [fix ALL PROBLEMS with timers!]
+X Can't edit AC in hack mode
+X (Stephanie) Autolaunch MM2 doesn't set the hacker properly; requires "reset memory scanner"
+X (Stephanie) Items not showing which classes they are usable by
+X Should be able to close spell window manually if it came up erroneously
+X Encounter window can appear if DOSBox takes too long to start; have to reset the memory hacker to fix [doesn't seem to happen now]
+X DraggableListView only works on the current view; doesn't scroll when you reach the edges [fixed using timer]
+X Cut/Copy/Paste/Delete don't do anything
+X Indicate the mode somewhere (particularly edit/non-edit) [added text on toolbar]
+X If all of the dirty squares are a single rectangle (e.g. move/copy selection), it would be better to only call CreateImage once with the entire rectangle
+X Copying/moving lots of blocks (e.g. 32x32) is quite slow
+X Decide what to do about using edit mode with unvisited squares hidden (edit mode probably needs to pause the memory hacker and disable invisible squares)
+X Ctrl-V paste when there is a selection should paste to that rectangle, not to (0,0)
+X Moving a selection off of the map doesn't delete the lines/backs/notes/icons that couldn't be moved
+X Graphical feedback when moving/copying a block
+X Separate context menu for edit mode with selection active
+X Actions for edit flag checkboxes in options
+X Selection is lost when zooming
+X Moving a block does not move the outer half of a double line
+X Moving/Copying blocks does not include notes or icons
+X Can't copy/move a region that includes a square in the bottom row
+X MapIcon objects know where they are (x,y); not sure this is appropriate (making a new icon and adding it to a square is a small nuisance) [it makes undo easier]
+X Moving selected squares that includes a bottom square doesn't work (at 124x124, anyway)
+X Switching maps should clear any active selection
+X Pressing escape while dragging a selected block should cancel the move/copy
+X Should be able to change between move/copy for a block based on Control up/down while in the process of moving the marquee
+X moving a selection should display the source blocks as empty during the move [dimmed as "ghost"]
+X Copy/move selection probably shouldn't copy the visited status
+X If only backgrounds (or etc.) are being copied during edit mode, the feedback bitmap should only have backgrounds in it
+X Dragging an edit selection around at 300% zoom leaves trash around
+X "Copy only outer lines" with selection has the wrong ghost bitmap (has all of the inner lines as well)
+X Moving only notes leaves non-note squares in the target area undirty (entire target area needs to be dirty regardless of items copied)
+X Starting square for selection should allow a margin (clicking at 29,29 in a 32x32 square should start the selection at the next square) [decided against this]
+X When copying/moving only lines, grid lines should not be included
+X Pressing F5 during copy/move should redraw the selection square
+X Zoom out, zoom in while keeping cursor near top, scroll to bottom, draw block -> jumps scroll to top and inadvertently draws line of blocks to new square (because of focus point?)
+X select one square, push delete, deletes all outer lines in border squares
+X Switching from edit mode to another mode with a selection active should clear the selection
+X Changing games leaves the wrong Game Information window open
+X Pressing enter on the Party window closes the form
+X Game information window needs a max width during auto-arrange
+X Change default background/grid line colors
+X Way to assign keys/mouse to actions
+X quick-select between two line types (solid/dot) [cycle line styles, cycle block styles]X Bitfields for rooms (e.g dark, anti-magic, forced encounter) [this is not necessary]
+X Easier way to move the "You Are Here" icon [reading the location from the game makes this kind of pointless]
+X Better layout options for a small main window (hidden menu and toolbar, better layout in the note panel for small sizes)
+X Add "find text" to the keyboard shortcuts list view
+X "Go to map" from the sheet organizer window
+X Options to set the grid line color/pattern/width (verify that places checking for grid lines still work afterwards)
+X If grid lines are going to be per-map-book then the options should be on the mapbook info dialog, not the main options dialog
+X Tooltips for nonobvious settings (block/line selectors, unicode button, etc)
+X Actions to toggle between last used block/line 
+X Edit mode should be a toggle (back to the last mode)
+X Drawing lines while the neighboring squares have not been revealed (or have only been revealed because of RevealAdjacentUnimportant) only draws half of the line
+X The default window positions are useless (are they even set to anything?) [Wizard now calls AutoArrangeWindows]
+X Maximize/Minimize main window puts inappropriate scroll bars [haven't seen this in some time]
+X Drawing a black line from left to right sometimes leaves the grid lines visible [drawing has been completely redone]
+X Changing games doesn't open a new map (need menu item to load default for current game?) [autoloading fixed]
+X Search window won't go to maps after loading a different book [needed to call SetMapBook after loading a new map]
+X Non-global hotkeys don't always work; depends on what main form control has the focus [seems better now]
+X Can't assign Ctrl+Alt+3 as a keyboard shortcut (next shortcut assignment erases it)
+X Help->About doesn't do anything and has the same shortcut as "map book info"
+X Ctrl+Z from the map title textbox undoes things in the map grid instead of in the textbox
+X Selecting an icon while in "play" mode should switch to another mode (otherwise the icon can't be placed) [changes to Block mode]
+X Attempting to open various forms (party info, game info, training assistant, etc) with no hacker running should be more consistent (some have dialog, some caption change, some nothing)
+X Pressing escape in the keyboard shortcuts find box closes the options form
+X Zoom in/out should leave the center square in the center, if possible [zooming is based on cursor position now]
+X Right-clicking on "block" color box selected top entry by default; that isn't the case for the "lines" color box - inconsistent [Negative ptCursor.Y was causing confusion]
+X adding a row/column leaves any lines on the edge as half-edges
+X Cropping leaves a ring of blank-looking squares if the outer edge is just lines (not sure how much that matters) [not sure what this meant; crop seems okay]
+X Something is allowing the user to change the quick-colors via the toolbar; not sure how [haven't seen this in a long time]
+X Moving the cursor around while zoomed in should scroll the view to follow the cursor
+X Adding a right column or bottom row with a line on it halves the visible line
+X Drawing lines from right to left or bottom to top slowly leaves pixel trash [not copying enough from the center square]
+X Viewing the book info and hitting "OK" should not change the zoom level if the user didn't change the value on the form
+X Zooming from 180% to 200% with the mouse in the lower right part of the map doesn't center the 200% map properly until a forced update (18x18 grid, 200% zoom fit-to-window)
+X Erasing a hybrid block from the edge of the map leaves a black line, and hybrid blocks at the edge are missing a line [refactored hybrid squares]
+X door-on-wall icons are kind of fat
+X Selecting an icon and clicking on the grid doesn't place an icon in "Keyboard" mode [it places it in "block" mode if in "play" mode now.  keyboard is not necessarily appropriate]
+X No keyboard shortcut to pick colors from dialog
+X Dotted lines look odd when the left/right or top/bottom lines are slightly different widths
+X New drawing function combines same-color-different-width dotted lines, but old function does not
+X notes and icons not working with new 3x3 drawing function
+X Wizard doesn't set the radio buttons they way the options are set when invoked manually (minimal was not checking enough settings)
+X Auto-center on party is sketchy when the map size is nearly the window size (possibly because of centering a small picturebox on the panel when the panel is oversized due to scrolling)
+X Error handling for save/load
+X Zoom in/out with map scrolled to the bottom/right is odd [implemented CenterMap]
+X After organizing sheets, clicking the map menu opens the menu at (0,0) instead of the proper menu location [Can't replace a menu during the dropdown event]
+X drawing entire bitmap while zoomed in is very slow; better to mark squares as dirty as necessary for the current view
+X Drawing 32x32 maps is pretty slow regardless of the zoom level even with an empty grid
+X Drawing lines of blocks at 300% zoom on a 32x32 map is very slow; supposed to only be drawing the changes
+X remove "IsShiftDown" from MapSheet/Draw
+X Loading a map doesn't use DrawAllSquares [seems to]
+X Background colors are showing through the confetti brush.. need to decide if that's better than the old way [no; back to old way]
+X Releasing the mouse over the scroll bar (or other items) after a drag invokes the right-click menu [new class, PanelBlockMessages]
+X Autosave could use some fleshing out (number of minutes, etc.)
+X Allow custom process name and window titles for GetGameProcess()
+X Complain when same keys are assigned to multiple actions
+X Copy current party location to clipboard
+X Choose between modes:  "Full trainer" (cheat enabled), "Maximum information" (no map or monster hiding), "Minimal information" (hide everything until explored)
+X Unvisited square opacity, notes in unvisited squares, etc.
+X Pick better names for the modes
+X Search known locations for games; ask user to browse for them if not found
+X Option to re-run the wizard
+X Call the auto-arrange function after running for the first time
+X Mention the colors that are ignored when checking to hide visited squares (sky, unimportant, space, others?) [added to misc options]
+X Make read/write memory in the hackers simpler with MemoryBytes class
+X Configurable delay waiting for game to start
+X Icons for other sizes like 24x24 and 48x48 (150%, 300%)
+X Mouse wheel zooming on the map should lock to 100%, 150%, 200%, etc. if close (e.g. 141% -> 150% or 158% -> 150%), so icons look nice if possible
+X Alt+F when first starting the program does not open the file menu [&Finished button was stealing it]
+X "Auto-position all windows" function that takes DOS Box window size and screen resolution into account
+X (MM3) Check cureall and bag with active monsters nearby
+X (MM3) Implement LargestBonus and LargestBonusEffect and check bag of holding columns
+X (MM3) Item levels on edit form
+X (MM3) add LastKeypress so that UpdateLocationFromGame can update teleporter squares
+X check tooltip for cursed/equipped items in the condition string
+X Update RefreshConditions() to check for location
+X (MM3) Check "show nearby monsters only" [looks good]
+X (MM3) Change cureall failure if monsters are nearby to "if active monsters are nearby"
+X (MM3) Add "awards" link to character control
+X (MM3) test bag of holding again with performance updates
+X (MM3) implement IsExplored and ToggleCartography
+X (MM3) Implement GetGameTimeLong()
+X (MM2) Implement LargestBonus and LargestBonusEffect and check bag of holding columns
+X Implement GetGameTimeLong() (if possible)
+X (MM2) implement IsExplored and ToggleCartography
+X (MM2) Update RefreshConditions() to check for location [1,Esc] is good almost everywhere
+X If you load a new map, the active squares don't get put back until you switch maps in-game [m_lastActiveSquares needed to be null]
+X Update RefreshConditions() to check for location [1,Esc is good enough for all screens]
+X Should the Safest Square have an icon (that can go around a text symbol)? [can't think of anything good]
+X Doing main objectives for quests without properly "starting" the quest sometimes shows the quest as finished before turning it in (quest bit never set)
+X Need to stop various timers before shutting down
+X Some of the options in the "Play" tab may not need to actually be there (e.g. "Read game info" checkbox vs. just selecting "None" from the current game dropdown) [done]
+X Load monsters/items/etc from external files instead of internal [loading from memory directly now; if the game is modified, it should work]
+X Active squares icon is not particularly clever [it is sufficient]
+X "show window" should toggle show/hide for all subwindow types [except scripts; that goes to the current square whenever selected]
+X Tooltips for stats on party window [done!]
+X Vendor improvements - mark items as trash and sell all at vendor [sell all is getting too much into the game; drop trash implemented]
+X Make sure the MapBytes and PartyBytes are not being stuffed into their member variables if the raw bytes haven't changed [GetGameInfo doesn't create a new object if the bytes are identical]
+X How to get to {map:B-2, Necropolis Sewer} (1,6) ? [absolutely no idea; web says teleport, but teleport is forbidden on the map]
+X Roster editor shows incorrect town when party is at a darkside inn
+X Way too many monsters in inaccessible areas used as map bits; need to not show those in the encounter list
+X put the encounter window name sort back to normal [changed to debug option]
+X Sandro claims "L7 Item" on drop but this doesn't ever seem to happen; must be something besides that in the monster record? [L7 item drops don't seem to do anything]
+X What does the "Lock Door" map command at e.g. (A-4, Ellinger's Tower Level 1: 3,8) do? [AlterMap just changes that map's wall to <x>, which differs depending on the map]
+X Change symbols to be NPC names instead of Te, Hu, Sh, etc.
+X Food prices, rumors, whatnot at the Inns
+X "(+1 Day if you enter the xxx for any reason)"
+X Add actions for all of the toggle-able settings in the options that make sense
+X Check bag of holding in mm4/5 towns and inns again
+X Teleporting out of range of monsters often leaves them on the map when "show only monsters in detection range" is true [was only being updated if the encounter window was open]
+X Check roster editor while saved on darkside [Game seems to always use dark.cur]
+X Figure out when game uses XEEN.CUR and when it uses DARK.CUR (important for bag of holding to not get corrupted) (especially check a brand new install) [Game seems to always use dark.cur]
+X Default window positions should be usefully arranged, not scattered to the whims of Windows (pay attention to the display size though)
+X Make all ListView headers either nonclickable or sortable
+x The defaults are not to show the party or game info windows? [not any more]
+X "Find" dialog take some time to show up [SizeHeadersAndContent call is actually quite slow]
+X Encounter window blinks in and out during end game sequence [doesn't seem to any more]
+X Way to sort bag of holding by item power (+15 better than +8, etc), element type, etc.
+X Note which weapon prefixes are available for which item level somewhere (on the item edit form at least)
+X Note where to get "if you have x" items in the map notes  [the searchable notes and quest list are sufficient for this]
+X Check donations at temples [donate depends on day of the week for blessing, also added heal costs]
+X Teleporters aren't cartography'd; make a workaround?  (e.g. C-4, Tomb of a Thousand Terrors: 3,5) [added LastKeypress so that UpdateLocationFromGame can update it]
+X Needs to not attempt to show maps (and game info) while on the opening title screens [doesn't seem to be a big problem]
+X Add (Map x,y) location notes to quest-related squares [the searchable notes and quest list are sufficient for this]
+X The keys to send to update the party portraits after a cure-all needs to be different based on the current screen [better but not perfect]
+X When entering a map, the in-game cartography should update the entire "visited" section of the map, not just the squares you manually visit (only a problem with first starting program?) [added timer]
+X Timer to force a map update after 1500 ms to fix visible inaccessible areas is lame; a better fix would be nice [added 'update cartography' option]
+X "Reveal Adajcent Inaccessible" only shows monsters in the inaccessible area when you first reveal it [doesn't seem to be true any more]
+X Game Info window default size is not particularly useful
+X Hover-over unvisited square with a monster in it shouldn't show the monster info
+X Remove spurious door icons (e.g. Sandcaster 6,25)
+X Check Time Distortion squares on all maps
+X Display SP in the partyform quickref window if character has SP (e.g. a Ninja drank from a SP fountain)
+X viewing the in-game quickref makes the quest list refresh for no reason [acting character byte]
+X Configurable hotkeys for selecting character pages in the party form
+X Default should be to hide the entire map, not 80% + walls [maybe; the wizard will let the user decide all of this at once]
+X AC bonus from "Bless" isn't being shown anywhere
+X "go to quest" from the quest list should pick from flagged or nearby if available
+X The up/down stairs icons need to overlap in a better looking away (e.g. A-4, Castle Kalindra Level 2: 5,5)
+X List the mirror portal keywords
+X Way to mark/unmark individual cartography squares as visited
+X "Available" and "accepted" both should be in "nearby" [yes]
+X "Find the sixth mirror" quest involves slaying Xeen [added prequest]
+X Kalindra's quest is going to the wrong locations [Seems fixed]
+X Check Kappa's gold mining - some of the three-mine squares are 100-200, 0-100, 0-100 instead of the 251-350 variety
+X Update the maps with valid Portal keywords (Vertigo, Nightshadow, Rivercity, Asp, Winterkill, WarZone, Alpha, Theta, Kappa, Omega, Mine 1, Mine 2, Mine 3, Mine 4, Mine 5)
+X Not all portals accept all keywords
+X Spell window appears while purchasing spell in a guild (may actually be useful, though) [seems like an okay accident]
+X Information about external scripts (Guild spells, Training levels and costs, Shop items, etc.)
+X EditBitsForm could use size saving [also EditBytesForm]
+X May not want to show the monsters in the encounter list if "hide unexplored areas" is enabled
+X Dwarf/Gnome again [dwarves is so stupid]
+X Check AC string with Blessed [quickref needed fixing]
+X "All Items" form like the monsters form
+X Add FindBox to monsters form (and possibly others)
+X Adapt FindBox to the quest form
+X Save name/description checkboxes in settings [no idea what I was talking about]
+X AddModifier needs implementation [seems done]
+X MM45Item Randomize() function [seems finished]
+X MM45Item MultilineDescription needs work [seems okay]
+X Which items are usable by what classes is all tossed around; verify them [seems okay]
+X Verify things that are similar to MM3 but might not be exact (stat bonus table, age modifiers, thievery,MaxHP,MaxSP per level/class and similar)
+X Check Gnome/Dwarf .. again (might be reversed from MM3) [seems correct]
+X (MM3) Still a bunch of unknown map byte items (identify them or remove them from the game info) [removed from --nodebug]
+X (MM3) Check item editor again [seems good]
+X (MM3) Check editing monsters again [basic editing seems okay]
+X new MonsterLocations() calls AddMM3Monster() constantly.  Need to skip it if the raw bytes (minus animations) haven't changed
+X If game process isn't acquired, doing things like "add item to backpack" gives no feedback as to what the problem is ["no party detected" now visible in those circumstances]
+X Hireling quest(s)
+X Max SP is way off (5700 vs 5472) [looks like Prayer Master for Paladins is not quite right]
+X Tooltip for modified stats to show what is causing the modification
+X Shop Inventory window shows last loot item when picking "inventory" in a shop before viewing items to buy [doesn't seem to any more]
+X Show whether current character can use an item in the shop inventory window
+X Selected monster icons on the map aren't very good, especially in 100% zoom [more cursor-style now]
+X (MM1) "Find specific items" quest (like the keys and passes but for other specific useful items)
+X (MM2) "Find specific items" quest (fixed-location fixed-item, like Speed Boots +3)
+X Reloading a game in a different area with the script window open causes trash to be displayed in the script window [selected line was wrong]
+X Temporary and Permanent stat gain quests (not just the crystals in the cavern)
+X temp stat quest goals should be done based on current temp values, not just "false"
+X CureAll shouldn't work if monsters are within 3 squares
+X Replace hardcoded quest locations with Spots3
+X Quest rewards are not complete (e.g. using the crystals for +? to stats)
+X Make sure quest counts are correct
+X Completed quests are not showing strikeout items
+X Some quests are accepted without having any items completed
+X Startup seems slower than normal [BSPlayer was causing grief]
+X Editable regexes for which DOSBox title is which game
+X Weapon damage may be wrong (e.g. short sword is 2d3, not 3d2) [yep, wrong]
+X Mark some quests as "unofficial" in the quest list if they aren't proper in-game quests (e.g. destroy the monster generators) [meh; quests are quests]
+X DOSBox search is trying full scan again [Seems okay now; new option to only try quick scans should flag this more readily in the future]
+X "Set note text for this script's square" - should be debug only, perhaps [nah; the script viewer is already pretty debuggy]
+X Set/Clear quest bits?  (Is that even worth trying, given how MM3 demolishes scripts?) [no; bits are editable in the game info if desired]
+X (MM3) Check "Cure HP with CureAll"
+X Make sure quest counts are correct
+X Add Secondary skill quest (repeatable/can't complete since only two per char, but useful for the locations)
+X Add Perm/Temp stat boosting quests
+X Add and check the QuestBits for "learn various spells"
+X Add "win black triple crown again" (and any other repeatable)
+X Make sure there really are only two moon phase flags [yep]
+X Forgot how to view scripts like "Custom script #249" (e.g. A-2, Castle Pinehurst, B2: 2,1) .. something about internal data [there were some bugs]
+X Sometimes saving the map doesn't save the latest block color changes; no idea under what circumstances.  [GridStreamCache wasn't being updated after saving a changed map]
+X Refreshing the encounter window should leave the selected monsters selected, if possible
+X Make the quick reference window nonmodal/save size/etc (update with party window timer?)
+X (MM345) Complete % is missing from the game info now [not worth it for these games; many unimportant squares are actually completely inaccessible]
+X Check "Cure HP with CureAll"
+X Make sure "Drop Trash" can't drop quest items
+X Implement CreateSuperCharacter()
+X Way to track "completed but doing again" quests ["Repeatable" node]
+X Show proper depth instead of just a byte
+X Change GameInfo to use new format
+X Add the new Legend items
+X Scripts are completely broken
+X Replace Up/D with stair icons
+X Surface map is supposed to include coordinates
+X Inventory full/names/info unimplemented
+X Party window switches to character 6 when quick ref screen is up in game (and when talking to Zom or Zam) [Somewhat fixed with GameState.NoActingChar]
+X "In Combat" is true if you go to an exit square (magic square) and decline to exit, until you go to the character screen and exit it (difficult to reproduce) [seems to be gone]
+X "Show Spell Window When Casting" doesn't seem to work until you open the spell window up once manually [doesn't seem true any more]
+X refactor quests codes
+X Check "Cure HP with CureAll"
+X Make sure quest counts are correct
+X Lord Ironfist's quests all look completed briefly while talking to him in the process of completing one of his quests [not seeing this any more]
+X Somehow the hacker for the ViewPartyForm can end up being different than the one used in the MainForm (CreateSuperCharacter's IsValid is false but Teleport's IsValid is true) [possibly fixed with IMain]
+X Detect when DOSBox is running a game other than the selected one and ask if the user wants to switch to that game
+X Unachievable node should not be shown if there are zero quests in it
+X Repeatable quests may need their own node and count at the top of the quest window (for completionists)
+X Check note templates (particularly $allEncounterMonsters) [seems correct]
+X Check GetMMStrings() [seems okay; don't remember the reason for checking it]
+X Add the new Legend items [added some; check other games]
+X Make sure "Drop Trash" can't drop quest items [ MM1Item implements Trashable property ]
+X Title of encounter window during treasure search mode still says "Combat! Round x"
+X Change GameInfo to use new format
+X Show full/names/info isn't right (always shows all info)
+X Implement CreateSuperCharacter()
+X Replace "receive x" with (+Item "x")
+X Replace Up/D with stair icons
+X An "Exit" icon might be nice
+X Selecting a location needs to leave out odd-numbered maps, as they don't actually exist
+X Show proper depth instead of just a byte
+X Surface map is supposed to include coordinates (don't forget MM1 maps are stored as 3 arbitrary bytes!!)
+X Save size/splitters on game info window
+X Getting and saving a splitter's splitposition doesn't work
+X The quick-door key probably shouldn't be a global hotkey (it interferes with any menu item with a D hotkey)
+X Some way to collapse/organize related quests (e.g. "Learn all of the Cleric spells") [tree view]
+X Option to show completed secondary quest goals [gray and strikethrough]
+X Global hotkeys for quest window, etc. [now for all menu items]
+X Put alternate (non-guild) locations for spells in the quest list
+X "Talk to Ambrose" quest is missing some steps
+X Some quests are missing (Xenoc, mining)
+X Combine "Available" with "Side" and "Main" to reduce the number of pointless tree nodes
+X Way to flag quests as "paying attention to these" (new node?)
+X Quest treelist blinks when updating
+X MegaCredits need to be part of a quest
+X right-click "flag" option for quests
+X When the quest list refreshes it picks the "Active" node rather than the "Nearby" or "Flagged" node for the selected item (should keep whatever was selected before)
+X Note which spells the guilds in Darkside sell
+X Note the Town Portal destination squares (they are on the surface)
+X Put the permanent stat increasers in the quests
+X If a quest goal is "complete <other quest>" then there should be a way to jump to that treenode
+X options button on quest dialog for selecting files, etc.
+X Encounter window context menu needs the checkboxes put back
+X Moving monsters does not update quest list locations for them
+X Quest options to show rewards, giver, etc.
+X Saving a window size should save the unmaximized size, if it is maximized (and probably whether it is maximized)
+X Quests in the tree are in no order whatsoever [slightly more organized now]
+X Add the unofficial quests (e.g. find level 7 items)
+X Sub-items in "nearby" quests that aren't actually nearby should be dimmed or similar [made nearby ones bold]
+X If DOSBox is minimized the autofocus doesn't work (focuses briefly on the clicked-on window such as the "find" window, and then switches to nothing)
+X Put Luna and Mirabeth's quests in the "Statistic Enhancement" leaf
+X Strikethrough any completed quests that are flagged
+X Stop flickering in the quest list on update (especially the treeview); would be nice if there is a TopItem equivalent to keep the position the same [stopped selecting nodes repeatedly]
+X "Quests for char" and "Quests for world" might need to be more .. separated [not really]
+X Would be nice if the ListView for quest goals stayed where it was when it changed (not use "ensure visible" but "move to same scroll position" if possible) [TopItem to the rescue]
+X character-bit quests
+X The quest goals listview keeps the selected index when the selected quest is changed to a different quest, which isn't entirely appropriate
+X Add Actions for all of the menu items, and change the menu hotkeys to reflect them [seems to work now]
+X Add temple of bark quest to Statistics
+X Awards quests?  Most of them are standard quests (but not all, e.g. Superior Intellect) [done]
+X Quest list could use some expand all, collapse all, etc. functions [added expand all]
+X Auto-expand a quest leaf if it only contains one or two children
+X Some way to find text in the quest tree [Ctrl+F search bar]
+X Some quests can be "failed" (or "uncompletable") - e.g. RetrieveAlacorn sets a character-based Award, but can only be done once, so no other character can do it [not such that it matters]
+X Hover over unachievable quest locations to explain why (e.g. "The alacorn has already been returned, perhaps by a different party")
+X "Where to learn" secondary skills is a little terse (e.g. "Complete Valia's quest" instead of just "F-4, Surface 9,3") [eh; there are quests for it now]
+X Secondary skill quests
+X Visual indicator that a quest (or goal) has no status because the data file couldn't be loaded
+X Quests that have a postrequisite in the "No File" state are being filed under "Completed"
+X When Alister turns into a Dragon King (D-1, Dragon Tower Level 1 6,5), the game side is wrong until the party moves or the dragon is attacked [There are a lot of WorldSide bytes]
+X missing quests: find all Jewelry/Ancient Jewelry
+X Some quests like "blessed by forces" and destroying the monster generators rely on "mobile objects" being removed from a map; figure out some way to know these
+X Check write-time to MM3.CUR for reading quest information (using FileStream with read-only parameters seems to work) [re-reading on map change only]
+X Visiting the Greek Brothers in-game doesn't seem to set the award [shrug]
+X Use party bits for better quest states
+X Check all of the "level ?" item squares
+X Greywind's quest needs some help; all glasses must be down to remove the wall, and then up to finish the quest - look at the wall state?
+X "Copy Script" only copies the main script, not any sub-scripts
+X Quest window lower pane is sloppy; goals and locations should be on the same line
+X Protection from elements not showing in active effects
+X Script summaries for squares without display text (receive items, damage, buildings, etc)
+X "Run script from another square" at least needs a "go to this square" and perhaps more needs "insert this script right here"
+X Change "L" for loot that is actually nothing to "n" instead
+X Find out which items are which "item level"
+X Rewards for quests
+X Complex quests: give orbs to kings, skulls to Kranion, artifacts to castles, shells to Athea, Arena wins, Pearls to queen, main quest line
+X Setting and clearing quest bits
+X "Its a Secret" map
+X Normalize "party found a scroll" symbol/text
+X Double-check "?" squares
+X "Remove icons" on the context menu works in "play" mode, but you can't add icons back (or undo the remove - maybe remove icons doesn't set the undo? [indeed])
+X Check spell short descriptions (e.g. "Create Food" creates how many?)
+X Check loot squares to add number and level of items
+X Check {map:} links
+X Re-check loot in Temple of Moo (chest types, missing bones)
+X "Kill all monsters"
+X "Reset all monsters"
+X Saving is not permitted in some dungeons (e.g. Greywind) - note it somewhere
+X "Crude pair of wings" hut gives +50 AC to evil characters if there are no good characters in the party
+X Training Assistant should either do something or not be accessible
+X Check duplicatable items (e.g. Sacred Silver Skull) and values of items
+X Find "Donate at all temples" bits
+X Temple Services
+X Find the "Safest Square" (although run to might just be random)
+X Something's up with the forbidden spells; C2 Surface (7,1) shows none, but C2 Surface (8,1) shows teleport/time dist/etherealize forbidden [attributes are per-quad]
+X Are Asleep and Immobilized really the only monster conditions?  Silenced? (don't forget to add to monster edit form)
+X Show monster conditions in encounter list and on multiline description
+X Game Information (exits) [not terribly important; "Surface" doesn't exist and N/S/E/W are obvious for the surface maps]
+X Check training cost/level in various towns (and max training level in a town) [cost per level is always level*level*10 Gold, town max 10/15/20/25/200)
+X Cure All needs to know about anti-magic zones (if those exist), and test combat/noncombat [never seen an anti-magic zone in mm3]
+X Check XP/level again, especially for robbers [robber base is 1000]
+X Show magical aging somewhere
+X Editing a monster's index doesn't change the animation (probably not worth fixing)
+X Consider limiting (or noting that the selection is illegal, since it's cheating anyway) editing known spells by class (Paladins can't learn resurrect, etc) [they can, actually]
+X Maps
+X Some spells show a blank ("Learned:") as the tooltip (find which guild sells these)
+X Show "to what level" an eligible character is able to train, instead of just "Train!"
+X What is the Sea Shell of Serenity for? [goes to Athea]
+X Throne of the Mysteries eradicates characters if they are not Ultimate Adventurers
+X Ale of Advancement and etc. cause aging and set alignment to evil
+X How much thievery required for chests, and how much XP they give [one value per-map]
+X non-crusader text for entering castles
+X Fountain in Baywatch has small % chance of raising luck? [yes]
+X Check AIR/WATER/etc. teleport locations
+X XP for arena battles
+X Fix the legend to show MM3 instead of MM2 squares
+X Find the quicksand squares (non-levitation in the swamp)
+X Do ectoplasmic rings add magic damage? [no]
+X Not sure that ranged attacks have a multiplier like melee does [indeed not]
+X rainbow island shells on particular day (brother zeta)
+X Fountain of Kartera gives +200 HP
+X "Powerful treasure is scattered throughout the hut" - If you have a Fizbin, you get treasure instead of death
+X Spell window still showing up briefly arrows hit targets
+X Skulls in the swamp need Linguist skill to understand
+X Well of rememberance
+X Thievery required for locked doors (and XP given)
+X Missing Castle Blackwind
+X Something is giving the robber XP (picking locks?)
+X "Spell Level" doesn't seem to have anything to do with level required to learn [yes, it does]
+X Spell Guild list of spells
+X Check pirate's treasure on Onesday (also show day of week on the party window)
+X Check the Nature's Gate days
+X Editing the day/year/time should set focus to that element, not just always select the time
+X Add arrows and {map:} for surface squares
+X Add things like the +100 SP well and +50 HP well to the active effects list [not actually an effect]
+X XP required for Druid to get to level 11 is wrong (should be 768000 but showing as 576000)
+X Training may take less time at different training halls (no)?  Or multiple training in one day (yes)?
+X Which monsters are selected in the encounter window changes when monsters are damaged/move/etc
+X Way to access shop inventory manually when not in a store
+X Stat modifiers for weak, age, etc. are not showing on the party form
+X Indicator on party quick view if equipped item is broken
+X Items at stores random or fixed? (seems random)
+X ShopInventoryWindow needs towns added, and header resize on size change?
+X Cheats for ShopInventoryWindow
+X Use MM3-Spells.txt in the spell list
+X swap backpacks (might not be feasible because of the way equipped items work)
+X SP above 32767 have an overflow in-game; limit max SP to 32767 for cheats?
+X HP above 32767 show as negative in-game but positive in the party window
+X Unconscious characters at -1 HP are showing as 65535
+X Monster list is missing undead, party attack
+X "Bring all windows to top when one is selected" doesn't maintain the z-order of the windows
+X Option to always show all windows if any window is selected
+X Decrease/Increase in creation assistant are swapping int/might (and also not changing the appropriate stat)
+X Reading a new map doesn't always update the title
+X Set ready spell based on proper known spells, if not in cheat mode (as opposed to just "View" which doesn't do anything)
+X Hotkeys for "set all arcane ready spells to <x>" are not finished
+X bag of holding (Inn-only if in non-cheat mode)
+X Roster Editor
+X Character Creation Assistant needs some way to update the display after changing values [ swapped Might/Int before writing ]
+X Super Shelter can only be cast on land; need to adjust spell reference [can still attempt to cast; just doesn't work]
+X Fix inside/outside display for spell list (towns, at least FountainHead, are outside!) [not sure any spells are actually outdoor-only]
+X Spell list doesn't work immediately on exiting Fountain Head the first time [seems fixed]
+X Pointers for Visible Objects, etc.?  Or are they the same per map [seem to be the same]
+X Remove characters and monsters from turn order list after they have acted
+X Option to show monsters or not, and for monster opacity
+X Cheat-edit for Lloyd's beacon
+X Switching characters while viewing inventory doesn't change characters on the party panel
+X Selected character in party window is incorrect when casting spells / in combat
+X Spell window appears when firing arrows
+X Encounter window is being visibly redrawn every time monsters move
+X Spell window per-character
+X Attacking a monster resizes the HP column to header-size only ("9999" is shortened)
+X Monster editor
+X Monster List window
+X Save zoom level with map
+X Monster timer isn't right; monsters appear and disappear improperly
+X Encounter window
+X Hovertext for monsters on the main map
+X Select columns for encounter window
+X Sortable columns in encounter list
+X Show one/two/three monsters on a square differently
+X List melee-range monsters properly
+X Outdoor maps aren't always at the same memory address [there are four maps in memory for outdoor areas, not sure which is the current location]
+X Melee/ranged damage
+X Fill backpack with random items
+X Stats and Resistances (including thievery) need to check all of the equipped items to get the proper value
+X Edit name/race/etc.
+X Edit skills
+X "Auto show party window" doesn't work when launching game after WhereAreWe is running [PartyInfo was null if numChars was 0]
+X Delete characters from roster editor [not necessary and potentially dangerous]
+X Figure out the blacksmith's specials (day 179 is +12?)
+X Hotkeys for hack teleporting
+X Hotkeys for "trade backpacks"
+X Show which items are enchantable/rechargeable/duplicatable [all items seem to be enchant/chargeable]
+X Nature's Gate information page? [listed on the destination squares]
+X hovertext over checkboxes on known spell editor
+X Change "edit" to "view" for spells when in non-cheat mode
+X Re-test bag of holding after MM1 changes
+X "Set Quest Bits" on "Help King Kalohn defeat the Mega Dragon" doesn't quite mark the quest as completed (must return to Lamanda)
+X "Surface" location busted again (can't reproduce)
+X Figure out how final score works (and show somewhere?) [for MM2 it's just the sum of everyone's XP]
+X Way to bring all windows to the foreground (hotkey?)
+X Somehow 1410065408 XP shows as 10 billion XP (also gold) [seems to just be a MM2 bug]
+X Depth is not on the info page (also encounter group, size)
+X Grid changes (draw blocks, lines, etc)
+X Adding/changing/clearing a note
+X Icons
+X Moving/Copying blocks
+X Expand grid manually
+X Cursor
+X key hooks for creating maps while in-game
+X Select colors for lines/blocks
+X Switch between sheets of a mapbook
+X Hybrid / "smart" mode to place blocks and surrounding lines
+X Hold shift to draw straight lines
+X select colors for blocks as well as lines (brush patterns too?)
+X Context menus instead of dragging map?
+X Way to edit notes in keyboard-mode
+X patterned lines
+X way to erase lines
+X add Line Width as a property to DrawColor
+X Save window size and position
+X Show current color on main form somewhere
+X icons in squares (doors, etc)
+X specific zoom levels via menu
+X Expand grid via context menu
+X Select icon from toolbar
+X Images in icon combobox
+X Change "dash/dot/solid" for blocks to "25%/50%/75%/solid"
+X Fit to window (zoom)
+X Select icon orientation
+X Crop unused rows/columns
+X Sheet titles
+X "You are here" icon, unique to the map sheet, movable
+X "Select" mode (for copy/paste/etc.)
+X Way to edit map origin and change x/y positive/negative mode
+X "fit window to map"
+X Sheet organizer (subfolders in menu for e.g. Town, Outdoor, Caverns, etc.)
+X Save window size
+X Crop selection instead of map when selected
+X Easy way to put unicode arrows, etc. into note symbols
+X Right-click on a note to go to the map linked to that note (e.g. "Entrance to Sorpigal" -> Go to sorpigal map)
+X Way to rearrange sheet order in menus/submenus (alphabetical at the minimum)
+X Copy/Paste notes
+X Read-only mode
+X Reveal-as-you-move mode
+X Window with character inventory (and etc.) showing actual stats for items so they can be compared
+X Make program work with ordinary dosbox (not SVN DAUM)
+X Drag-and-Drop
+X Option to always open party window
+X Show stat increasers used on party sheet
+X Spell reference (narrowed to current character?)
+X Show entire monster info in tooltip
+X Indicator if character is ready to train
+X "quick ref" for character when no particular character is of interest
+X Mass cure poison/disease hack (button on character page)
+X Move dosbox window to user-specified coordinates
+X Hotkeys for things like cure-all
+X Icon for program
+X Make monster list sortable
+X "Play" mode (no map editing)
+X "Show search window" needs to be an option
+X Option as to whether to reveal unvisited squares or not when location is read
+X Tooltip for condition (e.g. "poison: half max HP on rest," "disease: no HP gain on rest" etc
+X MRU list
+X Legend for map
+X Use roster-editor listview style for map book editor
+X Way to rearrange characters in the roster / load "favorite party"
+X Make Training and Char Creation assistant windows automatic and save position (and save checkbox)
+X "snap" window to DOSbox window
+X Make party window the same width as a 3x dosbox window
+X Snap on resize as well as move
+X Tooltips for spells with full text
+X Create a default .config file if none exists
+X Default locations for Assistants and Party window are bad (too far to the right)
+X More hotkeys for windows (spells, monsters, etc) and make them toggle, not just open the window
+X Clicking a character tab should (temporarily?) disable the lock-to-character option (until active character changes)
+X Show time of day somewhere (1/256 of 24 hours; 8 steps = 45  minutes)
+X Way to mark squares as "dim" (unvisited but visible) for people like Stephanie
+X Some way to read the location when keys are pressed or similar, so that autorepeat movement reveals faster
+X Better defaults (zoom size, etc.) for MM1
+X Distinguish "memory write" (e.g. Cure All) from "cheating" (e.g. Teleport)
+X Go through the .OVR files and make sure I know where all the text comes from
+X Change the default map when changing current game
+X Cheats are missing for age/race/class/name/alignment
+X Cheat for "Condition" has bad menu items
+X Show condition (paralyzed, etc.) for monsters
+X Hacks on monster window
+X Bag of Holding - move inventory items to/from external list (stored with unused characters in roster?)
+X Note templates editor
+X Different autoload map for each "currently playing" game
+X Should there be "primary quest/secondary quest" on the character sheet if there is a quest window? (sure, why not)
+X Tabs on the quest window to switch between characters (use keys 1-8)
+X Dim unlearned spells
+X Spell window while casting spell
+X Acting character in temples, shops, etc. is not there
+X XP requirements are not as simplistic as I thought - Additive XP doubles at 3,4,5,6,7,8,9,10,14,16,31,51,76,77 (http://faqs.neoseeker.com/Games/PC/might_and_magic_ii_a.txt)
+X Missing training assistant
+X Missing encounter window
+X Missing treasure window
+X Missing damage type for many spells
+X Missing monster list
+X Current Character in combat is wrong
+X Missing roster editor
+X Legend needs outdoor squares
+X Spell window appears when exiting to DOS
+X Bag of Holding should only work in the Inn
+X Adding an item to a blank area with space above it confuses the list (in-game and out)
+X Flying to a sector marks the old party location on the new map as "visited" (perhaps don't mark new squares as visited for a certain time?)
+X The treasure screen after a battle to get into Luxor shows only gold, not items
+X Spell window disappears briefly between level and number entry
+X Gold dropped isn't just "G value times level" - Wyvern drop hundreds of thousands of gold
+X Sorting the columns in the Bag of Holding should save the item list that way for next time
+X Missing many maps
+X Make sure hirelings work
+X Turn order is wrong
+X Check encounters to see if they are random or fixed enemies
+X The "Pre-Encounter" byte isn't always 1 during the pre-encounter (e.g. C1, 1,8 - fight with Grim Reapers)
+X Class-specific items squares need "if you have X in your party" conditions on the map
+X Battles lost is also tracked somewhere
+X Still have '?' notes
+X Screen for information such as quest status, mage guilds joined, Lloyd's beacon settings, etc.
+X Information on where spells can be found?
+X Show time-travel year as well as current year
+X Figure out Moon Phase benefits memory location
+X Find out how where "teleport allowed" and "etherealize allowed" (and Lloyd's Beacon) bits are
+X Eating special meals must be kept track of somewhere in the roster file (also Murray's tickets, temple donations, etc.)
+X Find all of the tavern rumors
+X There must be a "maximum number of monsters per random encounter" ... find it
+X Option to reset all of the hirelings in the roster editor
+X Check prices for resurrect, cure poison, etc. at all temples
+X Verify Robber's promotion quest
+X Allow keys 1-8 to select characters when on quest window
+X hoardall's item/slayer's monster simple quests
+X cheats for marking quests as accepted/completed/etc.
+X Does Haart require a crusader? (no)
+X implement TradeBackpacks, SetBackpack
+X "In Inn" for bag of holding
+X "Fill with random items"
+X Make sure new sheet index system works
+X Zam's map note is incomplete
+X implement quests
+X Check turn order during combat
+X Redrawing the entire grid when IsDirty() can take a while; need a way to only draw the squares that changed
+X Undo notes/icons/drawing separately to save memory
+X Undo specific notes instead of the entire list
+X Undo specific groups of MapSquares rather than the entire grid every time
+X Move the "persistent after undo/redo" information (cursor, drawcursor) from the sheet to their own object
+X First square of hybrid mode is not getting lines
+X Undo is resetting the zoom level
+X undo removes notes
+X undo with note in same square before background/line change loses the note
+X undo draw-with-keys is still using the entire sheet
+X undo/redo "expand sheet" moves the notes and icons
+X If "2" and "8" are shortcuts, but "28" isn't, the "28" combination passes through the 2 and 8 instead of running both shortcuts
+X Expanding north or west reveals the YouAreHere icon unbidden
+? Alt+V+1 to resize the form while in "keyboard" mode stops the keyboard commands from working
+X A square with all four inner lines at width 2 looks odd at zoom 100%
+X Ctrl+PgUp while editing note crashes
+X Right-click "Delete Note" doesn't select the square first, so it deleted whatever last note was selected
+X "Default zoom level" is not finished
+X Right-click "edit note" doesn't switch notes if one is already being edited
+X Undo a crop crashes
+X "You are here" marker covers up some notes (e.g. "?") - should be somewhat transparent
+X can't undo a "paste note"
+X New maps are listed as "changed" immediately again (probably because of the "visited" stuff) (made all squares visited in a new map)
+X Maps in the dropdown are not sorting properly after using the organizer
+X Parties of fewer than 6 people load phantom character data
+X Unconscious not showing as a condition
+X all monsters have same XP
+X Party order not being observed
+X Turning off "hide unvisited" and switching maps 
+X Some stat increasers might work past 26 (might, accuracy, speed, luck)
+X Encounter monster list is incorrect after monster advances
+X If the order is changed midgame, a lot of things need to be tested (character shown in shop, etc.)
+X Should not be able to edit un-visited squares in "hide" mode
+X Error message when initializing hacker if on the main game menu
+X Options on the "Misc" and "Play" page belong together
+X Map squares are revealed even when the wrong map is being shown
+X Ctrl+numpad to add lines does not work if program is not in focus
+X Ctrl+A and Ctrl+Z don't work in the textbox when editing a note
+X Spell window opens when trying to unequip a cursed item
+X After Town Portal, the spell window is left up
+X Initializing the hacker is very slow with normal DOSBox
+X The "reveal teleporters" code can reveal the map behind a wall at a corner if "forward, turn, forward" is too fast
+X Hitting a teleporter often moves you so fast that the square with the teleporter isn't revealed
+X Being in the main menu marks square (0,0) on the Sorpigal map as being visited
+X Selecting the main window sometimes doesn't actually activate it (encounter window was constantly being created and killed)
+X Signing in at the inn and returning to the game doesn't show the "you are here" marker until you move (MM2)
+X Location on previous map is sometimes revealed on next map before location is corrected
+X Add edge-of-map arrows
+X QuestBits for in-map quests (don't set/reset if not on that map!)
+X Something is wrong with the bag of holding chars.. if you delete them from the game they show up as Lv0 chars
+X Add some minor quests (ice queen's riddle, etc.)
+X check inside/outside
+X Find "surrender" squares
+X Surface or directional exit to Building of Gold level 1 crashes the game
+X Update "Safest Square" text on maps (still need Building of Gold and Astral Plane)
+X Setting the depth to "surface" doesn't allow "fly" ... must be somewhere else
+X Finding the hirelings should be in the quest list
+X Show various combat states (protective spells, entrapment, etc.) on the encounter form
+X Show transmutation status somewhere (separate window for party-wide effects?)
+X Cheats for day/year/etc
+X General info window: Which hirelings have been rescued (especially Sherman) [put in Quests instead]
+X Kill all / Reset all monsters (encounter bits?)
+X See if MM2 scripts can have an 0xff byte in the middle of them (e.g. for comparing or setting values) [no, they can't]
+X Script window takes a noticable amount of time to select the line for the selected square when "view scripts" is picked for the first time [ added param to CreateWindow ]
+X Test editing the forbidden spells on the map
+X Show "active" squares in MM1/MM2 on the map somehow (e.g. whether an encounter has been triggered already)
+X Test using "Panel1Collapsed" instead of moving the splitposition for spell window (as in MM3)
+X Shop Inventory window
+X Shop inventory window, daily specials need to know what day it is
+X Test editing basic info   
+X Edit current/permanent level doesn't work (ignores one of them?)
+X Test editing forbidden spells
+X Test item editing/adding
+X Test Gems/Gold/Food (including cheats)
+X Test "duplicate item" and full backpacks
+X Resistances and cheats for same
+X MaxLevel override and UI (if it's not 255) [ MM2 lets you train to 255 over and over! ]
+X refactor quests codes
+X MapCartography info
+X default zoom levels for maps (200%)
+X Internal map always needs "Visited" set to "false"
+X Move backpack and equipped bytes to the top so that their positions reflect the bytes properly
+X Compress the internal WAW files
+X Monster icons are visible on unvisited squares
+X (MM1) Test Gems/Gold/Food (including cheats)
+X (MM1) Test item editing/adding
+X (MM1) Test editing basic info
+X (MM1) Test editing forbidden spells
+X (MM1) Shop Inventory window
+X (MM1) Test "duplicate item" and full backpacks
+X (MM1) add TrainableLevel override
+X (MM1) Kill all / Reset all monsters (encounter bits?)
+X (MM1) default zoom levels for maps (200%)
+X (MM1) Resistances and cheats for same
+X (MM1) MM1 has a level limit of 200 but the party window still says "train!"
+X (MM1) Scripts [scripts are just  x86 code... too complicated for very little benefit]
+X (MM1) Soul Maze is showing (6,0) as a forced encounter
+X (MM1) B-3, Stronghold in the Enchanted Forest, level 1 is not showing any forced encounters (because they aren't random, probably)
+X Way to search through notes for text
+X Find out what the Navigator skill does (are some ? squares places where you get lost? - doesn't seem to do anything, even in desert) [no idea]
+X Disable several of the global keyboard hooks by default (especially Teleport to Cursor) [disable all global keys by default]
+X Check text for maps and make sure it is all accounted for (e.g. "you are not strong enough") [checked via scripts]
+X Some traps do random damage; figure out what that is (resisted randomly via resistances?), also standardize "(-## Type damage)"
+X "minus HP" traps might be based on % or something; check them [good enough]
+X Class-specific quests? Are there any? [not really]
+X Make the treasure text consistent (+1000 Gold vs. 1000 Gold, etc.) [good enough]
+X Check the tips/rumors and make sure the in-map information matches [good enough]
+X Do something with the tavern text, jester text, corak test, quest text [nah; in-game is sufficient]
+X Might required for bashing doors [no clue]
+X Normalize "character becomes <x>" text
+X Fountains with "toss a coin" need (-1 Gold) added
+X Check whether birth day affects the age modifier, or only the year [day seems to affect nothing]
+X Show Blessed/Power Shield/Holy Bonus/Heroism somewhere (and the effects, to-hit, damage absorb, etc)
+X Switch Might/Int for MM3 party window (make all attributes movable?)
+X Cheats to set/clear cartography data
+X 0x07 teleport vs 0x1f teleport?  0x1f seems to not check whether Light is necessary -- is that the only difference? [shrug]
+X Unknown script commands: 0x08, 0x1B [no clue]
+X Load cartography data from mm3.cur when manually switching maps?  [not sure this is the best idea]
+X Option to use cartography data for visited squares
+X Find out what items are "Important and cannot be discarded" (like the Yellow Fortress Key); perhaps don't let them get put into the Bag of Holding [nah]
+X Bag of Holding shows hirelings in the dropdown even after dismissing them [might be fixed; test]
+X Switching maps leaves a visited square on the new map where the old position was
+X Cartography needs to re-update occasionally (especially a step or two after a map switch)
+X Normalize the "Summon" notes 
+X Change "+Condition" to "Character becomes" where appropriate
+X resolve all of the "If ?" and "If (?)" and "?:" and "PartyBit" text
+X MMShops objects need to use a cached copy of the inventory objects if the raw bytes are the same as the last poll
+X Show the 1-9 indicators on the Shop Inventory form like on the character inventory list views
+X GameState doesn't think you're "in shop" if "Backpack is full" message is being displayed (try to buy an item when pack is full)
+X Saving the MM4/5 maps takes a nontrivial amount of time; might want to mark grid data (or entire sheet nodes, perhaps) as "unchanged" somehow to avoid recompressing it each time
+X debug->read map is putting stairs for the Vertigo entrance (F-3 surface) ["clouds" was matching "cloudside surface" -> 6]
+X Add the "Checked" and "Cleared" locations to the bits
+X Need "Go To Map" in the EditBitsDialog (not just set the beacon)
+X Some party bits are reset each year (like taxes) - note them [ doesn't look like the bit actually gets reset on year change ]
+X Ctrl+Home doesn't work in other programs (e.g. VisualStudio) when the keyboard hook is active [yes, when it's assigned to something, duh]
+X Anything with a "find" textbox (set beacon, edit item, etc) needs F3 for "find next" (and possibly shift+F3 for find previous) [ added CommonKeyForm ]
+X Does nothing really zero quest bit 23 ? [no; killing Lord Xeen does it]
+X Many treasures in the troll holes need "If party is facing x:" tacked on [no; this is too common elsewhere; the treasure chest graphics often need to be faced]
+X Prefix map titles with surface coordinates
+X Fix the beacon display and edit to include the new maps
+X Indoor map colors are wrong
+X ResetMonsters()
+X verify that "Train n!" only shows up to (255 - current level)
+X monster list is different from mm4 (don't forget the game->show monsters dialog as well)
+X Escape probably shouldn't close the party window
+X Show map bit for auto-activated vs. space-to-activate scripts on the script window somewhere (e.g. C-4, High Magic Clouds: 4,13)
+X Up/Down stair icons [also added --stair option to BitTwiddler]
+X advanced quickref, with melee/ranged damage, etc [not particularly fleshed out, but exists now]
+X "Show dead monsters" should be allowed on the encounter context menu even if not cheating
+X "If you don't have <x> or <y> for map notes isn't parsing correctly (sb.replace hack is not appropriate)
+X Weapons have a to-hit modifier (e.g. Silver is +2); this needs to be in the description
+X (C-3, Rivercity: 24,9) "Reveal Adjacent Inaccessible" is hiding the squares around this one after selling items
+X "Game Time" in the game info screen makes the screen blink after every step - need to update only changed values
+X "drop all items worth less than X" option
+X "Show Off-Map Monsters" (i.e. "Dead Monsters") should be an option in the Options, not just on the encounter window context menu
+X CureAll healing HP doesn't fix unconsciousness
+X Encounter window blinks and flickers during melee combat
+X Encounter window doesn't expand when changing maps from one that had no monsters to one with lots
+X "Where to Find" string for MM4/5 skills is missing
+X "Teleport to" in right-click menu of encounter list
+X Some maps are 16x32 (e.g. Dwarf Mine) [yep]
+X Scripts (check all maps)
+X Bag of Holding
+X "All Maps" cartography editing
+X Need some sort of feedback in the Bag of Holding when you can't add an item to the character's backpack ("Too many weapons" and etc.)
+X Verify that "Cheat" is required to edit scripts
+X "Current Map" is in the party bytes somewhere, not just the current map data bytes; might be a better place to look [eh]
+X "AddIfLessOrEqual" (0x21) is listed on the wiki as "RndDamage" - which is right? [changed from MM3 to 4/5]
+X Map Legend
+X Editing Experience/Gold/Gems should be UInt32 max, not Int32 max
+X Ready spell is wrong for Sorcerers (display and editing)
+X Rework the MM345Reward object so that collapsing a RewardArray is possible ("+25 Gems, Receive 1-6 Gems" -> "Receive 26-31 Gems")
+X Item gold values
+X Weapon damage value, armor AC values
+X Melee/ranged damage display
+X Character Creation
+X Trying to use the character creation window if memory-write is off crashes
+X MaxSP isn't quite right (1250 vs. 1200) [PrayerMaster/Prestidigitator is different for pal/arc/ran in mm45]
+X Cursed and Broken aren't working in the item editor
+X "Flags" in the map list view needs to be expanded to show individual togglable bits
+X Show GameInfo minutes as hh:mm instead of an int (and show it on the editor form too)
+X "Set All" and similar for the EditBitsForm
+X Add map flags to game info (or another map info window, or listview on the game info window with splitcontainer)
+X Need a hotkey for clicking on doors [space... duh..]
+X Scripts are all referencing MM3 items, attributes, monsters, etc.
+X Fix script code to be more like the MM2 script objects
+X Party window doesn't appear at game start
+X new MonsterLocations() calls AddMM45Monster() constantly.  Need to skip it if the raw bytes (minus animations) haven't changed
+X Item suffix 30 and 66 are both "Power" ? [one is Energy, one is Might]
+X Check roster editor again after offset refactoring [note: portraits are based on position of character]
+X Check roster editor again after offset refactoring
+X Check roster editor again after offset refactoring
+X Some of the MM2 script commands are probably audio-related; update them
+X Use the CharacterOffsets classes instead of magic numbers
+X Using the game UI to delete an Inventory character doesn't stop them from being active in the Bag of Holding [town of '0' means deleted]
+X Check scripts again after all the updates for MM2
+X Spell window appears when doing Preamble puzzle [ seems fixed ]
+X Add "percentage of map explored" to the game info (should be 256*60, 15360 squares)
+X Spell window appears and disappears when setting Beacon [seems fixed]
+X Current character in party window jumps around while in "view character" mode in the inn [ doesn't seem to any more ]
+X Check XP for levels for classes I don't use much (e.g. ninja)
+X add TrainableLevel override
+X Normalize "all character's x set to y" in notes
+X Scripts 127, 253, 254 in square lake cave are missing, and 129/130/131 in the Nomadic Rift Cave, 100 in B-2 Surface [suspect these are x86 code]
+X Spell window shows up while trading food (fixing this tends to cause the spell window to not show up in combat)
+X Last battle doesn't show up as an encounter
+X Roster editor options to reset visited map squares (or match to WAW map)
+X Spell window shows up during endgame screen
+X Acting character is wrong when entering WAFE during final encounter
+X There are more than one party byte for moon phase benefits, but the UI only shows one (may want to be able to set all party bytes directly)
+X Find the custom scripts in the data files [ MM2Uncompress saves the day ]
+X F5 refreshing the spell list loses track of the currently selected quest
+X Check scripts after combining with MM45
+X Change GameInfo to use new format
+X Add the item index (and highlighting) for Backpack/Equipped/Shops
+X Normalize: If you have object -> if you have "object"
+X Normalize: Resurrection squares to "E" instead of whatever symbol
+X "Po" -> "t", "Cu" -> "t"
+X Change "encounter + loot" squares to an "EL" symbol
+X Check editing the ready spells
+X Don't allow dropping of Xeen Slayer Sword with "drop trash"
+X Make sure "Drop Trash" can't drop quest items
+X "Auto" column for scripts is not being set [Seems to always be true for MM3]
+X Change the "inaccessible" squares to match the MM4/5 color scheme
+X Change "Pi" to "t" on the maps (and similar)
+X Replace Up/D with stair icons
+X "CreateSupercharacter" is erasing the character's beacon [known spell array was too long]
+X Changing class from Knight to Sorcerer leaves "not a spell caster" when trying to cast [There is also a "spellcaster" byte that needs changing]
+X SuperCharacter AC is not right (973/473 vs. 263+255) [obsidian bonus for "none" type items wasn't being counted]
+X Implement CreateSuperCharacter()
+X Lloyd's Beacon editing and displaying is messed up ["side" from MM45 was adding bogus values to the map index]
+X Dungeon of Death Level 4 has a "Lord Xeen" monster that shows up as "Yog" in the encounter list, also the scripts are missing
+X Check (D-2, Surface: 6,5); is there really supposed to be water there?  Something odd is going on [seems to be correct]
+X Check gem-reset square on witch clouds (requires you to press space) [yes, but it happens when you use the stairs - any way to cheese?]
+X Figure out exactly what's going on in Castle Burlock with bit 26
+X "Reveal Adjacent Inaccessible" is iffy when the game starts up from a load or switches maps; might need a timer
+X CureAllHPWithConditions needs UI
+X Map Index in Map Info display should include the int as well as the string [the string is fairly unnecessary]
+X Selected character while in inventory isn't reflected in the party window
+X Is Backpack trading even worth it in MM4/5 ? [not really]
+X Information about each partybit, if available
+X Character Record: The byte after inventory is which side the Lloyd's Beacon is set to
+X Verify HP/SP max values
+X Maps (all)
+X Shop Items
+X Monster List
+X Cure All
+X "Set all maps cartography" needs MM5 maps
+X Need Ctrl+C shortcut on Edit Bits form
+X Advanced quickref could use stats and age; maybe some way to visualize the party other than a long pile of columns
+X encounter window blinks on and off when in an inn with no party selected [was calling Hide() and then showing immediately]
+X Verify that all of the pyramids on cloudside go to castleview [yes]
+X remove the Image/Checked margin for context menus that don't need them
+X Index number is not shown in backpack/equipped while "discard item?" dialog is open in game
+X Put minimum sizes on all windows
+X Make a base class for the CureAll functions (especially 3 and 4/5 are extremely similar) [made a common function]
+X The shop inventory bytes don't belong in the game info, since there is a dialog devoted to those [moved to debug-only]
+X Verify the Genie text at (E-1, Skyroad E1: 12,1) is correct [yes]
+X Add the dark side locations to learn the secondary skills to the skill edit window
+X Test changing class from non-spellcaster to spellcaster [seems good]
+X Way to sort encounter list by proximity to the party (monsters in front of you should probably be first)
+X Figure out why darkside scripts need a 0x3c000 correction [because I was using a bogus value for the pointer]
+X (MM4) Test completely filling up the bag of holding (especially with only certain item types) [lots of performance updates]
+X Editing the character name doesn't work
+X "Active Effects" on the encounter window doesn't work (doesn't show Levitate, anyway) [moved to Game Info window for the most part]
+X Editing the n/s/e/w map indices in the game info should allow all integers, not just "known" ones
+X entering one of the towers (which?) goes to a map with index 100+, instead of the one I would expect [probably the MM4->MM5 transitions towers, not sure]
+X MapCommand() X value is off by 16 somehow?  (F-4, Witch Tower Level 4, 10,6) [no clue; reducing the value by 16 also works; might just be a MM4 bug]
+X Show quest items somewhere? [now in the game info using ByteDescriptionDelegate]]
+X test "Adventurer" mode [seems to just add 3x damage from characters and a to-hit bonus; not worth dealing with separately]
+X test old dosbox again (new/old game) [fixed up scripts and strings pointers]
+X Make sure the 0x170 byte discrepancy is really between SVN-Daum versions and not because of the "talkie" version of MM4/5 (scripts did not have the -368 bias) [not entirely sure but testing each]
+X (MM4) Old DOSBox scripts are loading from the wrong address [different constant depending on found block address.. not perfect but it works]
+X Test other versions of SVN-Daum DOSBox
+X Monster opacity default may need to be closer to 50% [65 seems good]
+X Decide which map/party game information isn't worth showing in the list [moved pointless items to debug-only]
+X See if there is a bit for "monster actively tracking party" [indeed there is; added to edit and icons]
+X Option to show monsters on map only if within a configurable number of squares (e.g. within in-game detection skill range?)
+X The user needs to be told if the game process is being re-acquired frequently
+X See if GetMapItems() can be different per map quad [Setting or clearing a ban affects all quads, at least]
+X Add the integer to the map title in the game info display
+X Option to set the zoom level for all maps (or selected ones in the editor, perhaps)
+X Move some GameView settings to "debug only"
+X Sortable GameViewListView (need a way to put it back to the original order, though) [sorting the lists doesn't make a lot of sense]
+X Need to find the proper lengths of things (Script bytes, map strings, monster positions) instead of just "read it all"
+X "NumChars" is theoretically two different values - one including hirelings and one without [doesn't seem to matter for MM4/5]
+X Re-acquire process after manual DOSBox reset is iffy at best [seems better now]
+X Character Record: There are two "ready" spells; adventuring and combat (and they are the last bytes in the record)  [this really seems irrelevant]
+X Character Record: Alignment is really "Side" (Clouds/Darkside) [this really seems irrelevant]
+X Canceling the save-on-exit dialog makes reading maps (debug menu) not work [now asking to save before anything else]
+X Verify spell purchase prices (especially for sorc vs. arch, etc.)
+X Verify the "where learned" spell info [changed to use same function as quests]
+X Implement GetDefaultMonster() (if applicable)
+X Empirical test for might bonus
+X "Next bonus at xx" for primary stats, to show what the next useful increase is
+X SP formula tooltip
+X primary stat tooltips
+X (MM2) Implement GetDefaultMonster() [not particularly important for MM2]
+X SP formula tooltip
+X primary stat tooltips
+X Empirical test for might bonus [seems the same as other stats]
+X (MM1) Implement GetDefaultMonster() [not applicable; each monster is its own instance, not an index to a master list]
+X SP formula tooltip
+X primary stat tooltips
+X Equipment effects on stats tooltip
+X Age effects on stats tooltip
+X Race effects on stats tooltip
+X Editing a backpack item that isn't in the proper internal order doesn't work right (e.g. blank item at position 0 in memory, editing the first listview item, shows as blank in item editor)
+X Show different bonus tables for different stats in charactor creation assistant; MM1 has different for at least Int/End/Mgt
+X Changing a doom bug's attack type to physical crashes the game [Acy 0 and physical damage are incompatible for some reason]
+X Hover-over monsters only works occasionally [seems better now]
+X Hover over HP/SP/etc. to show the actual formula used for calculation (age, equipment, condition, etc)
+X Hovering over a monster square while viewing a different map than the current one still shows the monster tooltip
+X Watchdog timer should not display the "can't locate memory addresses in dosbox" error if it's only 1-2 seconds into the LaunchGame process [added grace counter]
+X Maze level 8 is split into areas that have 8x8 sections that are adjacent to each other but not to other sections; makes a giantic map.  Might need special-casing.
+X Spell list not showing in combat
+X Monster Unknown[0] is "drain stat" (1-6 = strength...luck)
+X Wiz5Monster's GetBytes() call is not using the byte/int unknowns properly
+X Maps are often requiring a refresh to display correct Active Square icons after changing maps (again??) [The active squares delta wasn't paying attention to the Section changes]
+X Add invisible barriers to the legend
+X What I have listed as "water" is probably "darkness" - the pools are where you swim
+X Section transitions are not correct (especially on level 4; doors are incomplete and lots of incorrect one-way walls on the map) [added "Dependent" WizWall]
+X ActiveSquares are making the map center over and over
+X "Shop Inventories" should probably have a different title in Wiz5 ("Purchasing Items" or similar)
+X autocombat
+X maps
+X char creation assistant
+X bag of holding
+X autostart
+X party
+X items
+X monsters
+X Wiz5's GetActiveSquares() call may not need to be overridden; find the fight map
+X Encounter squares are showing as active even when the encounter is complete [bits seem arbitrary]
+X Collect the bits for all levels into some sort of data table for active squares [not necessary]
+X Find out which bits are reset when moving between maps and which aren't
+X Don't leave the (reverse bit) display on the bit editor form; make it a toggle or something
+X Active bits changing isn't updating the red triangles
+X Summoned monsters need to be shown somewhere (party window or encounter window)
+X Should not put active square icons in the map border squares (moving between maps sometimes makes this happen) [AllInactive may have mitigated this somewhat]
+X bit descriptions for level 7/8
+X Put whether Litofeit, etc. are active in the game info
+X Poison is not being shown on the party window
+X Swim is not being shown on the party window
+X "Magic Screen" needs to be shown somewhere
+X AC Bonus is not showing on party window
+X training assistant (Wiz5 seems to have far less chance to lose stats on level up)
+X trap disarming
+X treasure
+X "Double Gold" needs to be based on the right value
+X Treasure traps flags are wrong
+X Monster lists "Lx-y" items for the treasure column aren't based on anything meaningful
+X Wiz5's item invoke effects are completely different than 1-4
+X Melee checkmark in Encounter window should be based on character position and weapon range
+X spells (full of ?s in short descriptions)
+X verify spell damage types
+X Regen is not correct (or Gold Plate Mail doesn't provide regen)
+X RIP is not being shown on the party window
+X Cure-all (do you restore SP at the castle?  yes)
+X Apparently defeating the lords teleports you somewhere; haven't managed to get that to happen yet [indeed]
+X Check monster experience values [seems good]
+X Editing a monster's mage level isn't writing it back to the right place in memory [off by one byte]
+X quests
+X Check the "learned when" for Wiz5 Spells [mage and bishop empirically identical; presuming the same for the other classes]
+X Live squares on level 4 in the jigsaw bank don't always work when the map is first entered [added some more "Question" states, ignored for live updates]
+X Interpret or remove all squares with [xx,xxxx,..] notes
+X Make sure the saved state of maps with live squares is whatever the initial map setting is
+X Way to mark a door as locked (new icon?)
+X BT1: QuickRef
+X BT1: Items [internal only]
+X BT1: Items Form
+X BT1: Cheating
+X BT1: Supercharacters
+X BT1: Shop Inventories
+X BT1: Character Creation allows you to use one race's rolls for another race if you reroll
+X BT1: Char Creation isn't showing the current stats in the listview
+X BT1: Char Creation isn't implementing "use these rolls" properly (writing to wrong memory?)
+X BT1: Tabbed spell list needs shortcut keys (1/2/3/4, ctrl+pgup/pgdown)
+X BT1: Tabbed spell list needs to have "Spells 1" etc. replaced with Conjurer/Magician/Sorcerer/Wizard
+X BT1: Tabbed spell list "find" function removes focus from the find textbox when an entry is found
+X BT1: Spell list double-click doesn't work (should call OnDoubleClickSpell() but isn't)
+X BT1: Spell list should show the abbreviations (e.g. "MAFL")
+X BT1: Spell list isn't using the current character; always showing all spells
+X BT1: Cheating: Spell book (levels) needs implementation
+X BT1: Acting character isn't selecting the correct tab in the party window during combat
+X BT1: Should information about Bard Spells be in the spell list? [yes]
+X BT1: All spells are listed as "anywhere/anytime" but there are definitely combat-only spells; need to figure out which ones
+X BT1: Char Creation doesn't update the game UI when using previous rolls [no easy way to do it; added informational message to dialog]
+X BT1: "# bard songs" needs to be on the char form
+X BT1: need at least one of the character creation states in the GetMainState()
+X BT1: "Spellbook" on the party info screen (is it just "spell level for each class" or is there more to it?) [seems to be it]
+X BT1: Spell List needs to show based on spell level for known types, not character's current class 
+X BT1: Setting all monster HP to 0 doesn't end an encounter (for "kill all monsters" link in encounter editor)
+X BT1: "Shop Inspecting Char" isn't focused on the party window
+X BT1: Cheating: Condition needs BT-specific checkboxes
+X BT1: Spell list needs "duration" column
+X BT1: The tavern in Skara Brae have names; put them on the map
+X BT1: Game Info (game time, ?)
+X BT1: Monsters
+X BT1: Monsters Form
+X BT1: Spells
+X BT1: Spells Form
+X BT1: Maps
+X BT1: Character Record
+X BT1: Character Control
+X BT1: Encounters
+X BT1: Character Creation
+X BT1: When training a character, the focused character on the party window changes randomly ["InCombat" and "PreCombat" needed to be decoupled for NoActingChar]
+X BT1: Training Assistant
+X BT1: Scripts [not likely]
+X BT1: Cure All [no way to do that in this game]
+X BT1: Quests
+X BT1: Roster Editor
+X BT1: Bag of Holding
+X BT1: Drop Trash
+X BT1: Verify the ConditionDescription strings
+X BT1: Melee damage on character control is still "N/A"
+X BT1: WarGloves and Pure Shield have a Damage number; is that correct?  added?  replaced? (added)
+X BT1: Tooltips for stats on party form
+X BT1: Need to determine bonus values for stats (e.g. dex -> lower AC) [still missing Luck tooltip; no clue what luck does]
+X BT1: Resistances listview either needs something in it or to be hidden [no resistances?  no idea...]
+X BT1: Show active Bard songs in game info
+X BT1: Most of the spells need hard numbers in their descriptions, if possible
+X BT1: Show active spells during combat (SOSH, etc.) [these are condensed into "AC Bonus" and "Damage Bonus"]
+X BT1: Show characters' selected command during battle (cast/attack/defend/etc)
+X BT1: Need a way to specify consistent ordering for windows (e.g. "Spell Selection always on top of Party Window")
+X BT1: Generate item list from internal game data instead of in-source
+X BT1: find internal monster data
+X BT1: Do monsters have resistances or treasure?  Find out and unhide the encounter columns if so [seems not; treasure is part of the map?]
+X BT1: Some of the ?/?? rooms may be "anti-magic" (and some may drain SP) [they actually restore SP]
+X BT1: Partial-reveal map squares (SetSeen fn) based on light strength instead of just "3"
+X BT1: Add GetLightDistance() to MM/Wiz games (likely just "4 or 0" depending on whether light is currently active or not)
+X BT1: Add distance numbers to MAFL, CAEY, etc. spell descriptions
+X BT1: Are live squares worth it?  There are some wall-to-door areas [nearly every square on the map]
+X BT1: Implement GetActiveSquares()
+X BT1: The store/guild/etc. on the main map are never marked as visible, because the party never is actually in those squares (added Hacker.VisitFacingSquare)
+X BT1: Active Squares in Skara Brae are wrong [Skara Brae is a completely different map area in memory]
+X BT1: Move the guardians from the "various monsters" quest to a specific guardian-killing quest (or to the quests they impede specifically)
+X BT1: find "select song to sing" in stack (Adv. SB/sung, Combat SB/RE/dung)
+X BT1: turn-order display appears/disappears during SB random encounters
+X BT1: Use stack to get state properly instead of checking arbitrary points in it (don't forget SVN-old and original DOSBox!)
+X BT1: There is a brief "not in combat" moment while characters are dealing damage to enemies [some more combat/precombat states]
+X BT1: Spell list says "Combat Bard Spells for X, a Bard with YYY SP" -> change to "Songs" and "Songs Available" or similar
+X BT1: Bring back the "disarm trap" dialog like Wizardry has (test again with new stack states) [seems to work]
+X BT1: Check/Implement "SkipIntroductions"
+X BT1: Apparently DOSBox and SendInput don't like the arrow keys much; this makes SkipIntroductions not work properly [no idea why; switched to "a012345e" instead]
+X BT1: Show what's in the treasure box [found gold values, item range]
+X BT1: Find monster AC and Condition for encounter editor (or remove those columns from the list) [removed]
+X BT1: When moving through darkness (i.e. Kylearan's Tower 13,2) the focused character on the party window changes randomly [stack-based state seems to fixed this]
+X BT1: Show summoned creature in party window [minimal info in game info window now] [in-game info isn't any less detailed]
+X LightDistance/LOS behaves poorly when barriers are involved (e.g. MM1 Astral Plane).  Too much information for Minimal mode [hide IsSightBlocking lines in seen-only squares]
+X LightDistance/LOS is odd when solid or dashed lines don't actually block vision (e.g. MM3-5 surface water) and when there are no lines for blocked vision (e.g. MM3-5 adjacent mountains)
+X MM3 GameInfo is not updating when values change [Bytes property of MM3GameInfo object was not being set]
+X Fix Wiz5MemoryHacker's OnReinitialized() function (if appropriate) to set NeedsReinitialize properly [always uses internal lists]
+X ActiveSquares.IsActive() is called thousands of times when the map is redrawn (F5, zoom change, etc.) - needs to be particularly efficient [less than 0.5 ms to call it 1024 times]
+X Check quest counts (SetQuests isn't calling AddQuest; might be broken) [indeed]
+X "Short Sword" shows as usable by all, but definitely can't be used by bishop, mage, priest ... what other items might be wrong? [others seem correct]
